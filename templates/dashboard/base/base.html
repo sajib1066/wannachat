@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{% block title %}{% endblock title %} | Django Boilerplate</title>
+
+        {% include 'dashboard/base/header.html' %}
+        {% block extracss %}{% endblock extracss %}
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+            <!-- Preloader -->
+            <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="{% static 'dashboard/img/AdminLTELogo.png' %}" alt="AdminLTELogo" height="60" width="60" />
+            </div>
+
+            <!-- Navbar -->
+            {% include 'dashboard/base/navbar.html' %}
+            <!-- /.navbar -->
+
+            <!-- Main Sidebar Container -->
+            {% include 'dashboard/base/sidebar.html' %}
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <div class="content-header">
+                    <div class="container-fluid">
+                        {% block breadcrumb %}
+                        {% endblock breadcrumb %}
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="container-fluid">
+                        {% block content %}
+                        {% endblock content %}
+                    </div>
+                    <!-- /.container-fluid -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <strong>Copyright &copy; {% now 'Y' %} <a href="https://github.com/sajib1066/django-boilerplate">Django Boilerplate</a>.</strong>
+                All rights reserved.
+                <div class="float-right d-none d-sm-inline-block"><b>Version</b> 0.0.1</div>
+            </footer>
+
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
+        <!-- ./wrapper -->
+
+        {% include 'dashboard/base/js.html' %}
+        {% block extrascript %}{% endblock extrascript %}
+    </body>
+</html>
