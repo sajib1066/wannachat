@@ -57,6 +57,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'customauth.apps.CustomauthConfig',
     'dashboard.apps.DashboardConfig',
+    'chatroom.apps.ChatroomConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
