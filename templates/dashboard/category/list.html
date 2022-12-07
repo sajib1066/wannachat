@@ -1,0 +1,210 @@
+{% extends 'dashboard/base/base.html' %}
+{% load static %}
+
+
+{% block title %}Food List{% endblock title %}
+
+{% block extracss %}
+<style>
+    .pill_active {
+        background-color: #4caf50; /* Green */
+        border: none;
+        padding: 6px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    .pill_deactive {
+        background-color: rgb(196, 12, 12); /* Green */
+        border: none;
+        padding: 6px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 50%;
+    }
+</style>
+{% endblock extracss %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-body">
+                <div class="table-responsive">
+                    <div id="sampleTable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 mb-3">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h5>
+                                            <i class="fa fa-list"></i> <strong class="my-floor"> CATEGORY LIST</strong>
+                                            <sup class="d-print-none"><span class="badge badge-primary" title="Number of Food">{{ total }}</span></sup>
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-4 text-right">
+                                        <a class="btn btn-primary" href="#">CREATE NEW CATEGORY</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-12 mb-3">
+                                {# {% include 'snippets/filterset_form.html' with filterset_form=filterset_form %} #}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-hover table-bordered dataTable no-footer" id="sampleTable" role="grid" aria-describedby="sampleTable_info">
+                                    <thead>
+                                        <tr role="row">
+                                            <th>SL</th>
+                                            <th>Name</th>
+                                            <th>Fee Status</th>
+                                            <th>Status</th>
+                                            <th>Date Created</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for object in object_list %}
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">{{ forloop.counter }}</td>
+                                                <td>
+                                                    <a href="">{{ object.name }}</a>
+                                                </td>
+                                                <td>{{ object.ctg_id }}</td>
+                                                <td>
+                                                    <a href="">{{ object.slug }}</a>
+                                                </td>
+                                                <td class="text-center">
+                                                    {% if object.status %}
+                                                        <b class="pill_active"></b>
+                                                    {% else %}
+                                                        <b class="pill_deactive"></b>
+                                                    {% endif %}
+                                                </td>
+                                                <td>{{ object.created_at }}</td>
+                                                <td width="220px">
+                                                    {% if object.status %}
+                                                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#activeDeactiveModal_{{ object.pk }}">
+                                                            Deactive
+                                                        </button>
+                                                    {% else %}
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#activeDeactiveModal_{{ object.pk }}">
+                                                            Active
+                                                        </button>
+                                                    {% endif %}
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="activeDeactiveModal_{{ object.pk }}" tabindex="-1" role="dialog" aria-labelledby="activeDeactiveModal_{{ object.pk }}Label" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <form action="">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title text-danger" id="activeDeactiveModal_{{ object.pk }}">Are you sure want to {% if object.status %}deactivate{% else %}active{% endif %} this category?</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Category: {{ object.title }} <br>
+                                                                        Language: {{ object.language.name }} <br>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                                                        <button type="submit" class="btn btn-primary {% if request.user.email == object.email %}disabled{% endif %}">Yes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="" class="btn btn-warning btn-sm" title="Edit {{ object.title }}"><i class="fa fa-edit"></i></a>
+
+                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal_{{ object.pk }}"><i class="fa fa-trash"></i></button>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="deleteModal_{{ object.pk }}" tabindex="-1" role="dialog" aria-labelledby="deleteModal_{{ object.pk }}Label" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <form action="">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title text-danger" id="deleteModal_{{ object.pk }}">Are you sure want to delete this category?</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Category: {{ object.title }} <br>
+                                                                        Language: {{ object.language.name }} <br>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                                                        <button type="submit" class="btn btn-primary">Yes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        {% empty %}
+                                            <tr>
+                                                <td colspan="11" class="text-center text-danger font-weight-bold">No category found.</td>
+                                            </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                {% if page_obj.has_previous %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                {% endif %}
+                                {% if page_obj.number|add:'-2' > 1 %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page=1">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.number|add:'-3' }}">&hellip;</a></li>
+                                {% endif %}
+                                {% for i in page_obj.paginator.page_range %}
+                                    {% if page_obj.number == i %}
+                                        <li class="page-item active" aria-current="page"><span class="page-link">{{ i }}<span class="sr-only">(current)</span></span>
+                                        </li>
+                                    {% elif i > page_obj.number|add:'-3' and i < page_obj.number|add:'3' %}
+                                        <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                {% if page_obj.paginator.num_pages > page_obj.number|add:'2' %}
+                                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.number|add:'3' }}">&hellip;</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link"
+                                        href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+                                    </li>
+                                {% endif %}
+                                {% if page_obj.has_next %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

@@ -6,4 +6,8 @@ app_name = 'dashboard'
 
 urlpatterns = [
     path('', views.DashboardView.as_view(), name='dashboard'),
+    path(
+        'category-list/', views.CategoryListView.as_view(),
+        name='category_list'
+    ),
 ]
