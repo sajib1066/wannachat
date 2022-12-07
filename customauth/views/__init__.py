@@ -1,8 +1,8 @@
-from .login import LoginView
+from .login import AdminLoginView
 from .logout import user_logout
 
 
 __all__ = [
-    LoginView,
+    AdminLoginView,
     user_logout,
 ]

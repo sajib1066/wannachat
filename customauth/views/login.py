@@ -9,9 +9,9 @@ from customauth.forms import LoginForm
 logger = logging.getLogger(__name__)
 
 
-class LoginView(LoginView):
+class AdminLoginView(LoginView):
     """ Custom login view """
-    template_name = 'customauth/login.html'
+    template_name = 'customauth/adminlogin.html'
     form_class = LoginForm
 
     def get(self, request, *args, **kwargs):

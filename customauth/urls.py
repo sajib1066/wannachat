@@ -6,6 +6,6 @@ app_name = 'customauth'
 
 
 urlpatterns = [
-    path('login/', views.LoginView.as_view(), name='login'),
+    path('admin-login/', views.AdminLoginView.as_view(), name='admin_login'),
     path('logout/', views.user_logout, name='logout'),
 ]
