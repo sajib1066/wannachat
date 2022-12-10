@@ -20,10 +20,18 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    @property
+    def total_sub_category(self):
+        return self.sub_categories.all().count()
+
 
 class SubCategory(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(
+        Category, on_delete=models.CASCADE, related_name='sub_categories'
+    )
     name = models.CharField(max_length=255)
+    max_user = models.PositiveIntegerField(default=35)
+    max_previous_message = models.PositiveIntegerField(default=200)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

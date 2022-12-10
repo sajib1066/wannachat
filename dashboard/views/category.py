@@ -8,6 +8,7 @@ class CategoryListView(LoginRequiredMixin, ListView):
     template_name = 'dashboard/category/list.html'
     model = Category
     login_url = "/auth/admin-login/"
+    paginate_by = 15
 
     def get_queryset(self, **kwargs):
         return self.model.objects.all()

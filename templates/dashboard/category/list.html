@@ -59,8 +59,10 @@
                                         <tr role="row">
                                             <th>SL</th>
                                             <th>Name</th>
+                                            <th>Type</th>
                                             <th>Fee Status</th>
                                             <th>Status</th>
+                                            <th>Total Sub Category</th>
                                             <th>Date Created</th>
                                             <th>Action</th>
                                         </tr>
@@ -72,16 +74,17 @@
                                                 <td>
                                                     <a href="">{{ object.name }}</a>
                                                 </td>
-                                                <td>{{ object.ctg_id }}</td>
-                                                <td>
-                                                    <a href="">{{ object.slug }}</a>
-                                                </td>
+                                                <td>{{ object.category_type }}</td>
+                                                <td>{{ object.fee_status }}</td>
                                                 <td class="text-center">
-                                                    {% if object.status %}
+                                                    {% if object.is_active %}
                                                         <b class="pill_active"></b>
                                                     {% else %}
                                                         <b class="pill_deactive"></b>
                                                     {% endif %}
+                                                </td>
+                                                <td>
+                                                    <a href="">{{ object.total_sub_category }}</a>
                                                 </td>
                                                 <td>{{ object.created_at }}</td>
                                                 <td width="220px">
