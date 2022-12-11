@@ -2,7 +2,7 @@
 {% load static %}
 
 
-{% block title %}Category List{% endblock title %}
+{% block title %}Sub Category List{% endblock title %}
 
 {% block extracss %}
 <style>
@@ -39,12 +39,12 @@
                                 <div class="row">
                                     <div class="col-md-8">
                                         <h5>
-                                            <i class="fa fa-list"></i> <strong class="my-floor"> CATEGORY LIST</strong>
+                                            <i class="fa fa-list"></i> <strong class="my-floor"> SUB CATEGORY LIST</strong>
                                             <sup class="d-print-none"><span class="badge badge-primary" title="Number of Food">{{ total }}</span></sup>
                                         </h5>
                                     </div>
                                     <div class="col-md-4 text-right">
-                                        <a class="btn btn-primary" href="{% url 'dashboard:category_create' %}">CREATE NEW CATEGORY</a>
+                                        <a class="btn btn-primary" href="{% url 'dashboard:subcategory_create' %}">CREATE NEW SUB CATEGORY</a>
                                     </div>
                                 </div>
                             </div>
@@ -59,10 +59,10 @@
                                         <tr role="row">
                                             <th>SL</th>
                                             <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Fee Status</th>
+                                            <th>Category</th>
+                                            <th>Max User</th>
+                                            <th>Max Previous Message Show</th>
                                             <th>Status</th>
-                                            <th>Total Sub Category</th>
                                             <th>Date Created</th>
                                             <th>Action</th>
                                         </tr>
@@ -74,17 +74,15 @@
                                                 <td>
                                                     <a href="">{{ object.name }}</a>
                                                 </td>
-                                                <td>{{ object.category_type }}</td>
-                                                <td>{{ object.fee_status }}</td>
+                                                <td>{{ object.category.name }}</td>
+                                                <td>{{ object.max_user }}</td>
+                                                <td>{{ object.max_previous_message }}</td>
                                                 <td class="text-center">
                                                     {% if object.is_active %}
                                                         <b class="pill_active"></b>
                                                     {% else %}
                                                         <b class="pill_deactive"></b>
                                                     {% endif %}
-                                                </td>
-                                                <td>
-                                                    <a href="">{{ object.total_sub_category }}</a>
                                                 </td>
                                                 <td>{{ object.created_at }}</td>
                                                 <td width="220px">
@@ -101,17 +99,18 @@
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="activeDeactiveModal_{{ object.pk }}" tabindex="-1" role="dialog" aria-labelledby="activeDeactiveModal_{{ object.pk }}Label" aria-hidden="true">
                                                         <div class="modal-dialog" role="document">
-                                                            <form action="{% url 'dashboard:category_status_change' object.pk %}" method="post">
+                                                            <form action="{% url 'dashboard:subcategory_status_change' object.pk %}" method="post">
                                                                 {% csrf_token %}
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
-                                                                        <h5 class="modal-title text-danger" id="activeDeactiveModal_{{ object.pk }}">Are you sure want to {% if object.status %}deactivate{% else %}active{% endif %} this category?</h5>
+                                                                        <h5 class="modal-title text-danger" id="activeDeactiveModal_{{ object.pk }}">Are you sure want to {% if object.status %}deactivate{% else %}active{% endif %} this sub category?</h5>
                                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                             <span aria-hidden="true">&times;</span>
                                                                         </button>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Category: {{ object.name }} <br>
+                                                                        Name: {{ object.name }} <br>
+                                                                        Category: {{ object.category.name }} <br>
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
@@ -122,24 +121,25 @@
                                                         </div>
                                                     </div>
 
-                                                    <a href="{% url 'dashboard:category_edit' object.pk %}" class="btn btn-warning btn-sm" title="Edit {{ object.title }}"><i class="fa fa-edit"></i></a>
+                                                    <a href="{% url 'dashboard:subcategory_edit' object.pk %}" class="btn btn-warning btn-sm" title="Edit {{ object.title }}"><i class="fa fa-edit"></i></a>
 
                                                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal_{{ object.pk }}"><i class="fa fa-trash"></i></button>
 
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="deleteModal_{{ object.pk }}" tabindex="-1" role="dialog" aria-labelledby="deleteModal_{{ object.pk }}Label" aria-hidden="true">
                                                         <div class="modal-dialog" role="document">
-                                                            <form action="{% url 'dashboard:category_delete' object.pk %}" method="post">
+                                                            <form action="{% url 'dashboard:subcategory_delete' object.pk %}" method="post">
                                                                 {% csrf_token %}
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
-                                                                        <h5 class="modal-title text-danger" id="deleteModal_{{ object.pk }}">Are you sure want to delete this category?</h5>
+                                                                        <h5 class="modal-title text-danger" id="deleteModal_{{ object.pk }}">Are you sure want to delete this sub category?</h5>
                                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                             <span aria-hidden="true">&times;</span>
                                                                         </button>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Category: {{ object.name }} <br>
+                                                                        Name: {{ object.name }} <br>
+                                                                        Category: {{ object.category.name }} <br>
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
@@ -153,7 +153,7 @@
                                             </tr>
                                         {% empty %}
                                             <tr>
-                                                <td colspan="11" class="text-center text-danger font-weight-bold">No category found.</td>
+                                                <td colspan="11" class="text-center text-danger font-weight-bold">No sub category found.</td>
                                             </tr>
                                         {% endfor %}
                                     </tbody>

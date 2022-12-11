@@ -1,0 +1,45 @@
+{% extends 'dashboard/base/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Sub Category Edit{% endblock title %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <h3 class="tile-title text-center">Sub Category Edit Form</h3>
+            <div class="tile-body">
+                <form method="post" action="">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="form-group col-md-6">
+                            {{ form.category|as_crispy_field }}
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
+                        <div class="form-group col-md-6">
+                            {{ form.name|as_crispy_field }}
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
+                        <div class="form-group col-md-6">
+                            {{ form.max_user|as_crispy_field  }}
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
+                        <div class="form-group col-md-6">
+                            {{ form.max_previous_message|as_crispy_field  }}
+                        </div>
+                    </div>
+                    <div class="tile-footer text-center">
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Update Sub Category</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-danger" href="{% url 'dashboard:subcategory_list' %}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

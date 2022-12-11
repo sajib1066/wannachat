@@ -3,6 +3,10 @@ from .category import (
     CategoryListView, CategoryCreateView, CategoryEditView,
     CategoryStatusUpdateView, CategoryDeleteView
 )
+from .sub_category import (
+    SubCategoryListView, SubCategoryCreateView, SubCategoryEditView,
+    SubCategoryStatusUpdateView, SubCategoryDeleteView
+)
 
 
 __all__ = [
@@ -12,4 +16,9 @@ __all__ = [
     CategoryEditView,
     CategoryStatusUpdateView,
     CategoryDeleteView,
+    SubCategoryListView,
+    SubCategoryCreateView,
+    SubCategoryEditView,
+    SubCategoryStatusUpdateView,
+    SubCategoryDeleteView
 ]

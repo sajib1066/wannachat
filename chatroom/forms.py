@@ -16,14 +16,15 @@ class CategoryForm(forms.ModelForm):
 
 
 class SubCategoryForm(forms.ModelForm):
-    model = SubCategory
-    fields = ['category', 'name', 'max_user', 'max_previous_message']
+    class Meta:
+        model = SubCategory
+        fields = ['category', 'name', 'max_user', 'max_previous_message']
 
-    widgets = {
-        'category': forms.Select(attrs={'class': 'form-control'}),
-        'name': forms.TextInput(attrs={'class': 'form-control'}),
-        'max_user': forms.NumberInput(attrs={'class': 'form-control'}),
-        'max_previous_message': forms.NumberInput(attrs={
-            'class': 'form-control'
-        }),
-    }
+        widgets = {
+            'category': forms.Select(attrs={'class': 'form-control'}),
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'max_user': forms.NumberInput(attrs={'class': 'form-control'}),
+            'max_previous_message': forms.NumberInput(attrs={
+                'class': 'form-control'
+            }),
+        }
