@@ -1,23 +1,23 @@
 upstream uwsgi {
-        server unix:/opt/django_boilerplate/uwsgi/uwsgi.sock;
+        server unix:/opt/wannachat/uwsgi/uwsgi.sock;
 }
 
 server {
         listen 80;
         server_name _;
 
-        access_log /opt/django_boilerplate/logs/access.log;
-        error_log /opt/django_boilerplate/logs/error.log;
+        access_log /opt/wannachat/logs/access.log;
+        error_log /opt/wannachat/logs/error.log;
 
         charset utf-8;
         client_max_body_size 16M;
 
         location /static {
-                alias /opt/django_boilerplate/static;
+                alias /opt/wannachat/static;
         }
 
         location /media {
-                alias /opt/django_boilerplate/media;
+                alias /opt/wannachat/media;
         }
 
         location / {
