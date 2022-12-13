@@ -1,5 +1,7 @@
 from django.db import models
 
+from customauth.models import User
+
 
 class Category(models.Model):
     TYPE_CHOICES = (
@@ -24,6 +26,12 @@ class Category(models.Model):
     def total_sub_category(self):
         return self.sub_categories.all().count()
 
+    def category_type_display(self):
+        return dict(self.TYPE_CHOICES)[self.category_type]
+
+    def fee_status_display(self):
+        return dict(self.FEE_STATUS_CHOICES)[self.fee_status]
+
 
 class SubCategory(models.Model):
     category = models.ForeignKey(
@@ -41,3 +49,18 @@ class SubCategory(models.Model):
 
     def __str__(self):
         return f"{self.category.name} ({self.name})"
+
+    @property
+    def current_users(self):
+        return self.chatroom.count()
+
+
+class ChatRoomUser(models.Model):
+    room = models.ForeignKey(
+        SubCategory, on_delete=models.CASCADE, related_name='chatroom'
+    )
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='chatroom_users'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

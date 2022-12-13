@@ -60,10 +60,11 @@
                                             <th>SL</th>
                                             <th>Name</th>
                                             <th>Category</th>
-                                            <th>Max User</th>
+                                            <th>Users</th>
                                             <th>Max Previous Message Show</th>
                                             <th>Status</th>
                                             <th>Date Created</th>
+                                            <th>Updated Date</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -75,7 +76,7 @@
                                                     <a href="">{{ object.name }}</a>
                                                 </td>
                                                 <td>{{ object.category.name }}</td>
-                                                <td>{{ object.max_user }}</td>
+                                                <td>{{ object.current_users }} / {{ object.max_user }}</td>
                                                 <td>{{ object.max_previous_message }}</td>
                                                 <td class="text-center">
                                                     {% if object.is_active %}
@@ -85,6 +86,7 @@
                                                     {% endif %}
                                                 </td>
                                                 <td>{{ object.created_at }}</td>
+                                                <td>{{ object.updated_at }}</td>
                                                 <td width="220px">
                                                     {% if object.is_active %}
                                                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#activeDeactiveModal_{{ object.pk }}">

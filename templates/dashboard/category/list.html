@@ -64,6 +64,7 @@
                                             <th>Status</th>
                                             <th>Total Sub Category</th>
                                             <th>Date Created</th>
+                                            <th>Updated Date</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -74,8 +75,8 @@
                                                 <td>
                                                     <a href="">{{ object.name }}</a>
                                                 </td>
-                                                <td>{{ object.category_type }}</td>
-                                                <td>{{ object.fee_status }}</td>
+                                                <td>{{ object.category_type_display }}</td>
+                                                <td>{{ object.fee_status_display }}</td>
                                                 <td class="text-center">
                                                     {% if object.is_active %}
                                                         <b class="pill_active"></b>
@@ -87,6 +88,7 @@
                                                     <a href="">{{ object.total_sub_category }}</a>
                                                 </td>
                                                 <td>{{ object.created_at }}</td>
+                                                <td>{{ object.updated_at }}</td>
                                                 <td width="220px">
                                                     {% if object.is_active %}
                                                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#activeDeactiveModal_{{ object.pk }}">
