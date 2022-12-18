@@ -2112,7 +2112,7 @@
                                     <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="#" />
                                 </div>
 
-                                <h4 class="mb-1">William Wright</h4>
+                                <h4 class="mb-1">{{ request.user.profile.name }}</h4>
                                 <p>last seen 5 minutes ago</p>
                             </div>
                         </div>
@@ -2156,7 +2156,7 @@
                                 <div class="row align-items-center gx-6">
                                     <div class="col">
                                         <h5>E-mail</h5>
-                                        <p>william@studio.com</p>
+                                        <p>{{ request.user.email }}</p>
                                     </div>
 
                                     <div class="col-auto">
