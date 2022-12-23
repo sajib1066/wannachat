@@ -94,149 +94,22 @@
                                             <div class="col-md-12">
                                                 {% for subcategory in category.sub_categories.all %}
                                                 <li class="sub-category">
-                                                    <a href="">{{ subcategory.name }}</a>
+                                                    {% if category.category_type == 'chatroom' %}
+                                                        {% url 'chatroom:sidebar' as userpanel %}
+                                                        {% url 'chatroom:chatbox' subcategory.pk as chatbox %}
+                                                        {% url 'chatroom:users' subcategory.pk as users %}
+                                                        <button class="chatroom" onclick="openChatWindow('{{ userpanel }}', '{{ chatbox }}', '{{ users }}')">{{ subcategory.name }}</button>
+                                                    {% else %}
+                                                        <a href="">{{ subcategory.name }}</a>
+                                                    {% endif %}
                                                 </li>
                                                 {% endfor %}
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {% endfor %}
-                            <div class="col-md-4 mb-4 category-section">
-                                <div class="category-card">
-                                    <div class="card-header category-header">
-                                        <b>Category 1</b>
-                                    </div>
-                                    <div class="card-body category-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4 category-section">
-                                <div class="category-card">
-                                    <div class="card-header category-header">
-                                        <b>Category 1</b>
-                                    </div>
-                                    <div class="card-body category-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4 category-section">
-                                <div class="category-card">
-                                    <div class="card-header category-header">
-                                        <b>Category 1</b>
-                                    </div>
-                                    <div class="card-body category-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4 category-section">
-                                <div class="category-card">
-                                    <div class="card-header category-header">
-                                        <b>Category 1</b>
-                                    </div>
-                                    <div class="card-body category-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4 category-section">
-                                <div class="category-card">
-                                    <div class="card-header category-header">
-                                        <b>Category 1</b>
-                                    </div>
-                                    <div class="card-body category-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                                <li class="sub-category">
-                                                    <a href="">Sub Category</a>
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -266,6 +139,13 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="{% static 'home/js/scripts.js' %}"></script>
+        <script>
+            function openChatWindow(userpanel, chatbox, users) {  
+                window.open(userpanel, "My Panel", "toolbar=no,status=no,menubar=no,location=left,scrollbars=no,resizable=no,height=600,width=357");
+                window.open(chatbox, "Chat Box", "height=600,width=657,screenX=500");
+                window.open(users,"Users","height=600,width=357,screenX=1200");
+            } 
+        </script>
     </body>
 </html>

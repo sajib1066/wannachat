@@ -16,3 +16,42 @@ class ChatRoomView(LoginRequiredMixin, View):
             'obj': obj,
         }
         return render(request, self.template_name, context)
+
+
+class ChatRoomSidebarView(LoginRequiredMixin, View):
+    template_name = "chatroom/userpanel.html"
+    model = SubCategory
+    login_url = "/auth/login/"
+
+    def get(self, request, *args, **kwargs):
+        obj = None
+        context = {
+            'obj': obj,
+        }
+        return render(request, self.template_name, context)
+
+
+class ChatBoxView(LoginRequiredMixin, View):
+    template_name = "chatroom/chatbox.html"
+    model = SubCategory
+    login_url = "/auth/login/"
+
+    def get(self, request, *args, **kwargs):
+        obj = get_object_or_404(self.model, pk=kwargs.get('pk'))
+        context = {
+            'obj': obj,
+        }
+        return render(request, self.template_name, context)
+
+
+class ChatUsersView(LoginRequiredMixin, View):
+    template_name = "chatroom/chatusers.html"
+    model = SubCategory
+    login_url = "/auth/login/"
+
+    def get(self, request, *args, **kwargs):
+        obj = get_object_or_404(self.model, pk=kwargs.get('pk'))
+        context = {
+            'obj': obj,
+        }
+        return render(request, self.template_name, context)

@@ -11371,3 +11371,10 @@ li{
 .sub-category a {
   color: #000;
 }
+
+.chatroom {
+  background-color: #f0fdf4;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
