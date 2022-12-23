@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    color: rgb(89, 0, 172);
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.card-bg{
+    background-color: #F4F4F4;
+}
+.nav-bg{
+    background-color: #F4F4F4;
+}
+.leftSideCard a p{
+    color: rgb(89, 0, 172);
+    margin: 0;
+}
+.leftSideCard ul li a{
+    color: rgb(89, 0, 172);
+}
+/* calender start*/
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+    color: #444;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 11.6%;
+    color: rgb(35, 35, 35);
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: rgb(255, 255, 255);
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 11.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  .days li .active {
+    padding: 4px;
+    background: rgb(89, 0, 172);
+    color: white !important
+  }
+  
+  /* Add media queries for smaller screens */
+  @media screen and (max-width:768px) {
+    .weekdays li, .days li {width: 13.1%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+  }
+/* calender end */
+.nav-item-bg a{
+    background-color: white;
+    color: rgb(89, 0, 172);
+    margin: 0 5px;
+}
+.nav-item-bg a:hover{
+    color: rgb(89, 0, 172);
+}
+.category-heading{
+    background-color: rgb(205, 205, 205);
+}
+.category-heading h4{
+    font-size: 18px;
+    margin: 0;
+}
+.cat-list{
+    border-bottom: 1px solid rgba(204, 204, 204, 0.676);
+}
+.cat-list a{
+    color: rgb(89, 0, 172);
+}
+.nearBy-heading{
+    background-color: rgb(255, 255, 255);
+}
+.nearBy-heading h4{
+    font-size: 15px;
+    margin: 0;
+}
+.rightSideCard ul li a{
+    color: rgb(89, 0, 172);
+}

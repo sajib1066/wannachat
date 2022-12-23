@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WannaChat</title>
+        <link rel="stylesheet" href="{% static 'home/assets/css/bootstrap.css' %}" />
+        <link rel="stylesheet" href="{% static 'home/assets/css/style.css' %}" />
+        <style>
+            caption {
+                background: #dfdfdf;
+                padding: 12px;
+            }
+            caption div:first-child {
+                display: inline-block;
+                text-align: left;
+                width: 67%;
+                font-size: 18px;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            caption div:last-child {
+                display: inline-block;
+            }
+            caption div:last-child a {
+                width: 30px;
+                height: 30px;
+                background-color: #2196f3;
+                display: inline-block;
+                padding: 3px 0 0;
+                color: white;
+                border-radius: 3px;
+                margin: 0 6px;
+                cursor: pointer;
+            }
+            caption div:last-child a:hover {
+                opacity: 0.72;
+            }
+            #calendar {
+                position: relative;
+                margin-top: 60px;
+                margin-bottom: 10px;
+            }
+            table {
+                width: 100%;
+            }
+            #calendar thead {
+                padding: 10px 0;
+            }
+            #calendar caption a {
+                color: #fff;
+                text-align: center;
+                font-size: 17px;
+                background: #6c757d;
+            }
+            td {
+                color: #444;
+                padding: 6px 10px;
+                text-align: center;
+                font-size: 12px;
+            }
+            caption {
+                background: #dfdfdf;
+                padding: 12px;
+                position: absolute;
+                top: -50px;
+                width: 100%;
+            }
+            .hoy {
+                background-color: #f44336;
+                color: white;
+                border-color: #f44336;
+            }
+            .empty {
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card card-bg rounded-0">
+                            <div class="card-body text-center">
+                                <div class="leftSideCard">
+                                    <h3>WannaChat</h3>
+                                    <a href=""><p>Create a posting</p></a>
+                                    <a href=""><p>my account</p></a>
+                                    <ul class="py-3 ps-0">
+                                        <li class="leftCard-search">
+                                            <input class="form-control me-2" type="search" placeholder="&#x1F50D Search WannaChat" aria-label="Search" />
+                                        </li>
+                                    </ul>
+                                    <p class="fw-bold">event calender</p>
+                                    <!-- <div class="month">      
+                                    <ul>
+                                      <li class="prev">&#10094;</li>
+                                      <li class="next">&#10095;</li>
+                                      <li>
+                                        August<br>
+                                        <span style="font-size:18px">2021</span>
+                                      </li>
+                                    </ul>
+                                  </div> -->
+                                    <table id="calendar">
+                                        <caption></caption>
+                                        <thead>
+                                            <tr class="weekdays">
+                                                <th>M</th>
+                                                <th>T</th>
+                                                <th>W</th>
+                                                <th>T</th>
+                                                <th>F</th>
+                                                <th>S</th>
+                                                <th>S</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <ul class="p-0">
+                                        <li><a href="">craiglist app</a></li>
+                                        <li><a href="">help, faq, abuse, legal</a></li>
+                                        <li><a href="">avoid scams and fraud</a></li>
+                                        <li><a href="">personal safety tips</a></li>
+                                        <li><a href="">terms of use</a></li>
+                                        <li><a href="">privacy policy</a></li>
+                                        <li><a href="">system status</a></li>
+                                        <br />
+                                        <li><a href="">craiglist app</a></li>
+                                        <li><a href="">help, faq, abuse, legal</a></li>
+                                        <li><a href="">avoid scams and fraud</a></li>
+                                        <li><a href="">personal safety tips</a></li>
+                                        <li><a href="">terms of use</a></li>
+                                        <li><a href="">privacy policy</a></li>
+                                        <li><a href="">system status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-5">
+                        <nav class="navbar navbar-expand-xl mb-3 nav-bg">
+                            <div class="container">
+                                <a class="navbar-brand offset-1" href="#">new york city</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" aria-current="page" href="#">mnh</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">brk</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">ddk</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">hnk</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">cnk</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">lld</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">rrj</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">ioi</a>
+                                        </li>
+                                        <li class="nav-item nav-item-bg">
+                                            <a class="nav-link" href="#">jkl</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="category-heading py-2 text-center">
+                                    <h4 class="fw-bold">community</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-heading py-2 text-center">
+                                    <h4 class="fw-bold">services</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-heading py-2 text-center">
+                                    <h4 class="fw-bold">discussion forum</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-4">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-4">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-4 col-4">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                <div class="category-heading py-2 text-center">
+                                    <h4 class="fw-bold">housing</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-heading py-2 text-center">
+                                    <h4 class="fw-bold">for sale</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="category-heading py-2 text-center">
+                                    <h4 class="fw-bold">jobs</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                            <li class="cat-list"><a href="">activites</a></li>
+                                            <li class="cat-list"><a href="">childcare</a></li>
+                                            <li class="cat-list"><a href="">classes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-heading py-2 text-center">
+                                    <h4 class="fw-bold">gigs</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">computer</a></li>
+                                            <li class="cat-list"><a href="">creative</a></li>
+                                            <li class="cat-list"><a href="">domestic</a></li>
+                                            <li class="cat-list"><a href="">crew</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <ul class="ps-0">
+                                            <li class="cat-list"><a href="">event</a></li>
+                                            <li class="cat-list"><a href="">labour</a></li>
+                                            <li class="cat-list"><a href="">talent</a></li>
+                                            <li class="cat-list"><a href="">writing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="card card-bg rounded-0">
+                            <div class="card-body">
+                                <div class="rightSideCard text-center">
+                                    <select name="" id="" class="form-select">
+                                        <option selected value="">english</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <div class="nearBy-heading py-1 text-center my-2">
+                                        <h4 class="fw-bold">nearby cl</h4>
+                                    </div>
+                                    <ul class="p-0">
+                                        <li><a href="">crai</a></li>
+                                        <li><a href="">help</a></li>
+                                        <li><a href="">avoid</a></li>
+                                        <li><a href="">safety</a></li>
+                                        <li><a href="">terms</a></li>
+                                        <li><a href="">privacy</a></li>
+                                        <li><a href="">system</a></li>
+                                        <li><a href="">crai</a></li>
+                                        <li><a href="">help</a></li>
+                                        <li><a href="">avoid</a></li>
+                                        <li><a href="">safety</a></li>
+                                        <li><a href="">terms</a></li>
+                                        <li><a href="">privacy</a></li>
+                                        <li><a href="">system</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="{% static 'home/assets/js/bootstrap.bundle.js' %}"></script>
+        <script>
+            var fecha = new Date();
+
+            function mostrarCalendario(year, month) {
+                // variables
+                var ahora = new Date(year, month - 1, 1);
+                var ultimo = new Date(year, month, 0);
+                var primer_dia_semana = ahora.getDay() == 0 ? 7 : ahora.getDay();
+                var ultimo_dia_mes = ultimo.getDate();
+                var dia = 0;
+                var resultado = "<tr>";
+                var dia_actual = 0;
+
+                var ultima_celda = primer_dia_semana + ultimo_dia_mes;
+
+                for (var i = 1; i <= 42; i++) {
+                    // El dia que empieza la semana
+                    if (i == primer_dia_semana) {
+                        dia = 1;
+                    }
+
+                    if (i < primer_dia_semana || i >= ultima_celda) {
+                        // celda vacia
+                        resultado += "<td class='empty'>&nbsp;</td>";
+                    } else {
+                        // mostramos el dia
+                        if (dia == fecha.getDate() && month == fecha.getMonth() + 1 && year == fecha.getFullYear()) resultado += "<td class='hoy'>" + dia + "</td>";
+                        else resultado += "<td>" + dia + "</td>";
+                        dia++;
+                    }
+
+                    if (i % 7 == 0) {
+                        if (dia > ultimo_dia_mes) break;
+                        resultado += "</tr><tr>\n";
+                    }
+                }
+
+                resultado += "</tr>";
+
+                // Meses
+                var meses = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+                // Calculamos el siguiente mes y año
+                nextMonth = month + 1;
+                nextYear = year;
+                if (month + 1 > 12) {
+                    nextMonth = 1;
+                    nextYear = year + 1;
+                }
+
+                // Calculamos el anterior mes y año
+                prevMonth = month - 1;
+                prevYear = year;
+                if (month - 1 < 1) {
+                    prevMonth = 12;
+                    prevYear = year - 1;
+                }
+
+                document.getElementById("calendar").getElementsByTagName("caption")[0].innerHTML =
+                    "<div>" + meses[month - 1] + " / " + year + "</div><div><a onclick='mostrarCalendario(" + prevYear + "," + prevMonth + ")'>&lt;</a><a onclick='mostrarCalendario(" + nextYear + "," + nextMonth + ")'>&gt;</a></div>";
+                document.getElementById("calendar").getElementsByTagName("tbody")[0].innerHTML = resultado;
+            }
+
+            mostrarCalendario(fecha.getFullYear(), fecha.getMonth() + 1);
+        </script>
+    </body>
+</html>
