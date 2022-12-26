@@ -83,16 +83,17 @@
                     <!-- section 2 -->
                     <div class="col-md-8">
                         <div class="row">
-                            {% for category in category_list %}
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="category-heading py-2 text-center">
-                                        <h4 class="fw-bold">{{ category.name }}</h4>
+                           {% for category in category_list %}
+                            <div class="col-md-4 mb-4 category-section">
+                                <div class="category-card">
+                                    <div class="card-header category-header">
+                                        <b>{{ category.name }}</b>
                                     </div>
-                                    <div class="row">
-                                        {% for subcategory in category.sub_categories.all %}
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                            <ul class="ps-0">
-                                                <li class="cat-list">
+                                    <div class="card-body category-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                {% for subcategory in category.sub_categories.all %}
+                                                <li class="sub-category">
                                                     {% if category.category_type == 'chatroom' %}
                                                         {% url 'chatroom:sidebar' as userpanel %}
                                                         {% url 'chatroom:chatbox' subcategory.pk as chatbox %}
@@ -102,11 +103,12 @@
                                                         <a href="">{{ subcategory.name }}</a>
                                                     {% endif %}
                                                 </li>
-                                            </ul>
+                                                {% endfor %}
+                                            </div>
                                         </div>
-                                        {% endfor %}
                                     </div>
                                 </div>
+                            </div>
                             {% endfor %}
                         </div>
                     </div>
@@ -140,7 +142,7 @@
         <script src="{% static 'home/js/scripts.js' %}"></script>
         <script>
             function openChatWindow(userpanel, chatbox, users) {  
-                window.open(userpanel, "My Panel", "toolbar=no,status=no,menubar=no,location=left,scrollbars=no,resizable=no,height=600,width=357,screenX=100");
+                window.open(userpanel, "My Panel", "toolbar=no,status=no,menubar=no,location=left,scrollbars=no,resizable=no,height=600,width=357");
                 window.open(chatbox, "Chat Box", "height=600,width=657,screenX=500");
                 window.open(users,"Users","height=600,width=357,screenX=1200");
             } 
