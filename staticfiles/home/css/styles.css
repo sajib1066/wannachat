@@ -11296,6 +11296,13 @@ textarea.form-control-lg {
   margin-right: 10px;
 }
 
+.country {
+  border: none;
+  padding: 10px 6px;
+  margin-top: 7px;
+  border-radius: 0.25rem;
+}
+
 .language {
   border: none;
   padding: 6px 10px;
@@ -11391,4 +11398,10 @@ li{
 }
 .cat-list a{
   color: rgb(89, 0, 172);
+}
+
+#calendar {
+  font-size: 8px;
+  width: 100%;
+  padding: 5px;
 }

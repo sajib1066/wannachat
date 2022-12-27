@@ -3,6 +3,11 @@ from django.contrib import admin
 from chatroom import models
 
 
+@admin.register(models.Country)
+class CountryAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'ordering', 'slug']
+
+
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = [

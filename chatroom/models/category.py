@@ -12,9 +12,13 @@ class Category(models.Model):
         ('free', 'Free'),
         ('paid', 'Paid'),
     )
+    country = models.ForeignKey(
+        "chatroom.Country", on_delete=models.SET_NULL, null=True
+    )
     name = models.CharField(max_length=255, unique=True)
     category_type = models.CharField(max_length=20, choices=TYPE_CHOICES)
     fee_status = models.CharField(max_length=20, choices=FEE_STATUS_CHOICES)
+    ordering = models.PositiveIntegerField(default=0)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
