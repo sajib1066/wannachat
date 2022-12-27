@@ -13,7 +13,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link href="{% static 'calender/main.css' %}" rel="stylesheet" />
         <link href="{% static 'home/css/styles.css' %}" rel="stylesheet" />
     </head>
     <body>
@@ -72,7 +71,6 @@
                                         </form>
                                     </li>
                                 </ul>
-                                <div id="calendar"></div>
                                 <div class="mt-4 text-center" style="background-color: #fff; height: 70px;">
                                     <p>Place your ad. here</p>
                                 </div>
@@ -132,7 +130,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="{% static 'home/js/scripts.js' %}"></script>
-        <script src="{% static 'calender/main.js' %}"></script>
         <script>
             function openChatWindow(userpanel, chatbox, users) {  
                 window.open(userpanel, "My Panel", "toolbar=no,status=no,menubar=no,location=left,scrollbars=no,resizable=no,height=600,width=357,screenX=100");
@@ -140,57 +137,5 @@
                 window.open(users,"Users","height=600,width=357,screenX=1200");
             } 
         </script>
-        <script>
-
-            document.addEventListener('DOMContentLoaded', function() {
-              var calendarEl = document.getElementById('calendar');
-          
-              var calendar = new FullCalendar.Calendar(calendarEl, {
-                headerToolbar: {
-                  left: 'prev,next today',
-                  center: 'title',
-                  right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
-                },
-                navLinks: true, // can click day/week names to navigate views
-                nowIndicator: true,
-          
-                weekNumbers: true,
-                weekNumberCalculation: 'ISO',
-          
-                editable: true,
-                selectable: true,
-                dayMaxEvents: true, // allow "more" link when too many events
-                events: [
-                  {
-                    title: 'All Day Event',
-                    start: '2022-12-01'
-                  },
-                  {
-                    title: 'Long Event',
-                    start: '2022-12-02',
-                    end: '2022-12-06'
-                  },
-                  {
-                    groupId: 999,
-                    title: 'Repeating Event',
-                    start: '2022-12-09T16:00:00'
-                  },
-                  {
-                    groupId: 999,
-                    title: 'Repeating Event',
-                    start: '2022-12-16T16:00:00'
-                  },
-                  {
-                    title: 'Click for Google',
-                    url: 'http://google.com/',
-                    start: '2022-12-28'
-                  }
-                ]
-              });
-          
-              calendar.render();
-            });
-          
-          </script>
     </body>
 </html>
