@@ -11301,6 +11301,7 @@ textarea.form-control-lg {
   padding: 10px 6px;
   margin-top: 7px;
   border-radius: 0.25rem;
+  background-color: #e8feff;
 }
 
 .language {
@@ -11309,6 +11310,7 @@ textarea.form-control-lg {
   margin-top: 8px;
   margin-right: 16px;
   border-radius: 0.25rem;
+  background-color: #e8feff;
 }
 
 .button {
@@ -11316,7 +11318,7 @@ textarea.form-control-lg {
   margin-top: 8px;
   margin-right: 16px;
   border-radius: 0.25rem;
-  background-color: #fee2e2;
+  background-color: #e8feff;
 }
 
 .username {
@@ -11387,7 +11389,7 @@ li{
 }
 
 .category-heading{
-  background-color: #dcfce7;
+  background-color: #e8feff;
 }
 .category-heading h4{
   font-size: 18px;
