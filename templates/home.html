@@ -106,7 +106,8 @@
                                                         {% url 'chatroom:sidebar' as userpanel %}
                                                         {% url 'chatroom:chatbox' subcategory.pk as chatbox %}
                                                         {% url 'chatroom:users' subcategory.pk as users %}
-                                                        <button class="chatroom" onclick="openChatWindow('{{ userpanel }}', '{{ chatbox }}', '{{ users }}')">{{ subcategory.name }}</button>
+                                                        <!-- <button class="chatroom" onclick="openChatWindow('{{ userpanel }}', '{{ chatbox }}', '{{ users }}')">{{ subcategory.name }}</button> -->
+                                                        <a href="{% url 'chatroom:room' subcategory.pk %}" class="chatroom">{{ subcategory.name }}</a>
                                                     {% else %}
                                                         <button class="chatroom" onclick="alert('Coming Soon.')">{{ subcategory.name }}</button>
                                                     {% endif %}
