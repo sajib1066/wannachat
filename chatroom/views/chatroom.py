@@ -27,8 +27,10 @@ class ChatRoomView(LoginRequiredMixin, View):
             else:
                 messages.warning(request, "This room is full now.")
                 return redirect('home')
+        chatrooms = ChatRoomUser.objects.filter(user=request.user)
         context = {
             'obj': obj,
+            'chatrooms': chatrooms,
         }
         return render(request, self.template_name, context)
 
