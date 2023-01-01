@@ -68,3 +68,56 @@ class ChatRoomUser(models.Model):
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.room.name}"
+
+
+class DirectmessageUser(models.Model):
+    TYPE_CHOICES = (
+        ('buddies', 'Buddies'),
+        ('family', 'Family'),
+        ('co-workers', 'Co-Workers'),
+    )
+    me = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='me'
+    )
+    friends = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='friends'
+    )
+    friend_type = models.CharField(max_length=50, choices=TYPE_CHOICES)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.me}"
+
+
+class RoomMessage(models.Model):
+    room = models.ForeignKey(
+        SubCategory, on_delete=models.CASCADE, related_name='message_rooms'
+    )
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='user_room_messages'
+    )
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.room.name}"
+
+
+class DirectMessage(models.Model):
+    sender_user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='sender_users'
+    )
+    receiver_user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='receiver_users'
+    )
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.sender_user}"

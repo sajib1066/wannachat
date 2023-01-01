@@ -2,7 +2,7 @@ from django.views.generic import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 
-from chatroom.models import SubCategory
+from chatroom.models import SubCategory, ChatRoomUser
 
 
 class ChatRoomView(LoginRequiredMixin, View):
@@ -12,6 +12,10 @@ class ChatRoomView(LoginRequiredMixin, View):
 
     def get(self, request, *args, **kwargs):
         obj = get_object_or_404(self.model, pk=kwargs.get('pk'))
+        ChatRoomUser.objects.get_or_create(
+            user=request.user,
+            room=obj
+        )
         context = {
             'obj': obj,
         }
