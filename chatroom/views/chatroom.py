@@ -1,6 +1,7 @@
 from django.views.generic import View
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
 
 from chatroom.models import SubCategory, ChatRoomUser
 
@@ -12,10 +13,20 @@ class ChatRoomView(LoginRequiredMixin, View):
 
     def get(self, request, *args, **kwargs):
         obj = get_object_or_404(self.model, pk=kwargs.get('pk'))
-        ChatRoomUser.objects.get_or_create(
-            user=request.user,
-            room=obj
-        )
+        try:
+            ChatRoomUser.objects.get(
+                user=request.user,
+                room=obj
+            )
+        except ChatRoomUser.DoesNotExist:
+            if obj.current_users < obj.max_user:
+                ChatRoomUser.objects.create(
+                    user=request.user,
+                    room=obj
+                )
+            else:
+                messages.warning(request, "This room is full now.")
+                return redirect('home')
         context = {
             'obj': obj,
         }
