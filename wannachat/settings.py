@@ -51,6 +51,7 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'crispy_forms',
+    'channels',
 ]
 
 LOCAL_APPS = [
@@ -92,6 +93,13 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'wannachat.wsgi.application'
+ASGI_APPLICATION = 'wannachat.asgi.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer'
+    }
+}
 
 AUTH_USER_MODEL = 'customauth.User'
 
