@@ -8,7 +8,7 @@ from chatroom.models import SubCategory, RoomMessage, DirectMessage
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
-        self.room_id = self.scope['url_route']['kwargs']['room_id']
+        self.room_id = self.scope['url_route']['kwargs']['roomid']
         self.room_group_name = 'chat_%s' % self.room_id
 
         await self.channel_layer.group_add(
