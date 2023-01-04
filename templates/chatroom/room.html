@@ -1854,8 +1854,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <h5>William Pearson</h5>
-                                                    <p>wright@studio.com</p>
+                                                    <h5>{{ request.user.profile.name }}</h5>
+                                                    <p>{{ request.user.email }}</p>
                                                 </div>
                                                 <div class="col-auto">
                                                     <a href="#" class="text-muted">
@@ -2407,22 +2407,6 @@
                                             <div class="row align-items-center justify-content-end gx-6">
                                                 <div class="col-auto">
                                                     <a href="" class="icon icon-lg text-muted" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-more-group" aria-controls="offcanvas-more-group">
-                                                        <!-- <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            width="24"
-                                                            height="24"
-                                                            viewBox="0 0 24 24"
-                                                            fill="none"
-                                                            stroke="currentColor"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-more-horizontal"
-                                                        >
-                                                            <circle cx="12" cy="12" r="1"></circle>
-                                                            <circle cx="19" cy="12" r="1"></circle>
-                                                            <circle cx="5" cy="12" r="1"></circle>
-                                                        </svg> > -->
                                                         <svg class="icon icon-circle-right"  stroke-width="0" stroke="currentColor" fill="currentColor" style="font-size: 100px; height: 55px; width: 31px; color: #138bf5;">
                                                             <use xlink:href="#icon-circle-right"></use>
                                                             <symbol id="icon-circle-right" viewBox="0 0 32 32">
@@ -4832,7 +4816,7 @@
                                     <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="#" />
                                 </div>
 
-                                <h4 class="mb-1">William Wright</h4>
+                                <h4 class="mb-1">{{ request.user.profile.name }}</h4>
                                 <p>last seen 5 minutes ago</p>
                             </div>
                         </div>
@@ -4876,7 +4860,7 @@
                                 <div class="row align-items-center gx-6">
                                     <div class="col">
                                         <h5>E-mail</h5>
-                                        <p>william@studio.com</p>
+                                        <p>{{ request.user.email }}</p>
                                     </div>
 
                                     <div class="col-auto">
