@@ -1,0 +1,355 @@
+{% load static %}
+
+<div class="offcanvas offcanvas-end offcanvas-aside" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas-add-members">
+    <!-- Offcanvas Header -->
+    <div class="offcanvas-header py-4 py-lg-7 border-bottom">
+        <a class="icon icon-lg text-muted" href="#" data-bs-dismiss="offcanvas">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-left"
+            >
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </a>
+
+        <div class="visibility-xl-invisible overflow-hidden text-center">
+            <h5 class="text-truncate">Members</h5>
+            <p class="text-truncate">Add new members</p>
+        </div>
+
+        <a class="icon icon-lg text-muted" data-bs-toggle="collapse" href="#search-members" role="button" aria-expanded="false" aria-controls="search-members" onclick="event.preventDefault();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+        </a>
+    </div>
+    <!-- Offcanvas Header -->
+
+    <!-- Offcanvas Body -->
+    <div class="offcanvas-body hide-scrollbar py-0">
+        <!-- Search -->
+        <div class="collapse" id="search-members">
+            <div class="border-bottom py-6">
+                <form action="#">
+                    <div class="input-group">
+                        <div class="input-group-text" id="search-user">
+                            <div class="icon icon-lg">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-search"
+                                >
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <input type="text" class="form-control form-control-lg ps-0" placeholder="User name or phone" aria-label="User name or phone" aria-describedby="search-user" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Search -->
+
+        <!-- Members -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <small class="text-uppercase text-muted">B</small>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar">
+                            <img class="avatar-img" src="{% static 'assets/img/avatars/6.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Bill Marrow</h5>
+                        <p>last seen 3 days ago</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-1" />
+                            <label class="form-check-label" for="id-add-user-user-1"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-1"></label>
+            </li>
+
+            <li class="list-group-item">
+                <small class="text-uppercase text-muted">D</small>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar">
+                            <img class="avatar-img" src="{% static 'assets/img/avatars/5.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Damian Binder</h5>
+                        <p>last seen within a week</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-2" />
+                            <label class="form-check-label" for="id-add-user-user-2"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-2"></label>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar avatar-online">
+                            <span class="avatar-text">D</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Don Knight</h5>
+                        <p>online</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-3" />
+                            <label class="form-check-label" for="id-add-user-user-3"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-3"></label>
+            </li>
+
+            <li class="list-group-item">
+                <small class="text-uppercase text-muted">E</small>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar avatar-online">
+                            <img class="avatar-img" src="{% static 'assets/img/avatars/8.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Elise Dennis</h5>
+                        <p>online</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-4" />
+                            <label class="form-check-label" for="id-add-user-user-4"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-4"></label>
+            </li>
+
+            <li class="list-group-item">
+                <small class="text-uppercase text-muted">M</small>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar">
+                            <img class="avatar-img" src="{% static 'assets/img/avatars/11.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Mila White</h5>
+                        <p>last seen a long time ago</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-5" />
+                            <label class="form-check-label" for="id-add-user-user-5"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-5"></label>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar avatar-online">
+                            <span class="avatar-text">M</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Michael Fuller</h5>
+                        <p>online</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-6" />
+                            <label class="form-check-label" for="id-add-user-user-6"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-6"></label>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar">
+                            <span class="avatar-text">M</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Marshall Wallaker</h5>
+                        <p>last seen within a month</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-7" />
+                            <label class="form-check-label" for="id-add-user-user-7"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-7"></label>
+            </li>
+
+            <li class="list-group-item">
+                <small class="text-uppercase text-muted">O</small>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar avatar-online">
+                            <span class="avatar-text">O</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Ollie Chandler</h5>
+                        <p>online</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-8" />
+                            <label class="form-check-label" for="id-add-user-user-8"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-8"></label>
+            </li>
+
+            <li class="list-group-item">
+                <small class="text-uppercase text-muted">W</small>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar">
+                            <img class="avatar-img" src="{% static 'assets/img/avatars/4.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Warren White</h5>
+                        <p>last seen recently</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-9" />
+                            <label class="form-check-label" for="id-add-user-user-9"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-9"></label>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar avatar-online">
+                            <img class="avatar-img" src="{% static 'assets/img/avatars/7.jpg' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>William Wright</h5>
+                        <p>online</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-10" />
+                            <label class="form-check-label" for="id-add-user-user-10"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-10"></label>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row align-items-center gx-5">
+                    <div class="col-auto">
+                        <div class="avatar avatar-online">
+                            <span class="avatar-text">W</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Winton Wilkinson</h5>
+                        <p>online</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="id-add-user-user-11" />
+                            <label class="form-check-label" for="id-add-user-user-11"></label>
+                        </div>
+                    </div>
+                </div>
+                <label class="stretched-label" for="id-add-user-user-11"></label>
+            </li>
+        </ul>
+        <!-- Members -->
+    </div>
+    <!-- Offcanvas Body -->
+
+    <!-- Offcanvas Footer -->
+    <div class="offcanvas-footer border-top py-4 py-lg-7">
+        <a href="#" class="btn btn-lg btn-primary w-100 d-flex align-items-center">
+            Add members
+
+            <span class="icon ms-auto">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-right"
+                >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </span>
+        </a>
+    </div>
+    <!-- Offcanvas Footer -->
+</div>

@@ -1,0 +1,1799 @@
+{% load static %}
+
+<main class="main is-visible" data-dropzone-area="">
+    <div class="container h-100">
+        <div class="d-flex flex-column h-100 position-relative">
+            <!-- Chat: Header -->
+            <div class="chat-header border-bottom py-4 py-lg-7">
+                <div class="row align-items-center">
+                    <!-- Mobile: close -->
+                    <div class="col-2 d-xl-none">
+                        <a class="icon icon-lg text-muted" href="#" data-toggle-chat="">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-chevron-left"
+                            >
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Mobile: close -->
+
+                    <!-- Content -->
+                    <div class="col-8 col-xl-12">
+                        <div class="row align-items-center text-center text-xl-start">
+                            <!-- Title -->
+                            <div class="col-12 col-xl-6">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col-auto">
+                                        <div class="avatar d-none d-xl-inline-block">
+                                            <img class="avatar-img" src="{% static 'assets/img/avatars/bootstrap.svg' %}" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col overflow-hidden">
+                                        <h5 class="text-truncate">{{ obj.name }}</h5>
+                                        <p class="text-truncate">{{ obj.current_users }} members, 0 online</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Title -->
+
+                            <!-- Toolbar -->
+                            <div class="col-xl-6 d-none d-xl-block">
+                                <div class="row align-items-center justify-content-end gx-6">
+                                    <div class="col-auto">
+                                        <a href="" class="icon icon-lg text-muted" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-more-group" aria-controls="offcanvas-more-group">
+                                            <svg class="icon icon-circle-right"  stroke-width="0" stroke="currentColor" fill="currentColor" style="font-size: 100px; height: 55px; width: 31px; color: #138bf5;">
+                                                <use xlink:href="#icon-circle-right"></use>
+                                                <symbol id="icon-circle-right" viewBox="0 0 32 32">
+                                                    <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
+                                                    <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
+                                                </symbol>
+                                            </svg>                                                        
+                                        </a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <div class="avatar-group">
+
+                                            <a href="#" class="avatar avatar-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-add-members" aria-controls="offcanvas-add-members">
+                                                <span class="avatar-text" data-bs-toggle="tooltip" data-bs-placement="bottom" title="<strong>Add People</strong><p>Invite friends to group</p>">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-plus"
+                                                    >
+                                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Toolbar -->
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Mobile: more -->
+                    <div class="col-2 d-xl-none text-end">
+                        <div class="dropdown">
+                            <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="icon icon-lg">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="feather feather-more-vertical"
+                                    >
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="5" r="1"></circle>
+                                        <circle cx="12" cy="19" r="1"></circle>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-add-members" aria-controls="offcanvas-add-members">Add members</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-more-group" aria-controls="offcanvas-more-group">More</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Mobile: more -->
+                </div>
+            </div>
+            <!-- Chat: Header -->
+
+            <!-- Chat: Content -->
+            <div class="chat-body hide-scrollbar flex-1 h-100">
+                <div class="chat-body-inner">
+                    <div class="py-6 py-lg-12">
+                        <!-- Message -->
+                        <div class="message">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/11.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Send me the files please.</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message message-out">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <blockquote class="blockquote overflow-hidden">
+                                                <h6 class="text-reset text-truncate">William Wright</h6>
+                                                <p class="small text-truncate">Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                            </blockquote>
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <div class="row align-items-center gx-4">
+                                                <div class="col-auto">
+                                                    <a href="#" class="avatar avatar-sm">
+                                                        <div class="avatar-text bg-white text-primary">
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="24"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="feather feather-arrow-down"
+                                                            >
+                                                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                                <polyline points="19 12 12 19 5 12"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col overflow-hidden">
+                                                    <h6 class="text-truncate text-reset">
+                                                        <a href="#" class="text-reset">filename.json</a>
+                                                    </h6>
+                                                    <ul class="list-inline text-uppercase extra-small opacity-75 mb-0">
+                                                        <li class="list-inline-item">79.2 KB</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="message-divider">
+                            <small class="text-muted">Monday, Sep 16</small>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/6.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message message-out">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-gallery">
+                                            <div class="row gx-3">
+                                                <div class="col">
+                                                    <img class="img-fluid rounded" src="{% static 'assets/img/chat/1.jpg' %}" data-action="zoom" alt="" />
+                                                </div>
+                                                <div class="col">
+                                                    <img class="img-fluid rounded" src="{% static 'assets/img/chat/2.jpg' %}" data-action="zoom" alt="" />
+                                                </div>
+                                                <div class="col">
+                                                    <img class="img-fluid rounded" src="{% static 'assets/img/chat/3.jpg' %}" data-action="zoom" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/11.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="message-divider">
+                            <small class="text-muted">Friday, Sep 20</small>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message message-out">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-online avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/7.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Send me the files please</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message message-out">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/11.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple?</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message message-out">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>Hey, Marshall! How are you? Can you please change the color theme of the website to pink and purple? 😂</p>
+                                        </div>
+
+                                        <!-- Dropdown -->
+                                        <div class="message-action">
+                                            <div class="dropdown">
+                                                <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-more-vertical"
+                                                    >
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Edit</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-edit-3"
+                                                                >
+                                                                    <path d="M12 20h9"></path>
+                                                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <span class="me-auto">Reply</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-corner-up-left"
+                                                                >
+                                                                    <polyline points="9 14 4 9 9 4"></polyline>
+                                                                    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                                                            <span class="me-auto">Delete</span>
+                                                            <div class="icon">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-trash-2"
+                                                                >
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-footer">
+                                    <span class="extra-small text-muted">08:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="message">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-online avatar-responsive">
+                                <img class="avatar-img" src="{% static 'assets/img/avatars/7.jpg' %}" alt="" />
+                            </a>
+
+                            <div class="message-inner">
+                                <div class="message-body">
+                                    <div class="message-content">
+                                        <div class="message-text">
+                                            <p>
+                                                William is typing<span class="typing-dots"><span>.</span><span>.</span><span>.</span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Chat: Content -->
+
+            <!-- Chat: Footer -->
+            <div class="chat-footer pb-3 pb-lg-7 position-absolute bottom-0 start-0">
+                <!-- Chat: Files -->
+                <div class="dz-preview bg-dark" id="dz-preview-row" data-horizontal-scroll=""></div>
+                <!-- Chat: Files -->
+
+                <!-- Chat: Form -->
+                <form class="chat-form rounded-pill bg-dark" data-emoji-form="">
+                    <div class="row align-items-center gx-0">
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-icon btn-link text-body rounded-circle" id="dz-btn">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-paperclip"
+                                >
+                                    <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group">
+                                <textarea class="form-control px-0" placeholder="Type your message..." rows="1" data-emoji-input="" data-autosize="true"></textarea>
+
+                                <a href="#" class="input-group-text text-body pe-0" data-emoji-btn="">
+                                    <span class="icon icon-lg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-smile"
+                                        >
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <button class="btn btn-icon btn-primary rounded-circle ms-5">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-send"
+                                >
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Chat: Form -->
+            </div>
+            <!-- Chat: Footer -->
+        </div>
+    </div>
+</main>
