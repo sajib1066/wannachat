@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 
-from chatroom.models import SubCategory, ChatRoomUser
+from chatroom.models import SubCategory, ChatRoomUser, RoomMessage
 
 
 class ChatRoomView(LoginRequiredMixin, View):
@@ -13,6 +13,7 @@ class ChatRoomView(LoginRequiredMixin, View):
 
     def get(self, request, *args, **kwargs):
         obj = get_object_or_404(self.model, pk=kwargs.get('pk'))
+        message_list = RoomMessage.objects.filter(room=obj)
         try:
             ChatRoomUser.objects.get(
                 user=request.user,
@@ -31,6 +32,7 @@ class ChatRoomView(LoginRequiredMixin, View):
         context = {
             'obj': obj,
             'chatrooms': chatrooms,
+            'messages': message_list,
         }
         return render(request, self.template_name, context)
 
