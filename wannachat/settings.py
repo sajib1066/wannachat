@@ -98,9 +98,6 @@ ASGI_APPLICATION = 'wannachat.asgi.application'
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels.layers.InMemoryChannelLayer',
-        'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],
-        },
     }
 }
 
@@ -174,3 +171,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if os.getenv('DISABLE_LOGGING', False):  # for celery in jenkins ci only
     LOGGING_CONFIG = None
 LOGGING = LOGGING  # logging.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'wannachatcorp@gmail.com'
+EMAIL_HOST_PASSWORD = 'xqkvwdqmrpomwnan'

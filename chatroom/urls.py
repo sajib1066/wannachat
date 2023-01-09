@@ -10,4 +10,8 @@ urlpatterns = [
     path('sidebar/', views.ChatRoomSidebarView.as_view(), name='sidebar'),
     path('<int:pk>/chatbox/', views.ChatBoxView.as_view(), name='chatbox'),
     path('<int:pk>/users/', views.ChatUsersView.as_view(), name='users'),
+    path(
+        'send-room-message/', views.SendRoomMessageView.as_view(),
+        name='send_room_message'
+    ),
 ]
