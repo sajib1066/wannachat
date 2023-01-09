@@ -75,7 +75,7 @@
         <script>
             const roomName = JSON.parse(document.getElementById('json-roomid').textContent);
             const userName = JSON.parse(document.getElementById('json-email').textContent);
-            const chatSocket = new WebSocket('ws://' + window.location.host + '/ws/' + roomName + '/');
+            const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
             console.log(chatSocket);
             chatSocket.onclose = function(e) {
                 console.log('onclose')
