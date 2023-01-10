@@ -20,6 +20,11 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1',
+    'http://localhost',
+]
+
 # For PostgreSQL database (comment it if not needed)
 DB_CONFIG = {
     'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.postgresql'),
