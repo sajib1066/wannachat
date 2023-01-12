@@ -14,7 +14,7 @@ import os
 from .local_settings import (
     SECRET_KEY, DEBUG, ALLOWED_HOSTS, DB_CONFIG,
     TEMPLATES_DIR, STATICFILES_DIR, STATIC_DIR, MEDIA_DIR, LOGS_DIR,
-    CSRF_TRUSTED_ORIGINS
+    CSRF_TRUSTED_ORIGINS, CORS_ALLOWED_ORIGINS
 )
 from wannachat.logging import LOGGING
 
@@ -38,8 +38,6 @@ DEBUG = DEBUG
 
 ALLOWED_HOSTS = ALLOWED_HOSTS
 
-CSRF_TRUSTED_ORIGINS = CSRF_TRUSTED_ORIGINS
-
 
 # Application definition
 
@@ -55,6 +53,7 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     'crispy_forms',
     'channels',
+    'corsheaders',
 ]
 
 LOCAL_APPS = [
@@ -73,6 +72,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
 
 ROOT_URLCONF = 'wannachat.urls'
@@ -103,6 +104,9 @@ CHANNEL_LAYERS = {
         'BACKEND': 'channels.layers.InMemoryChannelLayer',
     }
 }
+
+CORS_ALLOWED_ORIGINS = CORS_ALLOWED_ORIGINS
+CSRF_TRUSTED_ORIGINS = CSRF_TRUSTED_ORIGINS
 
 AUTH_USER_MODEL = 'customauth.User'
 
