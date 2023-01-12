@@ -76,8 +76,8 @@
             const roomName = JSON.parse(document.getElementById('json-roomid').textContent);
             const userName = JSON.parse(document.getElementById('json-email').textContent);
             const chatSocket = new WebSocket('ws://' + window.location.host + '/ws/' + roomName + '/');
-            console.log(window.location.host)
-            console.log(chatSocket);
+            // console.log(window.location.host)
+            // console.log(chatSocket);
             chatSocket.onclose = function(e) {
                 console.log(e);
             }
@@ -107,21 +107,23 @@
                 const messageInputDom = document.querySelector('#chat-message-input');
                 const message = messageInputDom.value;
 
-                console.log({
-                    'message': message,
-                    'email': userName,
-                    'room': roomName
-                })
+                // console.log({
+                //     'message': message,
+                //     'email': userName,
+                //     'room': roomName
+                // })
                 var data = JSON.stringify({
                     'message': message,
                     'email': userName,
                     'room': roomName
                 })
-                console.log(data);
-                var sendmessage = chatSocket.send(data);
-
-                console.log(sendmessage);
-
+                // console.log(data);
+                try {
+                    chatSocket.send(data);
+                } catch (e) {
+                    console.log(e);
+                } 
+                
                 messageInputDom.value = '';
 
                 return false
