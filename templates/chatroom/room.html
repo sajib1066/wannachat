@@ -80,7 +80,7 @@
             const userName = JSON.parse(document.getElementById('json-email').textContent);
             const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
             console.log(window.location.host)
-            // console.log(chatSocket);
+            console.log(chatSocket);
             chatSocket.onclose = function(e) {
                 console.log(e);
             }
@@ -110,18 +110,16 @@
                 const messageInputDom = document.querySelector('#chat-message-input');
                 const message = messageInputDom.value;
 
-                // console.log({
-                //     'message': message,
-                //     'email': userName,
-                //     'room': roomName
-                // })
                 var data = JSON.stringify({
                     'message': message,
                     'email': userName,
                     'room': roomName
                 })
-                // console.log(data);
+                console.log(data);
                 try {
+                    if (chatSocket.readyState === 3){
+                        const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
+                    }
                     chatSocket.send(data);
                 } catch (e) {
                     console.log(e);
