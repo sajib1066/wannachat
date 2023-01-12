@@ -75,10 +75,11 @@
         <script>
             const roomName = JSON.parse(document.getElementById('json-roomid').textContent);
             const userName = JSON.parse(document.getElementById('json-email').textContent);
-            const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
+            const chatSocket = new WebSocket('ws://' + window.location.host + '/ws/' + roomName + '/');
+            console.log(window.location.host)
             console.log(chatSocket);
             chatSocket.onclose = function(e) {
-                console.log('onclose')
+                console.log(e);
             }
 
             chatSocket.onmessage = function(e) {
@@ -111,12 +112,15 @@
                     'email': userName,
                     'room': roomName
                 })
-
-                chatSocket.send(JSON.stringify({
+                var data = JSON.stringify({
                     'message': message,
                     'email': userName,
                     'room': roomName
-                }));
+                })
+                console.log(data);
+                var sendmessage = chatSocket.send(data);
+
+                console.log(sendmessage);
 
                 messageInputDom.value = '';
 
