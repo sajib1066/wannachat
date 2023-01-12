@@ -116,14 +116,29 @@
                     'room': roomName
                 })
                 console.log(data);
-                try {
-                    if (chatSocket.readyState === 3){
-                        const chatSocket = new WebSocket('wss://' + window.location.host + ':8001' + '/ws/' + roomName + '/');
+                const MAX_RETRIES = 4;
+                async function send(data, retries = 0) {
+                    try {
+                        chatSocket.send(data);
+                    } 
+                    catch (e) {
+                        if (retries < MAX_RETRIES) {
+                            await waitForConnection();
+                            send(data, retries + 1);
+                        }
+                        else {
+                            throw e;
+                        }
                     }
-                    chatSocket.send(data);
-                } catch (e) {
-                    console.log(e);
-                } 
+                }
+                // try {
+                //     if (chatSocket.readyState === 3){
+                //         const chatSocket = new WebSocket('wss://' + window.location.host + ':8001' + '/ws/' + roomName + '/');
+                //     }
+                //     chatSocket.send(data);
+                // } catch (e) {
+                //     console.log(e);
+                // } 
                 
                 messageInputDom.value = '';
 
