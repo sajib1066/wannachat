@@ -141,9 +141,11 @@
                     // if (chatSocket.readyState !== 1){
                     //     const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
                     // }
-                    chatSocket.send(data);
+                    if (chatSocket.OPEN) {
+                        var sendMessage = chatSocket.send(data);
+                        console.log("Message Sent");
+                    }
                     // chatSocket.onopen = () => chatSocket.send(data);
-                    console.log("Message Sent");
                 } catch (e) {
                     console.log(e);
                 } 
