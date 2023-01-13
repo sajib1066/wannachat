@@ -78,8 +78,11 @@
         <script>
             const roomName = JSON.parse(document.getElementById('json-roomid').textContent);
             const userName = JSON.parse(document.getElementById('json-email').textContent);
-            const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
-            console.log(window.location.host)
+            if (window.location.protocol != "https:") {
+                var chatSocket = new WebSocket('ws://' + window.location.host + '/ws/' + roomName + '/');
+            } else {
+                var chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
+            }
             console.log(chatSocket);
             chatSocket.onclose = function(e) {
                 console.log(e);
@@ -134,11 +137,11 @@
                 //     }
                 // }
                 try {
-                    if (chatSocket.readyState !== 1){
-                        const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
-                    }
-                    // chatSocket.send(data);
-                    chatSocket.onopen = () => chatSocket.send(data);
+                    // if (chatSocket.readyState !== 1){
+                    //     const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
+                    // }
+                    chatSocket.send(data);
+                    // chatSocket.onopen = () => chatSocket.send(data);
                     console.log("Message Sent");
                 } catch (e) {
                     console.log(e);

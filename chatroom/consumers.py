@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
+        logger.info("WebSocket Connected")
         self.room_id = self.scope['url_route']['kwargs']['roomid']
         self.room_group_name = 'chat_%s' % self.room_id
 
@@ -22,15 +23,17 @@ class ChatConsumer(AsyncWebsocketConsumer):
 
         await self.accept()
 
-    async def disconnect(self):
+    async def disconnect(self, close_code):
+        logger.info('WebSocket Disconnected')
         await self.channel_layer.group_discard(
-            self.room_group_name
+            self.room_group_name,
+            self.channel_name
         )
 
     # Receive message from WebSocket
     async def receive(self, text_data):
         data = json.loads(text_data)
-        print(data)
+        logger.info(data)
         message = data['message']
         email = data['email']
         room = data['room']
@@ -62,8 +65,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
     def save_message(self, email, room, message):
         user = User.objects.get(email=email)
         room = SubCategory.objects.get(pk=room)
-        print(user, room, message)
         logger.info(f"{user}--{room}--{message}")
         RoomMessage.objects.create(room=room, user=user, message=message)
-        print('MESSAGE SENT SUCCESSFULLY.................')
         logger.info('MESSAGE SENT SUCCESSFULLY.................')
