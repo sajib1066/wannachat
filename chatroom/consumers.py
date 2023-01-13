@@ -1,10 +1,14 @@
 import json
+import logging
 
 from channels.generic.websocket import AsyncWebsocketConsumer
 from asgiref.sync import sync_to_async
 
 from customauth.models import User
 from chatroom.models import SubCategory, RoomMessage, DirectMessage
+
+logger = logging.getLogger(__name__)
+
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
@@ -59,5 +63,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         user = User.objects.get(email=email)
         room = SubCategory.objects.get(pk=room)
         print(user, room, message)
+        logger.info(f"{user}--{room}--{message}")
         RoomMessage.objects.create(room=room, user=user, message=message)
         print('MESSAGE SENT SUCCESSFULLY.................')
+        logger.info('MESSAGE SENT SUCCESSFULLY.................')
