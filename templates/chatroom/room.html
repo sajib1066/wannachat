@@ -137,7 +137,8 @@
                     if (chatSocket.readyState != 1){
                         const chatSocket = new WebSocket('wss://' + window.location.host + ':8001' + '/ws/' + roomName + '/');
                     }
-                    chatSocket.send(data);
+                    // chatSocket.send(data);
+                    chatSocket.onopen = () => chatSocket.send(data);
                     console.log("Message Sent");
                 } catch (e) {
                     console.log(e);
