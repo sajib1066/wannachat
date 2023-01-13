@@ -125,9 +125,11 @@
                         if (retries < MAX_RETRIES) {
                             await waitForConnection();
                             send(data, retries + 1);
+                            console.log("Message Sent");
                         }
                         else {
                             throw e;
+                            console.log("Message Failed");
                         }
                     }
                 }
