@@ -124,36 +124,38 @@
                     'room': roomName
                 })
                 console.log(data);
-                // const MAX_RETRIES = 4;
-                // async function send(data, retries = 0) {
-                //     try {
-                //         chatSocket.send(data);
-                //     } 
-                //     catch (e) {
-                //         if (retries < MAX_RETRIES) {
-                //             await waitForConnection();
-                //             send(data, retries + 1);
-                //             console.log("Message Sent");
-                //         }
-                //         else {
-                //             throw e;
-                //             console.log("Message Failed");
-                //         }
-                //     }
-                // }
-                console.log(chatSocket.OPEN);
-                try {
-                    // if (chatSocket.readyState !== 1){
-                    //     const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
-                    // }
-                    if (chatSocket.OPEN) {
-                        var sendMessage = chatSocket.send(data);
-                        console.log("Message Sent");
+                const MAX_RETRIES = 4;
+                async function send(data, retries = 0) {
+                    console.log(retries);
+                    try {
+                        chatSocket.send(data);
+                    } 
+                    catch (e) {
+                        if (retries < MAX_RETRIES) {
+                            await waitForConnection();
+                            send(data, retries + 1);
+                            console.log("Message Sent");
+                        }
+                        else {
+                            throw e;
+                            console.log("Message Failed");
+                        }
                     }
-                    chatSocket.onopen = () => chatSocket.send(data);
-                } catch (e) {
-                    console.log(e);
-                } 
+                }
+                send(data);
+                // console.log(chatSocket.OPEN);
+                // try {
+                //     // if (chatSocket.readyState !== 1){
+                //     //     const chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
+                //     // }
+                //     if (chatSocket.OPEN) {
+                //         var sendMessage = chatSocket.send(data);
+                //         console.log(chatSocket.readyState, chatSocket.onopen)
+                //         console.log("Message Sent");
+                //     }
+                // } catch (e) {
+                //     console.log(e);
+                // } 
                 
                 messageInputDom.value = '';
 
