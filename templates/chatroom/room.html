@@ -124,6 +124,11 @@
                     'room': roomName
                 })
                 console.log(data);
+
+                function waitForConnection() {
+                    console.log('Waiting for connection');
+                }
+
                 const MAX_RETRIES = 4;
                 async function send(data, retries = 0) {
                     console.log(retries);
