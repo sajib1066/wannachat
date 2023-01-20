@@ -83,27 +83,27 @@
             let ws_port = '8000';
 
 
-            if (window.location.protocol != "https:") {
-                var chatSocket = new WebSocket('ws://' + window.location.host + '/ws/' + roomName + '/');
-            } else {
-                var chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
-            }
-            console.log(chatSocket);
-            chatSocket.onclose = function(e) {
-                console.log(e);
-            }
+            // if (window.location.protocol != "https:") {
+            //     var chatSocket = new WebSocket('ws://' + window.location.host + '/ws/' + roomName + '/');
+            // } else {
+            //     var chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
+            // }
+            // console.log(chatSocket);
+            // chatSocket.onclose = function(e) {
+            //     console.log(e);
+            // }
 
-            chatSocket.onmessage = function(e) {
-                const data = JSON.parse(e.data);
+            // chatSocket.onmessage = function(e) {
+            //     const data = JSON.parse(e.data);
 
-                if (data.message) {
-                    document.querySelector('#chat-messages').innerHTML += ('<b>' + data.email + '</b>: ' + data.message + '<br>');
-                } else {
-                    alert('The message was empty!')
-                }
+            //     if (data.message) {
+            //         document.querySelector('#chat-messages').innerHTML += ('<b>' + data.email + '</b>: ' + data.message + '<br>');
+            //     } else {
+            //         alert('The message was empty!')
+            //     }
 
-                scrollToBottom();
-            };
+            //     scrollToBottom();
+            // };
 
             document.querySelector('#chat-message-input').focus();
             document.querySelector('#chat-message-input').onkeyup = function(e) {
@@ -125,29 +125,56 @@
                 })
                 console.log(data);
 
-                function waitForConnection() {
-                    console.log('Waiting for connection');
+                if (window.location.protocol != "https:") {
+                    var chatSocket = new WebSocket('ws://' + window.location.host + '/ws/' + roomName + '/');
+                } else {
+                    var chatSocket = new WebSocket('wss://' + window.location.host + '/ws/' + roomName + '/');
+                }
+                console.log(chatSocket);
+                chatSocket.onclose = function(e) {
+                    console.log(e);
                 }
 
-                const MAX_RETRIES = 4;
-                async function send(data, retries = 0) {
-                    console.log(retries);
-                    try {
-                        chatSocket.send(data);
-                    } 
-                    catch (e) {
-                        if (retries < MAX_RETRIES) {
-                            await waitForConnection();
-                            send(data, retries + 1);
-                            console.log("Message Sent");
-                        }
-                        else {
-                            throw e;
-                            console.log("Message Failed");
-                        }
+                chatSocket.onmessage = function(e) {
+                    const data = JSON.parse(e.data);
+
+                    if (data.message) {
+                        document.querySelector('#chat-messages').innerHTML += ('<b>' + data.email + '</b>: ' + data.message + '<br>');
+                    } else {
+                        alert('The message was empty!')
                     }
-                }
-                send(data);
+
+                    scrollToBottom();
+                };
+
+                chatSocket.onopen = function () {
+                    chatSocket.send(data);
+                };
+
+
+
+                // function waitForConnection() {
+                //     console.log('Waiting for connection');
+                // }
+
+                // const MAX_RETRIES = 4;
+                // async function send(data, retries = 0) {
+                //     console.log(retries);
+                //     try {
+                //         chatSocket.send(data);
+                //     } 
+                //     catch (e) {
+                //         if (retries < MAX_RETRIES) {
+                //             await waitForConnection();
+                //             send(data, retries + 1);
+                //             console.log("Message Sent");
+                //         }
+                //         else {
+                //             throw e;
+                //             console.log("Message Failed");
+                //         }
+                //     }
+                // }
                 // console.log(chatSocket.OPEN);
                 // try {
                 //     // if (chatSocket.readyState !== 1){
