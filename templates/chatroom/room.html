@@ -150,7 +150,7 @@
                         var sendMessage = chatSocket.send(data);
                         console.log("Message Sent");
                     }
-                    // chatSocket.onopen = () => chatSocket.send(data);
+                    chatSocket.onopen = () => chatSocket.send(data);
                 } catch (e) {
                     console.log(e);
                 } 
