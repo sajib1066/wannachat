@@ -54,6 +54,7 @@ THIRD_PARTY_APPS = [
     'crispy_forms',
     'channels',
     'corsheaders',
+    'debug_toolbar',
 ]
 
 LOCAL_APPS = [
@@ -74,6 +75,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = 'wannachat.urls'
