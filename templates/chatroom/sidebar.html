@@ -1590,7 +1590,7 @@
                                         <p>{{ request.user.email }}</p>
                                     </div>
                                     <div class="col-auto">
-                                        <a href="#" class="text-muted">
+                                        <a href="{% url 'customauth:user_logout' %}" class="text-muted">
                                             <div class="icon">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -1645,7 +1645,10 @@
 
                                             <div id="accordion-profile-body-1" class="accordion-collapse collapse" aria-labelledby="accordion-profile-1" data-parent="#accordion-profile">
                                                 <div class="accordion-body">
-                                                    <div class="form-floating mb-6">
+                                                    <div class="mb-4">
+                                                        <input type="file" class="form-control" />
+                                                    </div>
+                                                    <div class="form-floating mb-6 mt-4">
                                                         <input type="text" class="form-control" id="profile-name" placeholder="Name" />
                                                         <label for="profile-name">Name</label>
                                                     </div>
