@@ -21,7 +21,10 @@ class HomeView(View):
             category_list = Category.objects.filter(country=country).order_by('ordering')
         else:
             category_list = Category.objects.all().order_by('ordering')
-            country = Country.objects.get(pk=1)
+            try:
+                country = Country.objects.get(pk=1)
+            except Country.DoesNotExist:
+                country = None
         context = {
             'category_list': category_list,
             'selected_country': country,

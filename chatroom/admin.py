@@ -11,8 +11,8 @@ class CountryAdmin(admin.ModelAdmin):
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = [
-        'id', 'name', 'category_type', 'fee_status', 'is_active',
-        'created_at', 'updated_at'
+        'id', 'name', 'country', 'category_type', 'fee_status', 'ordering',
+        'is_active', 'created_at', 'updated_at'
     ]
     list_filter = ['category_type', 'fee_status', 'is_active']
     search_fields = ['name']
@@ -21,7 +21,7 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(models.SubCategory)
 class SubCategoryAdmin(admin.ModelAdmin):
     list_display = [
-        'id', 'category', 'name', 'is_active', 'created_at', 'updated_at'
+        'id', 'category', 'name', 'is_active', 'ordering', 'created_at', 'updated_at'
     ]
     list_filter = ['category', 'is_active']
     search_fields = ['name']
