@@ -142,7 +142,7 @@
                                 <!-- My Message -->
                                 <div class="message message-out">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
-                                        <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="" />
+                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/1.jpg' %}{% endif %}" alt="" />
                                     </a>
 
                                     <div class="message-inner">
@@ -261,7 +261,7 @@
                                 <!-- Message -->
                                 <div class="message">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
-                                        <img class="avatar-img" src="{% static 'assets/img/avatars/11.jpg' %}" alt="" />
+                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/11.jpg' %}{% endif %}" alt="" />
                                     </a>
 
                                     <div class="message-inner">
