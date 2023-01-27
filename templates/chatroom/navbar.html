@@ -215,7 +215,7 @@
         <li class="nav-item d-none d-xl-block">
             <a href="#" class="nav-link p-0 mt-lg-2" data-bs-toggle="modal" data-bs-target="#modal-profile">
                 <div class="avatar avatar-online mx-auto">
-                    <img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="" />
+                    <img class="avatar-img" src="{% if request.user.profile.avatar.url %}{{ request.user.profile.avatar.url }}{% static 'assets/img/avatars/1.jpg' %}{% endif %}" alt="" />
                 </div>
             </a>
         </li>

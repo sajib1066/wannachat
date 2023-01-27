@@ -1561,7 +1561,7 @@
                                 <div class="row align-items-center gx-5">
                                     <div class="col-auto">
                                         <div class="avatar">
-                                            <img src="{% static 'assets/img/avatars/1.jpg' %}" alt="#" class="avatar-img" />
+                                            <img src="{% if user.profile.avatar.url %}{{ user.profile.avatar.url }}{% static 'assets/img/avatars/1.jpg' %}{% endif %}" alt="#" class="avatar-img" />
 
                                             <div class="badge badge-circle bg-secondary border-outline position-absolute bottom-0 end-0">
                                                 <svg
@@ -1645,30 +1645,28 @@
 
                                             <div id="accordion-profile-body-1" class="accordion-collapse collapse" aria-labelledby="accordion-profile-1" data-parent="#accordion-profile">
                                                 <div class="accordion-body">
-                                                    <div class="mb-4">
-                                                        <input type="file" class="form-control" />
-                                                    </div>
-                                                    <div class="form-floating mb-6 mt-4">
-                                                        <input type="text" class="form-control" id="profile-name" placeholder="Name" />
-                                                        <label for="profile-name">Name</label>
-                                                    </div>
-
-                                                    <div class="form-floating mb-6">
-                                                        <input type="email" class="form-control" id="profile-email" placeholder="Email address" />
-                                                        <label for="profile-email">Email</label>
-                                                    </div>
-
-                                                    <div class="form-floating mb-6">
-                                                        <input type="text" class="form-control" id="profile-phone" placeholder="Phone" />
-                                                        <label for="profile-phone">Phone</label>
-                                                    </div>
-
-                                                    <div class="form-floating mb-6">
-                                                        <textarea class="form-control" placeholder="Bio" id="profile-bio" data-autosize="true" style="min-height: 120px;"></textarea>
-                                                        <label for="profile-bio">Bio</label>
-                                                    </div>
-
-                                                    <button type="button" class="btn btn-block btn-lg btn-primary w-100">Save</button>
+                                                    <form action="" method="post" enctype="multipart/form-data">
+                                                        {% csrf_token %}
+                                                        <div class="mb-4">
+                                                            <input type="file" id="photo" name="photo" class="form-control" />
+                                                        </div>
+                                                        <div class="form-floating mb-6 mt-4">
+                                                            <input type="text" class="form-control" id="name" name="name" value="{% if user.profile.name %}{{ user.profile.name }}{% endif %}" placeholder="Name" />
+                                                            <label for="profile-name">Name</label>
+                                                        </div>
+    
+                                                        <div class="form-floating mb-6">
+                                                            <textarea class="form-control" placeholder="Bio" id="bio" name="bio" data-autosize="true" style="min-height: 120px;">{% if user.profile.bio %}{{ user.profile.bio }}{% endif %}</textarea>
+                                                            <label for="bio">Bio</label>
+                                                        </div>
+    
+                                                        <div class="form-floating mb-6">
+                                                            <textarea class="form-control" placeholder="Address" id="address" name="address" data-autosize="true" style="min-height: 120px;">{% if user.profile.address %}{{ user.profile.address }}{% endif %}</textarea>
+                                                            <label for="address">Address</label>
+                                                        </div>
+    
+                                                        <button type="submit" class="btn btn-block btn-lg btn-primary w-100">Save</button>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
