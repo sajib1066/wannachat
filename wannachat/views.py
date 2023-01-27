@@ -18,9 +18,9 @@ class HomeView(View):
             print(e)
             country = None
         if country:
-            category_list = Category.objects.filter(country=country)
+            category_list = Category.objects.filter(country=country).order_by('ordering')
         else:
-            category_list = Category.objects.all()
+            category_list = Category.objects.all().order_by('ordering')
             country = Country.objects.get(pk=1)
         context = {
             'category_list': category_list,
