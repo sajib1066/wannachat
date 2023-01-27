@@ -15,7 +15,7 @@ class Category(models.Model):
     country = models.ForeignKey(
         "chatroom.Country", on_delete=models.SET_NULL, null=True
     )
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255)
     category_type = models.CharField(max_length=20, choices=TYPE_CHOICES)
     fee_status = models.CharField(max_length=20, choices=FEE_STATUS_CHOICES)
     ordering = models.PositiveIntegerField(default=0)
@@ -24,6 +24,7 @@ class Category(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
+        unique_together = ['country', 'name']
         ordering = ('ordering', )
 
     def __str__(self):
