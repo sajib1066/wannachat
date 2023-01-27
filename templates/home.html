@@ -31,9 +31,9 @@
                         <li class="nav-item"><a class="nav-link active button" aria-current="page" href="">About Us</a></li>
                         <li class="nav-item"><a class="nav-link active button" aria-current="page" href="">Contact Us</a></li>
                         <li class="nav-item dropdown">
-                            <select class="country">
+                            <select class="country" id="country" name="country">
                                 {% for country in country_list %}
-                                    <option {% if country.ordering == 1 %}selected{% endif %}>{{ country.name }}</option>
+                                    <option {% if selected_country.name == country.name %}selected{% endif %}>{{ country.name }}</option>
                                 {% endfor %}
                             </select>
                         </li>
@@ -133,12 +133,28 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="{% static 'home/js/scripts.js' %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             function openChatWindow(userpanel, chatbox, users) {  
                 window.open(userpanel, "My Panel", "toolbar=no,status=no,menubar=no,location=left,scrollbars=no,resizable=no,height=600,width=357,screenX=100");
                 window.open(chatbox, "Chat Box", "height=600,width=657,screenX=500");
                 window.open(users,"Users","height=600,width=357,screenX=1200");
-            } 
+            }
+
+            $("#country").change(function () {
+                var countryName = $('#country').find(":selected").val();
+                $.ajax({
+                    url: '/change-country/',
+                    method: "GET",
+                    data: {
+                        'country': countryName,
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        window.location.reload();
+                    }
+                });
+            });
         </script>
     </body>
 </html>

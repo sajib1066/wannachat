@@ -18,12 +18,15 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-from .views import HomeView
+from .views import HomeView, ChangeCountryView
 
 
 urlpatterns = [
     path('management/', admin.site.urls),
+
     path('', HomeView.as_view(), name='home'),
+    path('change-country/', ChangeCountryView.as_view(), name='change_country'),
+
     path('auth/', include('customauth.urls')),
     path('chatroom/', include('chatroom.urls')),
     path('dashboard/', include('dashboard.urls')),
