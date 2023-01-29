@@ -20,18 +20,21 @@ class Usermanager(BaseUserManager):
 
     def create_user(self, email, password=None, **extra_fields):
         """ Create and save a user with given email and password """
+        extra_fields.setdefault('is_active', True)
         extra_fields.setdefault('is_staff', False)
         extra_fields.setdefault('is_superuser', False)
         return self._create_user(email, password, **extra_fields)
 
     def create_staffuser(self, email, password, **extra_fields):
         """ Create and save a staff user with given email and password """
+        extra_fields.setdefault('is_active', True)
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', False)
         return self._create_user(email, password, **extra_fields)
 
     def create_superuser(self, email, password, **extra_fields):
         """ Create and save a superuser with given email and password """
+        extra_fields.setdefault('is_active', True)
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
         return self._create_user(email, password, **extra_fields)
@@ -42,7 +45,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         _("Email Address"), max_length=255, unique=True, db_index=True
     )
     is_staff = models.BooleanField(_("Staff Status"), default=False)
-    is_active = models.BooleanField(_("Active Status"), default=True)
+    is_active = models.BooleanField(_("Active Status"), default=False)
     accepted_terms = models.BooleanField(_("accepted terms"), default=False)
     read_terms = models.BooleanField(_("terms read"), default=False)
     date_joined = models.DateTimeField(_("Date Joined"), auto_now_add=True)
