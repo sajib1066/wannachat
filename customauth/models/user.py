@@ -1,3 +1,4 @@
+import uuid
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser, BaseUserManager, PermissionsMixin
@@ -47,8 +48,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(_("Date Joined"), auto_now_add=True)
     last_updated = models.DateTimeField(_("Last Updated"), auto_now=True)
     email_token = models.CharField(
-        max_length=255, null=True, blank=True,
-        verbose_name=_("email token")
+        max_length=255, unique=True,
+        verbose_name=_("email token"),
+        default=uuid.uuid4
     )
     additional_email = models.EmailField(
         _("additional email address"), null=True, blank=True
