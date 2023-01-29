@@ -1,0 +1,6456 @@
+[
+{
+    "model": "chatroom.subcategory",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "name": "Babysitters",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T20:17:41.084Z",
+        "updated_at": "2023-01-27T20:17:41.084Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "name": "Dog Walkers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T20:18:30.234Z",
+        "updated_at": "2023-01-27T20:18:30.234Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "name": "Locksmith",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T20:20:19.197Z",
+        "updated_at": "2023-01-27T20:20:19.197Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "name": "Moving",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T20:20:46.058Z",
+        "updated_at": "2023-01-27T20:20:46.058Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "name": "Towing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T20:21:09.416Z",
+        "updated_at": "2023-01-27T20:21:09.416Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "name": "Plumber",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T20:21:31.638Z",
+        "updated_at": "2023-01-27T20:21:59.475Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 7,
+    "fields": {
+        "category": 1,
+        "name": "Homes For Sale",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T20:22:27.105Z",
+        "updated_at": "2023-01-27T20:22:27.105Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 8,
+    "fields": {
+        "category": 1,
+        "name": "Apartment Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T20:22:53.272Z",
+        "updated_at": "2023-01-27T20:22:53.272Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 9,
+    "fields": {
+        "category": 1,
+        "name": "Room Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T20:23:23.759Z",
+        "updated_at": "2023-01-27T20:23:23.759Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 10,
+    "fields": {
+        "category": 1,
+        "name": "Commercial Space",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T20:23:45.006Z",
+        "updated_at": "2023-01-27T20:23:45.006Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 11,
+    "fields": {
+        "category": 1,
+        "name": "Pool Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T20:24:13.206Z",
+        "updated_at": "2023-01-27T20:24:13.206Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 12,
+    "fields": {
+        "category": 1,
+        "name": "Car Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T20:24:43.013Z",
+        "updated_at": "2023-01-27T20:24:43.013Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 13,
+    "fields": {
+        "category": 1,
+        "name": "Car For Sale",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T20:25:02.634Z",
+        "updated_at": "2023-01-27T20:25:02.634Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 14,
+    "fields": {
+        "category": 1,
+        "name": "Garage Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T20:25:39.614Z",
+        "updated_at": "2023-01-27T20:25:39.614Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 15,
+    "fields": {
+        "category": 1,
+        "name": "Handy Person",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 15,
+        "created_at": "2023-01-27T20:26:09.534Z",
+        "updated_at": "2023-01-27T20:26:09.534Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 16,
+    "fields": {
+        "category": 1,
+        "name": "Cleaning",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 16,
+        "created_at": "2023-01-27T20:26:58.874Z",
+        "updated_at": "2023-01-27T20:26:58.874Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 17,
+    "fields": {
+        "category": 1,
+        "name": "Electrician",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 17,
+        "created_at": "2023-01-27T20:27:24.080Z",
+        "updated_at": "2023-01-27T20:27:24.080Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 18,
+    "fields": {
+        "category": 1,
+        "name": "Roofing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 18,
+        "created_at": "2023-01-27T20:27:46.724Z",
+        "updated_at": "2023-01-27T20:27:46.724Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 19,
+    "fields": {
+        "category": 1,
+        "name": "Contractors",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 19,
+        "created_at": "2023-01-27T20:28:12.111Z",
+        "updated_at": "2023-01-27T20:28:12.111Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 20,
+    "fields": {
+        "category": 1,
+        "name": "Landscaping",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 20,
+        "created_at": "2023-01-27T20:28:32.714Z",
+        "updated_at": "2023-01-27T20:28:32.714Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 21,
+    "fields": {
+        "category": 1,
+        "name": "Pest Control",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 21,
+        "created_at": "2023-01-27T20:28:48.210Z",
+        "updated_at": "2023-01-27T20:28:48.210Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 22,
+    "fields": {
+        "category": 1,
+        "name": "Everything Pets",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 22,
+        "created_at": "2023-01-27T20:29:09.773Z",
+        "updated_at": "2023-01-27T20:29:09.773Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 23,
+    "fields": {
+        "category": 1,
+        "name": "Jobs",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 23,
+        "created_at": "2023-01-27T20:29:29.504Z",
+        "updated_at": "2023-01-27T20:29:29.504Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 24,
+    "fields": {
+        "category": 1,
+        "name": "Gigs",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 24,
+        "created_at": "2023-01-27T20:29:53.928Z",
+        "updated_at": "2023-01-27T20:29:53.928Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 25,
+    "fields": {
+        "category": 1,
+        "name": "Wedding Services",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 25,
+        "created_at": "2023-01-27T20:30:10.601Z",
+        "updated_at": "2023-01-27T22:29:19.655Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 26,
+    "fields": {
+        "category": 1,
+        "name": "Models/Actors",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 26,
+        "created_at": "2023-01-27T20:30:37.665Z",
+        "updated_at": "2023-01-27T20:30:37.665Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 27,
+    "fields": {
+        "category": 1,
+        "name": "Casting",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 27,
+        "created_at": "2023-01-27T20:30:57.973Z",
+        "updated_at": "2023-01-27T20:30:57.973Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 28,
+    "fields": {
+        "category": 2,
+        "name": "Alabama Hospitality",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T20:32:34.977Z",
+        "updated_at": "2023-01-27T20:32:34.977Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 29,
+    "fields": {
+        "category": 2,
+        "name": "Alaska Iditarods",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T20:33:01.820Z",
+        "updated_at": "2023-01-27T20:33:01.820Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 30,
+    "fields": {
+        "category": 2,
+        "name": "Arizona Views",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T20:35:30.561Z",
+        "updated_at": "2023-01-27T20:35:30.561Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 31,
+    "fields": {
+        "category": 2,
+        "name": "Arkansas Springs",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T20:37:04.067Z",
+        "updated_at": "2023-01-27T20:37:04.067Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 32,
+    "fields": {
+        "category": 2,
+        "name": "California Stars",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T20:37:30.065Z",
+        "updated_at": "2023-01-27T20:37:30.065Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 33,
+    "fields": {
+        "category": 2,
+        "name": "Colorado Beers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T20:37:54.842Z",
+        "updated_at": "2023-01-27T20:37:54.842Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 34,
+    "fields": {
+        "category": 2,
+        "name": "Connecticut Foliage",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T20:38:21.100Z",
+        "updated_at": "2023-01-27T20:38:21.100Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 35,
+    "fields": {
+        "category": 2,
+        "name": "Delaware Beaches",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T20:38:45.845Z",
+        "updated_at": "2023-01-27T20:38:45.845Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 36,
+    "fields": {
+        "category": 2,
+        "name": "Florida Palms",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T20:39:01.611Z",
+        "updated_at": "2023-01-27T20:39:01.611Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 37,
+    "fields": {
+        "category": 2,
+        "name": "Georgia Peach",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T20:39:19.537Z",
+        "updated_at": "2023-01-27T20:39:19.537Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 38,
+    "fields": {
+        "category": 2,
+        "name": "Hawaii Islands",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T20:39:47.391Z",
+        "updated_at": "2023-01-27T20:39:47.391Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 39,
+    "fields": {
+        "category": 2,
+        "name": "Idaho Potatoes",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T20:40:07.255Z",
+        "updated_at": "2023-01-27T20:40:07.255Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 40,
+    "fields": {
+        "category": 2,
+        "name": "Illinois Skyscraper",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T20:40:46.808Z",
+        "updated_at": "2023-01-27T20:40:46.808Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 41,
+    "fields": {
+        "category": 2,
+        "name": "Indiana Ope",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T20:41:12.409Z",
+        "updated_at": "2023-01-27T20:41:12.409Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 42,
+    "fields": {
+        "category": 2,
+        "name": "Iowa Fair",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 15,
+        "created_at": "2023-01-27T20:41:30.506Z",
+        "updated_at": "2023-01-27T20:41:30.506Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 43,
+    "fields": {
+        "category": 2,
+        "name": "Kansas Rivers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 16,
+        "created_at": "2023-01-27T20:41:54.055Z",
+        "updated_at": "2023-01-27T20:41:54.055Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 44,
+    "fields": {
+        "category": 2,
+        "name": "Kentucky Chicken",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 17,
+        "created_at": "2023-01-27T20:42:14.532Z",
+        "updated_at": "2023-01-27T20:42:14.532Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 45,
+    "fields": {
+        "category": 2,
+        "name": "Louisiana Mardi Gras",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 18,
+        "created_at": "2023-01-27T20:42:38.291Z",
+        "updated_at": "2023-01-27T20:42:38.291Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 46,
+    "fields": {
+        "category": 2,
+        "name": "Maine Coastline",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 19,
+        "created_at": "2023-01-27T20:43:12.463Z",
+        "updated_at": "2023-01-27T20:43:12.463Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 47,
+    "fields": {
+        "category": 2,
+        "name": "Maryland Patriots",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 20,
+        "created_at": "2023-01-27T20:43:47.128Z",
+        "updated_at": "2023-01-27T20:43:47.128Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 48,
+    "fields": {
+        "category": 2,
+        "name": "Massachusetts Students",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 21,
+        "created_at": "2023-01-27T20:44:13.254Z",
+        "updated_at": "2023-01-27T20:44:13.254Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 49,
+    "fields": {
+        "category": 2,
+        "name": "Michigan Wolverines",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 22,
+        "created_at": "2023-01-27T20:44:42.846Z",
+        "updated_at": "2023-01-27T20:44:42.846Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 50,
+    "fields": {
+        "category": 2,
+        "name": "Minnesota Lakes",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 23,
+        "created_at": "2023-01-27T20:45:06.399Z",
+        "updated_at": "2023-01-27T20:45:06.399Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 51,
+    "fields": {
+        "category": 2,
+        "name": "Mississippi Blues",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 24,
+        "created_at": "2023-01-27T20:45:56.574Z",
+        "updated_at": "2023-01-27T20:45:56.574Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 52,
+    "fields": {
+        "category": 2,
+        "name": "Missouri Barbecue",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 25,
+        "created_at": "2023-01-27T20:46:28.936Z",
+        "updated_at": "2023-01-27T20:46:58.797Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 53,
+    "fields": {
+        "category": 2,
+        "name": "Montana Minerals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 26,
+        "created_at": "2023-01-27T20:47:55.844Z",
+        "updated_at": "2023-01-27T20:47:55.844Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 54,
+    "fields": {
+        "category": 2,
+        "name": "Nebraska Cornhuskers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 27,
+        "created_at": "2023-01-27T20:48:17.584Z",
+        "updated_at": "2023-01-27T20:48:17.584Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 55,
+    "fields": {
+        "category": 2,
+        "name": "Nevada Casinos",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 28,
+        "created_at": "2023-01-27T20:48:43.568Z",
+        "updated_at": "2023-01-27T20:49:09.601Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 56,
+    "fields": {
+        "category": 2,
+        "name": "New Hampshire Granite",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 29,
+        "created_at": "2023-01-27T20:49:41.618Z",
+        "updated_at": "2023-01-27T20:49:41.618Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 57,
+    "fields": {
+        "category": 2,
+        "name": "New Jersey Garden State",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 30,
+        "created_at": "2023-01-27T20:50:05.206Z",
+        "updated_at": "2023-01-27T20:50:05.206Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 58,
+    "fields": {
+        "category": 2,
+        "name": "New Mexico Wine",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 31,
+        "created_at": "2023-01-27T20:50:31.200Z",
+        "updated_at": "2023-01-27T20:50:31.200Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 59,
+    "fields": {
+        "category": 2,
+        "name": "New York’s Big Apple",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 32,
+        "created_at": "2023-01-27T20:50:58.220Z",
+        "updated_at": "2023-01-27T20:50:58.220Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 60,
+    "fields": {
+        "category": 2,
+        "name": "North Carolina Mountains",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 33,
+        "created_at": "2023-01-27T20:51:23.094Z",
+        "updated_at": "2023-01-27T20:51:23.094Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 61,
+    "fields": {
+        "category": 2,
+        "name": "North Dakota Badlands",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 34,
+        "created_at": "2023-01-27T20:51:40.234Z",
+        "updated_at": "2023-01-27T20:51:40.234Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 62,
+    "fields": {
+        "category": 2,
+        "name": "Ohio Buckeyes",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 35,
+        "created_at": "2023-01-27T20:52:02.554Z",
+        "updated_at": "2023-01-27T20:52:02.554Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 63,
+    "fields": {
+        "category": 2,
+        "name": "Oklahoma Cowboys",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 36,
+        "created_at": "2023-01-27T20:52:26.108Z",
+        "updated_at": "2023-01-27T20:52:26.108Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 64,
+    "fields": {
+        "category": 2,
+        "name": "Oregon Scenery",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 37,
+        "created_at": "2023-01-27T20:52:48.946Z",
+        "updated_at": "2023-01-27T20:52:48.946Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 65,
+    "fields": {
+        "category": 2,
+        "name": "Pennsylvania Keystones",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 38,
+        "created_at": "2023-01-27T20:53:12.187Z",
+        "updated_at": "2023-01-27T20:53:12.187Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 66,
+    "fields": {
+        "category": 2,
+        "name": "Rhode Island’s Little Rhodys",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 39,
+        "created_at": "2023-01-27T20:53:34.574Z",
+        "updated_at": "2023-01-27T20:53:34.574Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 67,
+    "fields": {
+        "category": 2,
+        "name": "South Carolina Golfers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 40,
+        "created_at": "2023-01-27T20:53:56.830Z",
+        "updated_at": "2023-01-27T20:53:56.830Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 68,
+    "fields": {
+        "category": 2,
+        "name": "South Dakota Tours",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 41,
+        "created_at": "2023-01-27T20:54:22.234Z",
+        "updated_at": "2023-01-27T20:54:22.234Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 69,
+    "fields": {
+        "category": 2,
+        "name": "Tennessee Whiskey",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 42,
+        "created_at": "2023-01-27T20:54:46.972Z",
+        "updated_at": "2023-01-27T20:54:46.972Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 70,
+    "fields": {
+        "category": 2,
+        "name": "Texas Lonestars",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 43,
+        "created_at": "2023-01-27T20:55:11.037Z",
+        "updated_at": "2023-01-27T20:55:11.037Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 71,
+    "fields": {
+        "category": 2,
+        "name": "Utah Skiing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 44,
+        "created_at": "2023-01-27T20:55:28.239Z",
+        "updated_at": "2023-01-27T20:55:28.239Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 72,
+    "fields": {
+        "category": 2,
+        "name": "Vermont Forests",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 45,
+        "created_at": "2023-01-27T20:55:50.804Z",
+        "updated_at": "2023-01-27T20:55:50.804Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 73,
+    "fields": {
+        "category": 2,
+        "name": "Virginia’s Old Dominions",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 46,
+        "created_at": "2023-01-27T20:56:15.524Z",
+        "updated_at": "2023-01-27T20:56:15.524Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 74,
+    "fields": {
+        "category": 2,
+        "name": "Washington Volcanoes",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 47,
+        "created_at": "2023-01-27T20:56:38.217Z",
+        "updated_at": "2023-01-27T20:56:38.217Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 75,
+    "fields": {
+        "category": 2,
+        "name": "West Virginia’s Mountain State",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 48,
+        "created_at": "2023-01-27T20:56:59.418Z",
+        "updated_at": "2023-01-27T20:56:59.419Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 76,
+    "fields": {
+        "category": 2,
+        "name": "Wisconsin Cheese",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 49,
+        "created_at": "2023-01-27T20:57:18.035Z",
+        "updated_at": "2023-01-27T20:57:18.035Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 77,
+    "fields": {
+        "category": 2,
+        "name": "Wyoming Prairies",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 50,
+        "created_at": "2023-01-27T20:57:43.030Z",
+        "updated_at": "2023-01-27T20:57:43.030Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 78,
+    "fields": {
+        "category": 3,
+        "name": "MAGA",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T20:59:44.126Z",
+        "updated_at": "2023-01-27T20:59:44.126Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 79,
+    "fields": {
+        "category": 3,
+        "name": "Black Lives Matter",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:00:13.212Z",
+        "updated_at": "2023-01-27T21:00:13.212Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 80,
+    "fields": {
+        "category": 3,
+        "name": "Abortion",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:00:31.020Z",
+        "updated_at": "2023-01-27T21:00:31.020Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 81,
+    "fields": {
+        "category": 3,
+        "name": "Election",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:00:47.637Z",
+        "updated_at": "2023-01-27T21:00:47.637Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 82,
+    "fields": {
+        "category": 3,
+        "name": "Racism",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:01:20.887Z",
+        "updated_at": "2023-01-27T21:01:20.887Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 83,
+    "fields": {
+        "category": 3,
+        "name": "Gun Control",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:01:41.559Z",
+        "updated_at": "2023-01-27T21:01:41.559Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 84,
+    "fields": {
+        "category": 3,
+        "name": "Vaccines",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:02:09.525Z",
+        "updated_at": "2023-01-27T21:02:09.525Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 85,
+    "fields": {
+        "category": 3,
+        "name": "Animal Cruelty",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T21:02:29.905Z",
+        "updated_at": "2023-01-27T21:02:29.905Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 86,
+    "fields": {
+        "category": 3,
+        "name": "COP26",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T21:02:59.129Z",
+        "updated_at": "2023-01-27T21:02:59.129Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 87,
+    "fields": {
+        "category": 3,
+        "name": "COVID-19",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T21:03:25.538Z",
+        "updated_at": "2023-01-27T21:03:25.538Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 88,
+    "fields": {
+        "category": 3,
+        "name": "War In Ukraine",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T21:03:43.528Z",
+        "updated_at": "2023-01-27T21:03:43.528Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 89,
+    "fields": {
+        "category": 3,
+        "name": "Woke Movement",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T21:04:02.708Z",
+        "updated_at": "2023-01-27T21:04:02.708Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 90,
+    "fields": {
+        "category": 3,
+        "name": "Cancel Culture",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T21:04:25.798Z",
+        "updated_at": "2023-01-27T21:04:25.798Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 91,
+    "fields": {
+        "category": 3,
+        "name": "Police Brutality",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T21:05:03.911Z",
+        "updated_at": "2023-01-27T21:05:03.911Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 92,
+    "fields": {
+        "category": 3,
+        "name": "Extraterrestrials are real",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 15,
+        "created_at": "2023-01-27T21:05:21.966Z",
+        "updated_at": "2023-01-27T21:05:21.966Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 93,
+    "fields": {
+        "category": 3,
+        "name": "Flat Earthers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 16,
+        "created_at": "2023-01-27T21:05:46.405Z",
+        "updated_at": "2023-01-27T21:05:46.405Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 94,
+    "fields": {
+        "category": 4,
+        "name": "Football Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:08:04.355Z",
+        "updated_at": "2023-01-27T21:08:04.355Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 95,
+    "fields": {
+        "category": 4,
+        "name": "Basketball Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:08:27.496Z",
+        "updated_at": "2023-01-27T21:08:27.496Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 96,
+    "fields": {
+        "category": 4,
+        "name": "Baseball Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:08:43.943Z",
+        "updated_at": "2023-01-27T21:08:43.943Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 97,
+    "fields": {
+        "category": 4,
+        "name": "Cricket Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:09:00.866Z",
+        "updated_at": "2023-01-27T21:09:00.866Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 98,
+    "fields": {
+        "category": 4,
+        "name": "Soccer Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:09:19.810Z",
+        "updated_at": "2023-01-27T21:09:19.810Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 99,
+    "fields": {
+        "category": 4,
+        "name": "Tennis Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:12:06.571Z",
+        "updated_at": "2023-01-27T21:12:06.571Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 100,
+    "fields": {
+        "category": 4,
+        "name": "Golf Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:12:23.356Z",
+        "updated_at": "2023-01-27T21:12:23.356Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 101,
+    "fields": {
+        "category": 4,
+        "name": "Bowling Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T21:12:42.448Z",
+        "updated_at": "2023-01-27T21:12:42.448Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 102,
+    "fields": {
+        "category": 4,
+        "name": "Surf Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T21:12:58.241Z",
+        "updated_at": "2023-01-27T21:12:58.241Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 103,
+    "fields": {
+        "category": 4,
+        "name": "Extreme Sports Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T21:13:24.226Z",
+        "updated_at": "2023-01-27T21:13:24.226Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 104,
+    "fields": {
+        "category": 5,
+        "name": "Crypto Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:14:26.314Z",
+        "updated_at": "2023-01-27T21:14:26.314Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 105,
+    "fields": {
+        "category": 5,
+        "name": "Forex Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:14:50.042Z",
+        "updated_at": "2023-01-27T21:14:50.042Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 106,
+    "fields": {
+        "category": 5,
+        "name": "Day Trading Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:15:13.872Z",
+        "updated_at": "2023-01-27T21:15:13.872Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 107,
+    "fields": {
+        "category": 5,
+        "name": "Bonds Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:15:39.742Z",
+        "updated_at": "2023-01-27T21:15:39.742Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 108,
+    "fields": {
+        "category": 5,
+        "name": "Swing Trading Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:16:18.003Z",
+        "updated_at": "2023-01-27T21:16:18.003Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 109,
+    "fields": {
+        "category": 5,
+        "name": "Options Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:16:35.310Z",
+        "updated_at": "2023-01-27T21:16:35.310Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 110,
+    "fields": {
+        "category": 5,
+        "name": "Real Estate Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:16:54.909Z",
+        "updated_at": "2023-01-27T21:16:54.909Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 111,
+    "fields": {
+        "category": 6,
+        "name": "Straight",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:18:22.726Z",
+        "updated_at": "2023-01-27T21:18:22.726Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 112,
+    "fields": {
+        "category": 6,
+        "name": "Gay",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:19:24.197Z",
+        "updated_at": "2023-01-27T21:19:24.197Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 113,
+    "fields": {
+        "category": 6,
+        "name": "Lesbian",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:19:40.208Z",
+        "updated_at": "2023-01-27T21:19:40.208Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 114,
+    "fields": {
+        "category": 6,
+        "name": "Transexual",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:20:27.174Z",
+        "updated_at": "2023-01-27T21:20:27.174Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 115,
+    "fields": {
+        "category": 6,
+        "name": "Bi-sexual",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:20:49.294Z",
+        "updated_at": "2023-01-27T21:20:49.294Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 116,
+    "fields": {
+        "category": 6,
+        "name": "LGBTQ",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:21:30.316Z",
+        "updated_at": "2023-01-27T21:21:30.316Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 117,
+    "fields": {
+        "category": 6,
+        "name": "BDSM",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:21:45.817Z",
+        "updated_at": "2023-01-27T21:21:45.817Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 118,
+    "fields": {
+        "category": 7,
+        "name": "Fishing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:22:52.092Z",
+        "updated_at": "2023-01-27T21:22:52.092Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 119,
+    "fields": {
+        "category": 7,
+        "name": "Hiking",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:23:12.202Z",
+        "updated_at": "2023-01-27T21:23:12.202Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 120,
+    "fields": {
+        "category": 7,
+        "name": "Climbing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:23:34.043Z",
+        "updated_at": "2023-01-27T21:23:34.043Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 121,
+    "fields": {
+        "category": 7,
+        "name": "Surfing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:23:54.493Z",
+        "updated_at": "2023-01-27T21:23:54.493Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 122,
+    "fields": {
+        "category": 7,
+        "name": "Dancing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:24:11.731Z",
+        "updated_at": "2023-01-27T21:24:11.731Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 123,
+    "fields": {
+        "category": 7,
+        "name": "Gardening",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:24:34.011Z",
+        "updated_at": "2023-01-27T21:24:34.011Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 124,
+    "fields": {
+        "category": 7,
+        "name": "Photography",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:24:53.630Z",
+        "updated_at": "2023-01-27T21:24:53.630Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 125,
+    "fields": {
+        "category": 7,
+        "name": "Gamer",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T21:25:20.165Z",
+        "updated_at": "2023-01-27T21:25:20.165Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 126,
+    "fields": {
+        "category": 7,
+        "name": "Painting",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T21:25:38.258Z",
+        "updated_at": "2023-01-27T21:25:38.258Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 127,
+    "fields": {
+        "category": 7,
+        "name": "Drawing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T21:25:59.321Z",
+        "updated_at": "2023-01-27T21:25:59.321Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 128,
+    "fields": {
+        "category": 7,
+        "name": "Graffiti",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T21:26:24.816Z",
+        "updated_at": "2023-01-27T21:26:24.816Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 129,
+    "fields": {
+        "category": 7,
+        "name": "Biking",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T21:26:39.581Z",
+        "updated_at": "2023-01-27T21:26:39.581Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 130,
+    "fields": {
+        "category": 7,
+        "name": "Travel",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T21:27:01.372Z",
+        "updated_at": "2023-01-27T21:27:01.372Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 131,
+    "fields": {
+        "category": 8,
+        "name": "Weight Lifting Madness",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:27:57.123Z",
+        "updated_at": "2023-01-27T21:27:57.123Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 132,
+    "fields": {
+        "category": 8,
+        "name": "Calisthenic",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:28:11.621Z",
+        "updated_at": "2023-01-27T21:28:11.621Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 133,
+    "fields": {
+        "category": 8,
+        "name": "Yoga",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:28:30.808Z",
+        "updated_at": "2023-01-27T21:28:30.808Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 134,
+    "fields": {
+        "category": 8,
+        "name": "Swimming",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:28:46.270Z",
+        "updated_at": "2023-01-27T21:28:46.270Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 135,
+    "fields": {
+        "category": 8,
+        "name": "Running",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:29:00.829Z",
+        "updated_at": "2023-01-27T21:29:00.829Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 136,
+    "fields": {
+        "category": 8,
+        "name": "Endurance",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:29:26.575Z",
+        "updated_at": "2023-01-27T21:29:26.575Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 137,
+    "fields": {
+        "category": 8,
+        "name": "Aerobics",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:29:43.548Z",
+        "updated_at": "2023-01-27T21:29:43.548Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 138,
+    "fields": {
+        "category": 9,
+        "name": "Democratic",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:30:48.281Z",
+        "updated_at": "2023-01-27T21:30:48.281Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 139,
+    "fields": {
+        "category": 9,
+        "name": "Republican",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:31:03.368Z",
+        "updated_at": "2023-01-27T21:31:03.368Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 140,
+    "fields": {
+        "category": 9,
+        "name": "Green Party",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:31:19.936Z",
+        "updated_at": "2023-01-27T21:31:19.936Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 141,
+    "fields": {
+        "category": 9,
+        "name": "Reform",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:31:35.374Z",
+        "updated_at": "2023-01-27T21:31:35.374Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 142,
+    "fields": {
+        "category": 9,
+        "name": "Liberalism",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:32:06.728Z",
+        "updated_at": "2023-01-27T21:32:06.728Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 143,
+    "fields": {
+        "category": 9,
+        "name": "Law",
+        "max_user": 34,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:32:22.206Z",
+        "updated_at": "2023-01-27T21:32:22.206Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 144,
+    "fields": {
+        "category": 9,
+        "name": "Socialism",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:32:48.841Z",
+        "updated_at": "2023-01-27T21:32:48.841Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 145,
+    "fields": {
+        "category": 10,
+        "name": "Muslim",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:34:19.633Z",
+        "updated_at": "2023-01-27T21:34:19.633Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 146,
+    "fields": {
+        "category": 10,
+        "name": "Christian",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:34:39.241Z",
+        "updated_at": "2023-01-27T21:35:23.151Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 147,
+    "fields": {
+        "category": 10,
+        "name": "Catholic",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:35:48.984Z",
+        "updated_at": "2023-01-27T21:35:48.984Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 148,
+    "fields": {
+        "category": 10,
+        "name": "Hindu",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:36:20.814Z",
+        "updated_at": "2023-01-27T21:36:20.814Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 149,
+    "fields": {
+        "category": 10,
+        "name": "Buddhism",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:36:47.959Z",
+        "updated_at": "2023-01-27T21:36:47.959Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 150,
+    "fields": {
+        "category": 10,
+        "name": "Atheist",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:37:05.831Z",
+        "updated_at": "2023-01-27T22:28:29.285Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 151,
+    "fields": {
+        "category": 10,
+        "name": "Jewish",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:37:52.086Z",
+        "updated_at": "2023-01-27T21:37:52.086Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 152,
+    "fields": {
+        "category": 10,
+        "name": "Pagan",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T21:38:09.314Z",
+        "updated_at": "2023-01-27T21:38:09.314Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 153,
+    "fields": {
+        "category": 11,
+        "name": "Marketers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:39:00.431Z",
+        "updated_at": "2023-01-27T21:39:00.431Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 154,
+    "fields": {
+        "category": 11,
+        "name": "Lawer",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:39:15.495Z",
+        "updated_at": "2023-01-27T21:39:15.495Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 155,
+    "fields": {
+        "category": 11,
+        "name": "Medical",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:39:34.432Z",
+        "updated_at": "2023-01-27T21:39:34.432Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 156,
+    "fields": {
+        "category": 11,
+        "name": "Computer Programmers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:39:58.533Z",
+        "updated_at": "2023-01-27T21:39:58.533Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 157,
+    "fields": {
+        "category": 11,
+        "name": "Police Officers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:40:14.884Z",
+        "updated_at": "2023-01-27T21:40:14.884Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 158,
+    "fields": {
+        "category": 11,
+        "name": "Fire Fighters",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:40:34.364Z",
+        "updated_at": "2023-01-27T21:40:34.364Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 159,
+    "fields": {
+        "category": 11,
+        "name": "Corporate Professionals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:40:49.719Z",
+        "updated_at": "2023-01-27T21:40:49.719Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 160,
+    "fields": {
+        "category": 11,
+        "name": "Construction",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T21:41:03.837Z",
+        "updated_at": "2023-01-27T21:41:03.837Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 161,
+    "fields": {
+        "category": 11,
+        "name": "Chefs",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T21:41:22.188Z",
+        "updated_at": "2023-01-27T21:41:22.188Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 162,
+    "fields": {
+        "category": 11,
+        "name": "Engineers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T21:41:38.747Z",
+        "updated_at": "2023-01-27T21:41:38.747Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 163,
+    "fields": {
+        "category": 11,
+        "name": "Teachers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T21:42:00.048Z",
+        "updated_at": "2023-01-27T21:42:00.048Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 164,
+    "fields": {
+        "category": 11,
+        "name": "Architects",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T21:42:32.854Z",
+        "updated_at": "2023-01-27T21:42:32.855Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 165,
+    "fields": {
+        "category": 11,
+        "name": "Drivers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T21:46:18.482Z",
+        "updated_at": "2023-01-27T21:46:18.482Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 166,
+    "fields": {
+        "category": 11,
+        "name": "Aviation",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T21:46:50.869Z",
+        "updated_at": "2023-01-27T21:46:50.869Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 167,
+    "fields": {
+        "category": 11,
+        "name": "Beauty",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 15,
+        "created_at": "2023-01-27T21:47:07.677Z",
+        "updated_at": "2023-01-27T21:47:07.677Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 168,
+    "fields": {
+        "category": 11,
+        "name": "Entertainment",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 16,
+        "created_at": "2023-01-27T21:47:57.872Z",
+        "updated_at": "2023-01-27T21:47:57.872Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 169,
+    "fields": {
+        "category": 11,
+        "name": "Authors",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 17,
+        "created_at": "2023-01-27T21:48:34.368Z",
+        "updated_at": "2023-01-27T21:48:34.368Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 170,
+    "fields": {
+        "category": 11,
+        "name": "Real Estate Agents",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 18,
+        "created_at": "2023-01-27T21:48:50.988Z",
+        "updated_at": "2023-01-27T21:48:50.988Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 171,
+    "fields": {
+        "category": 11,
+        "name": "Stock Brokers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 19,
+        "created_at": "2023-01-27T21:49:08.017Z",
+        "updated_at": "2023-01-27T21:49:08.017Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 172,
+    "fields": {
+        "category": 12,
+        "name": "Astronomy",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:50:24.307Z",
+        "updated_at": "2023-01-27T21:50:24.307Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 173,
+    "fields": {
+        "category": 12,
+        "name": "Biology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:50:39.111Z",
+        "updated_at": "2023-01-27T21:50:39.111Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 174,
+    "fields": {
+        "category": 12,
+        "name": "Chemistry",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:50:55.947Z",
+        "updated_at": "2023-01-27T21:50:55.947Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 175,
+    "fields": {
+        "category": 12,
+        "name": "Physics",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:51:11.711Z",
+        "updated_at": "2023-01-27T21:51:11.711Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 176,
+    "fields": {
+        "category": 12,
+        "name": "Geography",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:51:29.113Z",
+        "updated_at": "2023-01-27T21:51:29.113Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 177,
+    "fields": {
+        "category": 12,
+        "name": "Geology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:51:46.328Z",
+        "updated_at": "2023-01-27T21:51:46.328Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 178,
+    "fields": {
+        "category": 12,
+        "name": "Botany",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:52:00.116Z",
+        "updated_at": "2023-01-27T21:52:00.116Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 179,
+    "fields": {
+        "category": 12,
+        "name": "Zoology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T21:52:15.921Z",
+        "updated_at": "2023-01-27T21:52:15.921Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 180,
+    "fields": {
+        "category": 12,
+        "name": "Oceanography",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T21:52:53.404Z",
+        "updated_at": "2023-01-27T21:52:53.404Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 181,
+    "fields": {
+        "category": 12,
+        "name": "Meteorology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T21:53:07.709Z",
+        "updated_at": "2023-01-27T21:53:07.709Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 182,
+    "fields": {
+        "category": 13,
+        "name": "Hip Hop",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T21:54:25.970Z",
+        "updated_at": "2023-01-27T21:54:25.970Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 183,
+    "fields": {
+        "category": 13,
+        "name": "Pop",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T21:54:43.782Z",
+        "updated_at": "2023-01-27T21:54:43.782Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 184,
+    "fields": {
+        "category": 13,
+        "name": "Country",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T21:55:03.344Z",
+        "updated_at": "2023-01-27T21:55:03.344Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 185,
+    "fields": {
+        "category": 13,
+        "name": "Folk",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T21:55:22.228Z",
+        "updated_at": "2023-01-27T21:55:22.228Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 186,
+    "fields": {
+        "category": 13,
+        "name": "House",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T21:55:48.708Z",
+        "updated_at": "2023-01-27T21:55:48.708Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 187,
+    "fields": {
+        "category": 13,
+        "name": "Rock",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T21:57:02.940Z",
+        "updated_at": "2023-01-27T21:57:02.940Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 188,
+    "fields": {
+        "category": 13,
+        "name": "Metal",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T21:57:32.605Z",
+        "updated_at": "2023-01-27T21:57:32.606Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 189,
+    "fields": {
+        "category": 13,
+        "name": "Classical",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T21:57:47.947Z",
+        "updated_at": "2023-01-27T21:57:47.947Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 190,
+    "fields": {
+        "category": 13,
+        "name": "Latin",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T21:58:06.034Z",
+        "updated_at": "2023-01-27T21:58:06.034Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 191,
+    "fields": {
+        "category": 13,
+        "name": "Soul",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T21:58:36.055Z",
+        "updated_at": "2023-01-27T21:58:36.055Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 192,
+    "fields": {
+        "category": 13,
+        "name": "Dubstep",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T21:58:50.601Z",
+        "updated_at": "2023-01-27T21:58:50.601Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 193,
+    "fields": {
+        "category": 13,
+        "name": "Trance",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T21:59:15.965Z",
+        "updated_at": "2023-01-27T21:59:15.965Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 194,
+    "fields": {
+        "category": 13,
+        "name": "Alternate Rock",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T21:59:31.939Z",
+        "updated_at": "2023-01-27T21:59:31.939Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 195,
+    "fields": {
+        "category": 13,
+        "name": "Opera",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T21:59:56.068Z",
+        "updated_at": "2023-01-27T21:59:56.068Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 196,
+    "fields": {
+        "category": 14,
+        "name": "Horror",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:05:45.079Z",
+        "updated_at": "2023-01-27T22:05:45.079Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 197,
+    "fields": {
+        "category": 14,
+        "name": "Comedy",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:06:01.524Z",
+        "updated_at": "2023-01-27T22:06:01.524Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 198,
+    "fields": {
+        "category": 14,
+        "name": "Action",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:06:17.804Z",
+        "updated_at": "2023-01-27T22:06:17.804Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 199,
+    "fields": {
+        "category": 14,
+        "name": "Drama",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:06:34.701Z",
+        "updated_at": "2023-01-27T22:06:34.701Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 200,
+    "fields": {
+        "category": 14,
+        "name": "Love",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:06:50.689Z",
+        "updated_at": "2023-01-27T22:06:50.689Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 201,
+    "fields": {
+        "category": 14,
+        "name": "Science Fiction",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:07:13.609Z",
+        "updated_at": "2023-01-27T22:07:13.609Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 202,
+    "fields": {
+        "category": 14,
+        "name": "Western",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T22:07:27.393Z",
+        "updated_at": "2023-01-27T22:07:27.393Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 203,
+    "fields": {
+        "category": 14,
+        "name": "Thriller",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T22:07:41.643Z",
+        "updated_at": "2023-01-27T22:07:41.643Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 204,
+    "fields": {
+        "category": 15,
+        "name": "Christmas",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:08:42.795Z",
+        "updated_at": "2023-01-27T22:08:42.795Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 205,
+    "fields": {
+        "category": 15,
+        "name": "Thanksgiving",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:08:56.531Z",
+        "updated_at": "2023-01-27T22:08:56.531Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 206,
+    "fields": {
+        "category": 15,
+        "name": "Halloween",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:09:13.102Z",
+        "updated_at": "2023-01-27T22:09:13.102Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 207,
+    "fields": {
+        "category": 15,
+        "name": "Eid",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:09:28.776Z",
+        "updated_at": "2023-01-27T22:09:28.776Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 208,
+    "fields": {
+        "category": 15,
+        "name": "Hanukkah",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:09:47.514Z",
+        "updated_at": "2023-01-27T22:09:47.514Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 209,
+    "fields": {
+        "category": 15,
+        "name": "Easter",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:10:02.849Z",
+        "updated_at": "2023-01-27T22:10:02.849Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 210,
+    "fields": {
+        "category": 16,
+        "name": "S&M",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:10:50.351Z",
+        "updated_at": "2023-01-27T22:10:50.351Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 211,
+    "fields": {
+        "category": 16,
+        "name": "Gothic",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:11:06.455Z",
+        "updated_at": "2023-01-27T22:11:06.455Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 212,
+    "fields": {
+        "category": 16,
+        "name": "Emo",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:11:24.396Z",
+        "updated_at": "2023-01-27T22:11:24.396Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 213,
+    "fields": {
+        "category": 16,
+        "name": "Vampire",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:11:39.647Z",
+        "updated_at": "2023-01-27T22:11:39.647Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 214,
+    "fields": {
+        "category": 16,
+        "name": "Hippie",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:11:59.430Z",
+        "updated_at": "2023-01-27T22:11:59.430Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 215,
+    "fields": {
+        "category": 16,
+        "name": "Punk",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:12:15.269Z",
+        "updated_at": "2023-01-27T22:12:15.269Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 216,
+    "fields": {
+        "category": 16,
+        "name": "New age",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T22:12:31.141Z",
+        "updated_at": "2023-01-27T22:12:31.141Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 217,
+    "fields": {
+        "category": 16,
+        "name": "Fandom",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T22:12:58.538Z",
+        "updated_at": "2023-01-27T22:12:58.538Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 218,
+    "fields": {
+        "category": 16,
+        "name": "Grunge",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T22:13:31.043Z",
+        "updated_at": "2023-01-27T22:13:31.043Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 219,
+    "fields": {
+        "category": 16,
+        "name": "Bohemian",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T22:13:45.181Z",
+        "updated_at": "2023-01-27T22:13:45.181Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 220,
+    "fields": {
+        "category": 16,
+        "name": "Deaf",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T22:14:07.500Z",
+        "updated_at": "2023-01-27T22:14:07.500Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 221,
+    "fields": {
+        "category": 16,
+        "name": "Little People",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T22:14:45.585Z",
+        "updated_at": "2023-01-27T22:14:45.585Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 222,
+    "fields": {
+        "category": 16,
+        "name": "Mute",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T22:14:59.672Z",
+        "updated_at": "2023-01-27T22:14:59.672Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 223,
+    "fields": {
+        "category": 16,
+        "name": "Disabled",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T22:15:25.762Z",
+        "updated_at": "2023-01-27T22:15:25.762Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 224,
+    "fields": {
+        "category": 17,
+        "name": "Baby Boomers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:16:09.874Z",
+        "updated_at": "2023-01-27T22:16:09.874Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 225,
+    "fields": {
+        "category": 17,
+        "name": "Generation Jones",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:16:25.424Z",
+        "updated_at": "2023-01-27T22:16:25.424Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 226,
+    "fields": {
+        "category": 17,
+        "name": "Generation X",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:16:39.659Z",
+        "updated_at": "2023-01-27T22:16:39.659Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 227,
+    "fields": {
+        "category": 17,
+        "name": "Millennials",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:16:54.401Z",
+        "updated_at": "2023-01-27T22:16:54.401Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 228,
+    "fields": {
+        "category": 17,
+        "name": "Generation Z",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:17:11.931Z",
+        "updated_at": "2023-01-27T22:17:11.931Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 229,
+    "fields": {
+        "category": 18,
+        "name": "Partying",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:17:52.349Z",
+        "updated_at": "2023-01-27T22:17:52.349Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 230,
+    "fields": {
+        "category": 18,
+        "name": "Reading",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:18:06.221Z",
+        "updated_at": "2023-01-27T22:18:06.221Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 231,
+    "fields": {
+        "category": 18,
+        "name": "Writing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:18:21.029Z",
+        "updated_at": "2023-01-27T22:18:21.029Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 232,
+    "fields": {
+        "category": 18,
+        "name": "Shopping",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:18:35.757Z",
+        "updated_at": "2023-01-27T22:18:35.757Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 233,
+    "fields": {
+        "category": 18,
+        "name": "Bar Hopping",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:18:51.853Z",
+        "updated_at": "2023-01-27T22:18:51.853Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 234,
+    "fields": {
+        "category": 18,
+        "name": "Museums",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:19:07.408Z",
+        "updated_at": "2023-01-27T22:19:07.408Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 235,
+    "fields": {
+        "category": 18,
+        "name": "Gardens",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T22:20:22.370Z",
+        "updated_at": "2023-01-27T22:20:22.370Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 236,
+    "fields": {
+        "category": 18,
+        "name": "Movies",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T22:20:38.075Z",
+        "updated_at": "2023-01-27T22:20:38.075Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 237,
+    "fields": {
+        "category": 18,
+        "name": "Events",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T22:20:51.902Z",
+        "updated_at": "2023-01-27T22:20:51.902Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 238,
+    "fields": {
+        "category": 18,
+        "name": "Art Gallery",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T22:21:07.941Z",
+        "updated_at": "2023-01-27T22:21:55.457Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 239,
+    "fields": {
+        "category": 18,
+        "name": "Wedding",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T22:22:16.783Z",
+        "updated_at": "2023-01-27T22:22:16.783Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 240,
+    "fields": {
+        "category": 18,
+        "name": "Baby Shower",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T22:22:41.819Z",
+        "updated_at": "2023-01-27T22:22:41.819Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 241,
+    "fields": {
+        "category": 19,
+        "name": "Graduation",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:23:43.045Z",
+        "updated_at": "2023-01-27T22:23:43.045Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 242,
+    "fields": {
+        "category": 19,
+        "name": "Marriage",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:23:56.076Z",
+        "updated_at": "2023-01-27T22:23:56.076Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 243,
+    "fields": {
+        "category": 19,
+        "name": "Divorce",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:24:09.182Z",
+        "updated_at": "2023-01-27T22:24:09.182Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 244,
+    "fields": {
+        "category": 19,
+        "name": "Poligamy",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:24:25.668Z",
+        "updated_at": "2023-01-27T22:24:25.668Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 245,
+    "fields": {
+        "category": 19,
+        "name": "Celebate",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:24:42.678Z",
+        "updated_at": "2023-01-27T22:24:42.678Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 246,
+    "fields": {
+        "category": 19,
+        "name": "Single",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:25:07.487Z",
+        "updated_at": "2023-01-27T22:25:07.487Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 247,
+    "fields": {
+        "category": 19,
+        "name": "Pregnant",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T22:25:37.283Z",
+        "updated_at": "2023-01-27T22:25:37.283Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 248,
+    "fields": {
+        "category": 19,
+        "name": "Dating",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T22:25:57.419Z",
+        "updated_at": "2023-01-27T22:25:57.419Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 249,
+    "fields": {
+        "category": 19,
+        "name": "Retirement",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T22:26:22.979Z",
+        "updated_at": "2023-01-27T22:26:22.979Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 250,
+    "fields": {
+        "category": 20,
+        "name": "Babysitters",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:39:32.741Z",
+        "updated_at": "2023-01-27T22:39:32.741Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 251,
+    "fields": {
+        "category": 20,
+        "name": "Dog Walkers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:39:32.751Z",
+        "updated_at": "2023-01-27T22:39:32.751Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 252,
+    "fields": {
+        "category": 20,
+        "name": "Locksmith",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:39:32.754Z",
+        "updated_at": "2023-01-27T22:39:32.754Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 253,
+    "fields": {
+        "category": 20,
+        "name": "Moving",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:39:32.757Z",
+        "updated_at": "2023-01-27T22:39:32.757Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 254,
+    "fields": {
+        "category": 20,
+        "name": "Towing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:39:32.761Z",
+        "updated_at": "2023-01-27T22:39:32.761Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 255,
+    "fields": {
+        "category": 20,
+        "name": "Plumber",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:39:32.764Z",
+        "updated_at": "2023-01-27T22:39:32.764Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 256,
+    "fields": {
+        "category": 20,
+        "name": "Homes For Sale",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T22:39:32.767Z",
+        "updated_at": "2023-01-27T22:39:32.767Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 257,
+    "fields": {
+        "category": 20,
+        "name": "Apartment Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T22:39:32.770Z",
+        "updated_at": "2023-01-27T22:39:32.770Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 258,
+    "fields": {
+        "category": 20,
+        "name": "Room Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T22:39:32.773Z",
+        "updated_at": "2023-01-27T22:39:32.773Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 259,
+    "fields": {
+        "category": 20,
+        "name": "Commercial Space",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T22:39:32.776Z",
+        "updated_at": "2023-01-27T22:39:32.776Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 260,
+    "fields": {
+        "category": 20,
+        "name": "Pool Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T22:39:32.779Z",
+        "updated_at": "2023-01-27T22:39:32.779Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 261,
+    "fields": {
+        "category": 20,
+        "name": "Car Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T22:39:32.782Z",
+        "updated_at": "2023-01-27T22:39:32.782Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 262,
+    "fields": {
+        "category": 20,
+        "name": "Car For Sale",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T22:39:32.785Z",
+        "updated_at": "2023-01-27T22:39:32.785Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 263,
+    "fields": {
+        "category": 20,
+        "name": "Garage Rentals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T22:39:32.789Z",
+        "updated_at": "2023-01-27T22:39:32.789Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 264,
+    "fields": {
+        "category": 20,
+        "name": "Handy Person",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 15,
+        "created_at": "2023-01-27T22:39:32.793Z",
+        "updated_at": "2023-01-27T22:39:32.793Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 265,
+    "fields": {
+        "category": 20,
+        "name": "Cleaning",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 16,
+        "created_at": "2023-01-27T22:39:32.796Z",
+        "updated_at": "2023-01-27T22:39:32.796Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 266,
+    "fields": {
+        "category": 20,
+        "name": "Electrician",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 17,
+        "created_at": "2023-01-27T22:39:32.799Z",
+        "updated_at": "2023-01-27T22:39:32.799Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 267,
+    "fields": {
+        "category": 20,
+        "name": "Roofing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 18,
+        "created_at": "2023-01-27T22:39:32.803Z",
+        "updated_at": "2023-01-27T22:39:32.803Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 268,
+    "fields": {
+        "category": 20,
+        "name": "Contractors",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 19,
+        "created_at": "2023-01-27T22:39:32.805Z",
+        "updated_at": "2023-01-27T22:39:32.806Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 269,
+    "fields": {
+        "category": 20,
+        "name": "Landscaping",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 20,
+        "created_at": "2023-01-27T22:39:32.808Z",
+        "updated_at": "2023-01-27T22:39:32.809Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 270,
+    "fields": {
+        "category": 20,
+        "name": "Pest Control",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 21,
+        "created_at": "2023-01-27T22:39:32.811Z",
+        "updated_at": "2023-01-27T22:39:32.811Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 271,
+    "fields": {
+        "category": 20,
+        "name": "Everything Pets",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 22,
+        "created_at": "2023-01-27T22:39:32.814Z",
+        "updated_at": "2023-01-27T22:39:32.814Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 272,
+    "fields": {
+        "category": 20,
+        "name": "Jobs",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 23,
+        "created_at": "2023-01-27T22:39:32.817Z",
+        "updated_at": "2023-01-27T22:39:32.817Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 273,
+    "fields": {
+        "category": 20,
+        "name": "Gigs",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 24,
+        "created_at": "2023-01-27T22:39:32.820Z",
+        "updated_at": "2023-01-27T22:39:32.820Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 274,
+    "fields": {
+        "category": 20,
+        "name": "Wedding Services",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 25,
+        "created_at": "2023-01-27T22:39:32.824Z",
+        "updated_at": "2023-01-27T22:39:32.824Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 275,
+    "fields": {
+        "category": 20,
+        "name": "Models/Actors",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 26,
+        "created_at": "2023-01-27T22:39:32.827Z",
+        "updated_at": "2023-01-27T22:39:32.827Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 276,
+    "fields": {
+        "category": 20,
+        "name": "Casting",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 27,
+        "created_at": "2023-01-27T22:39:32.829Z",
+        "updated_at": "2023-01-27T22:39:32.830Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 277,
+    "fields": {
+        "category": 21,
+        "name": "Alberta’s Oil",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:42:26.108Z",
+        "updated_at": "2023-01-27T22:42:26.108Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 278,
+    "fields": {
+        "category": 21,
+        "name": "British Columbia’s Natural Beauty",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:42:44.295Z",
+        "updated_at": "2023-01-27T22:42:44.295Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 279,
+    "fields": {
+        "category": 21,
+        "name": "Manitoba Polar Bears",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:43:03.221Z",
+        "updated_at": "2023-01-27T22:43:03.221Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 280,
+    "fields": {
+        "category": 21,
+        "name": "New Brunswick’s Lighthouse",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:43:20.686Z",
+        "updated_at": "2023-01-27T22:43:20.686Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 281,
+    "fields": {
+        "category": 21,
+        "name": "Newfoundland and Labrador’s Culture",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:43:38.142Z",
+        "updated_at": "2023-01-27T22:43:38.142Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 282,
+    "fields": {
+        "category": 21,
+        "name": "Northwest Territories Precious Metals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:43:54.039Z",
+        "updated_at": "2023-01-27T22:43:54.039Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 283,
+    "fields": {
+        "category": 21,
+        "name": "Nova Scotia Fishers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T22:44:08.021Z",
+        "updated_at": "2023-01-27T22:44:08.021Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 284,
+    "fields": {
+        "category": 21,
+        "name": "Nunavut’s Narwhals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T22:44:27.820Z",
+        "updated_at": "2023-01-27T22:44:27.820Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 285,
+    "fields": {
+        "category": 21,
+        "name": "Ontario’s Niagara Falls",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T22:44:45.335Z",
+        "updated_at": "2023-01-27T22:44:45.335Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 286,
+    "fields": {
+        "category": 21,
+        "name": "Prince Edward Island’s Green Gables",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T22:45:05.951Z",
+        "updated_at": "2023-01-27T22:45:05.951Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 287,
+    "fields": {
+        "category": 21,
+        "name": "Quebec’s Maple Syrup",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T22:45:25.299Z",
+        "updated_at": "2023-01-27T22:45:25.299Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 288,
+    "fields": {
+        "category": 17,
+        "name": "Saskatchewan The Breadbasket",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T22:45:39.913Z",
+        "updated_at": "2023-01-27T22:45:39.913Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 289,
+    "fields": {
+        "category": 21,
+        "name": "Yukon The Land Of The Midnight Sun",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T22:45:55.697Z",
+        "updated_at": "2023-01-27T22:45:55.697Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 290,
+    "fields": {
+        "category": 22,
+        "name": "Black Lives Matter",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T22:46:58.585Z",
+        "updated_at": "2023-01-27T22:53:15.371Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 291,
+    "fields": {
+        "category": 22,
+        "name": "Abortion",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T22:47:13.004Z",
+        "updated_at": "2023-01-27T22:54:03.497Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 292,
+    "fields": {
+        "category": 22,
+        "name": "Election",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T22:47:27.258Z",
+        "updated_at": "2023-01-27T22:54:30.222Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 293,
+    "fields": {
+        "category": 21,
+        "name": "Racism",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T22:47:41.391Z",
+        "updated_at": "2023-01-27T22:47:41.391Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 294,
+    "fields": {
+        "category": 21,
+        "name": "Immigration",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T22:47:56.300Z",
+        "updated_at": "2023-01-27T22:47:56.300Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 295,
+    "fields": {
+        "category": 21,
+        "name": "●Gun Contro",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T22:48:19.888Z",
+        "updated_at": "2023-01-27T22:48:19.888Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 296,
+    "fields": {
+        "category": 21,
+        "name": "Vaccines",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-27T22:48:38.179Z",
+        "updated_at": "2023-01-27T22:48:38.179Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 297,
+    "fields": {
+        "category": 21,
+        "name": "Animal Cruelty",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-27T22:48:53.989Z",
+        "updated_at": "2023-01-27T22:48:53.989Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 298,
+    "fields": {
+        "category": 22,
+        "name": "COP26",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-27T22:49:07.501Z",
+        "updated_at": "2023-01-27T23:02:51.569Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 299,
+    "fields": {
+        "category": 22,
+        "name": "COVID-19",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-27T22:49:30.504Z",
+        "updated_at": "2023-01-27T23:03:14.755Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 300,
+    "fields": {
+        "category": 22,
+        "name": "War In Ukraine",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-27T23:04:21.879Z",
+        "updated_at": "2023-01-27T23:04:21.879Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 301,
+    "fields": {
+        "category": 22,
+        "name": "Woke Movement",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-27T23:05:00.235Z",
+        "updated_at": "2023-01-27T23:05:00.235Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 302,
+    "fields": {
+        "category": 22,
+        "name": "Cancel Culture",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-27T23:06:01.933Z",
+        "updated_at": "2023-01-27T23:06:01.933Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 303,
+    "fields": {
+        "category": 22,
+        "name": "Police Brutality",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-27T23:06:22.675Z",
+        "updated_at": "2023-01-27T23:06:22.675Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 304,
+    "fields": {
+        "category": 22,
+        "name": "Extraterrestrials are real",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 15,
+        "created_at": "2023-01-27T23:07:15.953Z",
+        "updated_at": "2023-01-27T23:07:15.953Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 305,
+    "fields": {
+        "category": 22,
+        "name": "Flat Earthers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 16,
+        "created_at": "2023-01-27T23:07:35.598Z",
+        "updated_at": "2023-01-27T23:07:35.598Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 306,
+    "fields": {
+        "category": 23,
+        "name": "Liberal Party",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-27T23:08:57.637Z",
+        "updated_at": "2023-01-27T23:08:57.637Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 307,
+    "fields": {
+        "category": 23,
+        "name": "Conservative Party",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-27T23:09:11.724Z",
+        "updated_at": "2023-01-27T23:09:11.724Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 308,
+    "fields": {
+        "category": 23,
+        "name": "New Democratic Party",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-27T23:09:27.881Z",
+        "updated_at": "2023-01-27T23:09:27.881Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 309,
+    "fields": {
+        "category": 23,
+        "name": "Law Reform",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-27T23:10:56.230Z",
+        "updated_at": "2023-01-27T23:10:56.230Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 310,
+    "fields": {
+        "category": 23,
+        "name": "Bloc Québécois",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-27T23:11:34.768Z",
+        "updated_at": "2023-01-27T23:11:34.768Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 311,
+    "fields": {
+        "category": 23,
+        "name": "Green Party",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-27T23:11:51.305Z",
+        "updated_at": "2023-01-27T23:11:51.305Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 312,
+    "fields": {
+        "category": 24,
+        "name": "Football Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:10:07.990Z",
+        "updated_at": "2023-01-29T19:10:07.990Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 313,
+    "fields": {
+        "category": 24,
+        "name": "Basketball Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:10:08.002Z",
+        "updated_at": "2023-01-29T19:10:08.002Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 314,
+    "fields": {
+        "category": 24,
+        "name": "Baseball Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:10:08.006Z",
+        "updated_at": "2023-01-29T19:10:08.006Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 315,
+    "fields": {
+        "category": 24,
+        "name": "Cricket Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:10:08.009Z",
+        "updated_at": "2023-01-29T19:10:08.009Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 316,
+    "fields": {
+        "category": 24,
+        "name": "Soccer Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:10:08.012Z",
+        "updated_at": "2023-01-29T19:10:08.012Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 317,
+    "fields": {
+        "category": 24,
+        "name": "Tennis Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:10:08.015Z",
+        "updated_at": "2023-01-29T19:10:08.015Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 318,
+    "fields": {
+        "category": 24,
+        "name": "Golf Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:10:08.018Z",
+        "updated_at": "2023-01-29T19:10:08.018Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 319,
+    "fields": {
+        "category": 24,
+        "name": "Bowling Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:10:08.021Z",
+        "updated_at": "2023-01-29T19:10:08.021Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 320,
+    "fields": {
+        "category": 24,
+        "name": "Surf Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:10:08.024Z",
+        "updated_at": "2023-01-29T19:10:08.024Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 321,
+    "fields": {
+        "category": 24,
+        "name": "Extreme Sports Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-29T19:10:08.027Z",
+        "updated_at": "2023-01-29T19:10:08.027Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 322,
+    "fields": {
+        "category": 25,
+        "name": "Crypto Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:11:51.921Z",
+        "updated_at": "2023-01-29T19:11:51.921Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 323,
+    "fields": {
+        "category": 25,
+        "name": "Forex Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:11:51.929Z",
+        "updated_at": "2023-01-29T19:11:51.929Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 324,
+    "fields": {
+        "category": 25,
+        "name": "Day Trading Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:11:51.932Z",
+        "updated_at": "2023-01-29T19:11:51.932Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 325,
+    "fields": {
+        "category": 25,
+        "name": "Bonds Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:11:51.935Z",
+        "updated_at": "2023-01-29T19:11:51.935Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 326,
+    "fields": {
+        "category": 25,
+        "name": "Swing Trading Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:11:51.938Z",
+        "updated_at": "2023-01-29T19:11:51.938Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 327,
+    "fields": {
+        "category": 25,
+        "name": "Options Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:11:51.941Z",
+        "updated_at": "2023-01-29T19:11:51.941Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 328,
+    "fields": {
+        "category": 25,
+        "name": "Real Estate Chat",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:11:51.944Z",
+        "updated_at": "2023-01-29T19:11:51.944Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 329,
+    "fields": {
+        "category": 26,
+        "name": "Straight",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:12:35.046Z",
+        "updated_at": "2023-01-29T19:12:35.046Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 330,
+    "fields": {
+        "category": 26,
+        "name": "Gay",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:12:35.054Z",
+        "updated_at": "2023-01-29T19:12:35.054Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 331,
+    "fields": {
+        "category": 26,
+        "name": "Lesbian",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:12:35.057Z",
+        "updated_at": "2023-01-29T19:12:35.057Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 332,
+    "fields": {
+        "category": 26,
+        "name": "Transexual",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:12:35.060Z",
+        "updated_at": "2023-01-29T19:12:35.060Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 333,
+    "fields": {
+        "category": 26,
+        "name": "Bi-sexual",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:12:35.063Z",
+        "updated_at": "2023-01-29T19:12:35.063Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 334,
+    "fields": {
+        "category": 26,
+        "name": "LGBTQ",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:12:35.065Z",
+        "updated_at": "2023-01-29T19:12:35.065Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 335,
+    "fields": {
+        "category": 26,
+        "name": "BDSM",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:12:35.068Z",
+        "updated_at": "2023-01-29T19:12:35.068Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 336,
+    "fields": {
+        "category": 27,
+        "name": "Fishing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:13:28.491Z",
+        "updated_at": "2023-01-29T19:13:28.491Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 337,
+    "fields": {
+        "category": 27,
+        "name": "Hiking",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:13:28.497Z",
+        "updated_at": "2023-01-29T19:13:28.497Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 338,
+    "fields": {
+        "category": 27,
+        "name": "Climbing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:13:28.498Z",
+        "updated_at": "2023-01-29T19:13:28.498Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 339,
+    "fields": {
+        "category": 27,
+        "name": "Surfing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:13:28.499Z",
+        "updated_at": "2023-01-29T19:13:28.499Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 340,
+    "fields": {
+        "category": 27,
+        "name": "Dancing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:13:28.500Z",
+        "updated_at": "2023-01-29T19:13:28.500Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 341,
+    "fields": {
+        "category": 27,
+        "name": "Gardening",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:13:28.501Z",
+        "updated_at": "2023-01-29T19:13:28.501Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 342,
+    "fields": {
+        "category": 27,
+        "name": "Photography",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:13:28.502Z",
+        "updated_at": "2023-01-29T19:13:28.502Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 343,
+    "fields": {
+        "category": 27,
+        "name": "Gamer",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:13:28.503Z",
+        "updated_at": "2023-01-29T19:13:28.503Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 344,
+    "fields": {
+        "category": 27,
+        "name": "Painting",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:13:28.504Z",
+        "updated_at": "2023-01-29T19:13:28.504Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 345,
+    "fields": {
+        "category": 27,
+        "name": "Drawing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-29T19:13:28.505Z",
+        "updated_at": "2023-01-29T19:13:28.505Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 346,
+    "fields": {
+        "category": 27,
+        "name": "Graffiti",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-29T19:13:28.506Z",
+        "updated_at": "2023-01-29T19:13:28.506Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 347,
+    "fields": {
+        "category": 27,
+        "name": "Biking",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-29T19:13:28.508Z",
+        "updated_at": "2023-01-29T19:13:28.508Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 348,
+    "fields": {
+        "category": 27,
+        "name": "Travel",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-29T19:13:28.510Z",
+        "updated_at": "2023-01-29T19:13:28.510Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 349,
+    "fields": {
+        "category": 28,
+        "name": "Weight Lifting Madness",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:14:11.379Z",
+        "updated_at": "2023-01-29T19:14:11.379Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 350,
+    "fields": {
+        "category": 28,
+        "name": "Calisthenic",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:14:11.387Z",
+        "updated_at": "2023-01-29T19:14:11.387Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 351,
+    "fields": {
+        "category": 28,
+        "name": "Yoga",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:14:11.390Z",
+        "updated_at": "2023-01-29T19:14:11.391Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 352,
+    "fields": {
+        "category": 28,
+        "name": "Swimming",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:14:11.393Z",
+        "updated_at": "2023-01-29T19:14:11.393Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 353,
+    "fields": {
+        "category": 28,
+        "name": "Running",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:14:11.397Z",
+        "updated_at": "2023-01-29T19:14:11.397Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 354,
+    "fields": {
+        "category": 28,
+        "name": "Endurance",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:14:11.400Z",
+        "updated_at": "2023-01-29T19:14:11.400Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 355,
+    "fields": {
+        "category": 28,
+        "name": "Aerobics",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:14:11.403Z",
+        "updated_at": "2023-01-29T19:14:11.403Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 356,
+    "fields": {
+        "category": 29,
+        "name": "Muslim",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:15:24.649Z",
+        "updated_at": "2023-01-29T19:15:24.649Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 357,
+    "fields": {
+        "category": 29,
+        "name": "Christian",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:15:24.655Z",
+        "updated_at": "2023-01-29T19:15:24.655Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 358,
+    "fields": {
+        "category": 29,
+        "name": "Catholic",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:15:24.656Z",
+        "updated_at": "2023-01-29T19:15:24.656Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 359,
+    "fields": {
+        "category": 29,
+        "name": "Hindu",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:15:24.658Z",
+        "updated_at": "2023-01-29T19:15:24.658Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 360,
+    "fields": {
+        "category": 29,
+        "name": "Buddhism",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:15:24.659Z",
+        "updated_at": "2023-01-29T19:15:24.659Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 361,
+    "fields": {
+        "category": 29,
+        "name": "Atheist",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:15:24.659Z",
+        "updated_at": "2023-01-29T19:15:24.660Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 362,
+    "fields": {
+        "category": 29,
+        "name": "Jewish",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:15:24.661Z",
+        "updated_at": "2023-01-29T19:15:24.661Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 363,
+    "fields": {
+        "category": 29,
+        "name": "Pagan",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:15:24.662Z",
+        "updated_at": "2023-01-29T19:15:24.662Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 364,
+    "fields": {
+        "category": 30,
+        "name": "Marketers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:16:10.192Z",
+        "updated_at": "2023-01-29T19:16:10.192Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 365,
+    "fields": {
+        "category": 30,
+        "name": "Lawer",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:16:10.200Z",
+        "updated_at": "2023-01-29T19:16:10.200Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 366,
+    "fields": {
+        "category": 30,
+        "name": "Medical",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:16:10.202Z",
+        "updated_at": "2023-01-29T19:16:10.202Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 367,
+    "fields": {
+        "category": 30,
+        "name": "Computer Programmers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:16:10.205Z",
+        "updated_at": "2023-01-29T19:16:10.205Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 368,
+    "fields": {
+        "category": 30,
+        "name": "Police Officers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:16:10.208Z",
+        "updated_at": "2023-01-29T19:16:10.208Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 369,
+    "fields": {
+        "category": 30,
+        "name": "Fire Fighters",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:16:10.211Z",
+        "updated_at": "2023-01-29T19:16:10.211Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 370,
+    "fields": {
+        "category": 30,
+        "name": "Corporate Professionals",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:16:10.213Z",
+        "updated_at": "2023-01-29T19:16:10.213Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 371,
+    "fields": {
+        "category": 30,
+        "name": "Construction",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:16:10.216Z",
+        "updated_at": "2023-01-29T19:16:10.216Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 372,
+    "fields": {
+        "category": 30,
+        "name": "Chefs",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:16:10.219Z",
+        "updated_at": "2023-01-29T19:16:10.219Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 373,
+    "fields": {
+        "category": 30,
+        "name": "Engineers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-29T19:16:10.222Z",
+        "updated_at": "2023-01-29T19:16:10.222Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 374,
+    "fields": {
+        "category": 30,
+        "name": "Teachers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-29T19:16:10.226Z",
+        "updated_at": "2023-01-29T19:16:10.226Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 375,
+    "fields": {
+        "category": 30,
+        "name": "Architects",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-29T19:16:10.229Z",
+        "updated_at": "2023-01-29T19:16:10.229Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 376,
+    "fields": {
+        "category": 30,
+        "name": "Drivers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-29T19:16:10.232Z",
+        "updated_at": "2023-01-29T19:16:10.232Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 377,
+    "fields": {
+        "category": 30,
+        "name": "Aviation",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-29T19:16:10.236Z",
+        "updated_at": "2023-01-29T19:16:10.236Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 378,
+    "fields": {
+        "category": 30,
+        "name": "Beauty",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 15,
+        "created_at": "2023-01-29T19:16:10.239Z",
+        "updated_at": "2023-01-29T19:16:10.240Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 379,
+    "fields": {
+        "category": 30,
+        "name": "Entertainment",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 16,
+        "created_at": "2023-01-29T19:16:10.243Z",
+        "updated_at": "2023-01-29T19:16:10.243Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 380,
+    "fields": {
+        "category": 30,
+        "name": "Authors",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 17,
+        "created_at": "2023-01-29T19:16:10.246Z",
+        "updated_at": "2023-01-29T19:16:10.246Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 381,
+    "fields": {
+        "category": 30,
+        "name": "Real Estate Agents",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 18,
+        "created_at": "2023-01-29T19:16:10.249Z",
+        "updated_at": "2023-01-29T19:16:10.249Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 382,
+    "fields": {
+        "category": 30,
+        "name": "Stock Brokers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 19,
+        "created_at": "2023-01-29T19:16:10.252Z",
+        "updated_at": "2023-01-29T19:16:10.252Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 383,
+    "fields": {
+        "category": 31,
+        "name": "Astronomy",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:16:53.745Z",
+        "updated_at": "2023-01-29T19:16:53.745Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 384,
+    "fields": {
+        "category": 31,
+        "name": "Biology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:16:53.748Z",
+        "updated_at": "2023-01-29T19:16:53.748Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 385,
+    "fields": {
+        "category": 31,
+        "name": "Chemistry",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:16:53.751Z",
+        "updated_at": "2023-01-29T19:16:53.751Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 386,
+    "fields": {
+        "category": 31,
+        "name": "Physics",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:16:53.754Z",
+        "updated_at": "2023-01-29T19:16:53.754Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 387,
+    "fields": {
+        "category": 31,
+        "name": "Geography",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:16:53.756Z",
+        "updated_at": "2023-01-29T19:16:53.756Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 388,
+    "fields": {
+        "category": 31,
+        "name": "Geology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:16:53.760Z",
+        "updated_at": "2023-01-29T19:16:53.760Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 389,
+    "fields": {
+        "category": 31,
+        "name": "Botany",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:16:53.763Z",
+        "updated_at": "2023-01-29T19:16:53.763Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 390,
+    "fields": {
+        "category": 31,
+        "name": "Zoology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:16:53.765Z",
+        "updated_at": "2023-01-29T19:16:53.765Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 391,
+    "fields": {
+        "category": 31,
+        "name": "Oceanography",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:16:53.768Z",
+        "updated_at": "2023-01-29T19:16:53.768Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 392,
+    "fields": {
+        "category": 31,
+        "name": "Meteorology",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-29T19:16:53.771Z",
+        "updated_at": "2023-01-29T19:16:53.771Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 393,
+    "fields": {
+        "category": 32,
+        "name": "Hip Hop",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:17:50.648Z",
+        "updated_at": "2023-01-29T19:17:50.648Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 394,
+    "fields": {
+        "category": 32,
+        "name": "Pop",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:17:50.651Z",
+        "updated_at": "2023-01-29T19:17:50.651Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 395,
+    "fields": {
+        "category": 32,
+        "name": "Country",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:17:50.652Z",
+        "updated_at": "2023-01-29T19:17:50.652Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 396,
+    "fields": {
+        "category": 32,
+        "name": "Folk",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:17:50.654Z",
+        "updated_at": "2023-01-29T19:17:50.654Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 397,
+    "fields": {
+        "category": 32,
+        "name": "House",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:17:50.656Z",
+        "updated_at": "2023-01-29T19:17:50.656Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 398,
+    "fields": {
+        "category": 32,
+        "name": "Rock",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:17:50.658Z",
+        "updated_at": "2023-01-29T19:17:50.658Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 399,
+    "fields": {
+        "category": 32,
+        "name": "Metal",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:17:50.659Z",
+        "updated_at": "2023-01-29T19:17:50.659Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 400,
+    "fields": {
+        "category": 32,
+        "name": "Classical",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:17:50.661Z",
+        "updated_at": "2023-01-29T19:17:50.661Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 401,
+    "fields": {
+        "category": 32,
+        "name": "Latin",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:17:50.662Z",
+        "updated_at": "2023-01-29T19:17:50.662Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 402,
+    "fields": {
+        "category": 32,
+        "name": "Soul",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-29T19:17:50.665Z",
+        "updated_at": "2023-01-29T19:17:50.665Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 403,
+    "fields": {
+        "category": 32,
+        "name": "Dubstep",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-29T19:17:50.666Z",
+        "updated_at": "2023-01-29T19:17:50.666Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 404,
+    "fields": {
+        "category": 32,
+        "name": "Trance",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-29T19:17:50.667Z",
+        "updated_at": "2023-01-29T19:17:50.667Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 405,
+    "fields": {
+        "category": 32,
+        "name": "Alternate Rock",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-29T19:17:50.669Z",
+        "updated_at": "2023-01-29T19:17:50.669Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 406,
+    "fields": {
+        "category": 32,
+        "name": "Opera",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-29T19:17:50.670Z",
+        "updated_at": "2023-01-29T19:17:50.670Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 407,
+    "fields": {
+        "category": 33,
+        "name": "Horror",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:20:51.252Z",
+        "updated_at": "2023-01-29T19:20:51.252Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 408,
+    "fields": {
+        "category": 33,
+        "name": "Comedy",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:20:51.255Z",
+        "updated_at": "2023-01-29T19:20:51.255Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 409,
+    "fields": {
+        "category": 33,
+        "name": "Action",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:20:51.259Z",
+        "updated_at": "2023-01-29T19:20:51.259Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 410,
+    "fields": {
+        "category": 33,
+        "name": "Drama",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:20:51.261Z",
+        "updated_at": "2023-01-29T19:20:51.261Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 411,
+    "fields": {
+        "category": 33,
+        "name": "Love",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:20:51.264Z",
+        "updated_at": "2023-01-29T19:20:51.264Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 412,
+    "fields": {
+        "category": 33,
+        "name": "Science Fiction",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:20:51.267Z",
+        "updated_at": "2023-01-29T19:20:51.267Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 413,
+    "fields": {
+        "category": 33,
+        "name": "Western",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:20:51.269Z",
+        "updated_at": "2023-01-29T19:20:51.270Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 414,
+    "fields": {
+        "category": 33,
+        "name": "Thriller",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:20:51.272Z",
+        "updated_at": "2023-01-29T19:20:51.272Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 415,
+    "fields": {
+        "category": 34,
+        "name": "Christmas",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:21:11.623Z",
+        "updated_at": "2023-01-29T19:21:11.623Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 416,
+    "fields": {
+        "category": 34,
+        "name": "Thanksgiving",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:21:11.629Z",
+        "updated_at": "2023-01-29T19:21:11.629Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 417,
+    "fields": {
+        "category": 34,
+        "name": "Halloween",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:21:11.630Z",
+        "updated_at": "2023-01-29T19:21:11.630Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 418,
+    "fields": {
+        "category": 34,
+        "name": "Eid",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:21:11.631Z",
+        "updated_at": "2023-01-29T19:21:11.631Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 419,
+    "fields": {
+        "category": 34,
+        "name": "Hanukkah",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:21:11.632Z",
+        "updated_at": "2023-01-29T19:21:11.632Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 420,
+    "fields": {
+        "category": 34,
+        "name": "Easter",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:21:11.633Z",
+        "updated_at": "2023-01-29T19:21:11.633Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 421,
+    "fields": {
+        "category": 35,
+        "name": "S&M",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:21:26.704Z",
+        "updated_at": "2023-01-29T19:21:26.704Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 422,
+    "fields": {
+        "category": 35,
+        "name": "Gothic",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:21:26.712Z",
+        "updated_at": "2023-01-29T19:21:26.712Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 423,
+    "fields": {
+        "category": 35,
+        "name": "Emo",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:21:26.715Z",
+        "updated_at": "2023-01-29T19:21:26.715Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 424,
+    "fields": {
+        "category": 35,
+        "name": "Vampire",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:21:26.717Z",
+        "updated_at": "2023-01-29T19:21:26.717Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 425,
+    "fields": {
+        "category": 35,
+        "name": "Hippie",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:21:26.720Z",
+        "updated_at": "2023-01-29T19:21:26.720Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 426,
+    "fields": {
+        "category": 35,
+        "name": "Punk",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:21:26.723Z",
+        "updated_at": "2023-01-29T19:21:26.723Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 427,
+    "fields": {
+        "category": 35,
+        "name": "New age",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:21:26.726Z",
+        "updated_at": "2023-01-29T19:21:26.726Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 428,
+    "fields": {
+        "category": 35,
+        "name": "Fandom",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:21:26.729Z",
+        "updated_at": "2023-01-29T19:21:26.729Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 429,
+    "fields": {
+        "category": 35,
+        "name": "Grunge",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:21:26.732Z",
+        "updated_at": "2023-01-29T19:21:26.732Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 430,
+    "fields": {
+        "category": 35,
+        "name": "Bohemian",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-29T19:21:26.735Z",
+        "updated_at": "2023-01-29T19:21:26.735Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 431,
+    "fields": {
+        "category": 35,
+        "name": "Deaf",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-29T19:21:26.739Z",
+        "updated_at": "2023-01-29T19:21:26.739Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 432,
+    "fields": {
+        "category": 35,
+        "name": "Little People",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-29T19:21:26.742Z",
+        "updated_at": "2023-01-29T19:21:26.742Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 433,
+    "fields": {
+        "category": 35,
+        "name": "Mute",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 13,
+        "created_at": "2023-01-29T19:21:26.745Z",
+        "updated_at": "2023-01-29T19:21:26.745Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 434,
+    "fields": {
+        "category": 35,
+        "name": "Disabled",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 14,
+        "created_at": "2023-01-29T19:21:26.748Z",
+        "updated_at": "2023-01-29T19:21:26.748Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 435,
+    "fields": {
+        "category": 36,
+        "name": "Baby Boomers",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:21:41.360Z",
+        "updated_at": "2023-01-29T19:21:41.360Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 436,
+    "fields": {
+        "category": 36,
+        "name": "Generation Jones",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:21:41.368Z",
+        "updated_at": "2023-01-29T19:21:41.368Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 437,
+    "fields": {
+        "category": 36,
+        "name": "Generation X",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:21:41.371Z",
+        "updated_at": "2023-01-29T19:21:41.371Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 438,
+    "fields": {
+        "category": 36,
+        "name": "Millennials",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:21:41.374Z",
+        "updated_at": "2023-01-29T19:21:41.374Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 439,
+    "fields": {
+        "category": 36,
+        "name": "Generation Z",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:21:41.377Z",
+        "updated_at": "2023-01-29T19:21:41.377Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 440,
+    "fields": {
+        "category": 36,
+        "name": "Saskatchewan The Breadbasket",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-29T19:21:41.379Z",
+        "updated_at": "2023-01-29T19:21:41.380Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 441,
+    "fields": {
+        "category": 37,
+        "name": "Partying",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:22:02.091Z",
+        "updated_at": "2023-01-29T19:22:02.091Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 442,
+    "fields": {
+        "category": 37,
+        "name": "Reading",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:22:02.098Z",
+        "updated_at": "2023-01-29T19:22:02.098Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 443,
+    "fields": {
+        "category": 37,
+        "name": "Writing",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:22:02.101Z",
+        "updated_at": "2023-01-29T19:22:02.101Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 444,
+    "fields": {
+        "category": 37,
+        "name": "Shopping",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:22:02.104Z",
+        "updated_at": "2023-01-29T19:22:02.104Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 445,
+    "fields": {
+        "category": 37,
+        "name": "Bar Hopping",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:22:02.107Z",
+        "updated_at": "2023-01-29T19:22:02.107Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 446,
+    "fields": {
+        "category": 37,
+        "name": "Museums",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:22:02.110Z",
+        "updated_at": "2023-01-29T19:22:02.110Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 447,
+    "fields": {
+        "category": 37,
+        "name": "Gardens",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:22:02.114Z",
+        "updated_at": "2023-01-29T19:22:02.114Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 448,
+    "fields": {
+        "category": 37,
+        "name": "Movies",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:22:02.116Z",
+        "updated_at": "2023-01-29T19:22:02.116Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 449,
+    "fields": {
+        "category": 37,
+        "name": "Events",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:22:02.119Z",
+        "updated_at": "2023-01-29T19:22:02.119Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 450,
+    "fields": {
+        "category": 37,
+        "name": "Art Gallery",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 10,
+        "created_at": "2023-01-29T19:22:02.120Z",
+        "updated_at": "2023-01-29T19:22:02.120Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 451,
+    "fields": {
+        "category": 37,
+        "name": "Wedding",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 11,
+        "created_at": "2023-01-29T19:22:02.122Z",
+        "updated_at": "2023-01-29T19:22:02.122Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 452,
+    "fields": {
+        "category": 37,
+        "name": "Baby Shower",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-29T19:22:02.124Z",
+        "updated_at": "2023-01-29T19:22:02.124Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 453,
+    "fields": {
+        "category": 38,
+        "name": "Graduation",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 1,
+        "created_at": "2023-01-29T19:22:17.940Z",
+        "updated_at": "2023-01-29T19:22:17.940Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 454,
+    "fields": {
+        "category": 38,
+        "name": "Marriage",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 2,
+        "created_at": "2023-01-29T19:22:17.947Z",
+        "updated_at": "2023-01-29T19:22:17.947Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 455,
+    "fields": {
+        "category": 38,
+        "name": "Divorce",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 3,
+        "created_at": "2023-01-29T19:22:17.949Z",
+        "updated_at": "2023-01-29T19:22:17.949Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 456,
+    "fields": {
+        "category": 38,
+        "name": "Poligamy",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 4,
+        "created_at": "2023-01-29T19:22:17.950Z",
+        "updated_at": "2023-01-29T19:22:17.950Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 457,
+    "fields": {
+        "category": 38,
+        "name": "Celebate",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 5,
+        "created_at": "2023-01-29T19:22:17.952Z",
+        "updated_at": "2023-01-29T19:22:17.953Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 458,
+    "fields": {
+        "category": 38,
+        "name": "Single",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 6,
+        "created_at": "2023-01-29T19:22:17.955Z",
+        "updated_at": "2023-01-29T19:22:17.955Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 459,
+    "fields": {
+        "category": 38,
+        "name": "Pregnant",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 7,
+        "created_at": "2023-01-29T19:22:17.957Z",
+        "updated_at": "2023-01-29T19:22:17.957Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 460,
+    "fields": {
+        "category": 38,
+        "name": "Dating",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 8,
+        "created_at": "2023-01-29T19:22:17.960Z",
+        "updated_at": "2023-01-29T19:22:17.960Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 461,
+    "fields": {
+        "category": 38,
+        "name": "Retirement",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 9,
+        "created_at": "2023-01-29T19:22:17.963Z",
+        "updated_at": "2023-01-29T19:22:17.963Z"
+    }
+}
+]

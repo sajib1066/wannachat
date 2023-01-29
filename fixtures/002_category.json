@@ -1,0 +1,534 @@
+[
+{
+    "model": "chatroom.category",
+    "pk": 1,
+    "fields": {
+        "country": 1,
+        "name": "SERVICE/ RENT/ SALE - $10 AD POST (VERIFIED USERS ONLY)",
+        "category_type": "post",
+        "fee_status": "paid",
+        "ordering": 1,
+        "is_active": true,
+        "created_at": "2023-01-27T20:11:16.482Z",
+        "updated_at": "2023-01-27T20:11:16.482Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 2,
+    "fields": {
+        "country": 1,
+        "name": "United States Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 2,
+        "is_active": true,
+        "created_at": "2023-01-27T20:31:46.004Z",
+        "updated_at": "2023-01-27T20:31:46.004Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 3,
+    "fields": {
+        "country": 1,
+        "name": "Controversial Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 3,
+        "is_active": true,
+        "created_at": "2023-01-27T20:58:52.707Z",
+        "updated_at": "2023-01-27T20:58:52.707Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 4,
+    "fields": {
+        "country": 1,
+        "name": "Sports/Recreation Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 4,
+        "is_active": true,
+        "created_at": "2023-01-27T21:07:15.699Z",
+        "updated_at": "2023-01-27T21:07:15.699Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 5,
+    "fields": {
+        "country": 1,
+        "name": "Investing Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 5,
+        "is_active": true,
+        "created_at": "2023-01-27T21:13:52.323Z",
+        "updated_at": "2023-01-27T21:13:52.324Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 6,
+    "fields": {
+        "country": 1,
+        "name": "Dating Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 6,
+        "is_active": true,
+        "created_at": "2023-01-27T21:18:00.092Z",
+        "updated_at": "2023-01-27T21:18:00.092Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 7,
+    "fields": {
+        "country": 1,
+        "name": "Hobbies Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 7,
+        "is_active": true,
+        "created_at": "2023-01-27T21:22:30.769Z",
+        "updated_at": "2023-01-27T21:22:30.769Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 8,
+    "fields": {
+        "country": 1,
+        "name": "Fitness Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 8,
+        "is_active": true,
+        "created_at": "2023-01-27T21:27:34.978Z",
+        "updated_at": "2023-01-27T21:27:34.978Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 9,
+    "fields": {
+        "country": 1,
+        "name": "Politics Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 9,
+        "is_active": true,
+        "created_at": "2023-01-27T21:30:18.208Z",
+        "updated_at": "2023-01-27T21:30:18.208Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 10,
+    "fields": {
+        "country": 1,
+        "name": "Religious Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 10,
+        "is_active": true,
+        "created_at": "2023-01-27T21:33:54.805Z",
+        "updated_at": "2023-01-27T21:33:54.805Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 11,
+    "fields": {
+        "country": 1,
+        "name": "Professions Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 11,
+        "is_active": true,
+        "created_at": "2023-01-27T21:38:33.023Z",
+        "updated_at": "2023-01-27T21:38:33.023Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 12,
+    "fields": {
+        "country": 1,
+        "name": "Science Chats",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 12,
+        "is_active": true,
+        "created_at": "2023-01-27T21:50:07.818Z",
+        "updated_at": "2023-01-27T21:50:07.818Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 13,
+    "fields": {
+        "country": 1,
+        "name": "Music Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 13,
+        "is_active": true,
+        "created_at": "2023-01-27T21:53:46.610Z",
+        "updated_at": "2023-01-27T21:53:46.610Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 14,
+    "fields": {
+        "country": 1,
+        "name": "Television Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 14,
+        "is_active": true,
+        "created_at": "2023-01-27T22:05:17.949Z",
+        "updated_at": "2023-01-27T22:05:17.949Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 15,
+    "fields": {
+        "country": 1,
+        "name": "Holidays Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 15,
+        "is_active": true,
+        "created_at": "2023-01-27T22:08:09.266Z",
+        "updated_at": "2023-01-27T22:08:09.266Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 16,
+    "fields": {
+        "country": 1,
+        "name": "Lifestyle Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 16,
+        "is_active": true,
+        "created_at": "2023-01-27T22:10:24.377Z",
+        "updated_at": "2023-01-27T22:10:24.377Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 17,
+    "fields": {
+        "country": 1,
+        "name": "Generation Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 17,
+        "is_active": true,
+        "created_at": "2023-01-27T22:15:50.645Z",
+        "updated_at": "2023-01-27T22:15:50.645Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 18,
+    "fields": {
+        "country": 1,
+        "name": "Pass Times Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 18,
+        "is_active": true,
+        "created_at": "2023-01-27T22:17:35.197Z",
+        "updated_at": "2023-01-27T22:17:35.197Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 19,
+    "fields": {
+        "country": 1,
+        "name": "Milestones Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 19,
+        "is_active": true,
+        "created_at": "2023-01-27T22:23:24.742Z",
+        "updated_at": "2023-01-27T22:23:24.742Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 20,
+    "fields": {
+        "country": 2,
+        "name": "SERVICE/ RENT/ SALE - $10 AD POST (VERIFIED USERS ONLY)",
+        "category_type": "post",
+        "fee_status": "paid",
+        "ordering": 1,
+        "is_active": true,
+        "created_at": "2023-01-27T22:35:22.645Z",
+        "updated_at": "2023-01-27T22:35:22.645Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 21,
+    "fields": {
+        "country": 2,
+        "name": "Canada Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 2,
+        "is_active": true,
+        "created_at": "2023-01-27T22:41:52.930Z",
+        "updated_at": "2023-01-27T22:41:52.930Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 22,
+    "fields": {
+        "country": 2,
+        "name": "Controversial Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 3,
+        "is_active": true,
+        "created_at": "2023-01-27T22:46:20.660Z",
+        "updated_at": "2023-01-27T23:02:02.222Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 23,
+    "fields": {
+        "country": 2,
+        "name": "Politics Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 9,
+        "is_active": true,
+        "created_at": "2023-01-27T23:08:03.806Z",
+        "updated_at": "2023-01-27T23:08:35.312Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 24,
+    "fields": {
+        "country": 2,
+        "name": "Sports/Recreation Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 4,
+        "is_active": true,
+        "created_at": "2023-01-29T19:07:53.550Z",
+        "updated_at": "2023-01-29T19:07:53.550Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 25,
+    "fields": {
+        "country": 2,
+        "name": "Investing Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 5,
+        "is_active": true,
+        "created_at": "2023-01-29T19:11:00.264Z",
+        "updated_at": "2023-01-29T19:11:00.264Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 26,
+    "fields": {
+        "country": 2,
+        "name": "Dating Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 6,
+        "is_active": true,
+        "created_at": "2023-01-29T19:12:12.034Z",
+        "updated_at": "2023-01-29T19:12:12.034Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 27,
+    "fields": {
+        "country": 2,
+        "name": "Hobbies Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 7,
+        "is_active": true,
+        "created_at": "2023-01-29T19:12:53.885Z",
+        "updated_at": "2023-01-29T19:12:53.885Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 28,
+    "fields": {
+        "country": 2,
+        "name": "Fitness Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 8,
+        "is_active": true,
+        "created_at": "2023-01-29T19:13:48.948Z",
+        "updated_at": "2023-01-29T19:13:48.948Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 29,
+    "fields": {
+        "country": 2,
+        "name": "Religious Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 10,
+        "is_active": true,
+        "created_at": "2023-01-29T19:14:46.240Z",
+        "updated_at": "2023-01-29T19:14:46.240Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 30,
+    "fields": {
+        "country": 2,
+        "name": "Professions Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 11,
+        "is_active": true,
+        "created_at": "2023-01-29T19:15:41.327Z",
+        "updated_at": "2023-01-29T19:15:41.327Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 31,
+    "fields": {
+        "country": 2,
+        "name": "Science Chats",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 12,
+        "is_active": true,
+        "created_at": "2023-01-29T19:16:33.010Z",
+        "updated_at": "2023-01-29T19:16:33.010Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 32,
+    "fields": {
+        "country": 2,
+        "name": "Music Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 13,
+        "is_active": true,
+        "created_at": "2023-01-29T19:17:24.472Z",
+        "updated_at": "2023-01-29T19:17:24.472Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 33,
+    "fields": {
+        "country": 2,
+        "name": "Television Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 14,
+        "is_active": true,
+        "created_at": "2023-01-29T19:18:11.493Z",
+        "updated_at": "2023-01-29T19:18:11.493Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 34,
+    "fields": {
+        "country": 2,
+        "name": "Holidays Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 15,
+        "is_active": true,
+        "created_at": "2023-01-29T19:18:27.664Z",
+        "updated_at": "2023-01-29T19:18:27.664Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 35,
+    "fields": {
+        "country": 2,
+        "name": "Lifestyle Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 16,
+        "is_active": true,
+        "created_at": "2023-01-29T19:18:41.677Z",
+        "updated_at": "2023-01-29T19:18:41.677Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 36,
+    "fields": {
+        "country": 2,
+        "name": "Generation Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 17,
+        "is_active": true,
+        "created_at": "2023-01-29T19:18:54.767Z",
+        "updated_at": "2023-01-29T19:18:54.767Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 37,
+    "fields": {
+        "country": 2,
+        "name": "Pass Times Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 18,
+        "is_active": true,
+        "created_at": "2023-01-29T19:19:12.280Z",
+        "updated_at": "2023-01-29T19:19:12.280Z"
+    }
+},
+{
+    "model": "chatroom.category",
+    "pk": 38,
+    "fields": {
+        "country": 2,
+        "name": "Milestones Chat",
+        "category_type": "chatroom",
+        "fee_status": "free",
+        "ordering": 19,
+        "is_active": true,
+        "created_at": "2023-01-29T19:19:36.053Z",
+        "updated_at": "2023-01-29T19:19:36.053Z"
+    }
+}
+]

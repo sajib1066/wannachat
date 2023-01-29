@@ -1,0 +1,24 @@
+[
+{
+    "model": "chatroom.country",
+    "pk": 1,
+    "fields": {
+        "name": "United States",
+        "ordering": 1,
+        "slug": "united-states",
+        "created_at": "2023-01-27T20:10:07.246Z",
+        "updated_at": "2023-01-27T20:10:22.090Z"
+    }
+},
+{
+    "model": "chatroom.country",
+    "pk": 2,
+    "fields": {
+        "name": "Canada",
+        "ordering": 2,
+        "slug": "canada",
+        "created_at": "2023-01-27T20:10:30.066Z",
+        "updated_at": "2023-01-27T20:10:30.066Z"
+    }
+}
+]
