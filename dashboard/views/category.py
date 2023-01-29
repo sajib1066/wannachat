@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 
 from chatroom.models import Category
-from chatroom.forms import CategoryForm
+from chatroom.forms import CategoryForm, CategoryFilterForm
 
 
 class CategoryListView(LoginRequiredMixin, ListView):
@@ -11,9 +11,21 @@ class CategoryListView(LoginRequiredMixin, ListView):
     model = Category
     login_url = "/auth/admin-login/"
     paginate_by = 15
+    filterset_form = CategoryFilterForm
 
     def get_queryset(self, **kwargs):
-        return self.model.objects.all()
+        objects = self.model.objects.all()
+        self.filterset = self.filterset_form(
+            data=self.request.GET, queryset=objects,
+            request=self.request
+        )
+        return self.filterset.qs
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['total'] = self.filterset.qs.count()
+        context['filterset_form'] = self.filterset.form
+        return context
 
 
 class CategoryCreateView(LoginRequiredMixin, View):

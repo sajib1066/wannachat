@@ -1,0 +1,74 @@
+{% load widget_tweaks %}
+<form class="{% if form_class %}{% else %}bg-white text-whitesmoke{% endif %} d-print-none p-2" method="GET" accept-charset="UTF-8">
+    {# HIDDEN FIELDS #}
+    {% for hidden_field in filterset_form.hidden_fields %}
+        {{ hidden_field }}
+    {% endfor %}
+
+    {# NON-FIELD ERRORS #}
+    {% if filterset_form.non_field_errors %}
+        <div class="alert alert-danger" role="alert">
+            {% for error in filterset_form.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div class="form-row no-gutters">
+        {# SHOW #}
+        {% if show_form %}
+            <div class="col-1 text-truncate">RESULTS:</div>
+            <div class="col-2 form-group mb-0">
+                <label for="{{ show_form.show.id_for_label }}" hidden>{{ show_form.show.label_tag }}</label>
+                <select class="form-control form-control-sm" id="{{ show_form.show.id_for_label }}" name="{{ show_form.show.html_name }}">
+                    {% for id, name in show_form.fields.show.choices %}
+                        <option value="{{ id }}"{% if request.GET.show == id|slugify or not request.GET.show and show_form.show.initial == id %} selected{% endif %}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="form-row no-gutters mt-2">
+        {# SEARCH #}
+        {% if filterset_form.q %}
+            <div class="col-1 text-truncate">SEARCH:</div>
+            <div class="col">{% include 'dashboard/snippets/filterset_field.html' with form=filterset_form formfld=filterset_form.q placeholder='Search by Name or ID or other attributes...' %}</div>
+        {% endif %}
+        {# DATE RANGE #}
+        {% if filterset_form.date %}
+            <div class="col-1 text-truncate">DATE RANGE:</div>
+            <div class="col">{% include 'dashboard/snippets/filterset_field.html' with form=filterset_form formfld=filterset_form.date placeholder='YYYY-MM-DD' %}</div>
+        {% endif %}
+    </div>
+
+    {# VISIBLE FIELDS #}
+    <div class="form-row no-gutters py-1">
+        <div class="col-1 text-truncate">FILTERS:</div>
+        <div class="col">
+            <div class="form-row no-gutters">
+                {% for field in filterset_form %}
+                    {% if field != filterset_form.q and field != filterset_form.date and field != filterset_form.o %}
+                        <div class="col-2 py-1 pr-2">
+                            {% include 'dashboard/snippets/filterset_field.html' with form=filterset_form formfld=field %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {# ORDER / PAGE SIZE / BUTTONS #}
+    <div class="form-row no-gutters">
+        {# ORDER #}
+        {% if filterset_form.o %}
+            <div class="col-1 text-truncate">ORDER BY:</div>
+            <div class="col-2">{% include 'dashboard/snippets/filterset_field.html' with form=filterset_form formfld=filterset_form.o %}</div>
+        {% endif %}
+        {# BUTTON GROUP #}
+        <div class="col-2 ml-auto form-group btn-group btn-group-sm text-whitesmoke mb-0">
+            <a class="btn btn-sm btn-danger" href="{{ request.path }}"><i class="fas fa-power-off mr-1"></i> RESET</a>
+            <button class="btn btn-sm btn-success" type="submit">FILTER <i class="fas fa-filter ml-1"></i></button>
+        </div>
+    </div>
+</form>

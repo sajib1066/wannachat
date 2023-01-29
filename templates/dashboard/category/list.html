@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 col-lg-12 mb-3">
-                                {# {% include 'snippets/filterset_form.html' with filterset_form=filterset_form %} #}
+                                {% include 'dashboard/snippets/filterset_form.html' with filterset_form=filterset_form %}
                             </div>
                         </div>
                         <div class="row">
@@ -59,9 +59,11 @@
                                         <tr role="row">
                                             <th>SL</th>
                                             <th>Name</th>
+                                            <th>Ordering</th>
                                             <th>Type</th>
                                             <th>Fee Status</th>
                                             <th>Status</th>
+                                            <th>Country</th>
                                             <th>Total Sub Category</th>
                                             <th>Date Created</th>
                                             <th>Updated Date</th>
@@ -75,6 +77,7 @@
                                                 <td>
                                                     <a href="">{{ object.name }}</a>
                                                 </td>
+                                                <td>{{ object.ordering }}</td>
                                                 <td>{{ object.category_type_display }}</td>
                                                 <td>{{ object.fee_status_display }}</td>
                                                 <td class="text-center">
@@ -84,6 +87,7 @@
                                                         <b class="pill_deactive"></b>
                                                     {% endif %}
                                                 </td>
+                                                <td>{{ object.country }}</td>
                                                 <td>
                                                     <a href="">{{ object.total_sub_category }}</a>
                                                 </td>

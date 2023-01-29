@@ -55,6 +55,10 @@ THIRD_PARTY_APPS = [
     'channels',
     'corsheaders',
     'debug_toolbar',
+    # https://pypi.org/project/django-filter/
+    'django_filters',
+    # https://pypi.org/project/django-widget-tweaks/
+    'widget_tweaks',
 ]
 
 LOCAL_APPS = [

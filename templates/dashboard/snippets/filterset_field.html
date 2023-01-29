@@ -1,0 +1,59 @@
+{% load widget_tweaks %}
+
+{% block field %}
+    {% block label %}
+        {% if label %}
+            {% block label-text %}
+                <div class="text-truncate">
+                    <label class="col-form-label m-0 p-0" for="{{ formfld.auto_id }}" id="{{ formfld.name|add:'_label' }}">{% if formfld.field.required or req %}
+                        <span class="text-danger">*</span>{% endif %}{{ formfld.label }}
+                    </label>
+                </div>
+            {% endblock label-text %}
+        {% endif %}
+    {% endblock label %}
+    {% block input-group %}
+        <div class="input-group">
+            {% block input-prepend %}
+                {% if prepend %}
+                    <div class="input-group-prepend"><span class="input-group-text"><i class="{{ icon_p }}"></i></span></div>
+                {% endif %}
+            {% endblock input-prepend %}
+            {% block input-field %}
+                {% if formfld.errors %}
+                    {% if prefill %}
+                        {% render_field formfld|append_attr:"readonly:readonly" class="form-control form-control-sm is-invalid" value=prefill %}
+                    {% elif value %}
+                        {% render_field formfld class="form-control form-control-sm is-invalid" value=value placeholder=placeholder %}
+                    {% else %}
+                        {% render_field formfld class="form-control form-control-sm is-invalid" placeholder=placeholder %}
+                    {% endif %}
+                {% else %}
+                    {% if prefill %}
+                        {% render_field formfld|append_attr:"readonly:readonly" class="form-control form-control-sm" value=prefill %}
+                    {% elif value %}
+                        {% render_field formfld class="form-control form-control-sm" value=value placeholder=placeholder %}
+                    {% else %}
+                        {% render_field formfld class="form-control form-control-sm" placeholder=placeholder %}
+                    {% endif %}
+                {% endif %}
+            {% endblock input-field %}
+            {% block input-append %}
+                {% if append %}
+                    <div class="input-group-append">
+                        <span class="input-group-text border-left-0 pl-1 pr-1"><i class="{{ icon_a }}"></i></span>
+                    </div>
+                {% endif %}
+            {% endblock input-append %}
+        </div>
+    {% endblock input-group %}
+    {% block help-text %}
+        {% if formfld.errors %}
+            {% for error in formfld.errors %}
+                <small id="{{ formfld.name|add:'_error' }}" class="text-danger">{{ error }}</small>
+            {% endfor %}
+        {% else %}
+            <small id="{{ formfld.name|add:'_error' }}" class="text-secondary">{{ formfld.help_text }}</small>
+        {% endif %}
+    {% endblock help-text %}
+{% endblock field %}
