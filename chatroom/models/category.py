@@ -28,7 +28,7 @@ class Category(models.Model):
         ordering = ('ordering', )
 
     def __str__(self):
-        return self.name
+        return f"{self.name} - ({self.country.name})"
 
     @property
     def total_sub_category(self):

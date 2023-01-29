@@ -93,3 +93,44 @@ class CategoryFilterForm(FilterSet):
         return queryset.filter(
             Q(name__icontains=value) or Q(country__name__icontains=value)
         )
+
+
+class SubCategoryFilterForm(FilterSet):
+    q = CharFilter(
+        label='Search',
+        method='filter_by_q',
+    )
+
+    STATUS_CHOICES = (
+        (True, 'Active'),
+        (False, 'Inactive'),
+    )
+    is_active = ChoiceFilter(
+        field_name='is_active',
+        choices=STATUS_CHOICES,
+        label='Status',
+        empty_label='-Status-',
+    )
+    category = ModelChoiceFilter(
+        queryset=Category.objects.all(),
+        field_name='category',
+        label='Category',
+        empty_label='-Category-',
+    )
+
+    class Meta:
+        model = SubCategory
+        fields = ()
+
+    o = OrderingFilter(
+        fields=(
+            ('name', 'Name'),
+            ('created_at', 'Created Date'),
+            ('updated_at', 'Updated Date'),
+        )
+    )
+
+    def filter_by_q(self, queryset, name, value):
+        return queryset.filter(
+            Q(name__icontains=value) or Q(category__name__icontains=value)
+        )

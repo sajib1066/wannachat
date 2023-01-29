@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 col-lg-12 mb-3">
-                                {# {% include 'snippets/filterset_form.html' with filterset_form=filterset_form %} #}
+                                {% include 'dashboard/snippets/filterset_form.html' with filterset_form=filterset_form %}
                             </div>
                         </div>
                         <div class="row">
@@ -60,6 +60,7 @@
                                             <th>SL</th>
                                             <th>Name</th>
                                             <th>Category</th>
+                                            <th>Country</th>
                                             <th>Users</th>
                                             <th>Max Previous Message Show</th>
                                             <th>Status</th>
@@ -76,6 +77,7 @@
                                                     <a href="">{{ object.name }}</a>
                                                 </td>
                                                 <td>{{ object.category.name }}</td>
+                                                <td>{{ object.category.country.name }}</td>
                                                 <td>{{ object.current_users }} / {{ object.max_user }}</td>
                                                 <td>{{ object.max_previous_message }}</td>
                                                 <td class="text-center">
