@@ -3,9 +3,11 @@ from django.contrib.auth.views import LoginView
 from django.views.generic import View
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.sites.models import Site
 
 from customauth.models import User
 from customauth.forms import LoginForm, SignUpForm
+from customauth.sent_mail import send_mail_to_user
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +40,17 @@ class UserRegistrationView(LoginView):
                     )
                     user.profile.name = name
                     user.profile.save()
+                    site = Site.objects.get_current()
+                    print(site, '************')
+                    send_mail_to_user(
+                        "Welcome to Wannachat",
+                        user.email,
+                        'message.html',
+                        {
+                            'site': site,
+                            'user': user
+                        }
+                    )
                     return redirect('customauth:user_login')
                 except Exception as e:
                     message = e
