@@ -30,6 +30,7 @@ class UserRegistrationView(LoginView):
         message = ""
         if form.is_valid():
             name = form.cleaned_data['name']
+            username = form.cleaned_data['username']
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             confirm_password = form.cleaned_data['confirm_password']
@@ -37,6 +38,7 @@ class UserRegistrationView(LoginView):
                 try:
                     user = User.objects.create_user(
                         email=email,
+                        username=username,
                         password=password
                     )
                     user.profile.name = name

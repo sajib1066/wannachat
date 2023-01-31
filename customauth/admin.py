@@ -25,7 +25,7 @@ class ProfileInline(admin.StackedInline):
 class UserAdmin(UserAdmin):
     ordering = ('email', )
     list_display = (
-        'id', 'email', 'verified_email', 'accepted_terms', 'read_terms',
+        'id', 'email', 'username', 'verified_email', 'accepted_terms', 'read_terms',
         'is_staff', 'is_superuser', 'is_active', 'date_joined', 'last_updated',
         'last_login'
     )
