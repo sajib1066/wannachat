@@ -32,8 +32,11 @@ class AdminLoginView(LoginView):
             password = form.cleaned_data['password']
             user = authenticate(email=email, password=password)
             if user:
-                login(request, user)
-                return redirect('dashboard:dashboard')
+                if user.is_active:
+                    login(request, user)
+                    return redirect('dashboard:dashboard')
+                else:
+                    messages.error(request, 'Please verify your account. Verification link sent to your email.')
             else:
                 messages.error(request, 'Invalid email or password')
         else:
