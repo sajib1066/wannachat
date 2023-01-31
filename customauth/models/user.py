@@ -41,6 +41,7 @@ class Usermanager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
+    username = models.CharField(max_length=255, unique=True)
     email = models.CharField(
         _("Email Address"), max_length=255, unique=True, db_index=True
     )
@@ -63,6 +64,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = Usermanager()  # Custom user manager
 
     USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["username"]
 
     def __str__(self):
         return self.email

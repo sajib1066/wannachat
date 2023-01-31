@@ -13,6 +13,16 @@ class SignUpForm(forms.Form):
             'autofocus': True,
         })
     )
+    username = forms.CharField(
+        label="username",
+        max_length=255,
+        widget=forms.TextInput(attrs={
+            'class': 'form-control',
+            'username': 'username',
+            'placeholder': 'Username',
+            'autofocus': True,
+        })
+    )
     email = forms.CharField(
         label="Email",
         max_length=255,
