@@ -60,7 +60,16 @@
                                         <div class="text-center">
                                             <h3 class="fw-bold mb-2">Sign In</h3>
                                             <p>Login to your account</p>
-                                            <p class="text-center text-danger">{{ message }}</p>
+                                            {% if messages %}
+                                                <div class="messages text-center">
+                                                    {% for message in messages %}
+                                                        <div{% if message.tags %}
+                                                            class="alert alert-sm alert-danger"{% endif %}>
+                                                            {{ message }}
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
                                         </div>
                                     </div>
     

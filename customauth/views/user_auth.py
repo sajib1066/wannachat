@@ -8,6 +8,7 @@ from django.contrib.sites.models import Site
 from customauth.models import User
 from customauth.forms import LoginForm, SignUpForm
 from customauth.sent_mail import send_mail_to_user
+from django.contrib import messages
 
 logger = logging.getLogger(__name__)
 
@@ -91,14 +92,17 @@ class UserLoginView(LoginView):
             password = form.cleaned_data['password']
             user = authenticate(email=email, password=password)
             if user:
-                login(request, user)
-                return redirect('home')
+                if user.verified_email:
+                    login(request, user)
+                    return redirect('home')
+                else:
+                    messages.error(request, 'Please verify your account. Verification link sent to your email.')
             else:
-                message = "Invalid email or password"
+                messages.error(request, 'Invalid email or password')
         else:
             print(form.errors)
             logger.error(f'Invalid form data: {form.errors}')
-            message = "Invalid email or password. Please enter correctly."
+            messages.error(request, "Invalid email or password. Please enter correctly.")
         context = {
             'form': form,
             'message': message
