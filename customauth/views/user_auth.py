@@ -9,6 +9,7 @@ from customauth.models import User
 from customauth.forms import LoginForm, SignUpForm
 from customauth.sent_mail import send_mail_to_user
 from django.contrib import messages
+from django.db.models import Q
 
 logger = logging.getLogger(__name__)
 
@@ -90,16 +91,22 @@ class UserLoginView(LoginView):
         form = self.form_class(request.POST)
         message = ""
         if form.is_valid():
-            email = form.cleaned_data['email']
+            username_or_email = form.cleaned_data['username_or_email']
             password = form.cleaned_data['password']
-            user = authenticate(email=email, password=password)
-            if user:
-                if user.verified_email:
-                    login(request, user)
-                    return redirect('home')
+            try:
+                get_user = User.objects.get(
+                    Q(username=username_or_email) | Q(email=username_or_email)
+                )
+                user = authenticate(email=get_user.email, password=password)
+                if user:
+                    if user.verified_email:
+                        login(request, user)
+                        return redirect('home')
+                    else:
+                        messages.error(request, 'Please verify your account. Verification link sent to your email.')
                 else:
-                    messages.error(request, 'Please verify your account. Verification link sent to your email.')
-            else:
+                    messages.error(request, 'Invalid email or password')
+            except User.DoesNotExist:
                 messages.error(request, 'Invalid email or password')
         else:
             print(form.errors)

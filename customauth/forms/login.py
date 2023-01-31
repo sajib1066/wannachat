@@ -3,13 +3,13 @@ from django import forms
 
 class LoginForm(forms.Form):
     """ Custom login form """
-    email = forms.CharField(
+    username_or_email = forms.CharField(
         label="Email",
         max_length=255,
-        widget=forms.EmailInput(attrs={
+        widget=forms.TextInput(attrs={
             'class': 'form-control',
-            'name': 'email',
-            'placeholder': 'Email',
+            'name': 'username_or_email',
+            'placeholder': 'Username or Email',
             'autofocus': True,
         })
     )
