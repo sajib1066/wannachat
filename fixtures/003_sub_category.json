@@ -4091,70 +4091,70 @@
     "model": "chatroom.subcategory",
     "pk": 293,
     "fields": {
-        "category": 21,
+        "category": 22,
         "name": "Racism",
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
         "ordering": 4,
         "created_at": "2023-01-27T22:47:41.391Z",
-        "updated_at": "2023-01-27T22:47:41.391Z"
+        "updated_at": "2023-01-31T18:15:59.600Z"
     }
 },
 {
     "model": "chatroom.subcategory",
     "pk": 294,
     "fields": {
-        "category": 21,
+        "category": 22,
         "name": "Immigration",
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
         "ordering": 5,
         "created_at": "2023-01-27T22:47:56.300Z",
-        "updated_at": "2023-01-27T22:47:56.300Z"
+        "updated_at": "2023-01-31T18:16:24.312Z"
     }
 },
 {
     "model": "chatroom.subcategory",
     "pk": 295,
     "fields": {
-        "category": 21,
-        "name": "●Gun Contro",
+        "category": 22,
+        "name": "Gun Control",
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
         "ordering": 6,
         "created_at": "2023-01-27T22:48:19.888Z",
-        "updated_at": "2023-01-27T22:48:19.888Z"
+        "updated_at": "2023-01-31T18:15:38.097Z"
     }
 },
 {
     "model": "chatroom.subcategory",
     "pk": 296,
     "fields": {
-        "category": 21,
+        "category": 22,
         "name": "Vaccines",
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
         "ordering": 7,
         "created_at": "2023-01-27T22:48:38.179Z",
-        "updated_at": "2023-01-27T22:48:38.179Z"
+        "updated_at": "2023-01-31T18:17:10.135Z"
     }
 },
 {
     "model": "chatroom.subcategory",
     "pk": 297,
     "fields": {
-        "category": 21,
+        "category": 22,
         "name": "Animal Cruelty",
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
         "ordering": 8,
         "created_at": "2023-01-27T22:48:53.989Z",
-        "updated_at": "2023-01-27T22:48:53.989Z"
+        "updated_at": "2023-01-31T18:16:49.736Z"
     }
 },
 {
@@ -6451,6 +6451,20 @@
         "ordering": 9,
         "created_at": "2023-01-29T19:22:17.963Z",
         "updated_at": "2023-01-29T19:22:17.963Z"
+    }
+},
+{
+    "model": "chatroom.subcategory",
+    "pk": 462,
+    "fields": {
+        "category": 21,
+        "name": "Saskatchewan The Breadbasket",
+        "max_user": 35,
+        "max_previous_message": 200,
+        "is_active": true,
+        "ordering": 12,
+        "created_at": "2023-01-31T18:18:00.990Z",
+        "updated_at": "2023-01-31T18:18:00.990Z"
     }
 }
 ]
