@@ -32,7 +32,7 @@ class AdminLoginView(LoginView):
             password = form.cleaned_data['password']
             user = authenticate(email=email, password=password)
             if user:
-                if user.is_active:
+                if user.verified_email:
                     login(request, user)
                     return redirect('dashboard:dashboard')
                 else:
