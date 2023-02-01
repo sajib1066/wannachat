@@ -1,7 +1,8 @@
 from .chatroom import (
-    ChatRoomView, ChatRoomSidebarView, ChatBoxView, ChatUsersView
+    ChatRoomView, ChatRoomSidebarView, ChatBoxView, ChatUsersView, DirectChatView
 )
 from .message import SendRoomMessageView
+from .ajax import ajax_custom_room
 
 
 __all__ = [
@@ -10,4 +11,6 @@ __all__ = [
     ChatBoxView,
     ChatUsersView,
     SendRoomMessageView,
+    DirectChatView,
+    ajax_custom_room
 ]

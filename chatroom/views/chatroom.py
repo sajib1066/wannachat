@@ -1,9 +1,11 @@
+from django.db.models import Q
 from django.views.generic import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 
-from chatroom.models import SubCategory, ChatRoomUser, RoomMessage
+from chatroom.models import SubCategory, ChatRoomUser, RoomMessage, DirectMessage
+from customauth.models import User
 
 
 class ChatRoomView(LoginRequiredMixin, View):
@@ -45,7 +47,6 @@ class ChatRoomView(LoginRequiredMixin, View):
         bio = request.POST.get('bio')
         address = request.POST.get('address')
         user = request.user
-        print(name, bio, address, user, photo)
         if name:
             user.profile.name = name
         if bio:
@@ -74,6 +75,51 @@ class ChatRoomView(LoginRequiredMixin, View):
             'user': request.user,
             'obj': obj,
             'chatrooms': chatrooms,
+            'messages': message_list,
+        }
+        return render(request, self.template_name, context)
+
+
+class DirectChatView(LoginRequiredMixin, View):
+    template_name = "chatroom/direct_room.html"
+    model = DirectMessage
+    login_url = "/auth/login/"
+
+    def get(self, request, pk, *args, **kwargs):
+        obj = get_object_or_404(User, pk=pk)
+        message_list = DirectMessage.objects.filter(
+            Q(sender_user=obj, receiver_user=request.user) | Q(sender_user=request.user, receiver_user=obj)
+        )
+        context = {
+            'user': request.user,
+            'obj': obj,
+            'messages': message_list,
+        }
+        return render(request, self.template_name, context)
+
+    def post(self, request, pk, *args, **kwargs):
+        obj = get_object_or_404(User, pk=pk)
+        photo = request.FILES.get('photo')
+        name = request.POST.get('name')
+        bio = request.POST.get('bio')
+        address = request.POST.get('address')
+        user = request.user
+        print(name, bio, address, user, photo, "*" * 100)
+        if name:
+            user.profile.name = name
+        if bio:
+            user.profile.bio = bio
+        if address:
+            user.profile.address = address
+        if photo:
+            user.profile.avatar = photo
+        user.profile.save()
+        message_list = DirectMessage.objects.filter(
+            Q(sender_user=obj, receiver_user=request.user) | Q(sender_user=request.user, receiver_user=obj)
+        )
+        context = {
+            'user': request.user,
+            'obj': obj,
             'messages': message_list,
         }
         return render(request, self.template_name, context)
