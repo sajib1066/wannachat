@@ -1,5 +1,5 @@
-from django.views.generic import View
-from django.shortcuts import render, redirect
+from django.views.generic import View, TemplateView
+from django.shortcuts import render
 from django.http import HttpResponse
 
 from chatroom.models import Category, Country
@@ -43,3 +43,31 @@ class ChangeCountryView(View):
         country = request.GET.get('country')
         request.session['country'] = country
         return HttpResponse('Done')
+
+
+class FAQPageView(TemplateView):
+    template_name = 'pages/faq.html'
+
+
+class TOSPageView(TemplateView):
+    template_name = 'pages/tos.html'
+
+
+class ChatRulesPageView(TemplateView):
+    template_name = 'pages/chat_rules.html'
+
+
+class SafetyTipsPageView(TemplateView):
+    template_name = 'pages/safety_tips.html'
+
+
+class PrivacyPolicyPageView(TemplateView):
+    template_name = 'pages/privacy_policy.html'
+
+
+class CookiePolicyPageView(TemplateView):
+    template_name = 'pages/cookie_policy.html'
+
+
+class CookieSettingsPageView(TemplateView):
+    template_name = 'pages/cookie_settings.html'
