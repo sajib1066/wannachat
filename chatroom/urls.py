@@ -15,5 +15,9 @@ urlpatterns = [
         'send-room-message/', views.SendRoomMessageView.as_view(),
         name='send_room_message'
     ),
+    path(
+        'send-direct-message/int:<receiver_id>/', views.SendDirectMessageView.as_view(),
+        name='send_direct_message'
+    ),
     path('ajax/custom/room/', views.ajax_custom_room, name='ajax_custom_room')
 ]

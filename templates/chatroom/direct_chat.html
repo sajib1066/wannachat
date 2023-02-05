@@ -40,10 +40,10 @@
                                     </div>
 
                                     <div class="col overflow-hidden">
-                                        <h5 class="text-truncate">{% if request.user.profile.name %}
-                                            {{ request.user.profile.name }}
+                                        <h5 class="text-truncate">{% if obj.profile.name %}
+                                            {{ obj.profile.name }}
                                             {% else %}
-                                            {{ request.user }}
+                                            {{ obj }}
                                             {% endif %}
                                         </h5>
                                     </div>
