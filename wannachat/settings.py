@@ -106,7 +106,6 @@ TEMPLATES = [
 ]
 
 
-
 WSGI_APPLICATION = 'wannachat.wsgi.application'
 ASGI_APPLICATION = 'wannachat.asgi.application'
 
