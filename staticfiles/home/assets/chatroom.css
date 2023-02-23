@@ -1,0 +1,10 @@
+.self-message {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #2787f5;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-weight: 400;
+}

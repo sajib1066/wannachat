@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+	font-family: "Labrada", serif;
+
+	/* font-family: 'Roboto', sans-serif;
+	*/
+}
+
+body {
+	width: 98% !important;
+	height: 500px;
+}
+
+.sign-up {
+	margin-top: 2.2rem;
+	width: 50%;
+	height: 3rem;
+	text-transform: capitalize;
+	font-size: 0.9rem;
+	font-weight: 700;
+	align-items: center;
+	font-family: "Roboto", sans-serif;
+	color: rgb(220, 229, 247);
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.form-control {
+	padding: 27px;
+}
+
+@media (max-width: 768px) {
+	.gender-select label {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 1024px) {
+	.female-select {
+		margin-left: 0 !important;
+	}
+}
+
+@media (width: 1440px) {
+	.female-select {
+		margin-left: 0 !important;
+	}
+}

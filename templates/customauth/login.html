@@ -1,112 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
-    <!-- Head -->
+   {% load static %}
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-        <meta name="color-scheme" content="light dark" />
-
-        <title>Login | WannaChat</title>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon" />
-
-        <!-- Font -->
-        <link rel="preconnect" href="../../../../fonts.gstatic.com/index.html" />
-        <link href="../../../../fonts.googleapis.com/css2f74f.css?family=Roboto:wght@400;500;700" rel="stylesheet" />
-
-        <!-- Template CSS -->
-        <link class="css-lt" rel="stylesheet" href="{% static 'assets/css/template.bundle.css' %}" media="(prefers-color-scheme: light)" />
-        <link class="css-dk" rel="stylesheet" href="{% static 'assets/css/template.dark.bundle.css' %}" media="(prefers-color-scheme: dark)" />
-
-        <!-- Theme mode -->
-        <script>
-            if (localStorage.getItem("color-scheme")) {
-                let scheme = localStorage.getItem("color-scheme");
-
-                const LTCSS = document.querySelectorAll("link[class=css-lt]");
-                const DKCSS = document.querySelectorAll("link[class=css-dk]");
-
-                [...LTCSS].forEach((link) => {
-                    link.media = scheme === "light" ? "all" : "not all";
-                });
-
-                [...DKCSS].forEach((link) => {
-                    link.media = scheme === "dark" ? "all" : "not all";
-                });
-            }
-        </script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wanna Chat || Login</title>
+        <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@200;300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'home/assets/login.css' %}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-
-    <body class="bg-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-center min-vh-100 gx-0">
-                <div class="col-12 col-md-5 col-lg-4">
-                    <div class="card card-shadow border-0">
-                        <div class="card-body">
-                            <form action="" method="post">
-                                {% csrf_token %}
-                                <div class="row g-6">
-                                    <div class="col-12">
-                                        <div class="text-center">
-                                            <h2 class="fw-bold mb-2">
-                                                <a href="{% url 'home' %}">WannaChat</a>
-                                            </h2>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="text-center">
-                                            <h3 class="fw-bold mb-2">Sign In</h3>
-                                            <p>Login to your account</p>
-                                            {% if messages %}
-                                                <div class="messages text-center">
-                                                    {% for message in messages %}
-                                                        <div{% if message.tags %}
-                                                            class="alert alert-sm alert-danger"{% endif %}>
-                                                            {{ message }}
-                                                        </div>
-                                                    {% endfor %}
-                                                </div>
-                                            {% endif %}
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            {{ form.username_or_email }}
-                                            <label for="id_username_or_email">Username or Email</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            {{ form.password }}
-                                            <label for="id_password">Password</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <button class="btn btn-block btn-lg btn-primary w-100" type="submit">Sign In</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+    <body>
+        <section class="row mt-4">
+            <div class="col-md-4 offset-md-4">
+                <form action="login-box" style="box-shadow: 4px 4px 7px 7px lightgray !important; padding: 25px;">
+                    <h3 class="title-login" style="text-align: center;"><b>Wanna Chat</b></h3>
+                    <hr />
+                    <p style="text-align: center;"><b>Login</b></p>
+                    <div class="form-group">
+                        <label for="username">username or email</label>
+                        <input type="text" class="form-control" />
                     </div>
-
-                    <!-- Text -->
-                    <div class="text-center mt-8">
-                        <p>Don't have an account yet? <a href="{% url 'customauth:user_signup' %}">Sign up</a></p>
-                        <p><a href="password-reset.html">Forgot Password?</a></p>
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input type="text" class="form-control" />
                     </div>
-                </div>
+                    <br />
+                    <div class="d-flex justify-content-center">
+                        <button class="btn-info login align-center">login</button>
+                    </div>
+                    <div class="text-center">
+                        <br />
+                        <a href="#" target="_blank" rel="noopener">forgot password</a>
+                        |
+                        <a href="{% url 'customauth:user_signup' %}" class="text-center" target="_blank" rel="noopener">sign up</a>
+                    </div>
+                </form>
             </div>
-            <!-- / .row -->
-        </div>
-
-        <!-- Scripts -->
-        <script src="{% static 'assets/js/vendor.js' %}"></script>
-        <script src="{% static 'assets/js/template.js' %}"></script>
+        </section>
     </body>
 </html>

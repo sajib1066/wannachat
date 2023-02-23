@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>live stream chat</title>
+      <!-- add fabicon -->
+      <link rel="shortcut icon" href="assets/images/fabicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="assets/style.css">
+   </head>
+   <body>
+      <section>
+         <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light bg-dark header-nav zigzag-bottom">
+            <img src="assets/images/logo2-removebg-preview.png" style="height:110px;width: 150px;" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link custom-padding" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link custom-padding" href="#">Find Friends</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link custom-padding" href="rules.html">Chat rules</a>
+                  </li>
+                  <div class="nav-item">
+                     <input type="text"  class="form-control mt-4 right-side" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                  </div>
+               </ul>
+               <div class="nav-item no-padding">
+                  <a class="nav-link right-side" href="login.html">Login</a>
+               </div>
+               <div class="nav-item no-padding">
+                  <a class="nav-link right-side" href="registration.html">Register</a>
+               </div>
+               <li class="nav-item dropdown no-padding">
+                  <select class="nav-link dropdown-toggle right-side" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #17a2b8 !important; border: none;">
+                     country
+                     <div class="dropdown-menu">
+                        <option  class="dropdown-item" href="#">USA</option>
+                        <option class="dropdown-item" href="#">Canada</option>
+                        <option class="dropdown-item" href="#">Australia</option>
+                        <option class="dropdown-item" href="#">UK</option>
+                     </div>
+                  </select>
+               </li>
+               <li class="nav-item dropdown no-padding">
+                  <select class="nav-link dropdown-toggle right-side" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #17a2b8 !important; border: none;">
+                     ln
+                     <div class="dropdown-menu">
+                        <option  class="dropdown-item" href="#">en</option>
+                        <option class="dropdown-item" href="#">bn</option>
+                        <option class="dropdown-item" href="#">cn</option>
+                        <option class="dropdown-item" href="#">rsa</option>
+                     </div>
+                  </select>
+               </li>
+            </div>
+         </nav>
+         <!--  -->
+         <div class="chat-room mt-4 pt-4">
+            <div class="row">
+               <div class="col">
+                  <div class="row">
+                     <div class="col side-menu zigzag-right" style="margin-left:15px;">
+                        <div class="col">
+                           <h2>Welcome to WannaChat.org!</h2>
+                           <p class="mt-4">If you are looking for Free Online Chatrooms or to Random Video Chat with strangers look no further! This is an awesome community that allows you to start or join a free online chat room with strangers, private message, and network with like-minded people who share the same hobbies and interests as you. If you make a friend, add them to your buddy list to keep in touch in the future!
+                              Our Free Random Video Chat is the perfect Omegle alternative that lets you meet new interesting people in real-time, based on similar interests!
+                           </p>
+                           <h5><b>Class room rules</b> </h5>
+                           <ul>
+                              <li>You are 18+ years old</li>
+                              <li>Don't spam</li>
+                              <li>Don't use bad language</li>
+                              <li>Don't share personal information</li>
+                              <li>Don't share links to other websites</li>
+                           </ul>
+                        </div>
+                        <div class="another-area">
+                           <ul>
+                              <li><a href="faq.html">FAQ</a></li>
+                              <li><a href="tos.html">Terms of Service</a></li>
+                              <li><a href="#">Conatct</a></li>
+                              <li><a href="safety.html">Safety Tips</a></li>
+                              <li><a href="pdf/privacy-policy.pdf">Privacy Policy</a></li>
+                              <li><a href="pdf/cookie-policy.pdf">Cookie Policy</a></li>
+                              <li><a href="">Cookie Settings</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md" id="random-chat">World wide Chat</a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Japan chat</a></li>
+                              <li><a href="">USA chat</a></li>
+                              <li><a href="">Canada chat</a></li>
+                              <li><a href="">UK chat</a></li>
+                              <li><a href="">Australia chat</a></li>
+                              <li><a href="">India chat</a></li>
+                              <li><a href="">Pakistan chat</a></li>
+                              <li><a href="">China chat</a></li>
+                              <li><a href="">Germany chat</a></li>
+                              <li><a href="">France chat</a></li>
+                              <li><a href="">Italy chat</a></li>
+                              <li><a href="">Spain chat</a></li>
+                              <li><a href="">Brazil chat</a></li>
+                              <li><a href="">Mexico chat</a></li>
+                              <li><a href="">Russia chat</a></li>
+                              <li><a href="">South Africa chat</a></li>
+                              <li><a href="">Nigeria chat</a></li>
+                              <li><a href="">Indonesia chat</a></li>
+                              <li><a href="">Turkey chat</a></li>
+                              <li><a href="">Iran chat</a></li>
+                              <li><a href="">Saudi Arabia chat</a></li>
+                              <li><a href="">Thailand chat</a></li>
+                              <li><a href="">Argentina chat</a></li>
+                              <li><a href="">Colombia chat</a></li>
+                              <li><a href="">Ukraine chat</a></li>
+                              <li><a href="">Poland chat</a></li>
+                              <li><a href="">South Korea chat</a></li>
+                              <li><a href="">Malaysia chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Controversial Chat</a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">MAGA Chat</a></li>
+                              <li><a href="">Black Lives Matter Chat</a></li>
+                              <li><a href="">Abortion Chat</a></li>
+                              <li><a href="">Election Chat</a></li>
+                              <li><a href="">Racism Chat</a></li>
+                              <li><a href=""> Gun Control Chat</a></li>
+                              <li><a href="">Vaccines Chat</a></li>
+                              <li><a href="">Animal Cruelty Chat</a></li>
+                              <li><a href="">COP26 Chat</a></li>
+                              <li><a href="">COVID-19 Chat</a></li>
+                              <li><a href="">War In Ukraine Chat</a></li>
+                              <li><a href=""> Woke Movement Chat</a></li>
+                              <li><a href=""> Cancel Culture Chat</a></li>
+                              <li><a href=""> Police Brutality Chat</a></li>
+                              <li><a href=""> Extraterrestrials are real Chat</a></li>
+                              <li> <a href=""> Flat Earthers</a> </li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Professions Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Marketers chat</a></li>
+                              <li><a href="">Lawer chat</a></li>
+                              <li><a href="">Medical chat</a></li>
+                              <li><a href="">Computer Programmers chat</a></li>
+                              <li><a href="">Police Officers chat</a></li>
+                              <li><a href="">Fire Fighters chat</a></li>
+                              <li><a href="">Corporate Professionals chat</a></li>
+                              <li><a href="">Construction chat</a></li>
+                              <li><a href="">Chefs chat</a></li>
+                              <li><a href="">Engineers chat</a></li>
+                              <li><a href="">Teachers chat</a></li>
+                              <li><a href="">Architects chat</a></li>
+                              <li><a href="">Drivers chat</a></li>
+                              <li><a href="">Aviation chat</a></li>
+                              <li><a href="">Beauty chat</a></li>
+                              <li><a href="">Entertainment chat</a></li>
+                              <li><a href="">Authors chat</a></li>
+                              <li><a href="">Real Estate Agents chat</a></li>
+                              <li><a href="">Stock Brokers chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Sports/Recreation Chat                    </a> </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href=""> Football Chat</a></li>
+                              <li><a href=""> Basketball Chat</a></li>
+                              <li><a href=""> Baseball Chat</a></li>
+                              <li><a href=""> Cricket Chat</a></li>
+                              <li><a href=""> Soccer Chat</a></li>
+                              <li><a href=""> Tennis Chat</a></li>
+                              <li><a href=""> Golf Chat</a></li>
+                              <li><a href=""> Bowling Chat</a></li>
+                              <li><a href=""> Surf Chat</a></li>
+                              <li><a href=""> Extreme Sports Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Investing Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Crypto Chat</a></li>
+                              <li><a href=""> Forex Chat</a></li>
+                              <li><a href=""> Day Trading Chat</a></li>
+                              <li><a href=""> Bonds Chat</a></li>
+                              <li><a href=""> Swing Trading Chat</a></li>
+                              <li><a href=""> Options Chat</a></li>
+                              <li><a href=""> Real Estate Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Dating Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Straight Chat</a></li>
+                              <li><a href="">Gay Chat</a></li>
+                              <li><a href="">Lesbian Chat</a></li>
+                              <li><a href="">Transexual Chat</a></li>
+                              <li><a href="">Bi-sexual Chat</a></li>
+                              <li><a href="">LGBTQ Chat</a></li>
+                              <li><a href="">BDSM Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Hobbies Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Fishing Chat</a></li>
+                              <li><a href="">Hiking Chat</a></li>
+                              <li><a href="">Climbing Chat</a></li>
+                              <li><a href="">Surfing Chat</a></li>
+                              <li><a href="">Dancing Chat</a></li>
+                              <li><a href="">Gardening Chat</a></li>
+                              <li><a href="">Photography Chat</a></li>
+                              <li><a href="">Gamer Chat</a></li>
+                              <li><a href="">Painting Chat</a></li>
+                              <li><a href="">Drawing Chat</a></li>
+                              <li><a href="">Graffiti Chat</a></li>
+                              <li><a href="">Biking Chat</a></li>
+                              <li><a href="">Travel Chat</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">United States Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                           <li><a href="">Alabama Chat</a></li>
+                           <li><a href="">Alaska Chat</a></li>
+                           <li><a href="">Arizona Chat</a></li>
+                           <li><a href="">Arkansas Chat</a></li>
+                           <li><a href="">California Chat</a></li>
+                           <li><a href="">Colorado  Chat</a></li>
+                           <li><a href="">Connecticut Chat</a></li>
+                           <li><a href="">Delaware Chat</a></li>
+                           <li><a href="">Florida Chat</a></li>
+                           <li><a href="">Georgia Chat</a></li>
+                           <li><a href="">Hawaii Chat</a></li>
+                           <li><a href="">Idaho Chat</a></li>
+                           <li><a href="">Illinois Chat</a></li>
+                           <li><a href="">Indiana Chat</a></li>
+                           <li><a href="">Iowa Chat</a></li>
+                           <li><a href="">Kansas Chat</a></li>
+                           <li><a href="">Kentucky Chat</a></li>
+                           <li><a href="">Louisiana Chat</a></li>
+                           <li><a href="">Maine Chat</a></li>
+                           <li><a href="">Maryland Chat </a></li>
+                           <li><a href="">Massachusetts Chat</a></li>
+                           <li><a href="">Michigan Chat</a></li>
+                           <li><a href="">Minnesota Chat</a></li>
+                           <li><a href="">Mississippi Chat</a></li>
+                           <li><a href="">Missouri Chat</a></li>
+                           <li><a href="">Montana Chat</a></li>
+                           <li><a href="">Nebraska Chat</a></li>
+                           <li><a href="">Nevada Chat</a></li>
+                           <li><a href="">New Hampshire Chat</a></li>
+                           <li><a href="">New Jersey Chat</a></li>
+                           <li><a href="">New Mexico Chat</a></li>
+                           <li><a href="">New York Chat</a></li>
+                           <li><a href="">North Carolina Chat</a></li>
+                           <li><a href="">North Dakota Chat</a></li>
+                           <li><a href="">Ohio Chat</a></li>
+                           <li><a href="">Oklahoma Chat</a></li>
+                           <li><a href="">Oregon Chat</a></li>
+                           <li><a href="">Pennsylvania Chat</a></li>
+                           <li><a href="">Rhode Island Chat</a></li>
+                           <li><a href="">South Carolina Chat</a></li>
+                           <li><a href="">South Dakota Chat</a></li>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Fitness Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Weight Lifting Madness Chat</a></li>
+                              <li><a href="">Calisthenic Chat</a></li>
+                              <li><a href="">Yoga Chat</a></li>
+                              <li><a href="">Swimming Chat</a></li>
+                              <li><a href="">Running Chat</a></li>
+                              <li><a href="">Endurance Chat</a></li>
+                              <li><a href="">Aerobics Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Politics Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Democratic Chat</a></li>
+                              <li><a href="">Republican Chat</a></li>
+                              <li><a href=""> Green Party Chat</a></li>
+                              <li><a href="">Reform Chat</a></li>
+                              <li><a href="">Liberalism Chat</a></li>
+                              <li><a href="">Law Chat</a></li>
+                              <li><a href="">Socialism Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Religious Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Muslim Chat</a></li>
+                              <li><a href="">Christian Chat</a></li>
+                              <li><a href="">Catholic Chat</a></li>
+                              <li><a href="">Hindu Chat</a></li>
+                              <li><a href="">Buddhism Chat</a></li>
+                              <li><a href="">Atheist Chat</a></li>
+                              <li><a href="">Jewish Chat</a></li>
+                              <li><a href="">Pagan Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Science Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Astronomy Chat</a></li>
+                              <li><a href="">Biology Chat</a></li>
+                              <li><a href="">Chemistry Chat</a></li>
+                              <li><a href="">Physics Chat</a></li>
+                              <li><a href="">Geography Chat</a></li>
+                              <li><a href="">Geology Chat</a></li>
+                              <li><a href="">Botany Chat</a></li>
+                              <li><a href="">Zoology Chat</a></li>
+                              <li><a href="">Oceanography Chat</a></li>
+                              <li><a href="">Meteorology Chat</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Music Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Hip Hop Chat Chat</a></li>
+                              <li><a href="">Pop Chat Chat</a></li>
+                              <li><a href="">Country Chat Chat</a></li>
+                              <li><a href="">Folk Chat Chat</a></li>
+                              <li><a href="">House Chat Chat</a></li>
+                              <li><a href="">Rock Chat Chat</a></li>
+                              <li><a href="">Metal Chat Chat</a></li>
+                              <li><a href="">Classical Chat Chat</a></li>
+                              <li><a href="">Latin Chat Chat</a></li>
+                              <li><a href="">Soul Chat Chat</a></li>
+                              <li><a href="">Dubstep Chat Chat</a></li>
+                              <li><a href="">Trance Chat Chat</a></li>
+                              <li><a href="">Alternate Rock Chat Chat</a></li>
+                              <li><a href="">Opera Chat Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Television Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Horror Chat</a></li>
+                              <li><a href="">Comedy Chat</a></li>
+                              <li><a href="">Action Chat</a></li>
+                              <li><a href="">Drama Chat</a></li>
+                              <li><a href="">Love Chat</a></li>
+                              <li><a href=""> Science Fiction Chat</a></li>
+                              <li><a href="">Western Chat</a></li>
+                              <li><a href="">Thriller Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Holidays Chats
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Christmas Chat</a></li>
+                              <li><a href="">Thanksgiving Chat</a></li>
+                              <li><a href="">Halloween Chat</a></li>
+                              <li><a href="">Eid Chat</a></li>
+                              <li><a href="">Hanukkah Chat</a></li>
+                              <li><a href="">Easter Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Lifestyle Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">S&M Chat</a></li>
+                              <li><a href="">Gothic Chat</a></li>
+                              <li><a href="">Emo Chat</a></li>
+                              <li><a href="">Vampire Chat</a></li>
+                              <li><a href="">Hippie Chat</a></li>
+                              <li><a href="">Punk Chat</a></li>
+                              <li><a href="">New age Chat</a></li>
+                              <li><a href="">Fandom Chat</a></li>
+                              <li><a href="">Grunge Chat</a></li>
+                              <li><a href="">Bohemian Chat</a></li>
+                              <li><a href="">Deaf Chat</a></li>
+                              <li><a href="">Little People Chat</a></li>
+                              <li><a href="">Mute Chat</a></li>
+                              <li><a href="">Disabled Chat</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Generation Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Baby Boomers</a></li>
+                              <li><a href="">Generation Jones</a></li>
+                              <li><a href="">Generation X</a></li>
+                              <li><a href="">Millennials</a></li>
+                              <li><a href="">Generation Z</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Pass Times Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Partying</a></li>
+                              <li><a href="">Reading</a></li>
+                              <li><a href="">Writing</a></li>
+                              <li><a href="">Shopping</a></li>
+                              <li><a href="">Bar Hopping</a></li>
+                              <li><a href="">Museums</a></li>
+                              <li><a href="">Gardens</a></li>
+                              <li><a href="">Movies</a></li>
+                              <li><a href="">Events</a></li>
+                              <li><a href="">Art Gallery</a></li>
+                              <li><a href="">Wedding</a></li>
+                              <li><a href="">Baby Shower</a></li>
+                           </ul>
+                        </div>
+                        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 section-btn"> <a target="_self" href="#" class="btn btn-primary btn-md">Milestones Chat
+                           </a> 
+                        </div>
+                        <div class="sub_category">
+                           <ul>
+                              <li><a href="">Graduation</a></li>
+                              <li><a href="">Marriage</a></li>
+                              <li><a href="">Divorce</a></li>
+                              <li><a href="">Poligamy</a></li>
+                              <li><a href="">Celebate</a></li>
+                              <li><a href="">Single</a></li>
+                              <li><a href="">Pregnant</a></li>
+                              <li><a href="">Dating</a></li>
+                              <li><a href="">Retirement</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <p>Copyright © WannaChat 2022 </p>
+         </footer>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="assets/app.js"></script>
+   </body>
+</html>

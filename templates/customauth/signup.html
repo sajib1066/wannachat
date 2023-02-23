@@ -1,124 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
-    <!-- Head -->
+   {% load static %}
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-        <meta name="color-scheme" content="light dark" />
-
-        <title>Signup | WannaChat</title>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon" />
-
-        <!-- Font -->
-        <link rel="preconnect" href="../../../../fonts.gstatic.com/index.html" />
-        <link href="../../../../fonts.googleapis.com/css2f74f.css?family=Roboto:wght@400;500;700" rel="stylesheet" />
-
-        <!-- Template CSS -->
-        <link class="css-lt" rel="stylesheet" href="{% static 'assets/css/template.bundle.css' %}" media="(prefers-color-scheme: light)" />
-        <link class="css-dk" rel="stylesheet" href="{% static 'assets/css/template.dark.bundle.css' %}" media="(prefers-color-scheme: dark)" />
-
-        <!-- Theme mode -->
-        <script>
-            if (localStorage.getItem("color-scheme")) {
-                let scheme = localStorage.getItem("color-scheme");
-
-                const LTCSS = document.querySelectorAll("link[class=css-lt]");
-                const DKCSS = document.querySelectorAll("link[class=css-dk]");
-
-                [...LTCSS].forEach((link) => {
-                    link.media = scheme === "light" ? "all" : "not all";
-                });
-
-                [...DKCSS].forEach((link) => {
-                    link.media = scheme === "dark" ? "all" : "not all";
-                });
-            }
-        </script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wannachat || Registration</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <script src="https://kit.fontawesome.com/35c4f0c859.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@200;300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'home/assets/registation.css' %}" />
     </head>
-
-    <body class="bg-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-center min-vh-100 gx-0">
-                <div class="col-12 col-md-5 col-lg-4">
-                    <div class="card card-shadow border-0">
-                        <div class="card-body">
-                            <form action="" method="post">
-                                {% csrf_token %}
-                                <div class="row g-6">
-                                    <div class="col-12">
-                                        <div class="text-center">
-                                            <h2 class="fw-bold mb-2">
-                                                <a href="{% url 'home' %}">WannaChat</a>
-                                            </h2>
-                                            <hr>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="text-center">
-                                            <h3 class="fw-bold mb-2">Sign Up</h3>
-                                            <p>Follow the easy steps</p>
-                                            <p class="text-center text-danger">{{ message }}</p>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            {{ form.name }}
-                                            <label for="id_name">Name</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            {{ form.username }}
-                                            <label for="id_username">Username</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            {{ form.email }}
-                                            <label for="id_email">Email</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            {{ form.password }}
-                                            <label for="id_password">Password</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            {{ form.confirm_password }}
-                                            <label for="id_confirm_password">Confirm Password</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <button class="btn btn-block btn-lg btn-primary w-100" type="submit">Create Account</button>
-                                    </div>
-                                </div>
-                            </form>
+    <body>
+        <section class="row mt-4">
+            <div class="col-md-4 offset-md-4">
+                <form action="reg-box" style="box-shadow: 4px 4px 7px 7px lightgray !important; padding: 25px;">
+                    <h3 class="title-login" style="text-align: center;"><b>Wanna Chat</b></h3>
+                    <hr />
+                    <p style="text-align: center;"><b>Register</b></p>
+                    <div class="form-group">
+                        <p for="username">User Name</p>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12">
+                            <div class="form-group">
+                                <p for="age">Age</p>
+                                <input type="number" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group gender-select">
+                                <p>Gender</p>
+                                <label style="border: 1px solid #ced4da; padding: 8px; border-radius: 0.25rem;">
+                                    <input type="radio" name="gender" value="male" class="'male-select" />
+                                    <span>Male</span>
+                                    <img src="{% static 'assets/images/male.svg' %}" alt="" />
+                                </label>
+                                <label style="box-sizing: border-box; border: 1px solid #ced4da; padding: 9px; border-radius: 0.25rem;" class="female-select">
+                                    <input type="radio" name="gender" value="female" />
+                                    <span>Female</span>
+                                    <img src="{% static 'assets/images/female.svg' %}" alt="" />
+                                </label>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Text -->
-                    <div class="text-center mt-8">
-                        <p>Already have an account? <a href="{% url 'customauth:user_login' %}">Sign in</a></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p for="country">Country</p>
+                                <select id="country" class="form-control">
+                                    <option value="Us">USA</option>
+                                    <option value="cn">Canada</option>
+                                    <option value="uk">UK</option>
+                                    <option value="Bd" selected>Bangladesh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p for="city">City</p>
+                                <select id="country" class="form-control">
+                                    <option value="Us">Dhaka</option>
+                                    <option value="cn">jessore</option>
+                                    <option value="uk">Khulna</option>
+                                    <option value="Bd" selected>chittagong</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <p for="email">Email</p>
+                        <input type="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <p for="password">password</p>
+                        <input type="password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <p for="password">Confirm password</p>
+                        <input type="password" class="form-control" />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn-info sign-up">Sign Up</button>
+                    </div>
+                    <div style="text-align: center;">
+                        <br />
+                        <a href="{% url 'customauth:user_login' %}" target="_blank" class="login-direction" rel="noopener">Login</a>
+                    </div>
+                </form>
             </div>
-            <!-- / .row -->
-        </div>
-
-        <!-- Scripts -->
-        <script src="{% static 'assets/js/vendor.js' %}"></script>
-        <script src="{% static 'assets/js/template.js' %}"></script>
+        </section>
+        <!-- link bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
