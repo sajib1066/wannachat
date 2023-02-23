@@ -649,7 +649,43 @@
 
                         <!-- Chats -->
                         <div class="card-list">
+                            <ul class="nav nav-pills nav-justified mb-2" role="tablist" style="font-size: 12px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="pill" href="#offcanvas-group-tab-buddies" role="tab" aria-controls="offcanvas-group-tab-buddies" aria-selected="true">
+                                        Direct Chat
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#offcanvas-group-tab-media" role="tab" aria-controls="offcanvas-group-tab-media" aria-selected="true">
+                                        Chat Room
+                                    </a>
+                                </li>
+                            </ul>
                             <!-- Card -->
+                            {% for direct in direct_messages %}
+                                <a href="{% url 'chatroom:room' direct.pk %}" class="card border-0 text-reset" {% if chatroom.room.pk == obj.pk %}style="background-color: #8bd3ff"{% endif %}>
+                                    <div class="card-body">
+                                        <div class="row align-items-center gx-4">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-xs">
+                                                    <img class="avatar-img" src="{% static 'assets/img/avatars/bootstrap.svg' %}" alt="Bootstrap Community" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <h6 class="mb-0">{{ direct.friends }}</h6>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <b>{{ direct.room.current_users }} / {{ direct.room.max_user }}</b>
+                                            </div>
+                                        </div>
+                                        <!-- .row -->
+                                    </div>
+                                    <!-- .card-footer -->
+                                </a>
+                            {% endfor %}
                             {% for chatroom in chatrooms %}
                                 <a href="{% url 'chatroom:room' chatroom.room.pk %}" class="card border-0 text-reset" {% if chatroom.room.pk == obj.pk %}style="background-color: #8bd3ff"{% endif %}>
                                     <div class="card-body">

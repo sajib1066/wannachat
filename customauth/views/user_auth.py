@@ -101,7 +101,7 @@ class UserLoginView(LoginView):
                 if user:
                     if user.verified_email:
                         login(request, user)
-                        return redirect('home')
+                        return redirect('chatroom:chat_dashboard')
                     else:
                         messages.error(request, 'Please verify your account. Verification link sent to your email.')
                 else:

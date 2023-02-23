@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <head>
+        {% load static %}
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+        <meta name="color-scheme" content="light dark" />
+
+        <title>WannaChat</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{% static 'assets/img/favicon/favicon.ico' %}" type="image/x-icon" />
+        
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+
+        <!-- Font -->
+        <link rel="preconnect" href="../../../../fonts.gstatic.com/index.html" />
+        <link href="../../../../fonts.googleapis.com/css2f74f.css?family=Roboto:wght@400;500;700" rel="stylesheet" />
+
+        <!-- Template CSS -->
+        <link class="css-lt" rel="stylesheet" href="{% static 'assets/css/template.bundle.css' %}" media="(prefers-color-scheme: light)" />
+        <link class="css-dk" rel="stylesheet" href="{% static 'assets/css/template.dark.bundle.css' %}" media="(prefers-color-scheme: dark)" />
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+
+        <!-- Theme mode -->
+        <script>
+            if (localStorage.getItem("color-scheme")) {
+                let scheme = localStorage.getItem("color-scheme");
+
+                const LTCSS = document.querySelectorAll("link[class=css-lt]");
+                const DKCSS = document.querySelectorAll("link[class=css-dk]");
+
+                [...LTCSS].forEach((link) => {
+                    link.media = scheme === "light" ? "all" : "not all";
+                });
+
+                [...DKCSS].forEach((link) => {
+                    link.media = scheme === "dark" ? "all" : "not all";
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- Layout -->
+        <div class="layout overflow-hidden">
+            <!-- Navigation -->
+            {% include "chatroom/navbar.html" %}
+
+            <!-- Navigation -->
+
+            <!-- Sidebar -->
+            {% include "chatroom/sidebar.html" %}
+            <!-- Sidebar -->
+
+            <!-- Chat -->
+            {% include "chatroom/chat.html" %}
+            <!-- Chat -->
+
+            <!-- Chat: Info -->
+            {% include "chatroom/chatinfo.html" %}
+
+            <!-- Chat: Add member -->
+            {% include "chatroom/addmember.html" %}
+            
+        </div>
+        <!-- Layout -->
+
+        {% include "chatroom/modals.html" %}
+
+        <!-- Scripts -->
+        <script src="{% static 'assets/js/vendor.js' %}"></script>
+        <script src="{% static 'assets/js/template.js' %}"></script>
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

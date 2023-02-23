@@ -6,6 +6,7 @@ app_name = 'chatroom'
 
 
 urlpatterns = [
+    path('', views.ChatDashboardView.as_view(), name='chat_dashboard'),
     path('<int:pk>/', views.ChatRoomView.as_view(), name='room'),
     path('direct/<int:pk>/', views.DirectChatView.as_view(), name='direct_chat'),
     path('sidebar/', views.ChatRoomSidebarView.as_view(), name='sidebar'),
