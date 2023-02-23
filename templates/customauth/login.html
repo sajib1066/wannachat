@@ -16,17 +16,28 @@
     <body>
         <section class="row mt-4">
             <div class="col-md-4 offset-md-4">
-                <form action="login-box" style="box-shadow: 4px 4px 7px 7px lightgray !important; padding: 25px;">
+                <form action="" method="post" style="box-shadow: 4px 4px 7px 7px lightgray !important; padding: 25px;">
+                  {% csrf_token %}
                     <h3 class="title-login" style="text-align: center;"><b>Wanna Chat</b></h3>
                     <hr />
                     <p style="text-align: center;"><b>Login</b></p>
+                    {% if messages %}
+                        <div class="messages text-center">
+                              {% for message in messages %}
+                                 <div{% if message.tags %}
+                                    class="alert alert-sm alert-danger"{% endif %}>
+                                    {{ message }}
+                                 </div>
+                              {% endfor %}
+                        </div>
+                     {% endif %}
                     <div class="form-group">
-                        <label for="username">username or email</label>
-                        <input type="text" class="form-control" />
+                        <label for="id_username_or_email">username or email</label>
+                        {{ form.username_or_email }}
                     </div>
                     <div class="form-group">
-                        <label for="password">password</label>
-                        <input type="text" class="form-control" />
+                        <label for="id_password">password</label>
+                        {{ form.password }}
                     </div>
                     <br />
                     <div class="d-flex justify-content-center">
