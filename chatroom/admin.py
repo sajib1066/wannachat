@@ -8,6 +8,10 @@ class CountryAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'ordering', 'slug']
 
 
+@admin.register(models.State)
+class StateAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'country', 'created_at', 'updated_at']
+
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = [
