@@ -78,6 +78,11 @@ class ChatRoomUser(models.Model):
     def __str__(self):
         return f"{self.room.name}"
 
+    @property
+    def get_last_message(self):
+        message = RoomMessage.objects.filter(room=self.room, user=self.user).last()
+        return message
+
 
 class DirectmessageUser(models.Model):
     TYPE_CHOICES = (
