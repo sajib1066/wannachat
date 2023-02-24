@@ -106,7 +106,13 @@
                                     <div class="sub_category">
                                         <ul>
                                             {% for subcategory in category.sub_categories.all %}
-                                                <li><a href="">{{ subcategory.name }}</a></li>
+                                                <li>
+                                                    {% if category.category_type == 'chatroom' %}
+                                                        <a href="{% url 'chatroom:room' subcategory.pk %}">{{ subcategory.name }}</a>
+                                                    {% else %}
+                                                        <a href="">{{ subcategory.name }}</a>
+                                                    {% endif %}
+                                                </li>
                                             {% endfor %}
                                         </ul>
                                     </div>
