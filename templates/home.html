@@ -36,12 +36,21 @@
                                 <input type="text" class="form-control mt-4 right-side" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" />
                             </div>
                         </ul>
+                        {% if request.user.is_authenticated %}
+                        <div class="nav-item no-padding">
+                            <a class="nav-link right-side" href="{% url 'customauth:user_login' %}">{{ request.user.username }}</a>
+                        </div>
+                        <div class="nav-item no-padding">
+                            <a class="nav-link right-side" href="{% url 'customauth:user_logout' %}">Logout</a>
+                        </div>
+                        {% else %}
                         <div class="nav-item no-padding">
                             <a class="nav-link right-side" href="{% url 'customauth:user_login' %}">Login</a>
                         </div>
                         <div class="nav-item no-padding">
                             <a class="nav-link right-side" href="{% url 'customauth:user_signup' %}">Register</a>
                         </div>
+                        {% endif %}
                         <li class="nav-item dropdown no-padding">
                             <select class="nav-link dropdown-toggle right-side country" id="country" name="country" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #17a2b8 !important; border: none;">
                                 country
