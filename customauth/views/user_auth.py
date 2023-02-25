@@ -38,33 +38,36 @@ class UserRegistrationView(LoginView):
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             confirm_password = form.cleaned_data['confirm_password']
-            if password == confirm_password:
-                try:
-                    user = User.objects.create_user(
-                        email=email,
-                        username=username,
-                        password=password
-                    )
-                    user.profile.name = name
-                    user.profile.gender = gender
-                    user.profile.country = country
-                    user.profile.state = state
-                    user.profile.save()
-                    site = Site.objects.get_current()
-                    send_mail_to_user(
-                        "Welcome to Wannachat",
-                        user.email,
-                        'message.html',
-                        {
-                            'site': site,
-                            'user': user
-                        }
-                    )
-                    return redirect('customauth:user_login')
-                except Exception as e:
-                    message = e
+            if gender:
+                if password == confirm_password:
+                    try:
+                        user = User.objects.create_user(
+                            email=email,
+                            username=username,
+                            password=password
+                        )
+                        user.profile.name = name
+                        user.profile.gender = gender
+                        user.profile.country = country
+                        user.profile.state = state
+                        user.profile.save()
+                        site = Site.objects.get_current()
+                        send_mail_to_user(
+                            "Welcome to Wannachat",
+                            user.email,
+                            'message.html',
+                            {
+                                'site': site,
+                                'user': user
+                            }
+                        )
+                        return redirect('customauth:user_login')
+                    except Exception as e:
+                        message = e
+                else:
+                    message = 'Password and confirm password must be same.'
             else:
-                message = 'Password and confirm password must be same.'
+                message = 'Please select gender.'
         else:
             print(form.errors)
             logger.error(f'Invalid form data: {form.errors}')
