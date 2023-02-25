@@ -32,9 +32,9 @@
                             <li class="nav-item">
                                 <a class="nav-link custom-padding" href="#">Find Friends</a>
                             </li>
-                            <div class="nav-item">
-                                <input type="text" class="form-control mt-4 right-side" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" />
-                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link custom-padding" href="{% url 'chat_rules' %}">Chat Rules</a>
+                            </li>
                         </ul>
                         {% if request.user.is_authenticated %}
                         <div class="nav-item no-padding">
@@ -58,17 +58,6 @@
                                     {% for country in country_list %}
                                         <option class="dropdown-item" {% if selected_country.name == country.name %}selected{% endif %}>{{ country.name }}</option>
                                     {% endfor %}
-                                </div>
-                            </select>
-                        </li>
-                        <li class="nav-item dropdown no-padding">
-                            <select class="nav-link dropdown-toggle right-side" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #17a2b8 !important; border: none;">
-                                ln
-                                <div class="dropdown-menu">
-                                    <option class="dropdown-item" href="#">en</option>
-                                    <option class="dropdown-item" href="#">bn</option>
-                                    <option class="dropdown-item" href="#">cn</option>
-                                    <option class="dropdown-item" href="#">rsa</option>
                                 </div>
                             </select>
                         </li>
@@ -98,9 +87,8 @@
                                 <ul>
                                     <li><a href="{% url 'faq' %}">FAQ</a></li>
                                     <li><a href="{% url 'tos' %}">Terms of Service</a></li>
-                                    <li><a href="{% url 'faq' %}">Conatct</a></li>
+                                    <li><a href="">Contact</a></li>
                                     <li><a href="{% url 'safety_tips' %}">Safety Tips</a></li>
-                                    <li><a href="{% url 'chat_rules' %}">Chat Rules</a></li>
                                     <li><a href="pdf/privacy-policy.pdf">Privacy Policy</a></li>
                                     <li><a href="pdf/cookie-policy.pdf">Cookie Policy</a></li>
                                     <li><a href="">Cookie Settings</a></li>
