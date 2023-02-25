@@ -651,7 +651,7 @@
                         <div class="card-list">
                             <!-- Card -->
                             {% for member in obj.chatroom.all %}
-                                <a href="{% url 'chatroom:room' member.pk %}" class="card border-0 text-reset" {% if chatroom.room.pk == obj.pk %}style="background-color: #8bd3ff"{% endif %}>
+                                <a href="{% url 'chatroom:direct_chat' member.user.pk %}" class="card border-0 text-reset" {% if chatroom.room.pk == obj.pk %}style="background-color: #8bd3ff"{% endif %}>
                                     <div class="card-body">
                                         <div class="row align-items-center gx-4">
                                             <div class="col-auto">

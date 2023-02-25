@@ -35,17 +35,12 @@
                                 <div class="row align-items-center gx-5">
                                     <div class="col-auto">
                                         <div class="avatar d-none d-xl-inline-block">
-                                            <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/1.jpg' %}{% endif %}" alt="" />
+                                            <img class="avatar-img" src="{% if obj.profile.avatar %}{{ obj.profile.avatar.url }}{% endif %}" alt="" />
                                         </div>
                                     </div>
 
                                     <div class="col overflow-hidden">
-                                        <h5 class="text-truncate">{% if obj.profile.name %}
-                                            {{ obj.profile.name }}
-                                            {% else %}
-                                            {{ obj }}
-                                            {% endif %}
-                                        </h5>
+                                        <h5 class="text-truncate">{{ obj.profile.name }}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -56,39 +51,8 @@
                                 <div class="row align-items-center justify-content-end gx-6">
                                     <div class="col-auto">
                                         <a href="" class="icon icon-lg text-muted" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-more-group" aria-controls="offcanvas-more-group">
-                                            <svg class="icon icon-circle-right"  stroke-width="0" stroke="currentColor" fill="currentColor" style="font-size: 100px; height: 55px; width: 31px; color: #138bf5;">
-                                                <use xlink:href="#icon-circle-right"></use>
-                                                <symbol id="icon-circle-right" viewBox="0 0 32 32">
-                                                    <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
-                                                    <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
-                                                </symbol>
-                                            </svg>                                                        
+                                            <i class="fa fa-info-circle "></i>                                                      
                                         </a>
-                                    </div>
-
-                                    <div class="col-auto">
-                                        <div class="avatar-group">
-
-                                            <a href="#" class="avatar avatar-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-add-members" aria-controls="offcanvas-add-members">
-                                                <span class="avatar-text" data-bs-toggle="tooltip" data-bs-placement="bottom" title="<strong>Add People</strong><p>Invite friends to group</p>">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-plus"
-                                                    >
-                                                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                    </svg>
-                                                </span>
-                                            </a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +109,7 @@
                                 <!-- My Message -->
                                 <div class="message message-out">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
-                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/1.jpg' %}{% endif %}" alt="" />
+                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                     </a>
 
                                     <div class="message-inner">
@@ -205,7 +169,7 @@
                                 <!-- Message -->
                                 <div class="message">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
-                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/11.jpg' %}{% endif %}" alt="" />
+                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                     </a>
 
                                     <div class="message-inner">
