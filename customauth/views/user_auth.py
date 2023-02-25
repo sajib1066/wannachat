@@ -32,6 +32,9 @@ class UserRegistrationView(LoginView):
         if form.is_valid():
             name = form.cleaned_data['name']
             username = form.cleaned_data['username']
+            gender = request.POST.get('gender')
+            country = form.cleaned_data['country']
+            state = form.cleaned_data['state']
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             confirm_password = form.cleaned_data['confirm_password']
@@ -43,9 +46,11 @@ class UserRegistrationView(LoginView):
                         password=password
                     )
                     user.profile.name = name
+                    user.profile.gender = gender
+                    user.profile.country = country
+                    user.profile.state = state
                     user.profile.save()
                     site = Site.objects.get_current()
-                    print(site, '************')
                     send_mail_to_user(
                         "Welcome to Wannachat",
                         user.email,
@@ -103,7 +108,10 @@ class UserLoginView(LoginView):
                         login(request, user)
                         return redirect('home')
                     else:
-                        messages.error(request, 'Please verify your account. Verification link sent to your email.')
+                        messages.error(
+                            request,
+                            'Please verify your account. Verification link sent to your email.'  # noqa
+                        )
                 else:
                     messages.error(request, 'Invalid email or password')
             except User.DoesNotExist:
@@ -111,7 +119,9 @@ class UserLoginView(LoginView):
         else:
             print(form.errors)
             logger.error(f'Invalid form data: {form.errors}')
-            messages.error(request, "Invalid email or password. Please enter correctly.")
+            messages.error(
+                request, "Invalid email or password. Please enter correctly."
+            )
         context = {
             'form': form,
             'message': message

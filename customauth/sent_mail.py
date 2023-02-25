@@ -47,7 +47,7 @@ def send_mail_to_user(
         receiver = [mail_receiver, ]
 
     # send email
-    sent_count = send_mail(
+    send_mail(
         subject, plain_message, settings.DEFAULT_FROM_EMAIL, receiver,
         html_message=html_message
     )

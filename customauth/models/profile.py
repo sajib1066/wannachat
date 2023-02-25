@@ -21,8 +21,12 @@ class Profile(models.Model):
     gender = models.CharField(
         _('Gender'), max_length=10, choices=GENDER_CHOICES, default='male'
     )
-    country = models.ForeignKey('chatroom.Country', on_delete=models.SET_NULL, null=True)
-    state = models.ForeignKey('chatroom.State', on_delete=models.SET_NULL, null=True)
+    country = models.ForeignKey(
+        'chatroom.Country', on_delete=models.SET_NULL, null=True
+    )
+    state = models.ForeignKey(
+        'chatroom.State', on_delete=models.SET_NULL, null=True
+    )
     avatar = models.ImageField(
         upload_to=avatar_upload_path, null=True, blank=True
     )
