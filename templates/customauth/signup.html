@@ -19,6 +19,7 @@
         <!-- Template CSS -->
         <link class="css-lt" rel="stylesheet" href="{% static 'assets/css/template.bundle.css' %}" media="(prefers-color-scheme: light)" />
         <link class="css-dk" rel="stylesheet" href="{% static 'assets/css/template.dark.bundle.css' %}" media="(prefers-color-scheme: dark)" />
+        <link class="css-dk" rel="stylesheet" href="{% static 'assets/css/registration.css' %}" />
 
         <!-- Theme mode -->
         <script>
@@ -42,7 +43,7 @@
     <body class="bg-light">
         <div class="container">
             <div class="row align-items-center justify-content-center min-vh-100 gx-0">
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="card card-shadow border-0">
                         <div class="card-body">
                             <form action="" method="post">
@@ -78,6 +79,41 @@
                                             <label for="id_username">Username</label>
                                         </div>
                                     </div>
+
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <div class="col-md-12">
+                                                <div class="radio" style="display: flex;">
+                                                    <div style="width: 50%; border: 1px solid #ced4da; padding: 10px; border-radius: 5px;">
+                                                        <label>
+                                                            <input type="radio" name="gender" value="male" id="gender-male" />
+                                                            <span>Male</span>
+                                                            <img src="{% static 'assets/img/male.webp' %}" alt="">
+                                                        </label>
+                                                    </div>
+                                                    <div style="width: 49%; border: 1px solid #ced4da; padding: 10px; border-radius: 5px; margin-left: 20px;">
+                                                        <label>
+                                                            <input type="radio" name="gender" value="female" id="gender-female" />
+                                                            <span>Female</span>
+                                                            <img class="text-right" src="{% static 'assets/img/female.webp' %}" alt="">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            {{ form.country }}
+                                            <label for="id_country">Country</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            {{ form.state }}
+                                            <label for="id_state">State</label>
+                                        </div>
+                                    </div>
     
                                     <div class="col-12">
                                         <div class="form-floating">
@@ -85,7 +121,6 @@
                                             <label for="id_email">Email</label>
                                         </div>
                                     </div>
-    
                                     <div class="col-12">
                                         <div class="form-floating">
                                             {{ form.password }}

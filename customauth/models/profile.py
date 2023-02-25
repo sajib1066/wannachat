@@ -11,8 +11,18 @@ def avatar_upload_path(instance, filename):
 
 
 class Profile(models.Model):
+    GENDER_CHOICES = (
+        ('male', 'Male'),
+        ('female', 'Female'),
+    )
+
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(_('Name'), max_length=255, blank=True, null=True)
+    gender = models.CharField(
+        _('Gender'), max_length=10, choices=GENDER_CHOICES, default='male'
+    )
+    country = models.ForeignKey('chatroom.Country', on_delete=models.SET_NULL, null=True)
+    state = models.ForeignKey('chatroom.State', on_delete=models.SET_NULL, null=True)
     avatar = models.ImageField(
         upload_to=avatar_upload_path, null=True, blank=True
     )

@@ -1,4 +1,5 @@
 from django import forms
+from chatroom.models import Country, State
 
 
 class SignUpForm(forms.Form):
@@ -21,6 +22,20 @@ class SignUpForm(forms.Form):
             'username': 'username',
             'placeholder': 'Username',
             'autofocus': True,
+        })
+    )
+    country = forms.ModelChoiceField(
+        label='Country',
+        queryset=Country.objects.all(),
+        widget=forms.Select(attrs={
+            'class': 'form-control',
+        })
+    )
+    state = forms.ModelChoiceField(
+        label='State',
+        queryset=State.objects.all(),
+        widget=forms.Select(attrs={
+            'class': 'form-control',
         })
     )
     email = forms.CharField(
