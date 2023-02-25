@@ -109,7 +109,7 @@
                                 <!-- My Message -->
                                 <div class="message message-out">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
-                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
+                                        <img class="avatar-img" src="{% if message.sender_user.profile.avatar %}{{ message.sender_user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                     </a>
 
                                     <div class="message-inner">
@@ -169,7 +169,7 @@
                                 <!-- Message -->
                                 <div class="message">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal-user-profile" class="avatar avatar-responsive">
-                                        <img class="avatar-img" src="{% if message.user.profile.avatar %}{{ message.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
+                                        <img class="avatar-img" src="{% if obj.profile.avatar %}{{ obj.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                     </a>
 
                                     <div class="message-inner">
