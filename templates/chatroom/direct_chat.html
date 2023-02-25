@@ -35,7 +35,7 @@
                                 <div class="row align-items-center gx-5">
                                     <div class="col-auto">
                                         <div class="avatar d-none d-xl-inline-block">
-                                            <img class="avatar-img" src="{% if obj.profile.avatar %}{{ obj.profile.avatar.url }}{% endif %}" alt="" />
+                                            <img class="avatar-img" src="{% if obj.profile.avatar %}{{ obj.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                         </div>
                                     </div>
 

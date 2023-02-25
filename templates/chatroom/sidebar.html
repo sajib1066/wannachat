@@ -656,7 +656,7 @@
                                         <div class="row align-items-center gx-4">
                                             <div class="col-auto">
                                                 <div class="avatar avatar-xs">
-                                                    <img class="avatar-img" src="{% if member.user.profile.avatar %}{{ member.user.profile.avatar.url }}{% endif %}" alt="Bootstrap Community" />
+                                                    <img class="avatar-img" src="{% if member.user.profile.avatar %}{{ member.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="Bootstrap Community" />
                                                 </div>
                                             </div>
 
