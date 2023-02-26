@@ -47,6 +47,7 @@ urlpatterns = [
         'cookie-settings/', views.CookieSettingsPageView.as_view(),
         name='cookie_settings'
     ),
+    path('contact/', views.ContactPageView.as_view(), name='contact'),
 
     path('auth/', include('customauth.urls')),
     path('chatroom/', include('chatroom.urls')),

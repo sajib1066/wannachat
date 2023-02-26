@@ -4,7 +4,7 @@ from django_filters import (
 )
 from django.db.models import Q
 
-from chatroom.models import Category, SubCategory, Country
+from chatroom.models import Category, SubCategory, Country, Contact
 
 
 class CategoryForm(forms.ModelForm):
@@ -134,3 +134,24 @@ class SubCategoryFilterForm(FilterSet):
         return queryset.filter(
             Q(name__icontains=value) or Q(category__name__icontains=value)
         )
+
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = ['name', 'email', 'message']
+
+        widgets = {
+            'name': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Enter name'
+            }),
+            'email': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Enter email address'
+            }),
+            'message': forms.Textarea(attrs={
+                'class': 'form-control',
+                'placeholder': 'Enter message'
+            }),
+        }

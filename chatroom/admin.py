@@ -53,3 +53,8 @@ class DirectMessageAdmin(admin.ModelAdmin):
     list_display = [
         'id', 'sender_user', 'receiver_user', 'created_at', 'updated_at'
     ]
+
+
+@admin.register(models.Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'email', 'created_at', 'updated_at']

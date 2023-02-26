@@ -3,6 +3,7 @@ from .category import (
     DirectMessage, DirectmessageUser
 )
 from .country import Country, State
+from .contact import Contact
 
 
 __all__ = [
@@ -14,4 +15,5 @@ __all__ = [
     RoomMessage,
     DirectmessageUser,
     DirectMessage,
+    Contact,
 ]

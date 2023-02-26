@@ -1,8 +1,10 @@
 from django.views.generic import View, TemplateView
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib import messages
 
-from chatroom.models import Category, Country
+from chatroom.models import Category, Country, Contact
+from chatroom.forms import ContactForm
 
 
 class HomeView(View):
@@ -71,3 +73,26 @@ class CookiePolicyPageView(TemplateView):
 
 class CookieSettingsPageView(TemplateView):
     template_name = 'home/cookie_settings.html'
+
+
+class ContactPageView(View):
+    template_name = 'home/contact.html'
+    model = Contact
+    form_class = ContactForm
+
+    def get(self, request, *args, **kwargs):
+        form = self.form_class()
+        context = {
+            'form': form,
+        }
+        return render(request, self.template_name, context)
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message submitted successfully.')
+        context = {
+            'form': form,
+        }
+        return render(request, self.template_name, context)

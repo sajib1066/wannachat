@@ -1,0 +1,55 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'home/assets/faq.css' %}">
+    <style>
+        label {
+            color: #000;
+        }
+        .asteriskField {
+            color: #e40f0f;
+        }
+        .message {
+            text-align: center;
+            color: #15d6bc;
+            font-weight: bold;
+        }
+    </style>
+{% endblock extracss %}
+
+
+{% block content %}
+<div class="col-md-7 col-lg-8">
+    <div class="col-md-6 offset-md-3">
+        <div class="faq-title text-center pb-3">
+           <h2 style="color: black;">Contact Us</h2>
+        </div>
+     </div>
+    <div class="contact-form mt-4" style="box-shadow: 4px 4px 7px 7px lightgray !important; padding: 25px; background-color: white;">
+        <form id="contact" action="" method="POST">
+            {% csrf_token %}
+            {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                        <div class="message">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <div class="form-group">
+                {{ form.name|as_crispy_field }}
+            </div>
+            <div class="form-group">
+                {{ form.email|as_crispy_field  }}
+            </div>
+            <div class="form-group">
+                {{ form.message|as_crispy_field }}
+            </div>
+            <button type="submit" class="btn w-100" style="background-color: #17a2b8; color: #fff;">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}
