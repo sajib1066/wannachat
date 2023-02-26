@@ -276,4 +276,10 @@ footer p {
 
 
     
+.content{
+background-color: #17A2A0 !important;
+}
 
+.find-friend{
+    color: red !important;
+}

@@ -2,10 +2,9 @@
 	margin: 0;
 	padding: 0;
 	text-transform: capitalize;
-	font-family: "Labrada", serif;
-
-	/* font-family: 'Roboto', sans-serif;
-	*/
+	/* font-family: "Labrada", serif; */
+	 font-family: 'Roboto', sans-serif;
+	 
 }
 
 body {

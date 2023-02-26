@@ -1,7 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Labrada", serif;
+	text-transform: capitalize;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 	margin-top: 2.2rem;
 	width: 50%;
 	height: 3rem;
+	text-transform: capitalize;
 	font-size: 0.9rem;
 	font-weight: 700;
 	align-items: center;

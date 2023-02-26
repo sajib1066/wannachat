@@ -7,7 +7,7 @@ from chatroom.models import Category, Country
 
 class HomeView(View):
     """ Home view """
-    template_name = 'home.html'
+    template_name = 'home/home.html'
 
     def get(self, request):
         try:
@@ -46,28 +46,28 @@ class ChangeCountryView(View):
 
 
 class FAQPageView(TemplateView):
-    template_name = 'pages/faq.html'
+    template_name = 'home/faq.html'
 
 
 class TOSPageView(TemplateView):
-    template_name = 'pages/tos.html'
+    template_name = 'home/tos.html'
 
 
 class ChatRulesPageView(TemplateView):
-    template_name = 'pages/chat_rules.html'
+    template_name = 'home/chat_rules.html'
 
 
 class SafetyTipsPageView(TemplateView):
-    template_name = 'pages/safety_tips.html'
+    template_name = 'home/safety_tips.html'
 
 
 class PrivacyPolicyPageView(TemplateView):
-    template_name = 'pages/privacy_policy.html'
+    template_name = 'home/privacy_policy.html'
 
 
 class CookiePolicyPageView(TemplateView):
-    template_name = 'pages/cookie_policy.html'
+    template_name = 'home/cookie_policy.html'
 
 
 class CookieSettingsPageView(TemplateView):
-    template_name = 'pages/cookie_settings.html'
+    template_name = 'home/cookie_settings.html'

@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+
+
+{% block content %}
+<div class="col-md-7 col-lg-8">
+    <div class="row">
+        {% for category in category_list %}
+        <div class="col-md-6 col-lg-4">
+            <div class="section-btn"><a target="_self" href="#" class="btn btn-primary btn-md" id="random-chat">{{ category.name }}</a></div>
+            <div class="sub_category">
+                <ul>
+                    {% for subcategory in category.sub_categories.all %}
+                        <li>
+                            {% if category.category_type == 'chatroom' %}
+                                <a href="{% url 'chatroom:room' subcategory.pk %}">{{ subcategory.name }}</a>
+                            {% else %}
+                                <a href="">{{ subcategory.name }}</a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
