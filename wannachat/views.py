@@ -96,3 +96,11 @@ class ContactPageView(View):
             'form': form,
         }
         return render(request, self.template_name, context)
+
+
+class FindFriendView(View):
+    template_name = 'home/find-friend.html'
+
+    def get(self, request, *args, **kwargs):
+        context = {}
+        return render(request, self.template_name, context)

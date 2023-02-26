@@ -48,6 +48,7 @@ urlpatterns = [
         name='cookie_settings'
     ),
     path('contact/', views.ContactPageView.as_view(), name='contact'),
+    path('find-friend/', views.FindFriendView.as_view(), name='find_friend'),
 
     path('auth/', include('customauth.urls')),
     path('chatroom/', include('chatroom.urls')),

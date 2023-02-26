@@ -1,0 +1,70 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="{% static 'home/assets/faq.css' %}">
+{% endblock extracss %}
+
+
+{% block content %}
+<div class="col-md-7 col-lg-8 find-friend">
+    <div class="card">
+        <div class="card-body">
+            <input type="text" class="form-control" placeholder="search name" id="name" />
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <div class="form-group gender-select">
+                <p>Gender</p>
+                <label style="border: 1px solid #ced4da; padding: 8px; border-radius: 0.25rem; background-color: #17a2b8;">
+                    <input type="radio" name="gender" value="male" class="'male-select" /> <span>Male</span> <img src="assets/images/male.svg" alt="male" />
+                </label>
+                <label style="box-sizing: border-box; border: 1px solid #ced4da; padding: 9px; border-radius: 0.25rem; margin-left: 9px; background-color: palevioletred;" class="female-select">
+                    <input type="radio" name="gender" value="female" /> <span>Female</span> <img src="assets/images/female.svg" alt="female" />
+                </label>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- <p for="country">Country</p> -->
+                        <select id="country" class="form-control" style="background-color: #17a2b8 !important;">
+                            <option value="Us">
+                                USA
+                            </option>
+                            <option value="cn">
+                                Canada
+                            </option>
+                            <option value="uk">
+                                UK
+                            </option>
+                            <option value="Bd">
+                                Bangladesh
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- <p for="city">City</p> -->
+                        <select id="country" class="form-control" style="background-color: #17a2b8 !important;">
+                            <option value="Us">
+                                Dhaka
+                            </option>
+                            <option value="cn">
+                                jessore
+                            </option>
+                            <option value="uk">
+                                Khulna
+                            </option>
+                            <option value="Bd">
+                                chittagong
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
