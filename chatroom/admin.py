@@ -5,7 +5,7 @@ from chatroom import models
 
 @admin.register(models.Country)
 class CountryAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'ordering', 'slug']
+    list_display = ['id', 'name', 'slug']
 
 
 @admin.register(models.State)
@@ -25,7 +25,7 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(models.SubCategory)
 class SubCategoryAdmin(admin.ModelAdmin):
     list_display = [
-        'id', 'category', 'name', 'is_active', 'ordering', 'created_at', 'updated_at'
+        'id', 'category', 'name', 'is_active', 'created_at', 'updated_at'
     ]
     list_filter = ['category', 'is_active']
     search_fields = ['name']

@@ -49,13 +49,12 @@ class SubCategory(models.Model):
     max_user = models.PositiveIntegerField(default=35)
     max_previous_message = models.PositiveIntegerField(default=200)
     is_active = models.BooleanField(default=True)
-    ordering = models.PositiveIntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         unique_together = ['category', 'name']
-        ordering = ('ordering', )
+        ordering = ('name', )
 
     def __str__(self):
         return f"{self.category.name} ({self.name})"
