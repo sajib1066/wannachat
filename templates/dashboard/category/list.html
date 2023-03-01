@@ -94,6 +94,7 @@
                                                 <td>{{ object.created_at }}</td>
                                                 <td>{{ object.updated_at }}</td>
                                                 <td width="220px">
+                                                    <a href="" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>
                                                     {% if object.is_active %}
                                                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#activeDeactiveModal_{{ object.pk }}">
                                                             Deactive
