@@ -28,7 +28,7 @@ class AdminLoginView(LoginView):
             return redirect('dashboard:dashboard')
         form = self.form_class(request.POST)
         if form.is_valid():
-            email = form.cleaned_data['email']
+            email = form.cleaned_data['username_or_email']
             password = form.cleaned_data['password']
             user = authenticate(email=email, password=password)
             if user:
