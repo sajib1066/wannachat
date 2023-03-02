@@ -4,7 +4,18 @@ from django_filters import (
 )
 from django.db.models import Q
 
-from chatroom.models import Category, SubCategory, Country, Contact
+from chatroom.models import Country, Category, SubCategory, Country, Contact
+
+
+class CountryForm(forms.ModelForm):
+    class Meta:
+        model = Country
+        fields = ['name', 'slug']
+
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'slug': forms.TextInput(attrs={'class': 'form-control'}),
+        }
 
 
 class CategoryForm(forms.ModelForm):
@@ -32,6 +43,41 @@ class SubCategoryForm(forms.ModelForm):
                 'class': 'form-control'
             }),
         }
+
+
+class CountryFilterForm(FilterSet):
+    q = CharFilter(
+        label='Search',
+        method='filter_by_q',
+    )
+
+    STATUS_CHOICES = (
+        (True, 'Active'),
+        (False, 'Inactive'),
+    )
+    is_active = ChoiceFilter(
+        field_name='is_active',
+        choices=STATUS_CHOICES,
+        label='Status',
+        empty_label='-Status-',
+    )
+
+    class Meta:
+        model = Country
+        fields = ()
+
+    o = OrderingFilter(
+        fields=(
+            ('name', 'Name'),
+            ('created_at', 'Created Date'),
+            ('updated_at', 'Updated Date'),
+        )
+    )
+
+    def filter_by_q(self, queryset, name, value):
+        return queryset.filter(
+            Q(name__icontains=value) or Q(slug__icontains=value)
+        )
 
 
 class CategoryFilterForm(FilterSet):

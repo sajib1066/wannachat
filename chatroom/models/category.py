@@ -13,7 +13,8 @@ class Category(models.Model):
         ('paid', 'Paid'),
     )
     country = models.ForeignKey(
-        "chatroom.Country", on_delete=models.SET_NULL, null=True
+        "chatroom.Country", on_delete=models.SET_NULL, null=True,
+        related_name='chatroom'
     )
     name = models.CharField(max_length=255)
     category_type = models.CharField(max_length=20, choices=TYPE_CHOICES)

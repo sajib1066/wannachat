@@ -14,6 +14,10 @@ class Country(models.Model):
     def __str__(self):
         return self.name
 
+    @property
+    def total_chatrooms(self):
+        return self.chatroom.all().count()
+
 
 class State(models.Model):
     country = models.ForeignKey(

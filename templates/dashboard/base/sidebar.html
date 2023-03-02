@@ -39,6 +39,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{% url 'dashboard:country_list' %}" class="nav-link">
+                        <i class="nav-icon fa fa-list-alt"></i>
+                        <p>
+                            Country
+                            <span class="right badge badge-danger">{{ total_country }}</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{% url 'dashboard:category_list' %}" class="nav-link">
                         <i class="nav-icon fa fa-list-alt"></i>
                         <p>

@@ -7,6 +7,29 @@ app_name = 'dashboard'
 urlpatterns = [
     path('', views.DashboardView.as_view(), name='dashboard'),
 
+    # country urls
+    path(
+        'country-list/', views.CountryListView.as_view(),
+        name='country_list'
+    ),
+    path(
+        'country-create/', views.CountryCreateView.as_view(),
+        name='country_create'
+    ),
+    path(
+        'country/<int:pk>/edit/', views.CountryEditView.as_view(),
+        name='country_edit'
+    ),
+    path(
+        'country/<int:pk>/status-change/',
+        views.CountryStatusUpdateView.as_view(),
+        name='country_status_change'
+    ),
+    path(
+        'country/<int:pk>/delete/', views.CountryDeleteView.as_view(),
+        name='country_delete'
+    ),
+
     # category urls
     path(
         'category-list/', views.CategoryListView.as_view(),
