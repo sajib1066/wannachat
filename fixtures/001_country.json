@@ -1,24 +1,2104 @@
 [
-{
-    "model": "chatroom.country",
-    "pk": 1,
-    "fields": {
-        "name": "United States",
-        "ordering": 1,
-        "slug": "united-states",
-        "created_at": "2023-01-27T20:10:07.246Z",
-        "updated_at": "2023-01-27T20:10:22.090Z"
+    {
+        "model": "chatroom.country",
+        "pk": 1,
+        "fields": {
+            "name": "United States",
+            "slug": "united-states",
+            "is_active": true,
+            "created_at": "2023-01-27T20:10:07.246Z",
+            "updated_at": "2023-01-27T20:10:22.090Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 2,
+        "fields": {
+            "name": "Canada",
+            "slug": "canada",
+            "is_active": true,
+            "created_at": "2023-01-27T20:10:30.066Z",
+            "updated_at": "2023-01-27T20:10:30.066Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 3,
+        "fields": {
+            "name": "Bangladesh",
+            "slug": "bangladesh",
+            "is_active": true,
+            "created_at": "2023-02-24T05:43:55.897Z",
+            "updated_at": "2023-02-24T05:43:55.897Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 4,
+        "fields": {
+            "name": "China",
+            "slug": "China",
+            "is_active": true,
+            "created_at": "2023-03-01T20:53:29.741Z",
+            "updated_at": "2023-03-01T20:53:29.741Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 5,
+        "fields": {
+            "name": "India",
+            "slug": "India",
+            "is_active": true,
+            "created_at": "2023-03-01T20:53:39.363Z",
+            "updated_at": "2023-03-01T20:53:39.363Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 6,
+        "fields": {
+            "name": "Indonesia",
+            "slug": "Indonesia",
+            "is_active": true,
+            "created_at": "2023-03-01T20:54:09.901Z",
+            "updated_at": "2023-03-01T20:54:09.901Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 7,
+        "fields": {
+            "name": "Pakistan",
+            "slug": "Pakistan",
+            "is_active": true,
+            "created_at": "2023-03-01T20:54:16.123Z",
+            "updated_at": "2023-03-01T20:54:16.123Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 8,
+        "fields": {
+            "name": "Brazil",
+            "slug": "Brazil",
+            "is_active": true,
+            "created_at": "2023-03-01T20:54:22.189Z",
+            "updated_at": "2023-03-01T20:54:22.189Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 9,
+        "fields": {
+            "name": "Nigeria",
+            "slug": "Nigeria",
+            "is_active": true,
+            "created_at": "2023-03-01T20:54:28.992Z",
+            "updated_at": "2023-03-01T20:54:28.992Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 10,
+        "fields": {
+            "name": "Russia",
+            "slug": "Russia",
+            "is_active": true,
+            "created_at": "2023-03-01T20:54:46.220Z",
+            "updated_at": "2023-03-01T20:54:46.220Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 11,
+        "fields": {
+            "name": "Mexico",
+            "slug": "Mexico",
+            "is_active": true,
+            "created_at": "2023-03-01T20:54:54.565Z",
+            "updated_at": "2023-03-01T20:54:54.565Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 12,
+        "fields": {
+            "name": "Japan",
+            "slug": "Japan",
+            "is_active": true,
+            "created_at": "2023-03-01T20:55:30.085Z",
+            "updated_at": "2023-03-01T20:55:30.085Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 13,
+        "fields": {
+            "name": "Ethiopia",
+            "slug": "Ethiopia",
+            "is_active": true,
+            "created_at": "2023-03-01T20:55:37.484Z",
+            "updated_at": "2023-03-01T20:55:37.484Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 14,
+        "fields": {
+            "name": "Philippines",
+            "slug": "Philippines",
+            "is_active": true,
+            "created_at": "2023-03-01T20:55:43.799Z",
+            "updated_at": "2023-03-01T20:55:43.799Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 15,
+        "fields": {
+            "name": "Egypt",
+            "slug": "Egypt",
+            "is_active": true,
+            "created_at": "2023-03-01T20:55:49.496Z",
+            "updated_at": "2023-03-01T20:55:49.496Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 16,
+        "fields": {
+            "name": "Vietnam",
+            "slug": "Vietnam",
+            "is_active": true,
+            "created_at": "2023-03-01T20:55:56.657Z",
+            "updated_at": "2023-03-01T20:55:56.657Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 17,
+        "fields": {
+            "name": "DR Congo",
+            "slug": "DR-Congo",
+            "is_active": true,
+            "created_at": "2023-03-01T20:56:09.096Z",
+            "updated_at": "2023-03-01T20:56:09.096Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 18,
+        "fields": {
+            "name": "Turkey",
+            "slug": "Turkey",
+            "is_active": true,
+            "created_at": "2023-03-01T20:56:22.710Z",
+            "updated_at": "2023-03-01T20:56:22.710Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 19,
+        "fields": {
+            "name": "Iran",
+            "slug": "Iran",
+            "is_active": true,
+            "created_at": "2023-03-01T20:56:42.131Z",
+            "updated_at": "2023-03-01T20:56:42.131Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 20,
+        "fields": {
+            "name": "Germany",
+            "slug": "Germany",
+            "is_active": true,
+            "created_at": "2023-03-01T20:56:49.616Z",
+            "updated_at": "2023-03-01T20:56:49.616Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 21,
+        "fields": {
+            "name": "Thailand",
+            "slug": "Thailand",
+            "is_active": true,
+            "created_at": "2023-03-01T20:56:57.527Z",
+            "updated_at": "2023-03-01T20:56:57.527Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 22,
+        "fields": {
+            "name": "United Kingdom",
+            "slug": "United-Kingdom",
+            "is_active": true,
+            "created_at": "2023-03-01T20:57:09.032Z",
+            "updated_at": "2023-03-01T20:57:09.032Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 23,
+        "fields": {
+            "name": "France",
+            "slug": "France",
+            "is_active": true,
+            "created_at": "2023-03-01T20:57:15.446Z",
+            "updated_at": "2023-03-01T20:57:15.446Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 24,
+        "fields": {
+            "name": "Italy",
+            "slug": "Italy",
+            "is_active": true,
+            "created_at": "2023-03-01T20:57:21.709Z",
+            "updated_at": "2023-03-01T20:57:21.709Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 25,
+        "fields": {
+            "name": "Tanzania",
+            "slug": "Tanzania",
+            "is_active": true,
+            "created_at": "2023-03-01T20:57:28.317Z",
+            "updated_at": "2023-03-01T20:57:28.317Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 26,
+        "fields": {
+            "name": "South Africa",
+            "slug": "South-Africa",
+            "is_active": true,
+            "created_at": "2023-03-01T20:57:37.945Z",
+            "updated_at": "2023-03-01T20:57:37.945Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 27,
+        "fields": {
+            "name": "Myanmar",
+            "slug": "Myanmar",
+            "is_active": true,
+            "created_at": "2023-03-01T20:57:48.566Z",
+            "updated_at": "2023-03-01T20:57:48.566Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 28,
+        "fields": {
+            "name": "Kenya",
+            "slug": "Kenya",
+            "is_active": true,
+            "created_at": "2023-03-01T20:57:55.206Z",
+            "updated_at": "2023-03-01T20:57:55.206Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 29,
+        "fields": {
+            "name": "South Korea",
+            "slug": "South-Korea",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:04.691Z",
+            "updated_at": "2023-03-01T20:58:04.691Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 30,
+        "fields": {
+            "name": "Colombia",
+            "slug": "Colombia",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:10.941Z",
+            "updated_at": "2023-03-01T20:58:10.941Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 31,
+        "fields": {
+            "name": "Spain",
+            "slug": "Spain",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:16.972Z",
+            "updated_at": "2023-03-01T20:58:16.972Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 32,
+        "fields": {
+            "name": "Uganda",
+            "slug": "Uganda",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:22.933Z",
+            "updated_at": "2023-03-01T20:58:22.933Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 33,
+        "fields": {
+            "name": "Argentina",
+            "slug": "Argentina",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:29.086Z",
+            "updated_at": "2023-03-01T20:58:29.086Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 34,
+        "fields": {
+            "name": "Algeria",
+            "slug": "Algeria",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:35.959Z",
+            "updated_at": "2023-03-01T20:58:35.959Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 35,
+        "fields": {
+            "name": "Sudan",
+            "slug": "Sudan",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:48.787Z",
+            "updated_at": "2023-03-01T20:58:48.787Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 36,
+        "fields": {
+            "name": "Ukraine",
+            "slug": "Ukraine",
+            "is_active": true,
+            "created_at": "2023-03-01T20:58:55.536Z",
+            "updated_at": "2023-03-01T20:58:55.536Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 37,
+        "fields": {
+            "name": "Iraq",
+            "slug": "Iraq",
+            "is_active": true,
+            "created_at": "2023-03-01T20:59:03.026Z",
+            "updated_at": "2023-03-01T20:59:03.026Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 38,
+        "fields": {
+            "name": "Afghanistan",
+            "slug": "Afghanistan",
+            "is_active": true,
+            "created_at": "2023-03-01T20:59:11.268Z",
+            "updated_at": "2023-03-01T20:59:11.268Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 39,
+        "fields": {
+            "name": "Poland",
+            "slug": "Poland",
+            "is_active": true,
+            "created_at": "2023-03-01T20:59:19.277Z",
+            "updated_at": "2023-03-01T20:59:19.277Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 40,
+        "fields": {
+            "name": "Morocco",
+            "slug": "Morocco",
+            "is_active": true,
+            "created_at": "2023-03-01T20:59:34.977Z",
+            "updated_at": "2023-03-01T20:59:34.977Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 41,
+        "fields": {
+            "name": "Saudi Arabia",
+            "slug": "Saudi-Arabia",
+            "is_active": true,
+            "created_at": "2023-03-01T20:59:45.577Z",
+            "updated_at": "2023-03-01T20:59:45.577Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 42,
+        "fields": {
+            "name": "Uzbekistan",
+            "slug": "Uzbekistan",
+            "is_active": true,
+            "created_at": "2023-03-01T20:59:55.527Z",
+            "updated_at": "2023-03-01T20:59:55.527Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 43,
+        "fields": {
+            "name": "Peru",
+            "slug": "Peru",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:01.830Z",
+            "updated_at": "2023-03-01T21:00:01.830Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 44,
+        "fields": {
+            "name": "Angola",
+            "slug": "Angola",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:07.830Z",
+            "updated_at": "2023-03-01T21:00:07.830Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 45,
+        "fields": {
+            "name": "Malaysia",
+            "slug": "Malaysia",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:14.020Z",
+            "updated_at": "2023-03-01T21:00:14.020Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 46,
+        "fields": {
+            "name": "Mozambique",
+            "slug": "Mozambique",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:20.181Z",
+            "updated_at": "2023-03-01T21:00:20.181Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 47,
+        "fields": {
+            "name": "Ghana",
+            "slug": "Ghana",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:25.297Z",
+            "updated_at": "2023-03-01T21:00:25.297Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 48,
+        "fields": {
+            "name": "Yemen",
+            "slug": "Yemen",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:32.373Z",
+            "updated_at": "2023-03-01T21:00:32.373Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 49,
+        "fields": {
+            "name": "Nepal",
+            "slug": "Nepal",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:38.243Z",
+            "updated_at": "2023-03-01T21:00:38.243Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 50,
+        "fields": {
+            "name": "Venezuela",
+            "slug": "Venezuela",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:45.325Z",
+            "updated_at": "2023-03-01T21:00:45.325Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 51,
+        "fields": {
+            "name": "Madagascar",
+            "slug": "Madagascar",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:51.421Z",
+            "updated_at": "2023-03-01T21:00:51.421Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 52,
+        "fields": {
+            "name": "Cameroon",
+            "slug": "Cameroon",
+            "is_active": true,
+            "created_at": "2023-03-01T21:00:56.412Z",
+            "updated_at": "2023-03-01T21:00:56.412Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 53,
+        "fields": {
+            "name": "North Korea",
+            "slug": "North-Korea",
+            "is_active": true,
+            "created_at": "2023-03-01T21:01:10.722Z",
+            "updated_at": "2023-03-01T21:01:10.722Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 54,
+        "fields": {
+            "name": "Australia",
+            "slug": "Australia",
+            "is_active": true,
+            "created_at": "2023-03-01T21:01:22.409Z",
+            "updated_at": "2023-03-01T21:01:22.409Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 55,
+        "fields": {
+            "name": "Niger",
+            "slug": "Niger",
+            "is_active": true,
+            "created_at": "2023-03-01T21:01:35.294Z",
+            "updated_at": "2023-03-01T21:01:35.294Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 56,
+        "fields": {
+            "name": "Sri Lanka",
+            "slug": "Sri-Lanka",
+            "is_active": true,
+            "created_at": "2023-03-01T21:01:46.413Z",
+            "updated_at": "2023-03-01T21:01:46.413Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 57,
+        "fields": {
+            "name": "Burkina Faso",
+            "slug": "Burkina-Faso",
+            "is_active": true,
+            "created_at": "2023-03-02T06:15:23.097Z",
+            "updated_at": "2023-03-02T06:15:23.097Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 58,
+        "fields": {
+            "name": "Mali",
+            "slug": "Mali",
+            "is_active": true,
+            "created_at": "2023-03-02T06:15:47.525Z",
+            "updated_at": "2023-03-02T06:15:47.525Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 59,
+        "fields": {
+            "name": "Romania",
+            "slug": "Romania",
+            "is_active": true,
+            "created_at": "2023-03-02T06:15:55.969Z",
+            "updated_at": "2023-03-02T06:15:55.969Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 60,
+        "fields": {
+            "name": "Malawi",
+            "slug": "Malawi",
+            "is_active": true,
+            "created_at": "2023-03-02T06:16:17.163Z",
+            "updated_at": "2023-03-02T06:16:17.164Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 61,
+        "fields": {
+            "name": "Chile",
+            "slug": "Chile",
+            "is_active": true,
+            "created_at": "2023-03-02T06:16:25.115Z",
+            "updated_at": "2023-03-02T06:16:25.115Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 62,
+        "fields": {
+            "name": "Kazakhstan",
+            "slug": "Kazakhstan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:16:33.007Z",
+            "updated_at": "2023-03-02T06:16:33.007Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 63,
+        "fields": {
+            "name": "Zambia",
+            "slug": "Zambia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:16:39.452Z",
+            "updated_at": "2023-03-02T06:16:39.452Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 64,
+        "fields": {
+            "name": "Guatemala",
+            "slug": "Guatemala",
+            "is_active": true,
+            "created_at": "2023-03-02T06:16:45.798Z",
+            "updated_at": "2023-03-02T06:16:45.798Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 65,
+        "fields": {
+            "name": "Ecuador",
+            "slug": "Ecuador",
+            "is_active": true,
+            "created_at": "2023-03-02T06:16:52.761Z",
+            "updated_at": "2023-03-02T06:16:52.761Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 66,
+        "fields": {
+            "name": "Syria",
+            "slug": "Syria",
+            "is_active": true,
+            "created_at": "2023-03-02T06:16:59.781Z",
+            "updated_at": "2023-03-02T06:16:59.781Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 67,
+        "fields": {
+            "name": "Netherlands",
+            "slug": "Netherlands",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:06.552Z",
+            "updated_at": "2023-03-02T06:17:06.552Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 68,
+        "fields": {
+            "name": "Senegal",
+            "slug": "Senegal",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:13.980Z",
+            "updated_at": "2023-03-02T06:17:13.980Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 69,
+        "fields": {
+            "name": "Cambodia",
+            "slug": "Cambodia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:20.112Z",
+            "updated_at": "2023-03-02T06:17:20.112Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 70,
+        "fields": {
+            "name": "Chad",
+            "slug": "Chad",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:28.561Z",
+            "updated_at": "2023-03-02T06:17:28.561Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 71,
+        "fields": {
+            "name": "Somalia",
+            "slug": "Somalia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:36.086Z",
+            "updated_at": "2023-03-02T06:17:36.086Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 72,
+        "fields": {
+            "name": "Zimbabwe",
+            "slug": "Zimbabwe",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:42.716Z",
+            "updated_at": "2023-03-02T06:17:42.716Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 73,
+        "fields": {
+            "name": "Guinea",
+            "slug": "Guinea",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:50.371Z",
+            "updated_at": "2023-03-02T06:17:50.371Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 74,
+        "fields": {
+            "name": "Rwanda",
+            "slug": "Rwanda",
+            "is_active": true,
+            "created_at": "2023-03-02T06:17:58.051Z",
+            "updated_at": "2023-03-02T06:17:58.051Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 75,
+        "fields": {
+            "name": "Benin",
+            "slug": "Benin",
+            "is_active": true,
+            "created_at": "2023-03-02T06:18:04.057Z",
+            "updated_at": "2023-03-02T06:18:04.057Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 76,
+        "fields": {
+            "name": "Burundi",
+            "slug": "Burundi",
+            "is_active": true,
+            "created_at": "2023-03-02T06:18:10.542Z",
+            "updated_at": "2023-03-02T06:18:10.542Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 77,
+        "fields": {
+            "name": "Tunisia",
+            "slug": "Tunisia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:18:18.212Z",
+            "updated_at": "2023-03-02T06:18:18.212Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 78,
+        "fields": {
+            "name": "Bolivia",
+            "slug": "Bolivia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:18:58.548Z",
+            "updated_at": "2023-03-02T06:18:58.548Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 79,
+        "fields": {
+            "name": "Belgium",
+            "slug": "Belgium",
+            "is_active": true,
+            "created_at": "2023-03-02T06:19:49.256Z",
+            "updated_at": "2023-03-02T06:19:49.256Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 80,
+        "fields": {
+            "name": "Haiti",
+            "slug": "Haiti",
+            "is_active": true,
+            "created_at": "2023-03-02T06:19:54.261Z",
+            "updated_at": "2023-03-02T06:19:54.262Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 81,
+        "fields": {
+            "name": "Cuba",
+            "slug": "Cuba",
+            "is_active": true,
+            "created_at": "2023-03-02T06:20:00.432Z",
+            "updated_at": "2023-03-02T06:20:00.432Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 82,
+        "fields": {
+            "name": "South Sudan",
+            "slug": "South-Sudan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:20:08.005Z",
+            "updated_at": "2023-03-02T06:20:08.005Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 83,
+        "fields": {
+            "name": "Dominican Republic",
+            "slug": "Dominican-Republic",
+            "is_active": true,
+            "created_at": "2023-03-02T06:21:20.321Z",
+            "updated_at": "2023-03-02T06:21:20.321Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 84,
+        "fields": {
+            "name": "Czech Republic (Czechia)",
+            "slug": "Czech-Republic-Czechia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:21:39.755Z",
+            "updated_at": "2023-03-02T06:21:39.755Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 85,
+        "fields": {
+            "name": "Greece",
+            "slug": "Greece",
+            "is_active": true,
+            "created_at": "2023-03-02T06:21:44.736Z",
+            "updated_at": "2023-03-02T06:21:44.736Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 86,
+        "fields": {
+            "name": "Jordan",
+            "slug": "Jordan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:21:51.036Z",
+            "updated_at": "2023-03-02T06:21:51.036Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 87,
+        "fields": {
+            "name": "Portugal",
+            "slug": "Portugal",
+            "is_active": true,
+            "created_at": "2023-03-02T06:21:57.147Z",
+            "updated_at": "2023-03-02T06:21:57.147Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 88,
+        "fields": {
+            "name": "Azerbaijan",
+            "slug": "Azerbaijan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:02.684Z",
+            "updated_at": "2023-03-02T06:22:02.684Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 89,
+        "fields": {
+            "name": "Sweden",
+            "slug": "Sweden",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:08.109Z",
+            "updated_at": "2023-03-02T06:22:08.109Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 90,
+        "fields": {
+            "name": "Honduras",
+            "slug": "Honduras",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:14.318Z",
+            "updated_at": "2023-03-02T06:22:14.318Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 91,
+        "fields": {
+            "name": "United Arab Emirates",
+            "slug": "United-Arab-Emirates",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:31.026Z",
+            "updated_at": "2023-03-02T06:22:31.026Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 92,
+        "fields": {
+            "name": "Hungary",
+            "slug": "Hungary",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:37.758Z",
+            "updated_at": "2023-03-02T06:22:37.758Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 93,
+        "fields": {
+            "name": "Tajikistan",
+            "slug": "Tajikistan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:44.928Z",
+            "updated_at": "2023-03-02T06:22:44.928Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 94,
+        "fields": {
+            "name": "Belarus",
+            "slug": "Belarus",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:49.968Z",
+            "updated_at": "2023-03-02T06:22:49.968Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 95,
+        "fields": {
+            "name": "Austria",
+            "slug": "Austria",
+            "is_active": true,
+            "created_at": "2023-03-02T06:22:55.646Z",
+            "updated_at": "2023-03-02T06:22:55.646Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 96,
+        "fields": {
+            "name": "Papua New Guinea",
+            "slug": "Papua-New-Guinea",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:06.636Z",
+            "updated_at": "2023-03-02T06:23:06.636Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 97,
+        "fields": {
+            "name": "Serbia",
+            "slug": "Serbia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:12.086Z",
+            "updated_at": "2023-03-02T06:23:12.086Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 98,
+        "fields": {
+            "name": "Israel",
+            "slug": "Israel",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:17.627Z",
+            "updated_at": "2023-03-02T06:23:17.627Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 99,
+        "fields": {
+            "name": "Switzerland",
+            "slug": "Switzerland",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:23.872Z",
+            "updated_at": "2023-03-02T06:23:23.872Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 100,
+        "fields": {
+            "name": "Togo",
+            "slug": "Togo",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:29.803Z",
+            "updated_at": "2023-03-02T06:23:29.803Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 101,
+        "fields": {
+            "name": "Sierra Leone",
+            "slug": "Sierra-Leone",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:41.261Z",
+            "updated_at": "2023-03-02T06:23:41.261Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 102,
+        "fields": {
+            "name": "Laos",
+            "slug": "Laos",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:49.064Z",
+            "updated_at": "2023-03-02T06:23:49.064Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 103,
+        "fields": {
+            "name": "Paraguay",
+            "slug": "Paraguay",
+            "is_active": true,
+            "created_at": "2023-03-02T06:23:55.737Z",
+            "updated_at": "2023-03-02T06:23:55.737Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 104,
+        "fields": {
+            "name": "Bulgaria",
+            "slug": "Bulgaria",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:02.692Z",
+            "updated_at": "2023-03-02T06:24:02.693Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 105,
+        "fields": {
+            "name": "Libya",
+            "slug": "Libya",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:09.172Z",
+            "updated_at": "2023-03-02T06:24:09.172Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 106,
+        "fields": {
+            "name": "Lebanon",
+            "slug": "Lebanon",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:16.123Z",
+            "updated_at": "2023-03-02T06:24:16.123Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 107,
+        "fields": {
+            "name": "Nicaragua",
+            "slug": "Nicaragua",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:22.888Z",
+            "updated_at": "2023-03-02T06:24:22.888Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 108,
+        "fields": {
+            "name": "Kyrgyzstan",
+            "slug": "Kyrgyzstan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:28.758Z",
+            "updated_at": "2023-03-02T06:24:28.758Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 109,
+        "fields": {
+            "name": "El Salvador",
+            "slug": "El-Salvador",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:39.099Z",
+            "updated_at": "2023-03-02T06:24:39.099Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 110,
+        "fields": {
+            "name": "Turkmenistan",
+            "slug": "Turkmenistan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:45.706Z",
+            "updated_at": "2023-03-02T06:24:45.706Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 111,
+        "fields": {
+            "name": "Singapore",
+            "slug": "Singapore",
+            "is_active": true,
+            "created_at": "2023-03-02T06:24:54.342Z",
+            "updated_at": "2023-03-02T06:24:54.342Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 112,
+        "fields": {
+            "name": "Denmark",
+            "slug": "Denmark",
+            "is_active": true,
+            "created_at": "2023-03-02T06:25:01.205Z",
+            "updated_at": "2023-03-02T06:25:01.205Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 113,
+        "fields": {
+            "name": "Finland",
+            "slug": "Finland",
+            "is_active": true,
+            "created_at": "2023-03-02T06:25:09.632Z",
+            "updated_at": "2023-03-02T06:25:09.632Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 114,
+        "fields": {
+            "name": "Congo",
+            "slug": "Congo",
+            "is_active": true,
+            "created_at": "2023-03-02T06:25:15.706Z",
+            "updated_at": "2023-03-02T06:25:15.706Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 115,
+        "fields": {
+            "name": "Slovakia",
+            "slug": "Slovakia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:25:23.024Z",
+            "updated_at": "2023-03-02T06:25:23.024Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 116,
+        "fields": {
+            "name": "Norway",
+            "slug": "Norway",
+            "is_active": true,
+            "created_at": "2023-03-02T06:25:29.306Z",
+            "updated_at": "2023-03-02T06:25:29.306Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 117,
+        "fields": {
+            "name": "Oman",
+            "slug": "Oman",
+            "is_active": true,
+            "created_at": "2023-03-02T06:25:35.349Z",
+            "updated_at": "2023-03-02T06:25:35.349Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 118,
+        "fields": {
+            "name": "State of Palestine",
+            "slug": "State-of-Palestine",
+            "is_active": true,
+            "created_at": "2023-03-02T06:25:51.524Z",
+            "updated_at": "2023-03-02T06:25:51.524Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 119,
+        "fields": {
+            "name": "Costa Rica",
+            "slug": "Costa-Rica",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:00.849Z",
+            "updated_at": "2023-03-02T06:26:00.849Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 120,
+        "fields": {
+            "name": "Liberia",
+            "slug": "Liberia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:06.629Z",
+            "updated_at": "2023-03-02T06:26:06.629Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 121,
+        "fields": {
+            "name": "Ireland",
+            "slug": "Ireland",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:15.909Z",
+            "updated_at": "2023-03-02T06:26:15.909Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 122,
+        "fields": {
+            "name": "Central African Republic",
+            "slug": "Central-African-Republic",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:30.877Z",
+            "updated_at": "2023-03-02T06:26:30.877Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 123,
+        "fields": {
+            "name": "New Zealand",
+            "slug": "New-Zealand",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:39.957Z",
+            "updated_at": "2023-03-02T06:26:39.957Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 124,
+        "fields": {
+            "name": "Mauritania",
+            "slug": "Mauritania",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:45.183Z",
+            "updated_at": "2023-03-02T06:26:45.183Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 125,
+        "fields": {
+            "name": "Panama",
+            "slug": "Panama",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:51.316Z",
+            "updated_at": "2023-03-02T06:26:51.316Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 126,
+        "fields": {
+            "name": "Kuwait",
+            "slug": "Kuwait",
+            "is_active": true,
+            "created_at": "2023-03-02T06:26:57.210Z",
+            "updated_at": "2023-03-02T06:26:57.210Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 127,
+        "fields": {
+            "name": "Croatia",
+            "slug": "Croatia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:03.939Z",
+            "updated_at": "2023-03-02T06:27:03.939Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 128,
+        "fields": {
+            "name": "Moldova",
+            "slug": "Moldova",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:09.088Z",
+            "updated_at": "2023-03-02T06:27:09.088Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 129,
+        "fields": {
+            "name": "Georgia",
+            "slug": "Georgia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:16.284Z",
+            "updated_at": "2023-03-02T06:27:16.284Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 130,
+        "fields": {
+            "name": "Eritrea",
+            "slug": "Eritrea",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:22.444Z",
+            "updated_at": "2023-03-02T06:27:22.444Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 131,
+        "fields": {
+            "name": "Uruguay",
+            "slug": "Uruguay",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:28.566Z",
+            "updated_at": "2023-03-02T06:27:28.566Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 132,
+        "fields": {
+            "name": "Bosnia and Herzegovina",
+            "slug": "Bosnia-and-Herzegovina",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:41.911Z",
+            "updated_at": "2023-03-02T06:27:41.911Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 133,
+        "fields": {
+            "name": "Mongolia",
+            "slug": "Mongolia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:47.974Z",
+            "updated_at": "2023-03-02T06:27:47.974Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 134,
+        "fields": {
+            "name": "Armenia",
+            "slug": "Armenia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:27:53.656Z",
+            "updated_at": "2023-03-02T06:27:53.656Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 135,
+        "fields": {
+            "name": "Jamaica",
+            "slug": "Jamaica",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:01.998Z",
+            "updated_at": "2023-03-02T06:28:01.998Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 136,
+        "fields": {
+            "name": "Qatar",
+            "slug": "Qatar",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:07.817Z",
+            "updated_at": "2023-03-02T06:28:07.817Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 137,
+        "fields": {
+            "name": "Albania",
+            "slug": "Albania",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:13.651Z",
+            "updated_at": "2023-03-02T06:28:13.651Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 138,
+        "fields": {
+            "name": "Lithuania",
+            "slug": "Lithuania",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:19.648Z",
+            "updated_at": "2023-03-02T06:28:19.648Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 139,
+        "fields": {
+            "name": "Namibia",
+            "slug": "Namibia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:26.630Z",
+            "updated_at": "2023-03-02T06:28:26.630Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 140,
+        "fields": {
+            "name": "Gambia",
+            "slug": "Gambia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:32.198Z",
+            "updated_at": "2023-03-02T06:28:32.198Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 141,
+        "fields": {
+            "name": "Botswana",
+            "slug": "Botswana",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:38.168Z",
+            "updated_at": "2023-03-02T06:28:38.168Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 142,
+        "fields": {
+            "name": "Gabon",
+            "slug": "Gabon",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:42.936Z",
+            "updated_at": "2023-03-02T06:28:42.936Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 143,
+        "fields": {
+            "name": "Lesotho",
+            "slug": "Lesotho",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:50.902Z",
+            "updated_at": "2023-03-02T06:28:50.902Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 144,
+        "fields": {
+            "name": "North Macedonia",
+            "slug": "North-Macedonia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:28:59.961Z",
+            "updated_at": "2023-03-02T06:28:59.961Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 145,
+        "fields": {
+            "name": "Slovenia",
+            "slug": "Slovenia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:05.702Z",
+            "updated_at": "2023-03-02T06:29:05.702Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 146,
+        "fields": {
+            "name": "Guinea-Bissau",
+            "slug": "Guinea-Bissau",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:11.628Z",
+            "updated_at": "2023-03-02T06:29:11.628Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 147,
+        "fields": {
+            "name": "Latvia",
+            "slug": "Latvia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:16.963Z",
+            "updated_at": "2023-03-02T06:29:16.963Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 148,
+        "fields": {
+            "name": "Bahrain",
+            "slug": "Bahrain",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:22.179Z",
+            "updated_at": "2023-03-02T06:29:22.179Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 149,
+        "fields": {
+            "name": "Equatorial Guinea",
+            "slug": "Equatorial-Guinea",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:31.174Z",
+            "updated_at": "2023-03-02T06:29:31.174Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 150,
+        "fields": {
+            "name": "Trinidad and Tobago",
+            "slug": "Trinidad-and-Tobago",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:45.073Z",
+            "updated_at": "2023-03-02T06:29:45.073Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 151,
+        "fields": {
+            "name": "Estonia",
+            "slug": "Estonia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:50.559Z",
+            "updated_at": "2023-03-02T06:29:50.559Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 152,
+        "fields": {
+            "name": "Timor-Leste",
+            "slug": "Timor-Leste",
+            "is_active": true,
+            "created_at": "2023-03-02T06:29:56.432Z",
+            "updated_at": "2023-03-02T06:29:56.432Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 153,
+        "fields": {
+            "name": "Mauritius",
+            "slug": "Mauritius",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:01.844Z",
+            "updated_at": "2023-03-02T06:30:01.844Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 154,
+        "fields": {
+            "name": "Cyprus",
+            "slug": "Cyprus",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:06.989Z",
+            "updated_at": "2023-03-02T06:30:06.989Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 155,
+        "fields": {
+            "name": "Eswatini",
+            "slug": "Eswatini",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:11.978Z",
+            "updated_at": "2023-03-02T06:30:11.978Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 156,
+        "fields": {
+            "name": "Djibouti",
+            "slug": "Djibouti",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:18.132Z",
+            "updated_at": "2023-03-02T06:30:18.132Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 157,
+        "fields": {
+            "name": "Fiji",
+            "slug": "Fiji",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:23.858Z",
+            "updated_at": "2023-03-02T06:30:23.858Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 158,
+        "fields": {
+            "name": "Comoros",
+            "slug": "Comoros",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:29.456Z",
+            "updated_at": "2023-03-02T06:30:29.456Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 159,
+        "fields": {
+            "name": "Guyana",
+            "slug": "Guyana",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:33.936Z",
+            "updated_at": "2023-03-02T06:30:33.936Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 160,
+        "fields": {
+            "name": "Bhutan",
+            "slug": "Bhutan",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:39.209Z",
+            "updated_at": "2023-03-02T06:30:39.209Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 161,
+        "fields": {
+            "name": "Solomon Islands",
+            "slug": "Solomon-Islands",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:50.703Z",
+            "updated_at": "2023-03-02T06:30:50.703Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 162,
+        "fields": {
+            "name": "Montenegro",
+            "slug": "Montenegro",
+            "is_active": true,
+            "created_at": "2023-03-02T06:30:56.204Z",
+            "updated_at": "2023-03-02T06:30:56.204Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 163,
+        "fields": {
+            "name": "Luxembourg",
+            "slug": "Luxembourg",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:03.067Z",
+            "updated_at": "2023-03-02T06:31:03.067Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 164,
+        "fields": {
+            "name": "Suriname",
+            "slug": "Suriname",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:08.045Z",
+            "updated_at": "2023-03-02T06:31:08.045Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 165,
+        "fields": {
+            "name": "Cabo Verde",
+            "slug": "Cabo-Verde",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:18.917Z",
+            "updated_at": "2023-03-02T06:31:18.917Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 166,
+        "fields": {
+            "name": "Micronesia",
+            "slug": "Micronesia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:24.149Z",
+            "updated_at": "2023-03-02T06:31:24.149Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 167,
+        "fields": {
+            "name": "Maldives",
+            "slug": "Maldives",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:29.494Z",
+            "updated_at": "2023-03-02T06:31:29.494Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 168,
+        "fields": {
+            "name": "Malta",
+            "slug": "Malta",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:34.693Z",
+            "updated_at": "2023-03-02T06:31:34.693Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 169,
+        "fields": {
+            "name": "Brunei",
+            "slug": "Brunei",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:42.604Z",
+            "updated_at": "2023-03-02T06:31:42.604Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 170,
+        "fields": {
+            "name": "Belize",
+            "slug": "Belize",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:48.100Z",
+            "updated_at": "2023-03-02T06:31:48.100Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 171,
+        "fields": {
+            "name": "Bahamas",
+            "slug": "Bahamas",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:53.423Z",
+            "updated_at": "2023-03-02T06:31:53.423Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 172,
+        "fields": {
+            "name": "Iceland",
+            "slug": "Iceland",
+            "is_active": true,
+            "created_at": "2023-03-02T06:31:58.900Z",
+            "updated_at": "2023-03-02T06:31:58.900Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 173,
+        "fields": {
+            "name": "Vanuatu",
+            "slug": "Vanuatu",
+            "is_active": true,
+            "created_at": "2023-03-02T06:32:03.525Z",
+            "updated_at": "2023-03-02T06:32:03.525Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 174,
+        "fields": {
+            "name": "Barbados",
+            "slug": "Barbados",
+            "is_active": true,
+            "created_at": "2023-03-02T06:32:09.177Z",
+            "updated_at": "2023-03-02T06:32:09.177Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 175,
+        "fields": {
+            "name": "Samoa",
+            "slug": "Samoa",
+            "is_active": true,
+            "created_at": "2023-03-02T06:32:20.703Z",
+            "updated_at": "2023-03-02T06:32:20.703Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 176,
+        "fields": {
+            "name": "Saint Lucia",
+            "slug": "Saint-Lucia",
+            "is_active": true,
+            "created_at": "2023-03-02T06:32:32.716Z",
+            "updated_at": "2023-03-02T06:32:32.716Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 177,
+        "fields": {
+            "name": "Kiribati",
+            "slug": "Kiribati",
+            "is_active": true,
+            "created_at": "2023-03-02T06:32:40.686Z",
+            "updated_at": "2023-03-02T06:32:40.686Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 178,
+        "fields": {
+            "name": "Grenada",
+            "slug": "Grenada",
+            "is_active": true,
+            "created_at": "2023-03-02T06:32:48.475Z",
+            "updated_at": "2023-03-02T06:32:48.475Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 179,
+        "fields": {
+            "name": "Tonga",
+            "slug": "Tonga",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:01.621Z",
+            "updated_at": "2023-03-02T06:33:01.621Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 180,
+        "fields": {
+            "name": "Seychelles",
+            "slug": "Seychelles",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:07.339Z",
+            "updated_at": "2023-03-02T06:33:07.339Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 181,
+        "fields": {
+            "name": "Antigua and Barbuda",
+            "slug": "Antigua-and-Barbuda",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:21.186Z",
+            "updated_at": "2023-03-02T06:33:21.186Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 182,
+        "fields": {
+            "name": "Andorra",
+            "slug": "Andorra",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:27.650Z",
+            "updated_at": "2023-03-02T06:33:27.650Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 183,
+        "fields": {
+            "name": "Dominica",
+            "slug": "Dominica",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:34.773Z",
+            "updated_at": "2023-03-02T06:33:34.773Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 184,
+        "fields": {
+            "name": "Marshall Islands",
+            "slug": "Marshall-Islands",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:44.252Z",
+            "updated_at": "2023-03-02T06:33:44.252Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 185,
+        "fields": {
+            "name": "Monaco",
+            "slug": "Monaco",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:51.687Z",
+            "updated_at": "2023-03-02T06:33:51.687Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 186,
+        "fields": {
+            "name": "Liechtenstein",
+            "slug": "Liechtenstein",
+            "is_active": true,
+            "created_at": "2023-03-02T06:33:57.751Z",
+            "updated_at": "2023-03-02T06:33:57.751Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 187,
+        "fields": {
+            "name": "San Marino",
+            "slug": "San-Marino",
+            "is_active": true,
+            "created_at": "2023-03-02T06:34:05.663Z",
+            "updated_at": "2023-03-02T06:34:05.663Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 188,
+        "fields": {
+            "name": "Palau",
+            "slug": "Palau",
+            "is_active": true,
+            "created_at": "2023-03-02T06:34:10.743Z",
+            "updated_at": "2023-03-02T06:34:10.743Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 189,
+        "fields": {
+            "name": "Tuvalu",
+            "slug": "Tuvalu",
+            "is_active": true,
+            "created_at": "2023-03-02T06:34:18.600Z",
+            "updated_at": "2023-03-02T06:34:18.600Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 190,
+        "fields": {
+            "name": "Nauru",
+            "slug": "Nauru",
+            "is_active": true,
+            "created_at": "2023-03-02T06:34:24.735Z",
+            "updated_at": "2023-03-02T06:34:24.735Z"
+        }
+    },
+    {
+        "model": "chatroom.country",
+        "pk": 191,
+        "fields": {
+            "name": "Holy See",
+            "slug": "Holy-See",
+            "is_active": true,
+            "created_at": "2023-03-02T06:34:33.872Z",
+            "updated_at": "2023-03-02T06:34:33.872Z"
+        }
     }
-},
-{
-    "model": "chatroom.country",
-    "pk": 2,
-    "fields": {
-        "name": "Canada",
-        "ordering": 2,
-        "slug": "canada",
-        "created_at": "2023-01-27T20:10:30.066Z",
-        "updated_at": "2023-01-27T20:10:30.066Z"
-    }
-}
-]
+    ]
+    
