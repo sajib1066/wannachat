@@ -89,12 +89,11 @@
                                                 </td>
                                                 <td>{{ object.country }}</td>
                                                 <td>
-                                                    <a href="">{{ object.total_sub_category }}</a>
+                                                    <a href="{% url 'dashboard:subcategory_list' %}?q=&category={{ object.pk }}">{{ object.total_sub_category }}</a>
                                                 </td>
                                                 <td>{{ object.created_at }}</td>
                                                 <td>{{ object.updated_at }}</td>
                                                 <td width="220px">
-                                                    <a href="" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>
                                                     {% if object.is_active %}
                                                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#activeDeactiveModal_{{ object.pk }}">
                                                             Deactive
