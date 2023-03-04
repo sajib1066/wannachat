@@ -32,7 +32,9 @@ class HomeView(View):
             except Country.DoesNotExist:
                 country = None
                 category_list = None
+        world_chat_list = Category.objects.filter(country__slug='world')
         context = {
+            'world_chat_list': world_chat_list,
             'category_list': category_list,
             'selected_country': country,
         }
