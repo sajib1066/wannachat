@@ -176,24 +176,60 @@
                         <div class="card-list">
                             <!-- Card -->
                             {% for member in obj.chatroom.all %}
-                                <a href="{% url 'chatroom:direct_chat' member.user.pk %}" class="card border-0 text-reset" {% if chatroom.room.pk == obj.pk %}style="background-color: #8bd3ff"{% endif %}>
+                                <div class="card border-0">
                                     <div class="card-body">
-                                        <div class="row align-items-center gx-4">
+                                        <div class="row align-items-center gx-5">
                                             <div class="col-auto">
-                                                <div class="avatar avatar-xs">
-                                                    <img class="avatar-img" src="{% if member.user.profile.avatar %}{{ member.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="Bootstrap Community" />
-                                                </div>
+                                                <a href="#" class="avatar">
+                                                    <img class="avatar-img" src="{% if member.user.profile.avatar %}{{ member.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
+                                                </a>
                                             </div>
-
+                                
                                             <div class="col">
-                                                <h6 class="mb-0">{{ member.user.profile.name }}</h6>
+                                                <h5><a href="{% url 'chatroom:direct_chat' member.user.pk %}">{{ member.user.profile.name }}</a></h5>
                                                 <p>{{ member.get_last_message.message }}</p>
                                             </div>
+                                
+                                            <div class="col-auto">
+                                                <!-- Dropdown -->
+                                                <div class="dropdown">
+                                                    <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-more-vertical"
+                                                        >
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="12" cy="5" r="1"></circle>
+                                                            <circle cx="12" cy="19" r="1"></circle>
+                                                        </svg>
+                                                    </a>
+                                
+                                                    <ul class="dropdown-menu" style="">
+                                                        <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                        <li><a class="dropdown-item" href="#">Add Friend</a></li>
+                                                        <li>
+                                                            <hr class="dropdown-divider" />
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item text-warning" href="#">Report User</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item text-danger" href="#">Block User</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <!-- .row -->
                                     </div>
-                                    <!-- .card-footer -->
-                                </a>
+                                </div>
                             {% endfor %}
 
                             <!-- Card -->
@@ -285,24 +321,59 @@
                         <div class="card-list">
                             <!-- Card -->
                             {% for member in obj.chatroom.all %}
-                                <a href="{% url 'chatroom:direct_chat' member.user.pk %}" class="card border-0 text-reset" {% if chatroom.room.pk == obj.pk %}style="background-color: #8bd3ff"{% endif %}>
+                                <div class="card border-0">
                                     <div class="card-body">
-                                        <div class="row align-items-center gx-4">
+                                        <div class="row align-items-center gx-5">
                                             <div class="col-auto">
-                                                <div class="avatar avatar-xs">
-                                                    <img class="avatar-img" src="{% if member.user.profile.avatar %}{{ member.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="Bootstrap Community" />
-                                                </div>
+                                                <a href="#" class="avatar">
+                                                    <img class="avatar-img" src="{% if member.user.profile.avatar %}{{ member.user.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
+                                                </a>
                                             </div>
-
+                                
                                             <div class="col">
-                                                <h6 class="mb-0">{{ member.user.profile.name }}</h6>
+                                                <h5><a href="{% url 'chatroom:direct_chat' member.user.pk %}">{{ member.user.profile.name }}</a></h5>
                                                 <p>{{ member.get_last_message.message }}</p>
                                             </div>
+                                
+                                            <div class="col-auto">
+                                                <!-- Dropdown -->
+                                                <div class="dropdown">
+                                                    <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-more-vertical"
+                                                        >
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="12" cy="5" r="1"></circle>
+                                                            <circle cx="12" cy="19" r="1"></circle>
+                                                        </svg>
+                                                    </a>
+                                
+                                                    <ul class="dropdown-menu" style="">
+                                                        <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                        <li>
+                                                            <hr class="dropdown-divider" />
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item text-warning" href="#">Report User</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item text-danger" href="#">Block User</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <!-- .row -->
                                     </div>
-                                    <!-- .card-footer -->
-                                </a>
+                                </div>
                             {% endfor %}
 
                             <!-- Card -->
