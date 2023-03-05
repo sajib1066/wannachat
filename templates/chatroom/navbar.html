@@ -3,7 +3,7 @@
 <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
     <!-- Brand -->
     <a href="{% url 'home' %}" title="Messenger" class="d-none d-xl-block mb-6">
-        <img src="{% static 'assets/img/logo_black.jpeg' %}" alt="" height="60px" width="80px">
+        <img src="{% static 'assets/img/logo_black.png' %}" alt="" height="60px" width="80px">
     </a>
 
     <!-- Nav items -->
@@ -66,6 +66,28 @@
                     <div class="badge badge-circle bg-primary">
                         <span>4</span>
                     </div>
+                </div>
+            </a>
+        </li>
+
+        <!-- Direct Chats -->
+        <li class="nav-item">
+            <a class="nav-link py-0 py-lg-8" id="tab-direct-chats" href="#tab-content-direct-chats" title="Direct Chats" data-bs-toggle="tab" role="tab">
+                <div class="icon icon-xl icon-badged">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-message-circle"
+                    >
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
                 </div>
             </a>
         </li>
