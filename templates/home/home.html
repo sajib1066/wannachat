@@ -3,10 +3,12 @@
 
 {% block content %}
 <div class="col-md-7 col-lg-8">
-    <div class="row" id="rooms">
+    <div class="card-columns category-section-area">
         {% for category in world_chat_list %}
-            <div class="col-md-6 col-lg-4">
-                <div class="section-btn"><a target="_self" href="#" class="btn btn-primary btn-md" id="random-chat">{{ category.name }}</a></div>
+            <div class="card">
+                <div class="section-btn">
+                    <a target="_self" href="#" class="btn btn-primary btn-md" id="random-chat">{{ category.name }}</a>
+                </div>
                 <div class="sub_category">
                     <ul>
                         {% for subcategory in category.sub_categories.all %}
@@ -22,10 +24,11 @@
                 </div>
             </div>
         {% endfor %}
-
         {% for category in category_list %}
-            <div class="col-md-6 col-lg-4">
-                <div class="section-btn"><a target="_self" href="#" class="btn btn-primary btn-md" id="random-chat">{{ category.name }}</a></div>
+            <div class="card">
+                <div class="section-btn">
+                    <a target="_self" href="#" class="btn btn-primary btn-md" id="random-chat">{{ category.name }}</a>
+                </div>
                 <div class="sub_category">
                     <ul>
                         {% for subcategory in category.sub_categories.all %}
@@ -40,7 +43,7 @@
                     </ul>
                 </div>
             </div>
-        {% endfor %}      
+        {% endfor %}
     </div>
 </div>
 {% endblock content %}

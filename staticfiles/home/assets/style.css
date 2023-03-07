@@ -273,7 +273,9 @@ footer p {
     }
     
 }
-
+.category-section-area .card {
+    border: none;
+}
 
     
 .content{
