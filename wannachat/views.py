@@ -2,6 +2,7 @@ from django.views.generic import View, TemplateView
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import messages
+from django.db.models import Q
 
 from chatroom.models import Category, Country, Contact
 from chatroom.forms import ContactForm
@@ -11,7 +12,8 @@ class HomeView(View):
     """ Home view """
     template_name = 'home/home.html'
 
-    def get(self, request):
+    def get(self, request, *args, **kwargs):
+        print(request, 'dada')
         try:
             country_name = request.session['country']
             print(country_name, '-------------------------------')
@@ -21,20 +23,19 @@ class HomeView(View):
             country = None
         if country:
             category_list = Category.objects.filter(
-                country=country, is_active=True
+                Q(Q(country=country) & Q(is_active=True)) | Q(country__slug='world')
             ).order_by('ordering')
         else:
             try:
                 country = Country.objects.get(pk=1)
                 category_list = Category.objects.filter(
-                    country=country, is_active=True
+                    Q(Q(country=country) & Q(is_active=True)) | Q(country__slug='world')
                 ).order_by('ordering')
             except Country.DoesNotExist:
                 country = None
                 category_list = None
-        world_chat_list = Category.objects.filter(country__slug='world')
+        print(category_list)
         context = {
-            'world_chat_list': world_chat_list,
             'category_list': category_list,
             'selected_country': country,
         }
@@ -56,20 +57,18 @@ class ChangeCountryView(View):
             country = None
         if country:
             category_list = Category.objects.filter(
-                country=country, is_active=True
+                Q(Q(country=country) & Q(is_active=True)) | Q(country__slug='world')
             ).order_by('ordering')
         else:
             try:
                 country = Country.objects.get(pk=1)
                 category_list = Category.objects.filter(
-                    country=country, is_active=True
+                    Q(Q(country=country) & Q(is_active=True)) | Q(country__slug='world')
                 ).order_by('ordering')
             except Country.DoesNotExist:
                 country = None
                 category_list = None
-        world_chat_list = Category.objects.filter(country__slug='world')
         context = {
-            'world_chat_list': world_chat_list,
             'category_list': category_list,
             'selected_country': country,
         }

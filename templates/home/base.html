@@ -59,14 +59,16 @@
                         </div>
                         {% endif %}
                         <li class="nav-item dropdown no-padding">
-                            <select class="nav-link dropdown-toggle right-side country" id="country" name="country" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #17a2b8 !important; border: none;">
-                                country
-                                <div class="dropdown-menu">
-                                    {% for country in country_list %}
-                                        <option class="dropdown-item" {% if selected_country.name == country.name %}selected{% endif %}>{{ country.name }}</option>
-                                    {% endfor %}
-                                </div>
-                            </select>
+                            <form action="" method="get">
+                                <select class="nav-link dropdown-toggle right-side country" id="country" name="country" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #17a2b8 !important; border: none;">
+                                    country
+                                    <div class="dropdown-menu">
+                                        {% for country in country_list %}
+                                            <option class="dropdown-item" {% if selected_country.name == country.name %}selected{% endif %}>{{ country.name }}</option>
+                                        {% endfor %}
+                                    </div>
+                                </select>
+                            </form>
                         </li>
                     </div>
                 </nav>
