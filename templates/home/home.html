@@ -12,9 +12,10 @@
                 <div class="sub_category">
                     <ul>
                         {% for subcategory in category.sub_categories.all %}
+                            {% url 'chatroom:room' subcategory.pk as chatroom %}
                             <li>
                                 {% if category.category_type == 'chatroom' %}
-                                    <a href="{% url 'chatroom:room' subcategory.pk %}">{{ subcategory.name }}</a>
+                                    <a class="chatroom" href="#" onclick="openChatWindow('{{ chatroom }}')">{{ subcategory.name }}</a>
                                 {% else %}
                                     <a href="">{{ subcategory.name }}</a>
                                 {% endif %}
@@ -27,3 +28,12 @@
     </div>
 </div>
 {% endblock content %}
+
+
+{% block scripts %}
+    <script>
+        function openChatWindow(chatroom) {  
+            window.open(chatroom, "Chat Room", "height=600,width=700,screenX=500");
+        }
+    </script>
+{% endblock scripts %}
