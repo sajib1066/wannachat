@@ -212,7 +212,7 @@
                                                                 <circle cx="12" cy="19" r="1"></circle>
                                                             </svg>
                                                         </a>
-                                                        <ul class="dropdown-menu" style="">
+                                                        <ul class="dropdown-menu">
                                                             <li><a class="dropdown-item" href="#">Send Message</a></li>
                                                             <li><a class="dropdown-item" href="#">Add Friend</a></li>
                                                             <li>
@@ -292,7 +292,7 @@
                                             </div>
                                 
                                             <div class="col">
-                                                <h5><a href="{% url 'chatroom:direct_chat' user.pk %}">{{ user.profile.name }}</a></h5>
+                                                <h5><a href="{% url 'chatroom:direct_chat' user.pk %}">{{ user.friends.profile.name }}</a></h5>
                                                 <p>{{ user.get_last_message.message }}</p>
                                             </div>
                                 
