@@ -31,11 +31,19 @@ class ChatRoomView(LoginRequiredMixin, View):
                 messages.warning(request, "This room is full now.")
                 return redirect('home')
         chatrooms = ChatRoomUser.objects.filter(user=request.user)
+        all_direct_chat = request.user.me.all()
+        buddies = all_direct_chat.filter(friend_type='buddies')
+        family_members = all_direct_chat.filter(friend_type='family')
+        co_workers = all_direct_chat.filter(friend_type='co-workers')
         context = {
             'user': request.user,
             'obj': obj,
             'chatrooms': chatrooms,
             'messages': message_list,
+            'all_direct_chat': all_direct_chat,
+            'buddies': buddies,
+            'family_members': family_members,
+            'co_workers': co_workers
         }
         return render(request, self.template_name, context)
 

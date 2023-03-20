@@ -72,57 +72,61 @@
                             <div class="tab-pane fade show active" id="buddies" role="tabpanel">
                                 <div class="card-list">
                                     <!-- Card -->
-                                    <div class="card border-0">
-                                        <div class="card-body">
-                                            <div class="row align-items-center gx-5">
-                                                <div class="col-auto">
-                                                    <a href="#" class="avatar avatar-online">
-                                                        <span class="avatar-text">D</span>
-                                                    </a>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h5><a href="#">Don Knight</a></h5>
-                                                    <p>online</p>
-                                                </div>
-
-                                                <div class="col-auto">
-                                                    <!-- Dropdown -->
-                                                    <div class="dropdown">
-                                                        <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="24"
-                                                                height="24"
-                                                                viewBox="0 0 24 24"
-                                                                fill="none"
-                                                                stroke="currentColor"
-                                                                stroke-width="2"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                class="feather feather-more-vertical"
-                                                            >
-                                                                <circle cx="12" cy="12" r="1"></circle>
-                                                                <circle cx="12" cy="5" r="1"></circle>
-                                                                <circle cx="12" cy="19" r="1"></circle>
-                                                            </svg>
+                                    {% for buddy in buddies %}
+                                        <div class="card border-0">
+                                            <div class="card-body">
+                                                <div class="row align-items-center gx-5">
+                                                    <div class="col-auto">
+                                                        <a href="#" class="avatar">
+                                                            <img class="avatar-img" src="{% if buddy.friends.profile.avatar %}{{ buddy.friends.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                                         </a>
+                                                    </div>
 
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">New message</a></li>
-                                                            <li><a class="dropdown-item" href="#">Edit contact</a></li>
-                                                            <li>
-                                                                <hr class="dropdown-divider" />
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item text-danger" href="#">Block user</a>
-                                                            </li>
-                                                        </ul>
+                                                    <div class="col">
+                                                        <h5><a href="#">{{ buddy.friends.profile.name }}</a></h5>
+                                                        <p>{{ buddy.friends.get_last_message.message }}</p>
+                                                    </div>
+
+                                                    <div class="col-auto">
+                                                        <!-- Dropdown -->
+                                                        <div class="dropdown">
+                                                            <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-more-vertical"
+                                                                >
+                                                                    <circle cx="12" cy="12" r="1"></circle>
+                                                                    <circle cx="12" cy="5" r="1"></circle>
+                                                                    <circle cx="12" cy="19" r="1"></circle>
+                                                                </svg>
+                                                            </a>
+
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider" />
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item text-warning" href="#">Report User</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item text-danger" href="#">Block User</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    {% endfor %}
                                     <!-- Card -->
                                 </div>
                             </div>
@@ -133,57 +137,61 @@
                             <div class="tab-pane fade show" id="family" role="tabpanel">
                                 <div class="card-list">
                                     <!-- Card -->
-                                    <div class="card border-0">
-                                        <div class="card-body">
-                                            <div class="row align-items-center gx-5">
-                                                <div class="col-auto">
-                                                    <a href="#" class="avatar avatar-online">
-                                                        <span class="avatar-text">D</span>
-                                                    </a>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h5><a href="#">Family</a></h5>
-                                                    <p>online</p>
-                                                </div>
-
-                                                <div class="col-auto">
-                                                    <!-- Dropdown -->
-                                                    <div class="dropdown">
-                                                        <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="24"
-                                                                height="24"
-                                                                viewBox="0 0 24 24"
-                                                                fill="none"
-                                                                stroke="currentColor"
-                                                                stroke-width="2"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                class="feather feather-more-vertical"
-                                                            >
-                                                                <circle cx="12" cy="12" r="1"></circle>
-                                                                <circle cx="12" cy="5" r="1"></circle>
-                                                                <circle cx="12" cy="19" r="1"></circle>
-                                                            </svg>
+                                    {% for family in family_members %}
+                                        <div class="card border-0">
+                                            <div class="card-body">
+                                                <div class="row align-items-center gx-5">
+                                                    <div class="col-auto">
+                                                        <a href="#" class="avatar">
+                                                            <img class="avatar-img" src="{% if family.friends.profile.avatar %}{{ family.friends.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                                         </a>
+                                                    </div>
 
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">New message</a></li>
-                                                            <li><a class="dropdown-item" href="#">Edit contact</a></li>
-                                                            <li>
-                                                                <hr class="dropdown-divider" />
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item text-danger" href="#">Block user</a>
-                                                            </li>
-                                                        </ul>
+                                                    <div class="col">
+                                                        <h5><a href="#">{{ family.friends.profile.name }}</a></h5>
+                                                        <p>{{ family.friends.get_last_message.message }}</p>
+                                                    </div>
+
+                                                    <div class="col-auto">
+                                                        <!-- Dropdown -->
+                                                        <div class="dropdown">
+                                                            <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-more-vertical"
+                                                                >
+                                                                    <circle cx="12" cy="12" r="1"></circle>
+                                                                    <circle cx="12" cy="5" r="1"></circle>
+                                                                    <circle cx="12" cy="19" r="1"></circle>
+                                                                </svg>
+                                                            </a>
+
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider" />
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item text-warning" href="#">Report User</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item text-danger" href="#">Block User</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    {% endfor %}
                                     <!-- Card -->
                                 </div>
                             </div>
@@ -194,57 +202,61 @@
                             <div class="tab-pane fade show" id="co-Workers" role="tabpanel">
                                 <div class="card-list">
                                     <!-- Card -->
-                                    <div class="card border-0">
-                                        <div class="card-body">
-                                            <div class="row align-items-center gx-5">
-                                                <div class="col-auto">
-                                                    <a href="#" class="avatar avatar-online">
-                                                        <span class="avatar-text">D</span>
-                                                    </a>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h5><a href="#">Co-Workers</a></h5>
-                                                    <p>online</p>
-                                                </div>
-
-                                                <div class="col-auto">
-                                                    <!-- Dropdown -->
-                                                    <div class="dropdown">
-                                                        <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="24"
-                                                                height="24"
-                                                                viewBox="0 0 24 24"
-                                                                fill="none"
-                                                                stroke="currentColor"
-                                                                stroke-width="2"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                class="feather feather-more-vertical"
-                                                            >
-                                                                <circle cx="12" cy="12" r="1"></circle>
-                                                                <circle cx="12" cy="5" r="1"></circle>
-                                                                <circle cx="12" cy="19" r="1"></circle>
-                                                            </svg>
+                                    {% for co_worker in co_workers %}
+                                        <div class="card border-0">
+                                            <div class="card-body">
+                                                <div class="row align-items-center gx-5">
+                                                    <div class="col-auto">
+                                                        <a href="#" class="avatar">
+                                                            <img class="avatar-img" src="{% if co_worker.friends.profile.avatar %}{{ co_worker.friends.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
                                                         </a>
+                                                    </div>
 
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">New message</a></li>
-                                                            <li><a class="dropdown-item" href="#">Edit contact</a></li>
-                                                            <li>
-                                                                <hr class="dropdown-divider" />
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item text-danger" href="#">Block user</a>
-                                                            </li>
-                                                        </ul>
+                                                    <div class="col">
+                                                        <h5><a href="#">{{ co_worker.friends.profile.name }}</a></h5>
+                                                        <p>{{ co_worker.friends.get_last_message.message }}</p>
+                                                    </div>
+
+                                                    <div class="col-auto">
+                                                        <!-- Dropdown -->
+                                                        <div class="dropdown">
+                                                            <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="feather feather-more-vertical"
+                                                                >
+                                                                    <circle cx="12" cy="12" r="1"></circle>
+                                                                    <circle cx="12" cy="5" r="1"></circle>
+                                                                    <circle cx="12" cy="19" r="1"></circle>
+                                                                </svg>
+                                                            </a>
+
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider" />
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item text-warning" href="#">Report User</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item text-danger" href="#">Block User</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    {% endfor %}
                                     <!-- Card -->
                                 </div>
                             </div>
@@ -463,7 +475,7 @@
                         <!-- Chats -->
                         <div class="card-list">
                             <!-- Card -->
-                            {% for user in request.user.me.all %}
+                            {% for user in all_direct_chat %}
                                 <div class="card border-0">
                                     <div class="card-body">
                                         <div class="row align-items-center gx-5">
