@@ -111,6 +111,8 @@
 
                                                             <ul class="dropdown-menu">
                                                                 <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_family' buddy.friends.pk %}">Make Family</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_co_worker' buddy.friends.pk %}">Make Co-Worker</a></li>
                                                                 <li>
                                                                     <hr class="dropdown-divider" />
                                                                 </li>
@@ -176,6 +178,8 @@
 
                                                             <ul class="dropdown-menu">
                                                                 <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_friend' family.friends.pk %}">Make Buddies</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_co_worker' family.friends.pk %}">Make Co-Worker</a></li>
                                                                 <li>
                                                                     <hr class="dropdown-divider" />
                                                                 </li>
@@ -241,6 +245,8 @@
 
                                                             <ul class="dropdown-menu">
                                                                 <li><a class="dropdown-item" href="#">Send Message</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_friend' co_worker.friends.pk %}">Make Buddies</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_family' co_worker.friends.pk %}">Make Family</a></li>
                                                                 <li>
                                                                     <hr class="dropdown-divider" />
                                                                 </li>
@@ -408,7 +414,7 @@
                                                         </a>
                                                         <ul class="dropdown-menu">
                                                             <li><a class="dropdown-item" href="#">Send Message</a></li>
-                                                            <li><a class="dropdown-item" href="#">Add Friend</a></li>
+                                                            <li><a class="dropdown-item" href="{% url 'chatroom:add_friend' member.user.pk %}">Add Friend</a></li>
                                                             <li>
                                                                 <hr class="dropdown-divider" />
                                                             </li>

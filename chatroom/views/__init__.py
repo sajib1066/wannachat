@@ -4,6 +4,9 @@ from .chatroom import (
 from .message import SendRoomMessageView, SendDirectMessageView
 from .ajax import ajax_custom_room
 from .chat_dashboard import ChatDashboardView
+from .add_friend import (
+    AddFriendView, MakeFriendView, MakeFamilyMemberView, MakeCoWorkerView
+)
 
 
 __all__ = [
@@ -15,5 +18,9 @@ __all__ = [
     SendRoomMessageView,
     SendDirectMessageView,
     DirectChatView,
-    ajax_custom_room
+    ajax_custom_room,
+    AddFriendView,
+    MakeFriendView,
+    MakeFamilyMemberView,
+    MakeCoWorkerView,
 ]

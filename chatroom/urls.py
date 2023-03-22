@@ -20,5 +20,9 @@ urlpatterns = [
         'send-direct-message/int:<receiver_id>/', views.SendDirectMessageView.as_view(),
         name='send_direct_message'
     ),
-    path('ajax/custom/room/', views.ajax_custom_room, name='ajax_custom_room')
+    path('ajax/custom/room/', views.ajax_custom_room, name='ajax_custom_room'),
+    path('add-friend/<int:userid>/', views.AddFriendView.as_view(), name='add_friend'),
+    path('make-friend/<int:userid>/', views.MakeFriendView.as_view(), name='make_friend'),
+    path('make-family/<int:userid>/', views.MakeFamilyMemberView.as_view(), name='make_family'),
+    path('make-co-worker/<int:userid>/', views.MakeCoWorkerView.as_view(), name='make_co_worker'),
 ]
