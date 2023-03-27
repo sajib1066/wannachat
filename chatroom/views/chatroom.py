@@ -37,7 +37,7 @@ class ChatRoomView(LoginRequiredMixin, View):
         co_workers = all_direct_chat.filter(friend_type='co-workers')
         context = {
             'user': request.user,
-            'obj': obj,
+            'chatroom': obj,
             'chatrooms': chatrooms,
             'messages': message_list,
             'all_direct_chat': all_direct_chat,
@@ -81,7 +81,7 @@ class ChatRoomView(LoginRequiredMixin, View):
         chatrooms = ChatRoomUser.objects.filter(user=request.user)
         context = {
             'user': request.user,
-            'obj': obj,
+            'chatroom': obj,
             'chatrooms': chatrooms,
             'messages': message_list,
         }
@@ -93,7 +93,8 @@ class DirectChatView(LoginRequiredMixin, View):
     model = DirectMessage
     login_url = "/auth/login/"
 
-    def get(self, request, pk, *args, **kwargs):
+    def get(self, request, chatroom, pk, *args, **kwargs):
+        chatroom = get_object_or_404(SubCategory, pk=chatroom)
         obj = get_object_or_404(User, pk=pk)
         message_list = DirectMessage.objects.filter(
             Q(sender_user=obj, receiver_user=request.user) | Q(sender_user=request.user, receiver_user=obj)
@@ -101,11 +102,13 @@ class DirectChatView(LoginRequiredMixin, View):
         context = {
             'user': request.user,
             'obj': obj,
+            'chatroom': chatroom,
             'messages': message_list,
         }
         return render(request, self.template_name, context)
 
-    def post(self, request, pk, *args, **kwargs):
+    def post(self, request, chatroom, pk, *args, **kwargs):
+        chatroom = get_object_or_404(SubCategory, pk=chatroom)
         obj = get_object_or_404(User, pk=pk)
         photo = request.FILES.get('photo')
         name = request.POST.get('name')
@@ -128,6 +131,7 @@ class DirectChatView(LoginRequiredMixin, View):
         context = {
             'user': request.user,
             'obj': obj,
+            'chatroom': chatroom,
             'messages': message_list,
         }
         return render(request, self.template_name, context)

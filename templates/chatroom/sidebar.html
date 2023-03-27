@@ -375,7 +375,7 @@
                         <!-- Chats -->
                         <div class="card-list">
                             <!-- Card -->
-                            {% for member in obj.chatroom.all %}
+                            {% for member in chatroom.chatroom.all %}
                                 <div class="card border-0">
                                     <div class="card-body">
                                         <div class="row align-items-center gx-5">
@@ -386,7 +386,7 @@
                                             </div>
                                 
                                             <div class="col">
-                                                <h5><a href="{% url 'chatroom:direct_chat' member.user.pk %}">{{ member.user.profile.name }}</a></h5>
+                                                <h5><a href="{% url 'chatroom:direct_chat' chatroom.pk member.user.pk %}">{{ member.user.profile.name }}</a></h5>
                                                 <p>{{ member.get_last_message.message }}</p>
                                             </div>
                                 
@@ -492,7 +492,7 @@
                                             </div>
                                 
                                             <div class="col">
-                                                <h5><a href="{% url 'chatroom:direct_chat' user.pk %}">{{ user.friends.profile.name }}</a></h5>
+                                                <h5><a href="{% url 'chatroom:direct_chat' chatroom.pk user.pk %}">{{ user.friends.profile.name }}</a></h5>
                                                 <p>{{ user.get_last_message.message }}</p>
                                             </div>
                                 
