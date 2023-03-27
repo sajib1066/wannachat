@@ -99,11 +99,21 @@ class DirectChatView(LoginRequiredMixin, View):
         message_list = DirectMessage.objects.filter(
             Q(sender_user=obj, receiver_user=request.user) | Q(sender_user=request.user, receiver_user=obj)
         )
+        chatrooms = ChatRoomUser.objects.filter(user=request.user)
+        all_direct_chat = request.user.me.all()
+        buddies = all_direct_chat.filter(friend_type='buddies')
+        family_members = all_direct_chat.filter(friend_type='family')
+        co_workers = all_direct_chat.filter(friend_type='co-workers')
         context = {
             'user': request.user,
             'obj': obj,
             'chatroom': chatroom,
             'messages': message_list,
+            'chatrooms': chatrooms,
+            'all_direct_chat': all_direct_chat,
+            'buddies': buddies,
+            'family_members': family_members,
+            'co_workers': co_workers
         }
         return render(request, self.template_name, context)
 
@@ -128,11 +138,21 @@ class DirectChatView(LoginRequiredMixin, View):
         message_list = DirectMessage.objects.filter(
             Q(sender_user=obj, receiver_user=request.user) | Q(sender_user=request.user, receiver_user=obj)
         )
+        chatrooms = ChatRoomUser.objects.filter(user=request.user)
+        all_direct_chat = request.user.me.all()
+        buddies = all_direct_chat.filter(friend_type='buddies')
+        family_members = all_direct_chat.filter(friend_type='family')
+        co_workers = all_direct_chat.filter(friend_type='co-workers')
         context = {
             'user': request.user,
             'obj': obj,
             'chatroom': chatroom,
             'messages': message_list,
+            'chatrooms': chatrooms,
+            'all_direct_chat': all_direct_chat,
+            'buddies': buddies,
+            'family_members': family_members,
+            'co_workers': co_workers
         }
         return render(request, self.template_name, context)
 
