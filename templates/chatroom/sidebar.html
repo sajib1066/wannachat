@@ -44,19 +44,7 @@
                         <ul class="nav nav-pills nav-justified" role="tablist" style="font-size: 12px;">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="pill" href="#buddies" role="tab" aria-controls="buddies" aria-selected="true">
-                                    Buddies
-                                </a>
-                            </li>
-                        
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="pill" href="#family" role="tab" aria-controls="family" aria-selected="true">
-                                    Family
-                                </a>
-                            </li>
-                        
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="pill" href="#co-Workers" role="tab" aria-controls="co-Workers" aria-selected="false">
-                                    Co-Workers
+                                    Buddies Online
                                 </a>
                             </li>
                         
@@ -83,7 +71,7 @@
                                                     </div>
 
                                                     <div class="col">
-                                                        <h5><a href="#">{{ buddy.friends.profile.name }}</a></h5>
+                                                        <h5><a href="{% url 'chatroom:direct_chat' chatroom.pk buddy.friends.pk %}">{{ buddy.friends.profile.name }}</a></h5>
                                                         <p>{{ buddy.friends.get_last_message.message }}</p>
                                                     </div>
 
@@ -110,143 +98,7 @@
                                                             </a>
 
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Send Message</a></li>
-                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_family' buddy.friends.pk %}">Make Family</a></li>
-                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_co_worker' buddy.friends.pk %}">Make Co-Worker</a></li>
-                                                                <li>
-                                                                    <hr class="dropdown-divider" />
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item text-warning" href="#">Report User</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item text-danger" href="#">Block User</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                    <!-- Card -->
-                                </div>
-                            </div>
-                            <!-- Members -->
-
-
-                            <!-- Family -->
-                            <div class="tab-pane fade show" id="family" role="tabpanel">
-                                <div class="card-list">
-                                    <!-- Card -->
-                                    {% for family in family_members %}
-                                        <div class="card border-0">
-                                            <div class="card-body">
-                                                <div class="row align-items-center gx-5">
-                                                    <div class="col-auto">
-                                                        <a href="#" class="avatar">
-                                                            <img class="avatar-img" src="{% if family.friends.profile.avatar %}{{ family.friends.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <h5><a href="#">{{ family.friends.profile.name }}</a></h5>
-                                                        <p>{{ family.friends.get_last_message.message }}</p>
-                                                    </div>
-
-                                                    <div class="col-auto">
-                                                        <!-- Dropdown -->
-                                                        <div class="dropdown">
-                                                            <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    width="24"
-                                                                    height="24"
-                                                                    viewBox="0 0 24 24"
-                                                                    fill="none"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="2"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="feather feather-more-vertical"
-                                                                >
-                                                                    <circle cx="12" cy="12" r="1"></circle>
-                                                                    <circle cx="12" cy="5" r="1"></circle>
-                                                                    <circle cx="12" cy="19" r="1"></circle>
-                                                                </svg>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Send Message</a></li>
-                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_friend' family.friends.pk %}">Make Buddies</a></li>
-                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_co_worker' family.friends.pk %}">Make Co-Worker</a></li>
-                                                                <li>
-                                                                    <hr class="dropdown-divider" />
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item text-warning" href="#">Report User</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item text-danger" href="#">Block User</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                    <!-- Card -->
-                                </div>
-                            </div>
-                            <!-- Members -->
-
-
-                            <!-- Co-Workers -->
-                            <div class="tab-pane fade show" id="co-Workers" role="tabpanel">
-                                <div class="card-list">
-                                    <!-- Card -->
-                                    {% for co_worker in co_workers %}
-                                        <div class="card border-0">
-                                            <div class="card-body">
-                                                <div class="row align-items-center gx-5">
-                                                    <div class="col-auto">
-                                                        <a href="#" class="avatar">
-                                                            <img class="avatar-img" src="{% if co_worker.friends.profile.avatar %}{{ co_worker.friends.profile.avatar.url }}{% else %}{% static 'assets/img/avatars/avatar.png' %}{% endif %}" alt="" />
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <h5><a href="#">{{ co_worker.friends.profile.name }}</a></h5>
-                                                        <p>{{ co_worker.friends.get_last_message.message }}</p>
-                                                    </div>
-
-                                                    <div class="col-auto">
-                                                        <!-- Dropdown -->
-                                                        <div class="dropdown">
-                                                            <a class="icon text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    width="24"
-                                                                    height="24"
-                                                                    viewBox="0 0 24 24"
-                                                                    fill="none"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="2"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="feather feather-more-vertical"
-                                                                >
-                                                                    <circle cx="12" cy="12" r="1"></circle>
-                                                                    <circle cx="12" cy="5" r="1"></circle>
-                                                                    <circle cx="12" cy="19" r="1"></circle>
-                                                                </svg>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#">Send Message</a></li>
-                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_friend' co_worker.friends.pk %}">Make Buddies</a></li>
-                                                                <li><a class="dropdown-item" href="{% url 'chatroom:make_family' co_worker.friends.pk %}">Make Family</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'chatroom:direct_chat' chatroom.pk buddy.friends.pk %}">Send Message</a></li>
                                                                 <li>
                                                                     <hr class="dropdown-divider" />
                                                                 </li>
