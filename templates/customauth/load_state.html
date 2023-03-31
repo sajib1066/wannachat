@@ -1,0 +1,4 @@
+<option value="">---------</option>
+{% for state in state_list %}
+    <option value="{{ state.pk }}">{{ state.name }}</option>
+{% endfor %}

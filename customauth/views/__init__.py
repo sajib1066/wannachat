@@ -2,6 +2,7 @@ from .login import AdminLoginView
 from .logout import user_logout
 from .user_auth import UserLoginView, UserLogoutView, UserRegistrationView
 from .account_activation import AccountActivationView
+from .load_state import load_state_view
 
 
 __all__ = [
@@ -11,4 +12,5 @@ __all__ = [
     UserLogoutView,
     UserRegistrationView,
     AccountActivationView,
+    load_state_view,
 ]

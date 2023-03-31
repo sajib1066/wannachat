@@ -15,4 +15,5 @@ urlpatterns = [
         'active-account/<str:token>/', views.AccountActivationView.as_view(),
         name='account_activation'
     ),
+    path('load-state/', views.load_state_view, name='load_state'),
 ]

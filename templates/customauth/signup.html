@@ -45,7 +45,7 @@
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="card card-shadow border-0">
                         <div class="card-body">
-                            <form action="" method="post">
+                            <form action="" method="post" id="registerForm" data-state-url="{% url 'customauth:load_state' %}">
                                 {% csrf_token %}
                                 <div class="row g-6">
                                     <div class="col-12">
@@ -154,5 +154,22 @@
         <!-- Scripts -->
         <script src="{% static 'assets/js/vendor.js' %}"></script>
         <script src="{% static 'assets/js/template.js' %}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $("#id_country").change(function () {
+            var url = $("#registerForm").attr("data-state-url");
+            var country = $(this).val();
+            $.ajax({
+                url: url,
+                data: {
+                    'country': country
+                },
+                success: function (data) {
+                    $("#id_state").html(data);
+                }
+            });
+        });
+        </script>
     </body>
 </html>
