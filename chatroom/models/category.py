@@ -97,6 +97,7 @@ class DirectmessageUser(models.Model):
         User, on_delete=models.CASCADE, related_name='friends'
     )
     friend_type = models.CharField(max_length=50, choices=TYPE_CHOICES, default='buddies')
+    is_accepted = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
