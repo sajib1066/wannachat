@@ -4,7 +4,7 @@ from django.utils.text import slugify
 
 class Country(models.Model):
     name = models.CharField(max_length=220, unique=True)
-    slug = models.SlugField(max_length=220, unique=True)
+    slug = models.SlugField(max_length=220, unique=True, blank=True)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
