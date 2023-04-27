@@ -8,7 +8,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T20:17:41.084Z",
         "updated_at": "2023-01-27T20:17:41.084Z"
     }
@@ -22,7 +21,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T20:18:30.234Z",
         "updated_at": "2023-01-27T20:18:30.234Z"
     }
@@ -36,7 +34,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T20:20:19.197Z",
         "updated_at": "2023-01-27T20:20:19.197Z"
     }
@@ -50,7 +47,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T20:20:46.058Z",
         "updated_at": "2023-01-27T20:20:46.058Z"
     }
@@ -64,7 +60,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T20:21:09.416Z",
         "updated_at": "2023-01-27T20:21:09.416Z"
     }
@@ -78,7 +73,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T20:21:31.638Z",
         "updated_at": "2023-01-27T20:21:59.475Z"
     }
@@ -92,7 +86,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T20:22:27.105Z",
         "updated_at": "2023-01-27T20:22:27.105Z"
     }
@@ -106,7 +99,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T20:22:53.272Z",
         "updated_at": "2023-01-27T20:22:53.272Z"
     }
@@ -120,7 +112,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T20:23:23.759Z",
         "updated_at": "2023-01-27T20:23:23.759Z"
     }
@@ -134,7 +125,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T20:23:45.006Z",
         "updated_at": "2023-01-27T20:23:45.006Z"
     }
@@ -148,7 +138,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T20:24:13.206Z",
         "updated_at": "2023-01-27T20:24:13.206Z"
     }
@@ -162,7 +151,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T20:24:43.013Z",
         "updated_at": "2023-01-27T20:24:43.013Z"
     }
@@ -176,7 +164,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T20:25:02.634Z",
         "updated_at": "2023-01-27T20:25:02.634Z"
     }
@@ -190,7 +177,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T20:25:39.614Z",
         "updated_at": "2023-01-27T20:25:39.614Z"
     }
@@ -204,7 +190,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 15,
         "created_at": "2023-01-27T20:26:09.534Z",
         "updated_at": "2023-01-27T20:26:09.534Z"
     }
@@ -218,7 +203,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 16,
         "created_at": "2023-01-27T20:26:58.874Z",
         "updated_at": "2023-01-27T20:26:58.874Z"
     }
@@ -232,7 +216,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 17,
         "created_at": "2023-01-27T20:27:24.080Z",
         "updated_at": "2023-01-27T20:27:24.080Z"
     }
@@ -246,7 +229,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 18,
         "created_at": "2023-01-27T20:27:46.724Z",
         "updated_at": "2023-01-27T20:27:46.724Z"
     }
@@ -260,7 +242,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 19,
         "created_at": "2023-01-27T20:28:12.111Z",
         "updated_at": "2023-01-27T20:28:12.111Z"
     }
@@ -274,7 +255,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 20,
         "created_at": "2023-01-27T20:28:32.714Z",
         "updated_at": "2023-01-27T20:28:32.714Z"
     }
@@ -288,7 +268,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 21,
         "created_at": "2023-01-27T20:28:48.210Z",
         "updated_at": "2023-01-27T20:28:48.210Z"
     }
@@ -302,7 +281,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 22,
         "created_at": "2023-01-27T20:29:09.773Z",
         "updated_at": "2023-01-27T20:29:09.773Z"
     }
@@ -316,7 +294,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 23,
         "created_at": "2023-01-27T20:29:29.504Z",
         "updated_at": "2023-01-27T20:29:29.504Z"
     }
@@ -330,7 +307,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 24,
         "created_at": "2023-01-27T20:29:53.928Z",
         "updated_at": "2023-01-27T20:29:53.928Z"
     }
@@ -344,7 +320,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 25,
         "created_at": "2023-01-27T20:30:10.601Z",
         "updated_at": "2023-01-27T22:29:19.655Z"
     }
@@ -358,7 +333,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 26,
         "created_at": "2023-01-27T20:30:37.665Z",
         "updated_at": "2023-01-27T20:30:37.665Z"
     }
@@ -372,7 +346,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 27,
         "created_at": "2023-01-27T20:30:57.973Z",
         "updated_at": "2023-01-27T20:30:57.973Z"
     }
@@ -386,7 +359,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T20:32:34.977Z",
         "updated_at": "2023-01-27T20:32:34.977Z"
     }
@@ -400,7 +372,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T20:33:01.820Z",
         "updated_at": "2023-01-27T20:33:01.820Z"
     }
@@ -414,7 +385,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T20:35:30.561Z",
         "updated_at": "2023-01-27T20:35:30.561Z"
     }
@@ -428,7 +398,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T20:37:04.067Z",
         "updated_at": "2023-01-27T20:37:04.067Z"
     }
@@ -442,7 +411,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T20:37:30.065Z",
         "updated_at": "2023-01-27T20:37:30.065Z"
     }
@@ -456,7 +424,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T20:37:54.842Z",
         "updated_at": "2023-01-27T20:37:54.842Z"
     }
@@ -470,7 +437,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T20:38:21.100Z",
         "updated_at": "2023-01-27T20:38:21.100Z"
     }
@@ -484,7 +450,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T20:38:45.845Z",
         "updated_at": "2023-01-27T20:38:45.845Z"
     }
@@ -498,7 +463,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T20:39:01.611Z",
         "updated_at": "2023-01-27T20:39:01.611Z"
     }
@@ -512,7 +476,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T20:39:19.537Z",
         "updated_at": "2023-01-27T20:39:19.537Z"
     }
@@ -526,7 +489,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T20:39:47.391Z",
         "updated_at": "2023-01-27T20:39:47.391Z"
     }
@@ -540,7 +502,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T20:40:07.255Z",
         "updated_at": "2023-01-27T20:40:07.255Z"
     }
@@ -554,7 +515,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T20:40:46.808Z",
         "updated_at": "2023-01-27T20:40:46.808Z"
     }
@@ -568,7 +528,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T20:41:12.409Z",
         "updated_at": "2023-01-27T20:41:12.409Z"
     }
@@ -582,7 +541,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 15,
         "created_at": "2023-01-27T20:41:30.506Z",
         "updated_at": "2023-01-27T20:41:30.506Z"
     }
@@ -596,7 +554,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 16,
         "created_at": "2023-01-27T20:41:54.055Z",
         "updated_at": "2023-01-27T20:41:54.055Z"
     }
@@ -610,7 +567,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 17,
         "created_at": "2023-01-27T20:42:14.532Z",
         "updated_at": "2023-01-27T20:42:14.532Z"
     }
@@ -624,7 +580,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 18,
         "created_at": "2023-01-27T20:42:38.291Z",
         "updated_at": "2023-01-27T20:42:38.291Z"
     }
@@ -638,7 +593,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 19,
         "created_at": "2023-01-27T20:43:12.463Z",
         "updated_at": "2023-01-27T20:43:12.463Z"
     }
@@ -652,7 +606,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 20,
         "created_at": "2023-01-27T20:43:47.128Z",
         "updated_at": "2023-01-27T20:43:47.128Z"
     }
@@ -666,7 +619,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 21,
         "created_at": "2023-01-27T20:44:13.254Z",
         "updated_at": "2023-01-27T20:44:13.254Z"
     }
@@ -680,7 +632,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 22,
         "created_at": "2023-01-27T20:44:42.846Z",
         "updated_at": "2023-01-27T20:44:42.846Z"
     }
@@ -694,7 +645,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 23,
         "created_at": "2023-01-27T20:45:06.399Z",
         "updated_at": "2023-01-27T20:45:06.399Z"
     }
@@ -708,7 +658,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 24,
         "created_at": "2023-01-27T20:45:56.574Z",
         "updated_at": "2023-01-27T20:45:56.574Z"
     }
@@ -722,7 +671,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 25,
         "created_at": "2023-01-27T20:46:28.936Z",
         "updated_at": "2023-01-27T20:46:58.797Z"
     }
@@ -736,7 +684,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 26,
         "created_at": "2023-01-27T20:47:55.844Z",
         "updated_at": "2023-01-27T20:47:55.844Z"
     }
@@ -750,7 +697,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 27,
         "created_at": "2023-01-27T20:48:17.584Z",
         "updated_at": "2023-01-27T20:48:17.584Z"
     }
@@ -764,7 +710,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 28,
         "created_at": "2023-01-27T20:48:43.568Z",
         "updated_at": "2023-01-27T20:49:09.601Z"
     }
@@ -778,7 +723,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 29,
         "created_at": "2023-01-27T20:49:41.618Z",
         "updated_at": "2023-01-27T20:49:41.618Z"
     }
@@ -792,7 +736,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 30,
         "created_at": "2023-01-27T20:50:05.206Z",
         "updated_at": "2023-01-27T20:50:05.206Z"
     }
@@ -806,7 +749,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 31,
         "created_at": "2023-01-27T20:50:31.200Z",
         "updated_at": "2023-01-27T20:50:31.200Z"
     }
@@ -820,7 +762,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 32,
         "created_at": "2023-01-27T20:50:58.220Z",
         "updated_at": "2023-01-27T20:50:58.220Z"
     }
@@ -834,7 +775,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 33,
         "created_at": "2023-01-27T20:51:23.094Z",
         "updated_at": "2023-01-27T20:51:23.094Z"
     }
@@ -848,7 +788,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 34,
         "created_at": "2023-01-27T20:51:40.234Z",
         "updated_at": "2023-01-27T20:51:40.234Z"
     }
@@ -862,7 +801,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 35,
         "created_at": "2023-01-27T20:52:02.554Z",
         "updated_at": "2023-01-27T20:52:02.554Z"
     }
@@ -876,7 +814,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 36,
         "created_at": "2023-01-27T20:52:26.108Z",
         "updated_at": "2023-01-27T20:52:26.108Z"
     }
@@ -890,7 +827,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 37,
         "created_at": "2023-01-27T20:52:48.946Z",
         "updated_at": "2023-01-27T20:52:48.946Z"
     }
@@ -904,7 +840,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 38,
         "created_at": "2023-01-27T20:53:12.187Z",
         "updated_at": "2023-01-27T20:53:12.187Z"
     }
@@ -918,7 +853,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 39,
         "created_at": "2023-01-27T20:53:34.574Z",
         "updated_at": "2023-01-27T20:53:34.574Z"
     }
@@ -932,7 +866,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 40,
         "created_at": "2023-01-27T20:53:56.830Z",
         "updated_at": "2023-01-27T20:53:56.830Z"
     }
@@ -946,7 +879,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 41,
         "created_at": "2023-01-27T20:54:22.234Z",
         "updated_at": "2023-01-27T20:54:22.234Z"
     }
@@ -960,7 +892,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 42,
         "created_at": "2023-01-27T20:54:46.972Z",
         "updated_at": "2023-01-27T20:54:46.972Z"
     }
@@ -974,7 +905,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 43,
         "created_at": "2023-01-27T20:55:11.037Z",
         "updated_at": "2023-01-27T20:55:11.037Z"
     }
@@ -988,7 +918,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 44,
         "created_at": "2023-01-27T20:55:28.239Z",
         "updated_at": "2023-01-27T20:55:28.239Z"
     }
@@ -1002,7 +931,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 45,
         "created_at": "2023-01-27T20:55:50.804Z",
         "updated_at": "2023-01-27T20:55:50.804Z"
     }
@@ -1016,7 +944,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 46,
         "created_at": "2023-01-27T20:56:15.524Z",
         "updated_at": "2023-01-27T20:56:15.524Z"
     }
@@ -1030,7 +957,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 47,
         "created_at": "2023-01-27T20:56:38.217Z",
         "updated_at": "2023-01-27T20:56:38.217Z"
     }
@@ -1044,7 +970,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 48,
         "created_at": "2023-01-27T20:56:59.418Z",
         "updated_at": "2023-01-27T20:56:59.419Z"
     }
@@ -1058,7 +983,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 49,
         "created_at": "2023-01-27T20:57:18.035Z",
         "updated_at": "2023-01-27T20:57:18.035Z"
     }
@@ -1072,7 +996,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 50,
         "created_at": "2023-01-27T20:57:43.030Z",
         "updated_at": "2023-01-27T20:57:43.030Z"
     }
@@ -1086,7 +1009,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T20:59:44.126Z",
         "updated_at": "2023-01-27T20:59:44.126Z"
     }
@@ -1100,7 +1022,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:00:13.212Z",
         "updated_at": "2023-01-27T21:00:13.212Z"
     }
@@ -1114,7 +1035,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:00:31.020Z",
         "updated_at": "2023-01-27T21:00:31.020Z"
     }
@@ -1128,7 +1048,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:00:47.637Z",
         "updated_at": "2023-01-27T21:00:47.637Z"
     }
@@ -1142,7 +1061,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:01:20.887Z",
         "updated_at": "2023-01-27T21:01:20.887Z"
     }
@@ -1156,7 +1074,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:01:41.559Z",
         "updated_at": "2023-01-27T21:01:41.559Z"
     }
@@ -1170,7 +1087,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:02:09.525Z",
         "updated_at": "2023-01-27T21:02:09.525Z"
     }
@@ -1184,7 +1100,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T21:02:29.905Z",
         "updated_at": "2023-01-27T21:02:29.905Z"
     }
@@ -1198,7 +1113,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T21:02:59.129Z",
         "updated_at": "2023-01-27T21:02:59.129Z"
     }
@@ -1212,7 +1126,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T21:03:25.538Z",
         "updated_at": "2023-01-27T21:03:25.538Z"
     }
@@ -1226,7 +1139,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T21:03:43.528Z",
         "updated_at": "2023-01-27T21:03:43.528Z"
     }
@@ -1240,7 +1152,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T21:04:02.708Z",
         "updated_at": "2023-01-27T21:04:02.708Z"
     }
@@ -1254,7 +1165,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T21:04:25.798Z",
         "updated_at": "2023-01-27T21:04:25.798Z"
     }
@@ -1268,7 +1178,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T21:05:03.911Z",
         "updated_at": "2023-01-27T21:05:03.911Z"
     }
@@ -1282,7 +1191,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 15,
         "created_at": "2023-01-27T21:05:21.966Z",
         "updated_at": "2023-01-27T21:05:21.966Z"
     }
@@ -1296,7 +1204,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 16,
         "created_at": "2023-01-27T21:05:46.405Z",
         "updated_at": "2023-01-27T21:05:46.405Z"
     }
@@ -1310,7 +1217,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:08:04.355Z",
         "updated_at": "2023-01-27T21:08:04.355Z"
     }
@@ -1324,7 +1230,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:08:27.496Z",
         "updated_at": "2023-01-27T21:08:27.496Z"
     }
@@ -1338,7 +1243,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:08:43.943Z",
         "updated_at": "2023-01-27T21:08:43.943Z"
     }
@@ -1352,7 +1256,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:09:00.866Z",
         "updated_at": "2023-01-27T21:09:00.866Z"
     }
@@ -1366,7 +1269,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:09:19.810Z",
         "updated_at": "2023-01-27T21:09:19.810Z"
     }
@@ -1380,7 +1282,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:12:06.571Z",
         "updated_at": "2023-01-27T21:12:06.571Z"
     }
@@ -1394,7 +1295,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:12:23.356Z",
         "updated_at": "2023-01-27T21:12:23.356Z"
     }
@@ -1408,7 +1308,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T21:12:42.448Z",
         "updated_at": "2023-01-27T21:12:42.448Z"
     }
@@ -1422,7 +1321,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T21:12:58.241Z",
         "updated_at": "2023-01-27T21:12:58.241Z"
     }
@@ -1436,7 +1334,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T21:13:24.226Z",
         "updated_at": "2023-01-27T21:13:24.226Z"
     }
@@ -1450,7 +1347,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:14:26.314Z",
         "updated_at": "2023-01-27T21:14:26.314Z"
     }
@@ -1464,7 +1360,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:14:50.042Z",
         "updated_at": "2023-01-27T21:14:50.042Z"
     }
@@ -1478,7 +1373,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:15:13.872Z",
         "updated_at": "2023-01-27T21:15:13.872Z"
     }
@@ -1492,7 +1386,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:15:39.742Z",
         "updated_at": "2023-01-27T21:15:39.742Z"
     }
@@ -1506,7 +1399,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:16:18.003Z",
         "updated_at": "2023-01-27T21:16:18.003Z"
     }
@@ -1520,7 +1412,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:16:35.310Z",
         "updated_at": "2023-01-27T21:16:35.310Z"
     }
@@ -1534,7 +1425,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:16:54.909Z",
         "updated_at": "2023-01-27T21:16:54.909Z"
     }
@@ -1548,7 +1438,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:18:22.726Z",
         "updated_at": "2023-01-27T21:18:22.726Z"
     }
@@ -1562,7 +1451,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:19:24.197Z",
         "updated_at": "2023-01-27T21:19:24.197Z"
     }
@@ -1576,7 +1464,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:19:40.208Z",
         "updated_at": "2023-01-27T21:19:40.208Z"
     }
@@ -1590,7 +1477,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:20:27.174Z",
         "updated_at": "2023-01-27T21:20:27.174Z"
     }
@@ -1604,7 +1490,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:20:49.294Z",
         "updated_at": "2023-01-27T21:20:49.294Z"
     }
@@ -1618,7 +1503,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:21:30.316Z",
         "updated_at": "2023-01-27T21:21:30.316Z"
     }
@@ -1632,7 +1516,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:21:45.817Z",
         "updated_at": "2023-01-27T21:21:45.817Z"
     }
@@ -1646,7 +1529,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:22:52.092Z",
         "updated_at": "2023-01-27T21:22:52.092Z"
     }
@@ -1660,7 +1542,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:23:12.202Z",
         "updated_at": "2023-01-27T21:23:12.202Z"
     }
@@ -1674,7 +1555,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:23:34.043Z",
         "updated_at": "2023-01-27T21:23:34.043Z"
     }
@@ -1688,7 +1568,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:23:54.493Z",
         "updated_at": "2023-01-27T21:23:54.493Z"
     }
@@ -1702,7 +1581,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:24:11.731Z",
         "updated_at": "2023-01-27T21:24:11.731Z"
     }
@@ -1716,7 +1594,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:24:34.011Z",
         "updated_at": "2023-01-27T21:24:34.011Z"
     }
@@ -1730,7 +1607,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:24:53.630Z",
         "updated_at": "2023-01-27T21:24:53.630Z"
     }
@@ -1744,7 +1620,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T21:25:20.165Z",
         "updated_at": "2023-01-27T21:25:20.165Z"
     }
@@ -1758,7 +1633,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T21:25:38.258Z",
         "updated_at": "2023-01-27T21:25:38.258Z"
     }
@@ -1772,7 +1646,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T21:25:59.321Z",
         "updated_at": "2023-01-27T21:25:59.321Z"
     }
@@ -1786,7 +1659,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T21:26:24.816Z",
         "updated_at": "2023-01-27T21:26:24.816Z"
     }
@@ -1800,7 +1672,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T21:26:39.581Z",
         "updated_at": "2023-01-27T21:26:39.581Z"
     }
@@ -1814,7 +1685,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T21:27:01.372Z",
         "updated_at": "2023-01-27T21:27:01.372Z"
     }
@@ -1828,7 +1698,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:27:57.123Z",
         "updated_at": "2023-01-27T21:27:57.123Z"
     }
@@ -1842,7 +1711,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:28:11.621Z",
         "updated_at": "2023-01-27T21:28:11.621Z"
     }
@@ -1856,7 +1724,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:28:30.808Z",
         "updated_at": "2023-01-27T21:28:30.808Z"
     }
@@ -1870,7 +1737,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:28:46.270Z",
         "updated_at": "2023-01-27T21:28:46.270Z"
     }
@@ -1884,7 +1750,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:29:00.829Z",
         "updated_at": "2023-01-27T21:29:00.829Z"
     }
@@ -1898,7 +1763,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:29:26.575Z",
         "updated_at": "2023-01-27T21:29:26.575Z"
     }
@@ -1912,7 +1776,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:29:43.548Z",
         "updated_at": "2023-01-27T21:29:43.548Z"
     }
@@ -1926,7 +1789,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:30:48.281Z",
         "updated_at": "2023-01-27T21:30:48.281Z"
     }
@@ -1940,7 +1802,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:31:03.368Z",
         "updated_at": "2023-01-27T21:31:03.368Z"
     }
@@ -1954,7 +1815,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:31:19.936Z",
         "updated_at": "2023-01-27T21:31:19.936Z"
     }
@@ -1968,7 +1828,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:31:35.374Z",
         "updated_at": "2023-01-27T21:31:35.374Z"
     }
@@ -1982,7 +1841,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:32:06.728Z",
         "updated_at": "2023-01-27T21:32:06.728Z"
     }
@@ -1996,7 +1854,6 @@
         "max_user": 34,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:32:22.206Z",
         "updated_at": "2023-01-27T21:32:22.206Z"
     }
@@ -2010,7 +1867,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:32:48.841Z",
         "updated_at": "2023-01-27T21:32:48.841Z"
     }
@@ -2024,7 +1880,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:34:19.633Z",
         "updated_at": "2023-01-27T21:34:19.633Z"
     }
@@ -2038,7 +1893,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:34:39.241Z",
         "updated_at": "2023-01-27T21:35:23.151Z"
     }
@@ -2052,7 +1906,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:35:48.984Z",
         "updated_at": "2023-01-27T21:35:48.984Z"
     }
@@ -2066,7 +1919,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:36:20.814Z",
         "updated_at": "2023-01-27T21:36:20.814Z"
     }
@@ -2080,7 +1932,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:36:47.959Z",
         "updated_at": "2023-01-27T21:36:47.959Z"
     }
@@ -2094,7 +1945,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:37:05.831Z",
         "updated_at": "2023-01-27T22:28:29.285Z"
     }
@@ -2108,7 +1958,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:37:52.086Z",
         "updated_at": "2023-01-27T21:37:52.086Z"
     }
@@ -2122,7 +1971,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T21:38:09.314Z",
         "updated_at": "2023-01-27T21:38:09.314Z"
     }
@@ -2136,7 +1984,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:39:00.431Z",
         "updated_at": "2023-01-27T21:39:00.431Z"
     }
@@ -2150,7 +1997,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:39:15.495Z",
         "updated_at": "2023-01-27T21:39:15.495Z"
     }
@@ -2164,7 +2010,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:39:34.432Z",
         "updated_at": "2023-01-27T21:39:34.432Z"
     }
@@ -2178,7 +2023,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:39:58.533Z",
         "updated_at": "2023-01-27T21:39:58.533Z"
     }
@@ -2192,7 +2036,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:40:14.884Z",
         "updated_at": "2023-01-27T21:40:14.884Z"
     }
@@ -2206,7 +2049,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:40:34.364Z",
         "updated_at": "2023-01-27T21:40:34.364Z"
     }
@@ -2220,7 +2062,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:40:49.719Z",
         "updated_at": "2023-01-27T21:40:49.719Z"
     }
@@ -2234,7 +2075,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T21:41:03.837Z",
         "updated_at": "2023-01-27T21:41:03.837Z"
     }
@@ -2248,7 +2088,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T21:41:22.188Z",
         "updated_at": "2023-01-27T21:41:22.188Z"
     }
@@ -2262,7 +2101,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T21:41:38.747Z",
         "updated_at": "2023-01-27T21:41:38.747Z"
     }
@@ -2276,7 +2114,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T21:42:00.048Z",
         "updated_at": "2023-01-27T21:42:00.048Z"
     }
@@ -2290,7 +2127,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T21:42:32.854Z",
         "updated_at": "2023-01-27T21:42:32.855Z"
     }
@@ -2304,7 +2140,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T21:46:18.482Z",
         "updated_at": "2023-01-27T21:46:18.482Z"
     }
@@ -2318,7 +2153,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T21:46:50.869Z",
         "updated_at": "2023-01-27T21:46:50.869Z"
     }
@@ -2332,7 +2166,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 15,
         "created_at": "2023-01-27T21:47:07.677Z",
         "updated_at": "2023-01-27T21:47:07.677Z"
     }
@@ -2346,7 +2179,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 16,
         "created_at": "2023-01-27T21:47:57.872Z",
         "updated_at": "2023-01-27T21:47:57.872Z"
     }
@@ -2360,7 +2192,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 17,
         "created_at": "2023-01-27T21:48:34.368Z",
         "updated_at": "2023-01-27T21:48:34.368Z"
     }
@@ -2374,7 +2205,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 18,
         "created_at": "2023-01-27T21:48:50.988Z",
         "updated_at": "2023-01-27T21:48:50.988Z"
     }
@@ -2388,7 +2218,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 19,
         "created_at": "2023-01-27T21:49:08.017Z",
         "updated_at": "2023-01-27T21:49:08.017Z"
     }
@@ -2402,7 +2231,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:50:24.307Z",
         "updated_at": "2023-01-27T21:50:24.307Z"
     }
@@ -2416,7 +2244,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:50:39.111Z",
         "updated_at": "2023-01-27T21:50:39.111Z"
     }
@@ -2430,7 +2257,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:50:55.947Z",
         "updated_at": "2023-01-27T21:50:55.947Z"
     }
@@ -2444,7 +2270,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:51:11.711Z",
         "updated_at": "2023-01-27T21:51:11.711Z"
     }
@@ -2458,7 +2283,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:51:29.113Z",
         "updated_at": "2023-01-27T21:51:29.113Z"
     }
@@ -2472,7 +2296,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:51:46.328Z",
         "updated_at": "2023-01-27T21:51:46.328Z"
     }
@@ -2486,7 +2309,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:52:00.116Z",
         "updated_at": "2023-01-27T21:52:00.116Z"
     }
@@ -2500,7 +2322,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T21:52:15.921Z",
         "updated_at": "2023-01-27T21:52:15.921Z"
     }
@@ -2514,7 +2335,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T21:52:53.404Z",
         "updated_at": "2023-01-27T21:52:53.404Z"
     }
@@ -2528,7 +2348,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T21:53:07.709Z",
         "updated_at": "2023-01-27T21:53:07.709Z"
     }
@@ -2542,7 +2361,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T21:54:25.970Z",
         "updated_at": "2023-01-27T21:54:25.970Z"
     }
@@ -2556,7 +2374,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T21:54:43.782Z",
         "updated_at": "2023-01-27T21:54:43.782Z"
     }
@@ -2570,7 +2387,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T21:55:03.344Z",
         "updated_at": "2023-01-27T21:55:03.344Z"
     }
@@ -2584,7 +2400,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T21:55:22.228Z",
         "updated_at": "2023-01-27T21:55:22.228Z"
     }
@@ -2598,7 +2413,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T21:55:48.708Z",
         "updated_at": "2023-01-27T21:55:48.708Z"
     }
@@ -2612,7 +2426,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T21:57:02.940Z",
         "updated_at": "2023-01-27T21:57:02.940Z"
     }
@@ -2626,7 +2439,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T21:57:32.605Z",
         "updated_at": "2023-01-27T21:57:32.606Z"
     }
@@ -2640,7 +2452,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T21:57:47.947Z",
         "updated_at": "2023-01-27T21:57:47.947Z"
     }
@@ -2654,7 +2465,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T21:58:06.034Z",
         "updated_at": "2023-01-27T21:58:06.034Z"
     }
@@ -2668,7 +2478,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T21:58:36.055Z",
         "updated_at": "2023-01-27T21:58:36.055Z"
     }
@@ -2682,7 +2491,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T21:58:50.601Z",
         "updated_at": "2023-01-27T21:58:50.601Z"
     }
@@ -2696,7 +2504,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T21:59:15.965Z",
         "updated_at": "2023-01-27T21:59:15.965Z"
     }
@@ -2710,7 +2517,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T21:59:31.939Z",
         "updated_at": "2023-01-27T21:59:31.939Z"
     }
@@ -2724,7 +2530,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T21:59:56.068Z",
         "updated_at": "2023-01-27T21:59:56.068Z"
     }
@@ -2738,7 +2543,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:05:45.079Z",
         "updated_at": "2023-01-27T22:05:45.079Z"
     }
@@ -2752,7 +2556,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:06:01.524Z",
         "updated_at": "2023-01-27T22:06:01.524Z"
     }
@@ -2766,7 +2569,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:06:17.804Z",
         "updated_at": "2023-01-27T22:06:17.804Z"
     }
@@ -2780,7 +2582,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:06:34.701Z",
         "updated_at": "2023-01-27T22:06:34.701Z"
     }
@@ -2794,7 +2595,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:06:50.689Z",
         "updated_at": "2023-01-27T22:06:50.689Z"
     }
@@ -2808,7 +2608,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:07:13.609Z",
         "updated_at": "2023-01-27T22:07:13.609Z"
     }
@@ -2822,7 +2621,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T22:07:27.393Z",
         "updated_at": "2023-01-27T22:07:27.393Z"
     }
@@ -2836,7 +2634,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T22:07:41.643Z",
         "updated_at": "2023-01-27T22:07:41.643Z"
     }
@@ -2850,7 +2647,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:08:42.795Z",
         "updated_at": "2023-01-27T22:08:42.795Z"
     }
@@ -2864,7 +2660,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:08:56.531Z",
         "updated_at": "2023-01-27T22:08:56.531Z"
     }
@@ -2878,7 +2673,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:09:13.102Z",
         "updated_at": "2023-01-27T22:09:13.102Z"
     }
@@ -2892,7 +2686,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:09:28.776Z",
         "updated_at": "2023-01-27T22:09:28.776Z"
     }
@@ -2906,7 +2699,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:09:47.514Z",
         "updated_at": "2023-01-27T22:09:47.514Z"
     }
@@ -2920,7 +2712,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:10:02.849Z",
         "updated_at": "2023-01-27T22:10:02.849Z"
     }
@@ -2934,7 +2725,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:10:50.351Z",
         "updated_at": "2023-01-27T22:10:50.351Z"
     }
@@ -2948,7 +2738,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:11:06.455Z",
         "updated_at": "2023-01-27T22:11:06.455Z"
     }
@@ -2962,7 +2751,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:11:24.396Z",
         "updated_at": "2023-01-27T22:11:24.396Z"
     }
@@ -2976,7 +2764,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:11:39.647Z",
         "updated_at": "2023-01-27T22:11:39.647Z"
     }
@@ -2990,7 +2777,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:11:59.430Z",
         "updated_at": "2023-01-27T22:11:59.430Z"
     }
@@ -3004,7 +2790,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:12:15.269Z",
         "updated_at": "2023-01-27T22:12:15.269Z"
     }
@@ -3018,7 +2803,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T22:12:31.141Z",
         "updated_at": "2023-01-27T22:12:31.141Z"
     }
@@ -3032,7 +2816,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T22:12:58.538Z",
         "updated_at": "2023-01-27T22:12:58.538Z"
     }
@@ -3046,7 +2829,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T22:13:31.043Z",
         "updated_at": "2023-01-27T22:13:31.043Z"
     }
@@ -3060,7 +2842,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T22:13:45.181Z",
         "updated_at": "2023-01-27T22:13:45.181Z"
     }
@@ -3074,7 +2855,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T22:14:07.500Z",
         "updated_at": "2023-01-27T22:14:07.500Z"
     }
@@ -3088,7 +2868,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T22:14:45.585Z",
         "updated_at": "2023-01-27T22:14:45.585Z"
     }
@@ -3102,7 +2881,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T22:14:59.672Z",
         "updated_at": "2023-01-27T22:14:59.672Z"
     }
@@ -3116,7 +2894,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T22:15:25.762Z",
         "updated_at": "2023-01-27T22:15:25.762Z"
     }
@@ -3130,7 +2907,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:16:09.874Z",
         "updated_at": "2023-01-27T22:16:09.874Z"
     }
@@ -3144,7 +2920,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:16:25.424Z",
         "updated_at": "2023-01-27T22:16:25.424Z"
     }
@@ -3158,7 +2933,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:16:39.659Z",
         "updated_at": "2023-01-27T22:16:39.659Z"
     }
@@ -3172,7 +2946,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:16:54.401Z",
         "updated_at": "2023-01-27T22:16:54.401Z"
     }
@@ -3186,7 +2959,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:17:11.931Z",
         "updated_at": "2023-01-27T22:17:11.931Z"
     }
@@ -3200,7 +2972,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:17:52.349Z",
         "updated_at": "2023-01-27T22:17:52.349Z"
     }
@@ -3214,7 +2985,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:18:06.221Z",
         "updated_at": "2023-01-27T22:18:06.221Z"
     }
@@ -3228,7 +2998,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:18:21.029Z",
         "updated_at": "2023-01-27T22:18:21.029Z"
     }
@@ -3242,7 +3011,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:18:35.757Z",
         "updated_at": "2023-01-27T22:18:35.757Z"
     }
@@ -3256,7 +3024,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:18:51.853Z",
         "updated_at": "2023-01-27T22:18:51.853Z"
     }
@@ -3270,7 +3037,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:19:07.408Z",
         "updated_at": "2023-01-27T22:19:07.408Z"
     }
@@ -3284,7 +3050,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T22:20:22.370Z",
         "updated_at": "2023-01-27T22:20:22.370Z"
     }
@@ -3298,7 +3063,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T22:20:38.075Z",
         "updated_at": "2023-01-27T22:20:38.075Z"
     }
@@ -3312,7 +3076,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T22:20:51.902Z",
         "updated_at": "2023-01-27T22:20:51.902Z"
     }
@@ -3326,7 +3089,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T22:21:07.941Z",
         "updated_at": "2023-01-27T22:21:55.457Z"
     }
@@ -3340,7 +3102,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T22:22:16.783Z",
         "updated_at": "2023-01-27T22:22:16.783Z"
     }
@@ -3354,7 +3115,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T22:22:41.819Z",
         "updated_at": "2023-01-27T22:22:41.819Z"
     }
@@ -3368,7 +3128,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:23:43.045Z",
         "updated_at": "2023-01-27T22:23:43.045Z"
     }
@@ -3382,7 +3141,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:23:56.076Z",
         "updated_at": "2023-01-27T22:23:56.076Z"
     }
@@ -3396,7 +3154,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:24:09.182Z",
         "updated_at": "2023-01-27T22:24:09.182Z"
     }
@@ -3410,7 +3167,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:24:25.668Z",
         "updated_at": "2023-01-27T22:24:25.668Z"
     }
@@ -3424,7 +3180,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:24:42.678Z",
         "updated_at": "2023-01-27T22:24:42.678Z"
     }
@@ -3438,7 +3193,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:25:07.487Z",
         "updated_at": "2023-01-27T22:25:07.487Z"
     }
@@ -3452,7 +3206,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T22:25:37.283Z",
         "updated_at": "2023-01-27T22:25:37.283Z"
     }
@@ -3466,7 +3219,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T22:25:57.419Z",
         "updated_at": "2023-01-27T22:25:57.419Z"
     }
@@ -3480,7 +3232,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T22:26:22.979Z",
         "updated_at": "2023-01-27T22:26:22.979Z"
     }
@@ -3494,7 +3245,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:39:32.741Z",
         "updated_at": "2023-01-27T22:39:32.741Z"
     }
@@ -3508,7 +3258,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:39:32.751Z",
         "updated_at": "2023-01-27T22:39:32.751Z"
     }
@@ -3522,7 +3271,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:39:32.754Z",
         "updated_at": "2023-01-27T22:39:32.754Z"
     }
@@ -3536,7 +3284,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:39:32.757Z",
         "updated_at": "2023-01-27T22:39:32.757Z"
     }
@@ -3550,7 +3297,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:39:32.761Z",
         "updated_at": "2023-01-27T22:39:32.761Z"
     }
@@ -3564,7 +3310,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:39:32.764Z",
         "updated_at": "2023-01-27T22:39:32.764Z"
     }
@@ -3578,7 +3323,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T22:39:32.767Z",
         "updated_at": "2023-01-27T22:39:32.767Z"
     }
@@ -3592,7 +3336,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T22:39:32.770Z",
         "updated_at": "2023-01-27T22:39:32.770Z"
     }
@@ -3606,7 +3349,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T22:39:32.773Z",
         "updated_at": "2023-01-27T22:39:32.773Z"
     }
@@ -3620,7 +3362,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T22:39:32.776Z",
         "updated_at": "2023-01-27T22:39:32.776Z"
     }
@@ -3634,7 +3375,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T22:39:32.779Z",
         "updated_at": "2023-01-27T22:39:32.779Z"
     }
@@ -3648,7 +3388,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T22:39:32.782Z",
         "updated_at": "2023-01-27T22:39:32.782Z"
     }
@@ -3662,7 +3401,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T22:39:32.785Z",
         "updated_at": "2023-01-27T22:39:32.785Z"
     }
@@ -3676,7 +3414,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T22:39:32.789Z",
         "updated_at": "2023-01-27T22:39:32.789Z"
     }
@@ -3690,7 +3427,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 15,
         "created_at": "2023-01-27T22:39:32.793Z",
         "updated_at": "2023-01-27T22:39:32.793Z"
     }
@@ -3704,7 +3440,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 16,
         "created_at": "2023-01-27T22:39:32.796Z",
         "updated_at": "2023-01-27T22:39:32.796Z"
     }
@@ -3718,7 +3453,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 17,
         "created_at": "2023-01-27T22:39:32.799Z",
         "updated_at": "2023-01-27T22:39:32.799Z"
     }
@@ -3732,7 +3466,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 18,
         "created_at": "2023-01-27T22:39:32.803Z",
         "updated_at": "2023-01-27T22:39:32.803Z"
     }
@@ -3746,7 +3479,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 19,
         "created_at": "2023-01-27T22:39:32.805Z",
         "updated_at": "2023-01-27T22:39:32.806Z"
     }
@@ -3760,7 +3492,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 20,
         "created_at": "2023-01-27T22:39:32.808Z",
         "updated_at": "2023-01-27T22:39:32.809Z"
     }
@@ -3774,7 +3505,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 21,
         "created_at": "2023-01-27T22:39:32.811Z",
         "updated_at": "2023-01-27T22:39:32.811Z"
     }
@@ -3788,7 +3518,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 22,
         "created_at": "2023-01-27T22:39:32.814Z",
         "updated_at": "2023-01-27T22:39:32.814Z"
     }
@@ -3802,7 +3531,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 23,
         "created_at": "2023-01-27T22:39:32.817Z",
         "updated_at": "2023-01-27T22:39:32.817Z"
     }
@@ -3816,7 +3544,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 24,
         "created_at": "2023-01-27T22:39:32.820Z",
         "updated_at": "2023-01-27T22:39:32.820Z"
     }
@@ -3830,7 +3557,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 25,
         "created_at": "2023-01-27T22:39:32.824Z",
         "updated_at": "2023-01-27T22:39:32.824Z"
     }
@@ -3844,7 +3570,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 26,
         "created_at": "2023-01-27T22:39:32.827Z",
         "updated_at": "2023-01-27T22:39:32.827Z"
     }
@@ -3858,7 +3583,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 27,
         "created_at": "2023-01-27T22:39:32.829Z",
         "updated_at": "2023-01-27T22:39:32.830Z"
     }
@@ -3872,7 +3596,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:42:26.108Z",
         "updated_at": "2023-01-27T22:42:26.108Z"
     }
@@ -3886,7 +3609,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:42:44.295Z",
         "updated_at": "2023-01-27T22:42:44.295Z"
     }
@@ -3900,7 +3622,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:43:03.221Z",
         "updated_at": "2023-01-27T22:43:03.221Z"
     }
@@ -3914,7 +3635,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:43:20.686Z",
         "updated_at": "2023-01-27T22:43:20.686Z"
     }
@@ -3928,7 +3648,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:43:38.142Z",
         "updated_at": "2023-01-27T22:43:38.142Z"
     }
@@ -3942,7 +3661,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:43:54.039Z",
         "updated_at": "2023-01-27T22:43:54.039Z"
     }
@@ -3956,7 +3674,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T22:44:08.021Z",
         "updated_at": "2023-01-27T22:44:08.021Z"
     }
@@ -3970,7 +3687,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T22:44:27.820Z",
         "updated_at": "2023-01-27T22:44:27.820Z"
     }
@@ -3984,7 +3700,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T22:44:45.335Z",
         "updated_at": "2023-01-27T22:44:45.335Z"
     }
@@ -3998,7 +3713,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T22:45:05.951Z",
         "updated_at": "2023-01-27T22:45:05.951Z"
     }
@@ -4012,7 +3726,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T22:45:25.299Z",
         "updated_at": "2023-01-27T22:45:25.299Z"
     }
@@ -4026,7 +3739,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T22:45:39.913Z",
         "updated_at": "2023-01-27T22:45:39.913Z"
     }
@@ -4040,7 +3752,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T22:45:55.697Z",
         "updated_at": "2023-01-27T22:45:55.697Z"
     }
@@ -4054,7 +3765,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T22:46:58.585Z",
         "updated_at": "2023-01-27T22:53:15.371Z"
     }
@@ -4068,7 +3778,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T22:47:13.004Z",
         "updated_at": "2023-01-27T22:54:03.497Z"
     }
@@ -4082,7 +3791,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T22:47:27.258Z",
         "updated_at": "2023-01-27T22:54:30.222Z"
     }
@@ -4096,7 +3804,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T22:47:41.391Z",
         "updated_at": "2023-01-31T18:15:59.600Z"
     }
@@ -4110,7 +3817,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T22:47:56.300Z",
         "updated_at": "2023-01-31T18:16:24.312Z"
     }
@@ -4124,7 +3830,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T22:48:19.888Z",
         "updated_at": "2023-01-31T18:15:38.097Z"
     }
@@ -4138,7 +3843,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-27T22:48:38.179Z",
         "updated_at": "2023-01-31T18:17:10.135Z"
     }
@@ -4152,7 +3856,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-27T22:48:53.989Z",
         "updated_at": "2023-01-31T18:16:49.736Z"
     }
@@ -4166,7 +3869,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-27T22:49:07.501Z",
         "updated_at": "2023-01-27T23:02:51.569Z"
     }
@@ -4180,7 +3882,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-27T22:49:30.504Z",
         "updated_at": "2023-01-27T23:03:14.755Z"
     }
@@ -4194,7 +3895,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-27T23:04:21.879Z",
         "updated_at": "2023-01-27T23:04:21.879Z"
     }
@@ -4208,7 +3908,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-27T23:05:00.235Z",
         "updated_at": "2023-01-27T23:05:00.235Z"
     }
@@ -4222,7 +3921,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-27T23:06:01.933Z",
         "updated_at": "2023-01-27T23:06:01.933Z"
     }
@@ -4236,7 +3934,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-27T23:06:22.675Z",
         "updated_at": "2023-01-27T23:06:22.675Z"
     }
@@ -4250,7 +3947,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 15,
         "created_at": "2023-01-27T23:07:15.953Z",
         "updated_at": "2023-01-27T23:07:15.953Z"
     }
@@ -4264,7 +3960,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 16,
         "created_at": "2023-01-27T23:07:35.598Z",
         "updated_at": "2023-01-27T23:07:35.598Z"
     }
@@ -4278,7 +3973,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-27T23:08:57.637Z",
         "updated_at": "2023-01-27T23:08:57.637Z"
     }
@@ -4292,7 +3986,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-27T23:09:11.724Z",
         "updated_at": "2023-01-27T23:09:11.724Z"
     }
@@ -4306,7 +3999,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-27T23:09:27.881Z",
         "updated_at": "2023-01-27T23:09:27.881Z"
     }
@@ -4320,7 +4012,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-27T23:10:56.230Z",
         "updated_at": "2023-01-27T23:10:56.230Z"
     }
@@ -4334,7 +4025,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-27T23:11:34.768Z",
         "updated_at": "2023-01-27T23:11:34.768Z"
     }
@@ -4348,7 +4038,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-27T23:11:51.305Z",
         "updated_at": "2023-01-27T23:11:51.305Z"
     }
@@ -4362,7 +4051,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:10:07.990Z",
         "updated_at": "2023-01-29T19:10:07.990Z"
     }
@@ -4376,7 +4064,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:10:08.002Z",
         "updated_at": "2023-01-29T19:10:08.002Z"
     }
@@ -4390,7 +4077,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:10:08.006Z",
         "updated_at": "2023-01-29T19:10:08.006Z"
     }
@@ -4404,7 +4090,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:10:08.009Z",
         "updated_at": "2023-01-29T19:10:08.009Z"
     }
@@ -4418,7 +4103,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:10:08.012Z",
         "updated_at": "2023-01-29T19:10:08.012Z"
     }
@@ -4432,7 +4116,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:10:08.015Z",
         "updated_at": "2023-01-29T19:10:08.015Z"
     }
@@ -4446,7 +4129,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:10:08.018Z",
         "updated_at": "2023-01-29T19:10:08.018Z"
     }
@@ -4460,7 +4142,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:10:08.021Z",
         "updated_at": "2023-01-29T19:10:08.021Z"
     }
@@ -4474,7 +4155,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:10:08.024Z",
         "updated_at": "2023-01-29T19:10:08.024Z"
     }
@@ -4488,7 +4168,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-29T19:10:08.027Z",
         "updated_at": "2023-01-29T19:10:08.027Z"
     }
@@ -4502,7 +4181,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:11:51.921Z",
         "updated_at": "2023-01-29T19:11:51.921Z"
     }
@@ -4516,7 +4194,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:11:51.929Z",
         "updated_at": "2023-01-29T19:11:51.929Z"
     }
@@ -4530,7 +4207,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:11:51.932Z",
         "updated_at": "2023-01-29T19:11:51.932Z"
     }
@@ -4544,7 +4220,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:11:51.935Z",
         "updated_at": "2023-01-29T19:11:51.935Z"
     }
@@ -4558,7 +4233,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:11:51.938Z",
         "updated_at": "2023-01-29T19:11:51.938Z"
     }
@@ -4572,7 +4246,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:11:51.941Z",
         "updated_at": "2023-01-29T19:11:51.941Z"
     }
@@ -4586,7 +4259,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:11:51.944Z",
         "updated_at": "2023-01-29T19:11:51.944Z"
     }
@@ -4600,7 +4272,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:12:35.046Z",
         "updated_at": "2023-01-29T19:12:35.046Z"
     }
@@ -4614,7 +4285,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:12:35.054Z",
         "updated_at": "2023-01-29T19:12:35.054Z"
     }
@@ -4628,7 +4298,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:12:35.057Z",
         "updated_at": "2023-01-29T19:12:35.057Z"
     }
@@ -4642,7 +4311,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:12:35.060Z",
         "updated_at": "2023-01-29T19:12:35.060Z"
     }
@@ -4656,7 +4324,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:12:35.063Z",
         "updated_at": "2023-01-29T19:12:35.063Z"
     }
@@ -4670,7 +4337,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:12:35.065Z",
         "updated_at": "2023-01-29T19:12:35.065Z"
     }
@@ -4684,7 +4350,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:12:35.068Z",
         "updated_at": "2023-01-29T19:12:35.068Z"
     }
@@ -4698,7 +4363,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:13:28.491Z",
         "updated_at": "2023-01-29T19:13:28.491Z"
     }
@@ -4712,7 +4376,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:13:28.497Z",
         "updated_at": "2023-01-29T19:13:28.497Z"
     }
@@ -4726,7 +4389,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:13:28.498Z",
         "updated_at": "2023-01-29T19:13:28.498Z"
     }
@@ -4740,7 +4402,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:13:28.499Z",
         "updated_at": "2023-01-29T19:13:28.499Z"
     }
@@ -4754,7 +4415,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:13:28.500Z",
         "updated_at": "2023-01-29T19:13:28.500Z"
     }
@@ -4768,7 +4428,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:13:28.501Z",
         "updated_at": "2023-01-29T19:13:28.501Z"
     }
@@ -4782,7 +4441,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:13:28.502Z",
         "updated_at": "2023-01-29T19:13:28.502Z"
     }
@@ -4796,7 +4454,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:13:28.503Z",
         "updated_at": "2023-01-29T19:13:28.503Z"
     }
@@ -4810,7 +4467,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:13:28.504Z",
         "updated_at": "2023-01-29T19:13:28.504Z"
     }
@@ -4824,7 +4480,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-29T19:13:28.505Z",
         "updated_at": "2023-01-29T19:13:28.505Z"
     }
@@ -4838,7 +4493,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-29T19:13:28.506Z",
         "updated_at": "2023-01-29T19:13:28.506Z"
     }
@@ -4852,7 +4506,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-29T19:13:28.508Z",
         "updated_at": "2023-01-29T19:13:28.508Z"
     }
@@ -4866,7 +4519,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-29T19:13:28.510Z",
         "updated_at": "2023-01-29T19:13:28.510Z"
     }
@@ -4880,7 +4532,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:14:11.379Z",
         "updated_at": "2023-01-29T19:14:11.379Z"
     }
@@ -4894,7 +4545,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:14:11.387Z",
         "updated_at": "2023-01-29T19:14:11.387Z"
     }
@@ -4908,7 +4558,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:14:11.390Z",
         "updated_at": "2023-01-29T19:14:11.391Z"
     }
@@ -4922,7 +4571,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:14:11.393Z",
         "updated_at": "2023-01-29T19:14:11.393Z"
     }
@@ -4936,7 +4584,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:14:11.397Z",
         "updated_at": "2023-01-29T19:14:11.397Z"
     }
@@ -4950,7 +4597,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:14:11.400Z",
         "updated_at": "2023-01-29T19:14:11.400Z"
     }
@@ -4964,7 +4610,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:14:11.403Z",
         "updated_at": "2023-01-29T19:14:11.403Z"
     }
@@ -4978,7 +4623,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:15:24.649Z",
         "updated_at": "2023-01-29T19:15:24.649Z"
     }
@@ -4992,7 +4636,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:15:24.655Z",
         "updated_at": "2023-01-29T19:15:24.655Z"
     }
@@ -5006,7 +4649,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:15:24.656Z",
         "updated_at": "2023-01-29T19:15:24.656Z"
     }
@@ -5020,7 +4662,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:15:24.658Z",
         "updated_at": "2023-01-29T19:15:24.658Z"
     }
@@ -5034,7 +4675,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:15:24.659Z",
         "updated_at": "2023-01-29T19:15:24.659Z"
     }
@@ -5048,7 +4688,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:15:24.659Z",
         "updated_at": "2023-01-29T19:15:24.660Z"
     }
@@ -5062,7 +4701,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:15:24.661Z",
         "updated_at": "2023-01-29T19:15:24.661Z"
     }
@@ -5076,7 +4714,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:15:24.662Z",
         "updated_at": "2023-01-29T19:15:24.662Z"
     }
@@ -5090,7 +4727,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:16:10.192Z",
         "updated_at": "2023-01-29T19:16:10.192Z"
     }
@@ -5104,7 +4740,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:16:10.200Z",
         "updated_at": "2023-01-29T19:16:10.200Z"
     }
@@ -5118,7 +4753,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:16:10.202Z",
         "updated_at": "2023-01-29T19:16:10.202Z"
     }
@@ -5132,7 +4766,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:16:10.205Z",
         "updated_at": "2023-01-29T19:16:10.205Z"
     }
@@ -5146,7 +4779,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:16:10.208Z",
         "updated_at": "2023-01-29T19:16:10.208Z"
     }
@@ -5160,7 +4792,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:16:10.211Z",
         "updated_at": "2023-01-29T19:16:10.211Z"
     }
@@ -5174,7 +4805,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:16:10.213Z",
         "updated_at": "2023-01-29T19:16:10.213Z"
     }
@@ -5188,7 +4818,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:16:10.216Z",
         "updated_at": "2023-01-29T19:16:10.216Z"
     }
@@ -5202,7 +4831,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:16:10.219Z",
         "updated_at": "2023-01-29T19:16:10.219Z"
     }
@@ -5216,7 +4844,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-29T19:16:10.222Z",
         "updated_at": "2023-01-29T19:16:10.222Z"
     }
@@ -5230,7 +4857,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-29T19:16:10.226Z",
         "updated_at": "2023-01-29T19:16:10.226Z"
     }
@@ -5244,7 +4870,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-29T19:16:10.229Z",
         "updated_at": "2023-01-29T19:16:10.229Z"
     }
@@ -5258,7 +4883,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-29T19:16:10.232Z",
         "updated_at": "2023-01-29T19:16:10.232Z"
     }
@@ -5272,7 +4896,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-29T19:16:10.236Z",
         "updated_at": "2023-01-29T19:16:10.236Z"
     }
@@ -5286,7 +4909,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 15,
         "created_at": "2023-01-29T19:16:10.239Z",
         "updated_at": "2023-01-29T19:16:10.240Z"
     }
@@ -5300,7 +4922,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 16,
         "created_at": "2023-01-29T19:16:10.243Z",
         "updated_at": "2023-01-29T19:16:10.243Z"
     }
@@ -5314,7 +4935,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 17,
         "created_at": "2023-01-29T19:16:10.246Z",
         "updated_at": "2023-01-29T19:16:10.246Z"
     }
@@ -5328,7 +4948,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 18,
         "created_at": "2023-01-29T19:16:10.249Z",
         "updated_at": "2023-01-29T19:16:10.249Z"
     }
@@ -5342,7 +4961,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 19,
         "created_at": "2023-01-29T19:16:10.252Z",
         "updated_at": "2023-01-29T19:16:10.252Z"
     }
@@ -5356,7 +4974,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:16:53.745Z",
         "updated_at": "2023-01-29T19:16:53.745Z"
     }
@@ -5370,7 +4987,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:16:53.748Z",
         "updated_at": "2023-01-29T19:16:53.748Z"
     }
@@ -5384,7 +5000,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:16:53.751Z",
         "updated_at": "2023-01-29T19:16:53.751Z"
     }
@@ -5398,7 +5013,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:16:53.754Z",
         "updated_at": "2023-01-29T19:16:53.754Z"
     }
@@ -5412,7 +5026,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:16:53.756Z",
         "updated_at": "2023-01-29T19:16:53.756Z"
     }
@@ -5426,7 +5039,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:16:53.760Z",
         "updated_at": "2023-01-29T19:16:53.760Z"
     }
@@ -5440,7 +5052,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:16:53.763Z",
         "updated_at": "2023-01-29T19:16:53.763Z"
     }
@@ -5454,7 +5065,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:16:53.765Z",
         "updated_at": "2023-01-29T19:16:53.765Z"
     }
@@ -5468,7 +5078,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:16:53.768Z",
         "updated_at": "2023-01-29T19:16:53.768Z"
     }
@@ -5482,7 +5091,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-29T19:16:53.771Z",
         "updated_at": "2023-01-29T19:16:53.771Z"
     }
@@ -5496,7 +5104,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:17:50.648Z",
         "updated_at": "2023-01-29T19:17:50.648Z"
     }
@@ -5510,7 +5117,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:17:50.651Z",
         "updated_at": "2023-01-29T19:17:50.651Z"
     }
@@ -5524,7 +5130,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:17:50.652Z",
         "updated_at": "2023-01-29T19:17:50.652Z"
     }
@@ -5538,7 +5143,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:17:50.654Z",
         "updated_at": "2023-01-29T19:17:50.654Z"
     }
@@ -5552,7 +5156,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:17:50.656Z",
         "updated_at": "2023-01-29T19:17:50.656Z"
     }
@@ -5566,7 +5169,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:17:50.658Z",
         "updated_at": "2023-01-29T19:17:50.658Z"
     }
@@ -5580,7 +5182,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:17:50.659Z",
         "updated_at": "2023-01-29T19:17:50.659Z"
     }
@@ -5594,7 +5195,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:17:50.661Z",
         "updated_at": "2023-01-29T19:17:50.661Z"
     }
@@ -5608,7 +5208,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:17:50.662Z",
         "updated_at": "2023-01-29T19:17:50.662Z"
     }
@@ -5622,7 +5221,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-29T19:17:50.665Z",
         "updated_at": "2023-01-29T19:17:50.665Z"
     }
@@ -5636,7 +5234,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-29T19:17:50.666Z",
         "updated_at": "2023-01-29T19:17:50.666Z"
     }
@@ -5650,7 +5247,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-29T19:17:50.667Z",
         "updated_at": "2023-01-29T19:17:50.667Z"
     }
@@ -5664,7 +5260,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-29T19:17:50.669Z",
         "updated_at": "2023-01-29T19:17:50.669Z"
     }
@@ -5678,7 +5273,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-29T19:17:50.670Z",
         "updated_at": "2023-01-29T19:17:50.670Z"
     }
@@ -5692,7 +5286,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:20:51.252Z",
         "updated_at": "2023-01-29T19:20:51.252Z"
     }
@@ -5706,7 +5299,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:20:51.255Z",
         "updated_at": "2023-01-29T19:20:51.255Z"
     }
@@ -5720,7 +5312,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:20:51.259Z",
         "updated_at": "2023-01-29T19:20:51.259Z"
     }
@@ -5734,7 +5325,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:20:51.261Z",
         "updated_at": "2023-01-29T19:20:51.261Z"
     }
@@ -5748,7 +5338,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:20:51.264Z",
         "updated_at": "2023-01-29T19:20:51.264Z"
     }
@@ -5762,7 +5351,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:20:51.267Z",
         "updated_at": "2023-01-29T19:20:51.267Z"
     }
@@ -5776,7 +5364,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:20:51.269Z",
         "updated_at": "2023-01-29T19:20:51.270Z"
     }
@@ -5790,7 +5377,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:20:51.272Z",
         "updated_at": "2023-01-29T19:20:51.272Z"
     }
@@ -5804,7 +5390,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:21:11.623Z",
         "updated_at": "2023-01-29T19:21:11.623Z"
     }
@@ -5818,7 +5403,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:21:11.629Z",
         "updated_at": "2023-01-29T19:21:11.629Z"
     }
@@ -5832,7 +5416,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:21:11.630Z",
         "updated_at": "2023-01-29T19:21:11.630Z"
     }
@@ -5846,7 +5429,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:21:11.631Z",
         "updated_at": "2023-01-29T19:21:11.631Z"
     }
@@ -5860,7 +5442,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:21:11.632Z",
         "updated_at": "2023-01-29T19:21:11.632Z"
     }
@@ -5874,7 +5455,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:21:11.633Z",
         "updated_at": "2023-01-29T19:21:11.633Z"
     }
@@ -5888,7 +5468,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:21:26.704Z",
         "updated_at": "2023-01-29T19:21:26.704Z"
     }
@@ -5902,7 +5481,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:21:26.712Z",
         "updated_at": "2023-01-29T19:21:26.712Z"
     }
@@ -5916,7 +5494,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:21:26.715Z",
         "updated_at": "2023-01-29T19:21:26.715Z"
     }
@@ -5930,7 +5507,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:21:26.717Z",
         "updated_at": "2023-01-29T19:21:26.717Z"
     }
@@ -5944,7 +5520,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:21:26.720Z",
         "updated_at": "2023-01-29T19:21:26.720Z"
     }
@@ -5958,7 +5533,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:21:26.723Z",
         "updated_at": "2023-01-29T19:21:26.723Z"
     }
@@ -5972,7 +5546,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:21:26.726Z",
         "updated_at": "2023-01-29T19:21:26.726Z"
     }
@@ -5986,7 +5559,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:21:26.729Z",
         "updated_at": "2023-01-29T19:21:26.729Z"
     }
@@ -6000,7 +5572,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:21:26.732Z",
         "updated_at": "2023-01-29T19:21:26.732Z"
     }
@@ -6014,7 +5585,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-29T19:21:26.735Z",
         "updated_at": "2023-01-29T19:21:26.735Z"
     }
@@ -6028,7 +5598,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-29T19:21:26.739Z",
         "updated_at": "2023-01-29T19:21:26.739Z"
     }
@@ -6042,7 +5611,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-29T19:21:26.742Z",
         "updated_at": "2023-01-29T19:21:26.742Z"
     }
@@ -6056,7 +5624,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 13,
         "created_at": "2023-01-29T19:21:26.745Z",
         "updated_at": "2023-01-29T19:21:26.745Z"
     }
@@ -6070,7 +5637,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 14,
         "created_at": "2023-01-29T19:21:26.748Z",
         "updated_at": "2023-01-29T19:21:26.748Z"
     }
@@ -6084,7 +5650,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:21:41.360Z",
         "updated_at": "2023-01-29T19:21:41.360Z"
     }
@@ -6098,7 +5663,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:21:41.368Z",
         "updated_at": "2023-01-29T19:21:41.368Z"
     }
@@ -6112,7 +5676,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:21:41.371Z",
         "updated_at": "2023-01-29T19:21:41.371Z"
     }
@@ -6126,7 +5689,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:21:41.374Z",
         "updated_at": "2023-01-29T19:21:41.374Z"
     }
@@ -6140,7 +5702,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:21:41.377Z",
         "updated_at": "2023-01-29T19:21:41.377Z"
     }
@@ -6154,7 +5715,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-29T19:21:41.379Z",
         "updated_at": "2023-01-29T19:21:41.380Z"
     }
@@ -6168,7 +5728,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:22:02.091Z",
         "updated_at": "2023-01-29T19:22:02.091Z"
     }
@@ -6182,7 +5741,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:22:02.098Z",
         "updated_at": "2023-01-29T19:22:02.098Z"
     }
@@ -6196,7 +5754,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:22:02.101Z",
         "updated_at": "2023-01-29T19:22:02.101Z"
     }
@@ -6210,7 +5767,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:22:02.104Z",
         "updated_at": "2023-01-29T19:22:02.104Z"
     }
@@ -6224,7 +5780,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:22:02.107Z",
         "updated_at": "2023-01-29T19:22:02.107Z"
     }
@@ -6238,7 +5793,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:22:02.110Z",
         "updated_at": "2023-01-29T19:22:02.110Z"
     }
@@ -6252,7 +5806,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:22:02.114Z",
         "updated_at": "2023-01-29T19:22:02.114Z"
     }
@@ -6266,7 +5819,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:22:02.116Z",
         "updated_at": "2023-01-29T19:22:02.116Z"
     }
@@ -6280,7 +5832,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:22:02.119Z",
         "updated_at": "2023-01-29T19:22:02.119Z"
     }
@@ -6294,7 +5845,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 10,
         "created_at": "2023-01-29T19:22:02.120Z",
         "updated_at": "2023-01-29T19:22:02.120Z"
     }
@@ -6308,7 +5858,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 11,
         "created_at": "2023-01-29T19:22:02.122Z",
         "updated_at": "2023-01-29T19:22:02.122Z"
     }
@@ -6322,7 +5871,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-29T19:22:02.124Z",
         "updated_at": "2023-01-29T19:22:02.124Z"
     }
@@ -6336,7 +5884,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 1,
         "created_at": "2023-01-29T19:22:17.940Z",
         "updated_at": "2023-01-29T19:22:17.940Z"
     }
@@ -6350,7 +5897,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 2,
         "created_at": "2023-01-29T19:22:17.947Z",
         "updated_at": "2023-01-29T19:22:17.947Z"
     }
@@ -6364,7 +5910,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 3,
         "created_at": "2023-01-29T19:22:17.949Z",
         "updated_at": "2023-01-29T19:22:17.949Z"
     }
@@ -6378,7 +5923,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 4,
         "created_at": "2023-01-29T19:22:17.950Z",
         "updated_at": "2023-01-29T19:22:17.950Z"
     }
@@ -6392,7 +5936,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 5,
         "created_at": "2023-01-29T19:22:17.952Z",
         "updated_at": "2023-01-29T19:22:17.953Z"
     }
@@ -6406,7 +5949,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 6,
         "created_at": "2023-01-29T19:22:17.955Z",
         "updated_at": "2023-01-29T19:22:17.955Z"
     }
@@ -6420,7 +5962,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 7,
         "created_at": "2023-01-29T19:22:17.957Z",
         "updated_at": "2023-01-29T19:22:17.957Z"
     }
@@ -6434,7 +5975,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 8,
         "created_at": "2023-01-29T19:22:17.960Z",
         "updated_at": "2023-01-29T19:22:17.960Z"
     }
@@ -6448,7 +5988,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 9,
         "created_at": "2023-01-29T19:22:17.963Z",
         "updated_at": "2023-01-29T19:22:17.963Z"
     }
@@ -6462,7 +6001,6 @@
         "max_user": 35,
         "max_previous_message": 200,
         "is_active": true,
-        "ordering": 12,
         "created_at": "2023-01-31T18:18:00.990Z",
         "updated_at": "2023-01-31T18:18:00.990Z"
     }
