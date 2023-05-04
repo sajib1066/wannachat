@@ -1,4 +1,5 @@
 from django.views.generic import View, TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import messages
@@ -127,8 +128,9 @@ class ContactPageView(View):
         return render(request, self.template_name, context)
 
 
-class FindFriendView(View):
+class FindFriendView(LoginRequiredMixin, View):
     template_name = 'home/find-friend.html'
+    login_url = "/auth/login/"
 
     def get(self, request, *args, **kwargs):
         country = Country.objects.all()
@@ -159,6 +161,7 @@ class FindFriendView(View):
             friends = friends.filter(country__pk=country)
         if state:
             friends = friends.filter(state__pk=state)
+        friends = friends.exclude(user__email=request.user.email)
         print(friends)
         country_list = Country.objects.all()
         context = {
