@@ -6,6 +6,7 @@ from django.db.models import Q
 
 from chatroom.models import Category, Country, Contact
 from chatroom.forms import ContactForm
+from customauth.models import Profile
 
 
 class HomeView(View):
@@ -130,5 +131,38 @@ class FindFriendView(View):
     template_name = 'home/find-friend.html'
 
     def get(self, request, *args, **kwargs):
-        context = {}
+        country = Country.objects.all()
+        context = {
+            'country_list': country,
+        }
+        return render(request, self.template_name, context)
+
+    def post(self, request, *args, **kwargs):
+        name = request.POST.get('name')
+        country = request.POST.get('country')
+        state = request.POST.get('state')
+        gender = request.POST.get('gender')
+        print(name, country, state, gender)
+        # friends = Profile.objects.filter(
+        #     Q(user__username__icontains=name) | Q(name__icontains=name) | Q(
+        #         gender=gender
+        #     ) | Q(country__pk=country) | Q(state__pk=state)
+        # )
+        friends = Profile.objects.all()
+        if name:
+            friends = friends.filter(
+                Q(user__username__icontains=name) | Q(name__icontains=name)
+            )
+        if gender:
+            friends = friends.filter(gender=gender)
+        if country:
+            friends = friends.filter(country__pk=country)
+        if state:
+            friends = friends.filter(state__pk=state)
+        print(friends)
+        country_list = Country.objects.all()
+        context = {
+            'country_list': country_list,
+            'friends': friends,
+        }
         return render(request, self.template_name, context)

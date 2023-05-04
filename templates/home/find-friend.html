@@ -10,61 +10,87 @@
 <div class="col-md-7 col-lg-8 find-friend">
     <div class="card">
         <div class="card-body">
-            <input type="text" class="form-control" placeholder="search name" id="name" />
+            <form action="" method="post" id="findFriendForm" data-state-url="{% url 'customauth:load_state' %}">
+                {% csrf_token %}
+                <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="search name" id="name" name="name" />
+                </div>
+    
+                <div class="col-md-12 col-lg-6">
+                    <div class="form-group gender-select">
+                        <p>Gender</p>
+                        <label style="border: 1px solid #ced4da; padding: 8px; border-radius: 0.25rem; background-color: #17a2b8;">
+                            <input type="radio" name="gender" value="male" class="'male-select" /> <span>Male</span> <img src="{% static 'assets/img/man.png' %}" alt="male" height="30px" />
+                        </label>
+                        <label style="box-sizing: border-box; border: 1px solid #ced4da; padding: 9px; border-radius: 0.25rem; margin-left: 9px; background-color: palevioletred;" class="female-select">
+                            <input type="radio" name="gender" value="female" /> <span>Female</span> <img src="{% static 'assets/img/female.png' %}" alt="female" height="30px" />
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- <p for="country">Country</p> -->
+                                <select id="id_country" name="country" class="form-control" style="background-color: #17a2b8 !important;">
+                                    <option value="">-------</option>
+                                    {% for country in country_list %}
+                                        <option value="{{ country.pk }}">{{ country.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- <p for="city">City</p> -->
+                                <select id="state" name="state" class="form-control" style="background-color: #17a2b8 !important;">
+                                    <option value="">-------</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-info w-50">Search</button>
+                </div>
+            </form>
         </div>
-        <div class="col-md-12 col-lg-6">
-            <div class="form-group gender-select">
-                <p>Gender</p>
-                <label style="border: 1px solid #ced4da; padding: 8px; border-radius: 0.25rem; background-color: #17a2b8;">
-                    <input type="radio" name="gender" value="male" class="'male-select" /> <span>Male</span> <img src="assets/images/male.svg" alt="male" />
-                </label>
-                <label style="box-sizing: border-box; border: 1px solid #ced4da; padding: 9px; border-radius: 0.25rem; margin-left: 9px; background-color: palevioletred;" class="female-select">
-                    <input type="radio" name="gender" value="female" /> <span>Female</span> <img src="assets/images/female.svg" alt="female" />
-                </label>
-            </div>
-        </div>
+    </div>
+
+    {% if friends %}
+    <div class="card mt-4">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <!-- <p for="country">Country</p> -->
-                        <select id="country" class="form-control" style="background-color: #17a2b8 !important;">
-                            <option value="Us">
-                                USA
-                            </option>
-                            <option value="cn">
-                                Canada
-                            </option>
-                            <option value="uk">
-                                UK
-                            </option>
-                            <option value="Bd">
-                                Bangladesh
-                            </option>
-                        </select>
+                {% for friend in friends %}
+                    <div class="col-md-4 text-center" style="border: 1px solid #17a2b8; padding: 8px; border-radius: 0.25rem;">
+                        <p class="text-dark">{{ friend.name }}</p>
+                        <a href="" class="btn btn-success btn-sm">Start Chat</a>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <!-- <p for="city">City</p> -->
-                        <select id="country" class="form-control" style="background-color: #17a2b8 !important;">
-                            <option value="Us">
-                                Dhaka
-                            </option>
-                            <option value="cn">
-                                jessore
-                            </option>
-                            <option value="uk">
-                                Khulna
-                            </option>
-                            <option value="Bd">
-                                chittagong
-                            </option>
-                        </select>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
+    {% endif %}
 </div>
 {% endblock content %}
+
+{% block scripts %}
+<script>
+    $("#id_country").change(function () {
+        var url = $("#findFriendForm").attr("data-state-url");
+        var country = $(this).val();
+        console.log(country);
+        $.ajax({
+            url: url,
+            data: {
+                'country': country
+            },
+            success: function (data) {
+                $("#state").html(data);
+            }
+        });
+    });
+</script>
+{% endblock scripts %}
