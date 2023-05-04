@@ -162,7 +162,7 @@ class FindFriendView(LoginRequiredMixin, View):
         if state:
             friends = friends.filter(state__pk=state)
         friends = friends.exclude(user__email=request.user.email)
-        friends = friends.exclude(is_superuser=True)
+        friends = friends.exclude(user__is_superuser=True)
         print(friends)
         country_list = Country.objects.all()
         context = {
