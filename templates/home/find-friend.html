@@ -60,18 +60,22 @@
     </div>
 
     {% if friends %}
-    <div class="card mt-4">
-        <div class="card-body">
-            <div class="row">
-                {% for friend in friends %}
-                    <div class="col-md-4 text-center" style="border: 1px solid #17a2b8; padding: 8px; border-radius: 0.25rem;">
-                        <p class="text-dark">{{ friend.name }}</p>
-                        <a href="{% url 'chatroom:direct_chat' 1 friend.user.pk %}" class="btn btn-success btn-sm">Start Chat</a>
-                    </div>
-                {% endfor %}
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="row">
+                    {% for friend in friends %}
+                        <div class="col-md-4 text-center mb-2 mr-2" style="border: 1px solid #17a2b8; padding: 8px; border-radius: 0.25rem;">
+                            <p class="text-dark">{{ friend.name }}</p>
+                            <a href="{% url 'chatroom:direct_chat' 1 friend.user.pk %}" class="btn btn-success btn-sm">Start Chat</a>
+                        </div>
+                    {% empty %}
+                        <p class="text-center text-danger">No friends found.</p>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
+    {% else %}
+        <p class="mt-4 text-center text-danger">No friends found.</p>
     {% endif %}
 </div>
 {% endblock content %}
