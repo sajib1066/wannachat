@@ -14,7 +14,8 @@ import os
 from .local_settings import (
     SECRET_KEY, DEBUG, ALLOWED_HOSTS, DB_CONFIG,
     TEMPLATES_DIR, STATICFILES_DIR, STATIC_DIR, MEDIA_DIR, LOGS_DIR,
-    CSRF_TRUSTED_ORIGINS, CORS_ALLOWED_ORIGINS, SITE_ID
+    CSRF_TRUSTED_ORIGINS, CORS_ALLOWED_ORIGINS, SITE_ID,
+    EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
 )
 from wannachat.logging import LOGGING
 
@@ -197,8 +198,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'wannachatcorp@gmail.com'
-EMAIL_HOST_PASSWORD = 'xqkvwdqmrpomwnan'
+EMAIL_HOST_USER = EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
 
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
