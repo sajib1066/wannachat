@@ -52,15 +52,18 @@ class UserRegistrationView(LoginView):
                         user.profile.state = state
                         user.profile.save()
                         site = Site.objects.get_current()
-                        send_mail_to_user(
-                            "Welcome to Wannachat",
-                            user.email,
-                            'message.html',
-                            {
-                                'site': site,
-                                'user': user
-                            }
-                        )
+                        try:
+                            send_mail_to_user(
+                                "Welcome to Wannachat",
+                                user.email,
+                                'message.html',
+                                {
+                                    'site': site,
+                                    'user': user
+                                }
+                            )
+                        except Exception as e:
+                            message = e
                         return redirect('customauth:user_login')
                     except Exception as e:
                         message = e
@@ -71,7 +74,7 @@ class UserRegistrationView(LoginView):
         else:
             print(form.errors)
             logger.error(f'Invalid form data: {form.errors}')
-            message = "Invalid email or password. Please enter correctly."
+            message = f"{form.errors}"
         context = {
             'form': form,
             'message': message

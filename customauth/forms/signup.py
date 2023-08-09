@@ -33,7 +33,7 @@ class SignUpForm(forms.Form):
     )
     state = forms.ModelChoiceField(
         label='State',
-        queryset=State.objects.none(),
+        queryset=State.objects.all(),
         widget=forms.Select(attrs={
             'class': 'form-control',
         })

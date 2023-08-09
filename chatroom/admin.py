@@ -11,6 +11,8 @@ class CountryAdmin(admin.ModelAdmin):
 @admin.register(models.State)
 class StateAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'country', 'created_at', 'updated_at']
+    list_filter = ['country']
+
 
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
