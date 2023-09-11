@@ -17,4 +17,5 @@ urlpatterns = [
     ),
     path('load-state/', views.load_state_view, name='load_state'),
     path('welcome/', views.WelcomePageView.as_view(), name='welcome'),
+    path('confirmation/', views.ConfirmPageView.as_view(), name='confirmation'),
 ]

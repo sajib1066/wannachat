@@ -16,4 +16,4 @@ class AccountActivationView(View):
             user.is_active = True
             user.verified_email = True
             user.save()
-        return redirect('customauth:user_login')
+        return redirect('customauth:confirmation')

@@ -148,3 +148,12 @@ class WelcomePageView(View):
     def get(self, request, *args, **kwargs):
         context = {}
         return render(request, self.template_name, context)
+
+
+class ConfirmPageView(View):
+    template_name = 'customauth/confirm.html'
+
+    def get(self, request, *args, **kwargs):
+        context = {}
+        return render(request, self.template_name, context)
+
