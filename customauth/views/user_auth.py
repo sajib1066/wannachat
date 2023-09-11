@@ -64,7 +64,7 @@ class UserRegistrationView(LoginView):
                             )
                         except Exception as e:
                             message = e
-                        return redirect('customauth:user_login')
+                        return redirect('customauth:welcome')
                     except Exception as e:
                         message = e
                 else:
@@ -140,3 +140,11 @@ class UserLogoutView(View):
     def get(self, request, *args, **kwargs):
         logout(request)
         return redirect('customauth:user_login')
+
+
+class WelcomePageView(View):
+    template_name = 'customauth/welcome.html'
+
+    def get(self, request, *args, **kwargs):
+        context = {}
+        return render(request, self.template_name, context)

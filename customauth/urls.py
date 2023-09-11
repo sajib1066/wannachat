@@ -16,4 +16,5 @@ urlpatterns = [
         name='account_activation'
     ),
     path('load-state/', views.load_state_view, name='load_state'),
+    path('welcome/', views.WelcomePageView.as_view(), name='welcome'),
 ]

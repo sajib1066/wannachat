@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+        <meta name="color-scheme" content="light dark" />
+
+        <title>Welcome | WannaChat</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="../../../../fonts.gstatic.com/index.html" />
+        <link href="../../../../fonts.googleapis.com/css2f74f.css?family=Roboto:wght@400;500;700" rel="stylesheet" />
+
+        <!-- Template CSS -->
+        <link class="css-lt" rel="stylesheet" href="{% static 'assets/css/template.bundle.css' %}" media="(prefers-color-scheme: light)" />
+        <link class="css-dk" rel="stylesheet" href="{% static 'assets/css/template.dark.bundle.css' %}" media="(prefers-color-scheme: dark)" />
+
+        <!-- Theme mode -->
+        <script>
+            if (localStorage.getItem("color-scheme")) {
+                let scheme = localStorage.getItem("color-scheme");
+
+                const LTCSS = document.querySelectorAll("link[class=css-lt]");
+                const DKCSS = document.querySelectorAll("link[class=css-dk]");
+
+                [...LTCSS].forEach((link) => {
+                    link.media = scheme === "light" ? "all" : "not all";
+                });
+
+                [...DKCSS].forEach((link) => {
+                    link.media = scheme === "dark" ? "all" : "not all";
+                });
+            }
+        </script>
+    </head>
+
+    <body class="bg-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-center min-vh-100 gx-0">
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="card border-0">
+                        <div class="card-header text-center" style="background: #17a2b8;">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'home/assets/images/logo2-removebg-preview.png' %}" style="height: 110px; width: 150px;" alt="" />
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3>Welcome to WannaChat</h3>
+                            <p>Thank You For Signing Up Please click the link on the confirmation email to validate your email</p>
+                            <a href="{% url 'customauth:user_login' %}">Back to Login Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+
+        <!-- Scripts -->
+        <script src="{% static 'assets/js/vendor.js' %}"></script>
+        <script src="{% static 'assets/js/template.js' %}"></script>
+    </body>
+</html>
